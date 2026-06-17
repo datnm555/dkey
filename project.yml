@@ -44,5 +44,6 @@ targets:
       - target: dkey
     settings:
       base:
+        GENERATE_INFOPLIST_FILE: YES
         BUNDLE_LOADER: "$(TEST_HOST)"
         TEST_HOST: "$(BUILT_PRODUCTS_DIR)/dkey.app/Contents/MacOS/dkey"
