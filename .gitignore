@@ -1,0 +1,12 @@
+# Xcode / XcodeGen
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+build/
+*.dmg
+
+# macOS
+.DS_Store
+
+# Swift
+.build/
