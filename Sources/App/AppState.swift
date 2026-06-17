@@ -52,7 +52,8 @@ final class AppState: ObservableObject {
         if status & 0x400 != 0 { parts += "⌘" }
         if status & 0x800 != 0 { parts += "⇧" }
         let display = UInt8((status >> 24) & 0xFF)
-        if display != 0, let scalar = Unicode.Scalar(display) {
+        if display != 0 {
+            let scalar = Unicode.Scalar(display)
             parts += String(scalar).uppercased()
         }
         return parts
