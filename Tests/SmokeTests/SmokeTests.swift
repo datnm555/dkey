@@ -10,11 +10,15 @@ final class SmokeTests: XCTestCase {
         XCTAssertEqual(state.switchKeyStatus, AppState.defaultSwitchKeyStatus)
     }
 
-    func testHotkeyDescriptionAltZ() {
-        // 0x7A000206: display char 'Z' (0x7A ở byte cao... thực tế 0x7A là keycode,
-        // display char nằm ở >>24). Kiểm tra option-bit (0x200) tạo ra "⌥".
-        let desc = AppState.hotkeyDescription(0x00000200)
-        XCTAssertEqual(desc, "⌥")
+    func testHotkeyDescriptionModifierOnly() {
+        // Chỉ bit ⌥ (0x200), không có ký tự hiển thị.
+        XCTAssertEqual(AppState.hotkeyDescription(0x00000200), "⌥")
+    }
+
+    func testHotkeyDescriptionDefaultAltZ() {
+        // Mặc định 0x7A000206: ⌥ (bit 0x200) + ký tự 'z' (byte cao 0x7A) → "⌥Z".
+        // Bao phủ nhánh giải mã ký tự hiển thị (>>24).
+        XCTAssertEqual(AppState.hotkeyDescription(AppState.defaultSwitchKeyStatus), "⌥Z")
     }
 
     func testSettingsPagesCount() {

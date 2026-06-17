@@ -33,8 +33,9 @@ enum SettingsPage: String, CaseIterable, Identifiable {
 final class AppState: ObservableObject {
     static let shared = AppState()
 
-    /// ⌥Z mặc định: keyCode 0x7A=Z? Thực tế MKey lưu bitfield 0x7A000206.
-    /// Phase 0 chỉ dùng để hiển thị; logic hotkey thêm sau.
+    /// Bitfield hotkey chuyển ngôn ngữ (giống MKey), mặc định ⌥Z = 0x7A000206:
+    /// byte cao (>>24) = 0x7A = ký tự hiển thị 'z'; bit 0x200 = phím ⌥ (Option).
+    /// Phase 0 chỉ dùng để hiển thị; logic bắt phím thêm ở phase sau.
     static let defaultSwitchKeyStatus: Int32 = 0x7A000206
 
     @Published var isVietnamese: Bool = true
