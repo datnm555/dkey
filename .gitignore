@@ -10,3 +10,6 @@ build/
 
 # Swift
 .build/
+
+# Local MCP config (may contain tokens) — do not commit
+.mcp.json
