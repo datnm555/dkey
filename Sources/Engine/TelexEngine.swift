@@ -8,8 +8,30 @@ public final class TelexEngine: InputEngine {
 
     public func newSession() { buffer.reset() }
 
-    // Stub — full implementation in Task 4.
-    public func handle(key: UInt16, caps: Bool) -> EngineOutput { .none }
+    public func handle(key: UInt16, caps: Bool) -> EngineOutput {
+        if Self.breakCodes.contains(key) {
+            newSession()
+            return EngineOutput(backspaceCount: 0, newChars: [], action: .wordBreak)
+        }
+        return insertKey(key, caps: caps)
+    }
+
+    func insertKey(_ key: UInt16, caps: Bool) -> EngineOutput {
+        guard buffer.index < TypingBuffer.maxBuff else {
+            return EngineOutput(backspaceCount: 0, newChars: [], action: .passthrough)
+        }
+        buffer[buffer.index] = UInt32(key) | (caps ? EngineMask.caps : 0)
+        buffer.index += 1
+        let ch = UInt16(keyCodeToCharacter(UInt32(key) | (caps ? EngineMask.caps : 0)))
+        let scalars: [Unicode.Scalar] = ch != 0 ? [Unicode.Scalar(ch)!] : []
+        return EngineOutput(backspaceCount: 0, newChars: scalars, action: .passthrough)
+    }
+
+    static let breakCodes: Set<UInt16> = [
+        KeyCode.esc, KeyCode.tab, KeyCode.enter, KeyCode.ret, KeyCode.left, KeyCode.right,
+        KeyCode.down, KeyCode.up, KeyCode.comma, KeyCode.dot, KeyCode.slash, KeyCode.semicolon,
+        KeyCode.quote, KeyCode.backSlash, KeyCode.minus, KeyCode.equals, KeyCode.backquote, KeyCode.space
+    ]
 
     // Stub — full implementation in Task 10.
     public func backspace() -> EngineOutput { .none }
