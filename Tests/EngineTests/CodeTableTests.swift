@@ -21,4 +21,9 @@ final class CodeTableTests: XCTestCase {
         XCTAssertEqual(keyCodeToCharacter(UInt32(KeyCode.a)), UInt16(Character("a").asciiValue!))
         XCTAssertEqual(keyCodeToCharacter(UInt32(KeyCode.s)), UInt16(Character("s").asciiValue!))
     }
+    func testIRowTildeCorrection() {
+        let row = codeTableUnicode[UInt32(KeyCode.i)]!
+        XCTAssertEqual(row[6], 0x0128) // Ĩ — brief-mandated 4-digit correction
+        XCTAssertEqual(row[7], 0x0129) // ĩ
+    }
 }
