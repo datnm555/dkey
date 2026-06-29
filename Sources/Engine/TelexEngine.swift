@@ -22,6 +22,16 @@ public final class TelexEngine: InputEngine {
             return EngineOutput(backspaceCount: 0, newChars: [], action: .wordBreak)
         }
 
+        // Route '[' (KEY_LEFT_BRACKET) → standalone ơ (Engine.cpp:1065-1068)
+        if key == KeyCode.leftBracket {
+            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
+        }
+
+        // Route ']' (KEY_RIGHT_BRACKET) → standalone ư (Engine.cpp:1070-1073)
+        if key == KeyCode.rightBracket {
+            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+        }
+
         // Route mark keys s/f/r/x/j BEFORE plain insertKey — mirror handleMainKey mark branch
         // (Engine.cpp:1104-1142).
         if isMarkKey(key) && buffer.index > 0 {
@@ -56,6 +66,34 @@ public final class TelexEngine: InputEngine {
             return insertKey(key, caps: caps)
         }
 
+        // Route 'w' key → horn/breve via insertW (if vowel pattern matched) or standalone ư.
+        // Mirror handleMainKey IS_KEY_W branch (Engine.cpp:1169-1191).
+        if key == KeyCode.w {
+            let patterns = vowel[KeyCode.w] ?? []
+            var wMatched = false
+            for l in 0..<patterns.count {
+                if buffer.index < patterns[l].count { continue }
+                if buffer.index > 0 && checkCorrectVowel(patterns: patterns, patternIdx: l, markKey: key) {
+                    wMatched = true
+                    let wOut = insertW(caps: caps)
+                    // insertW multi-vowel "don't do anything" → fall through to standalone
+                    if wOut.action == .passthrough { break }
+                    // insertW vRestore → also output current key (Engine.cpp:1512-1514)
+                    if wOut.action == .restore {
+                        let keyOut = insertKey(key, caps: caps)
+                        return EngineOutput(
+                            backspaceCount: wOut.backspaceCount,
+                            newChars: wOut.newChars + keyOut.newChars,
+                            action: .passthrough)
+                    }
+                    return wOut
+                }
+            }
+            // No pattern matched or insertW said "don't do anything" → standalone
+            _ = wMatched  // consumed
+            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+        }
+
         // Route double keys a/e/o for circumflex (insertAOE) — mirror handleMainKey vowel branch
         // (Engine.cpp:1154-1168, IS_KEY_DOUBLE).
         if isDoubleKey(key) && buffer.index > 0 {
@@ -81,6 +119,249 @@ public final class TelexEngine: InputEngine {
         }
 
         return insertKey(key, caps: caps)
+    }
+
+    // MARK: - insertW (Engine.cpp:871-984)
+
+    /// Port of insertW — applies (or toggles off) horn/breve diacritic.
+    /// For multi-vowel clusters handles uo/ua/ui/uu/oi/io/oa vowel-pair rules.
+    /// For single-vowel scans backward from buffer tail to VSI, toggling TONEW on a/u/o.
+    /// Returns action == .restore when toggling off (caller in handle must then also
+    /// call insertKey for the trigger key, mirroring C++ vRestore passthrough).
+    /// Returns action == .passthrough when multi-vowel pair is unrecognised (caller
+    /// falls through to checkForStandaloneChar, mirroring C++ isChanged=false path).
+    func insertW(caps: Bool) -> EngineOutput {
+        var isRestoredW = false
+
+        findAndCalculateVowel(forGrammar: false)
+
+        // Remove TONE_MASK from vowel cluster (Engine.cpp:877-879)
+        if vowelCount > 0 {
+            for ii in vowelStartIndex...vowelEndIndex {
+                buffer[ii] &= ~EngineMask.tone
+            }
+        }
+
+        let vsi = vowelStartIndex
+        let vei = vowelEndIndex
+        let idx = buffer.index
+
+        // Multi-vowel branch (Engine.cpp:881-933)
+        if vowelCount > 1 {
+            let hBPC = idx - vsi
+
+            let firstHasToneW  = (buffer[vsi] & EngineMask.toneW) != 0
+            let secondHasToneW = (buffer[vsi + 1] & EngineMask.toneW) != 0
+            let secondIsI      = buffer[vsi + 1].cellKeyCode == KeyCode.i
+            let secondIsA      = buffer[vsi + 1].cellKeyCode == KeyCode.a
+
+            if (firstHasToneW && secondHasToneW) ||
+               (firstHasToneW && secondIsI) ||
+               (firstHasToneW && secondIsA) {
+                // Restore: clear all TONEW (Engine.cpp:889-895)
+                isRestoredW = true
+                for ii in vsi..<idx {
+                    buffer[ii] &= ~EngineMask.toneW
+                }
+                var newChars: [Unicode.Scalar] = []
+                for ii in vsi..<idx {
+                    // C++ stores raw TypingWord (no STANDALONE) for restore char
+                    let cell = buffer[ii] & ~EngineMask.standalone
+                    if let s = cellToScalar(cell) { newChars.append(s) }
+                }
+                return EngineOutput(backspaceCount: hBPC, newChars: newChars, action: .restore)
+            }
+
+            // Determine which position(s) get TONEW (Engine.cpp:898-930)
+            let chr0 = buffer[vsi].cellKeyCode
+            let chr1 = buffer[vsi + 1].cellKeyCode
+
+            if chr0 == KeyCode.u && chr1 == KeyCode.o {
+                // UO: context-sensitive (Engine.cpp:900-911)
+                if vsi - 2 >= 0 &&
+                   buffer[vsi - 2].cellKeyCode == KeyCode.t &&
+                   buffer[vsi - 1].cellKeyCode == KeyCode.h {
+                    buffer[vsi + 1] |= EngineMask.toneW
+                    if vsi + 2 < idx && buffer[vsi + 2].cellKeyCode == KeyCode.n {
+                        buffer[vsi] |= EngineMask.toneW
+                    }
+                } else if vsi - 1 >= 0 && buffer[vsi - 1].cellKeyCode == KeyCode.q {
+                    buffer[vsi + 1] |= EngineMask.toneW
+                } else {
+                    buffer[vsi] |= EngineMask.toneW
+                    buffer[vsi + 1] |= EngineMask.toneW
+                }
+            } else if (chr0 == KeyCode.u && chr1 == KeyCode.a) ||
+                      (chr0 == KeyCode.u && chr1 == KeyCode.i) ||
+                      (chr0 == KeyCode.u && chr1 == KeyCode.u) ||
+                      (chr0 == KeyCode.o && chr1 == KeyCode.i) {
+                buffer[vsi] |= EngineMask.toneW
+            } else if (chr0 == KeyCode.i && chr1 == KeyCode.o) ||
+                      (chr0 == KeyCode.o && chr1 == KeyCode.a) {
+                buffer[vsi + 1] |= EngineMask.toneW
+            } else {
+                // Don't do anything (Engine.cpp:921-924) — caller falls to standalone
+                return EngineOutput(backspaceCount: 0, newChars: [], action: .passthrough)
+            }
+
+            var newChars: [Unicode.Scalar] = []
+            for ii in vsi..<idx {
+                if let s = cellToScalar(buffer[ii]) { newChars.append(s) }
+            }
+            return EngineOutput(backspaceCount: hBPC, newChars: newChars, action: .process)
+        }
+
+        // Single-vowel branch (Engine.cpp:935-983)
+        // hCode = vWillProcess, hBPC = 0
+        var hBPC = 0
+        var ii = idx - 1
+        while ii >= 0 {
+            if ii < vsi { break }
+            hBPC += 1
+            let chr = buffer[ii].cellKeyCode
+            switch chr {
+            case KeyCode.a, KeyCode.u, KeyCode.o:
+                if (buffer[ii] & EngineMask.toneW) != 0 {
+                    // Already has TONEW → toggle off (Engine.cpp:948-966)
+                    if (buffer[ii] & EngineMask.standalone) != 0 {
+                        // Standalone case
+                        if chr == KeyCode.u {
+                            // ư (standalone) → restore to 'w' key, hCode=vWillProcess
+                            buffer[ii] = UInt32(KeyCode.w) |
+                                         (buffer[ii].cellHasCaps ? EngineMask.caps : 0)
+                        } else if chr == KeyCode.o {
+                            // ơ (standalone) → restore to 'o', hCode=vRestore
+                            isRestoredW = true
+                            buffer[ii] = UInt32(KeyCode.o) |
+                                         (buffer[ii].cellHasCaps ? EngineMask.caps : 0)
+                        }
+                        // tempDisableKey = true in C++ (no Swift equivalent needed here)
+                    } else {
+                        // Regular toggle off, hCode=vRestore
+                        isRestoredW = true
+                        buffer[ii] &= ~EngineMask.toneW
+                    }
+                } else {
+                    // Add TONEW (Engine.cpp:967-970)
+                    buffer[ii] |= EngineMask.toneW
+                    buffer[ii] &= ~EngineMask.tone
+                }
+            default:
+                break  // consonants: output as-is (Engine.cpp:974-976)
+            }
+            ii -= 1
+        }
+
+        let startIdx = idx - hBPC
+        var newChars: [Unicode.Scalar] = []
+        for i in startIdx..<idx {
+            if let s = cellToScalar(buffer[i]) { newChars.append(s) }
+        }
+
+        return EngineOutput(
+            backspaceCount: hBPC,
+            newChars: newChars,
+            action: isRestoredW ? .restore : .process
+        )
+    }
+
+    // MARK: - reverseLastStandaloneChar (Engine.cpp:986-993)
+
+    /// Port of reverseLastStandaloneChar — overwrites buffer[index-1] with the
+    /// standalone form of keyCode (TONEW | STANDALONE set). Returns EngineOutput
+    /// with 0 backspaces and 1 new char (hBPC=0, hNCC=1 in C++).
+    private func reverseLastStandaloneChar(_ keyCode: UInt16, caps: Bool) -> EngineOutput {
+        let cell = UInt32(keyCode) | EngineMask.toneW | EngineMask.standalone |
+                   (caps ? EngineMask.caps : 0)
+        buffer[buffer.index - 1] = cell
+        let scalar = cellToScalar(cell)
+        return EngineOutput(
+            backspaceCount: 0,
+            newChars: scalar.map { [$0] } ?? [],
+            action: .process
+        )
+    }
+
+    // MARK: - insertIntoBuffer (C++ insertKey with isCheckSpelling=false, buffer-only)
+
+    /// Inserts a key into the buffer without producing screen output.
+    /// Used inside checkForStandaloneChar before reverseLastStandaloneChar.
+    private func insertIntoBuffer(_ key: UInt16, caps: Bool) {
+        guard buffer.index < TypingBuffer.maxBuff else { return }
+        buffer[buffer.index] = UInt32(key) | (caps ? EngineMask.caps : 0)
+        buffer.index += 1
+    }
+
+    // MARK: - checkForStandaloneChar (Engine.cpp:995-1040)
+
+    /// Port of checkForStandaloneChar — handles standalone w/[/] conversion.
+    /// `data` = the typed key (w, [, or ]); `keyWillReverse` = the vowel to stand in
+    /// (KEY_O for [, KEY_U for ] and w).
+    ///
+    /// Logic:
+    ///  1. If last buffer cell is keyWillReverse with TONEW → replace with data (toggle off).
+    ///  2. If last cell is KEY_U and keyWillReverse==KEY_O → insert KEY_O then standalone ơ.
+    ///  3. Empty buffer → insert data (buffer only) + standalone keyWillReverse.
+    ///  4. 1-char buffer → standalone unless prefix is in standaloneWbad.
+    ///  5. 2-char buffer → standalone only if prefix is in doubleWAllowed.
+    ///  6. 3+ chars → plain insertKey.
+    func checkForStandaloneChar(_ data: UInt16, caps: Bool, keyWillReverse: UInt16) -> EngineOutput {
+        // 1. Toggle off: last char is keyWillReverse with TONEW (Engine.cpp:996-1003)
+        if buffer.index > 0 {
+            let last = buffer[buffer.index - 1]
+            if last.cellKeyCode == keyWillReverse && (last & EngineMask.toneW) != 0 {
+                let cell = UInt32(data) | (caps ? EngineMask.caps : 0)
+                buffer[buffer.index - 1] = cell
+                let scalar = cellToScalar(cell)
+                return EngineOutput(
+                    backspaceCount: 1,
+                    newChars: scalar.map { [$0] } ?? [],
+                    action: .process
+                )
+            }
+        }
+
+        // 2. Standalone w → ư followed by '[' (Engine.cpp:1007-1010)
+        if buffer.index > 0 &&
+           buffer[buffer.index - 1].cellKeyCode == KeyCode.u &&
+           keyWillReverse == KeyCode.o {
+            insertIntoBuffer(keyWillReverse, caps: caps)
+            return reverseLastStandaloneChar(keyWillReverse, caps: caps)
+        }
+
+        // 3. Empty buffer (Engine.cpp:1013-1015)
+        if buffer.index == 0 {
+            insertIntoBuffer(data, caps: caps)
+            return reverseLastStandaloneChar(keyWillReverse, caps: caps)
+        }
+
+        // 4. One-char buffer (Engine.cpp:1017-1026)
+        if buffer.index == 1 {
+            let chr = buffer[0].cellKeyCode
+            for bad in standaloneWbad {
+                if chr == bad {
+                    return insertKey(data, caps: caps)
+                }
+            }
+            insertIntoBuffer(data, caps: caps)
+            return reverseLastStandaloneChar(keyWillReverse, caps: caps)
+        }
+
+        // 5. Two-char buffer (Engine.cpp:1027-1036)
+        if buffer.index == 2 {
+            let chr0 = buffer[0].cellKeyCode
+            let chr1 = buffer[1].cellKeyCode
+            for pair in doubleWAllowed {
+                if chr0 == pair[0] && chr1 == pair[1] {
+                    insertIntoBuffer(data, caps: caps)
+                    return reverseLastStandaloneChar(keyWillReverse, caps: caps)
+                }
+            }
+            return insertKey(data, caps: caps)
+        }
+
+        // 6. 3+ chars → plain insert (Engine.cpp:1039)
+        return insertKey(data, caps: caps)
     }
 
     func insertKey(_ key: UInt16, caps: Bool) -> EngineOutput {

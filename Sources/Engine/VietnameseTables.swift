@@ -18,6 +18,28 @@ let codeTableUnicode: [UInt32: [UInt16]] = [
     UInt32(KeyCode.y): [0x00DD,0x00FD,0x1EF2,0x1EF3,0x1EF6,0x1EF7,0x1EF8,0x1EF9,0x1EF4,0x1EF5],
 ]
 
+// MARK: - Horn/breve standalone tables (Vietnamese.cpp:375-389)
+
+/// Characters after which a standalone w/[/] is disallowed (1-char prefix).
+/// Verbatim port of _standaloneWbad (Vietnamese.cpp:375-377).
+let standaloneWbad: [UInt16] = [
+    KeyCode.w, KeyCode.e, KeyCode.y, KeyCode.f, KeyCode.j, KeyCode.k, KeyCode.z
+]
+
+/// Two-character prefixes that allow a standalone w/[/] to follow.
+/// Verbatim port of _doubleWAllowed (Vietnamese.cpp:379-389).
+let doubleWAllowed: [[UInt16]] = [
+    [KeyCode.t, KeyCode.r],
+    [KeyCode.t, KeyCode.h],
+    [KeyCode.c, KeyCode.h],
+    [KeyCode.n, KeyCode.h],
+    [KeyCode.n, KeyCode.g],
+    [KeyCode.k, KeyCode.h],
+    [KeyCode.g, KeyCode.i],
+    [KeyCode.p, KeyCode.h],
+    [KeyCode.g, KeyCode.h],
+]
+
 // MARK: - Vowel pattern tables (Vietnamese.cpp:19-97, 99-168)
 
 /// Vowel pattern table — verbatim port of OpenKey _vowel (Vietnamese.cpp:19-97).
