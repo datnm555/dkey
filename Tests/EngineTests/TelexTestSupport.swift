@@ -9,6 +9,13 @@ func type(_ telex: String, modern: Bool = true, engine: TelexEngine? = nil) -> S
     e.newSession()
     var screen: [Character] = []
     for ch in telex {
+        // Backspace sentinel: U+0008 (BS control character) → call engine.backspace()
+        if ch == "\u{8}" {
+            let out = e.backspace()
+            for _ in 0..<out.backspaceCount { if !screen.isEmpty { screen.removeLast() } }
+            for s in out.newChars { screen.append(Character(s)) }
+            continue
+        }
         guard let (code, caps) = KeyCode.keyCode(for: ch) else { continue }
         let out = e.handle(key: code, caps: caps)
         if out.action == .wordBreak {

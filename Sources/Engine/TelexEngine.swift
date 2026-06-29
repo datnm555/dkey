@@ -22,6 +22,13 @@ public final class TelexEngine: InputEngine {
             return EngineOutput(backspaceCount: 0, newChars: [], action: .wordBreak)
         }
 
+        // Route 'z' → removeMark (IS_KEY_Z, Engine.cpp:1057-1062)
+        // If no mark present, fall through to insertKey (plain 'z').
+        if key == KeyCode.z {
+            let removeOut = removeMark()
+            return removeOut == .none ? insertKey(key, caps: caps) : removeOut
+        }
+
         // Route '[' (KEY_LEFT_BRACKET) → standalone ơ (Engine.cpp:1065-1068)
         if key == KeyCode.leftBracket {
             return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
@@ -511,8 +518,124 @@ public final class TelexEngine: InputEngine {
         KeyCode.quote, KeyCode.backSlash, KeyCode.minus, KeyCode.equals, KeyCode.backquote, KeyCode.space
     ]
 
-    // Stub — full implementation in Task 10.
-    public func backspace() -> EngineOutput { .none }
+    // MARK: - removeMark (Engine.cpp:587-609)
+
+    /// Port of removeMark — clears all MARK_MASK bits from the vowel cluster (VSI…VEI).
+    /// Returns .none when no mark was present (caller falls through to insertKey).
+    /// Returns a redraw EngineOutput covering VSI…_index-1 when a mark was removed.
+    func removeMark() -> EngineOutput {
+        findAndCalculateVowel(forGrammar: true)
+        var isChanged = false
+        if buffer.index > 0 {
+            for i in vowelStartIndex...vowelEndIndex {
+                if (buffer[i] & EngineMask.mark) != 0 {
+                    buffer[i] &= ~EngineMask.mark
+                    isChanged = true
+                }
+            }
+        }
+        guard isChanged else { return .none }
+        var newChars: [Unicode.Scalar] = []
+        for i in vowelStartIndex..<buffer.index {
+            if let s = cellToScalar(buffer[i]) { newChars.append(s) }
+        }
+        return EngineOutput(
+            backspaceCount: buffer.index - vowelStartIndex,
+            newChars: newChars,
+            action: .process
+        )
+    }
+
+    // MARK: - checkGrammar (Engine.cpp:290-346, tone parts only)
+
+    /// Port of checkGrammar — after a deletion re-places the tone mark on the correct vowel.
+    /// Spell-check / KeyStates undo-stack (_stateIndex, vCheckSpelling) are deferred (Phase 1
+    /// constant: vCheckSpelling=0), so only the tone-reflow logic is ported.
+    /// Returns nil when no re-arrangement was needed; returns the redraw EngineOutput otherwise.
+    @discardableResult
+    func checkGrammar(_ deltaBackspace: Int) -> EngineOutput? {
+        guard buffer.index > 1 && buffer.index < TypingBuffer.maxBuff else { return nil }
+        findAndCalculateVowel(forGrammar: true)
+        guard vowelCount > 0 else { return nil }
+
+        var isCheckedGrammar = false
+        let l = vowelStartIndex       // save before insertMark re-runs findAndCalculateVowel
+        let savedVEI = vowelEndIndex  // save for mark-scan loop
+
+        // Fix UO TONEW mismatch: "thuơn"/"ưoi"/"ưom"/"ưoc" (Engine.cpp:302-317)
+        if buffer.index >= 3 {
+            outer: for i in stride(from: buffer.index - 1, through: 0, by: -1) {
+                let chr = buffer[i].cellKeyCode
+                if chr == KeyCode.n || chr == KeyCode.c || chr == KeyCode.i ||
+                   chr == KeyCode.m || chr == KeyCode.p || chr == KeyCode.t {
+                    if i >= 2 &&
+                       buffer[i-1].cellKeyCode == KeyCode.o &&
+                       buffer[i-2].cellKeyCode == KeyCode.u {
+                        if ((buffer[i-1] & EngineMask.toneW) ^ (buffer[i-2] & EngineMask.toneW)) != 0 {
+                            buffer[i-2] |= EngineMask.toneW
+                            buffer[i-1] |= EngineMask.toneW
+                            isCheckedGrammar = true
+                            break outer
+                        }
+                    }
+                }
+            }
+        }
+
+        // Re-place tone mark on the correct vowel (Engine.cpp:320-331)
+        if buffer.index >= 2 {
+            var i = l
+            while i <= savedVEI {
+                if (buffer[i] & EngineMask.mark) != 0 {
+                    let mark = buffer[i] & EngineMask.mark
+                    buffer[i] &= ~EngineMask.mark
+                    _ = insertMark(mark, canModifyFlag: false)
+                    // vowelWillSetMark is set by insertMark for all vowel-count cases
+                    if i != vowelWillSetMark {
+                        isCheckedGrammar = true
+                    }
+                    break
+                }
+                i += 1
+            }
+        }
+
+        guard isCheckedGrammar else { return nil }
+
+        // Assemble redraw output (Engine.cpp:334-346)
+        // hBPC = (chars from l…_index-1) + deltaBackspace; hNCC = chars from l…_index-1
+        var newChars: [Unicode.Scalar] = []
+        for i in l..<buffer.index {
+            if let s = cellToScalar(buffer[i]) { newChars.append(s) }
+        }
+        let hNCC = buffer.index - l
+        return EngineOutput(
+            backspaceCount: hNCC + deltaBackspace,
+            newChars: newChars,
+            action: .process
+        )
+    }
+
+    // MARK: - backspace (Engine.cpp:1420-1465, tone parts only)
+
+    /// Port of the KEY_DELETE path in the main key handler.
+    /// Decrements buffer.index, then calls checkGrammar(1) to re-place any tone mark
+    /// on the surviving vowel cluster.  Spell-check / _stateIndex / _longWordHelper /
+    /// _specialChar / _spaceCount handling are all deferred (Phase 1 scope).
+    public func backspace() -> EngineOutput {
+        guard buffer.index > 0 else { return .none }
+        buffer.index -= 1
+        if buffer.index == 0 {
+            newSession()
+            return EngineOutput(backspaceCount: 1, newChars: [], action: .passthrough)
+        }
+        // checkGrammar(1) — deltaBackspace=1 because one char was just deleted
+        if let redrawn = checkGrammar(1) {
+            return redrawn
+        }
+        // No grammar re-arrangement — just tell caller to delete 1 char
+        return EngineOutput(backspaceCount: 1, newChars: [], action: .passthrough)
+    }
 
     // MARK: - Vowel detection (Engine.cpp:560-585)
 
@@ -796,6 +919,9 @@ public final class TelexEngine: InputEngine {
                 vowelWillSetMark = vowelEndIndex
             }
         }
+        // Always update vowelWillSetMark (single-vowel case and multi-vowel fallback).
+        // Required so that checkGrammar can compare the old mark position with the new one.
+        vowelWillSetMark = vwsm
 
         let vsi = vowelStartIndex
 
