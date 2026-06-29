@@ -18,6 +18,165 @@ let codeTableUnicode: [UInt32: [UInt16]] = [
     UInt32(KeyCode.y): [0x00DD,0x00FD,0x1EF2,0x1EF3,0x1EF6,0x1EF7,0x1EF8,0x1EF9,0x1EF4,0x1EF5],
 ]
 
+// MARK: - Vowel pattern tables (Vietnamese.cpp:19-97, 99-168)
+
+/// Vowel pattern table — verbatim port of OpenKey _vowel (Vietnamese.cpp:19-97).
+/// Key = first vowel key code; value = list of syllable-final vowel+consonant patterns.
+/// END_CONSONANT_MASK (0x4000) is OR'd directly into UInt16 key codes as in C++.
+let vowel: [UInt16: [[UInt16]]] = {
+    let EC = UInt16(EngineMask.endConsonant)   // 0x4000
+    return [
+        KeyCode.a: [
+            [KeyCode.a, KeyCode.n, KeyCode.g], [KeyCode.a, KeyCode.g | EC],
+            [KeyCode.a, KeyCode.n],
+            [KeyCode.a, KeyCode.m],
+            [KeyCode.a, KeyCode.u],
+            [KeyCode.a, KeyCode.y],
+            [KeyCode.a, KeyCode.t],
+            [KeyCode.a, KeyCode.p],
+            [KeyCode.a],
+            [KeyCode.a, KeyCode.c],
+        ],
+        KeyCode.o: [
+            [KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.o, KeyCode.g | EC],
+            [KeyCode.o, KeyCode.n],
+            [KeyCode.o, KeyCode.m],
+            [KeyCode.o, KeyCode.i],
+            [KeyCode.o, KeyCode.c],
+            [KeyCode.o, KeyCode.t],
+            [KeyCode.o, KeyCode.p],
+            [KeyCode.o],
+        ],
+        KeyCode.e: [
+            [KeyCode.e, KeyCode.n, KeyCode.h], [KeyCode.e, KeyCode.h | EC],
+            [KeyCode.e, KeyCode.n, KeyCode.g], [KeyCode.e, KeyCode.g | EC],
+            [KeyCode.e, KeyCode.c, KeyCode.h], [KeyCode.e, KeyCode.k | EC],
+            [KeyCode.e, KeyCode.c],
+            [KeyCode.e, KeyCode.t],
+            [KeyCode.e, KeyCode.y],
+            [KeyCode.e, KeyCode.u],
+            [KeyCode.e, KeyCode.p],
+            [KeyCode.e, KeyCode.c],
+            [KeyCode.e, KeyCode.n],
+            [KeyCode.e, KeyCode.m],
+            [KeyCode.e],
+        ],
+        KeyCode.w: [
+            [KeyCode.o, KeyCode.n],
+
+            [KeyCode.u, KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.u, KeyCode.o, KeyCode.g | EC],
+
+            [KeyCode.u, KeyCode.o, KeyCode.n],
+            [KeyCode.u, KeyCode.o, KeyCode.i],
+            [KeyCode.u, KeyCode.o, KeyCode.c],
+
+            [KeyCode.o, KeyCode.i],
+            [KeyCode.o, KeyCode.p],
+            [KeyCode.o, KeyCode.m],
+            [KeyCode.o, KeyCode.a],
+            [KeyCode.o, KeyCode.t],
+
+            [KeyCode.u, KeyCode.n, KeyCode.g], [KeyCode.u, KeyCode.g | EC],
+            [KeyCode.a, KeyCode.n, KeyCode.g], [KeyCode.a, KeyCode.g | EC],
+            [KeyCode.u, KeyCode.n],
+            [KeyCode.u, KeyCode.m],
+            [KeyCode.u, KeyCode.c],
+            [KeyCode.u, KeyCode.a],
+            [KeyCode.u, KeyCode.i],
+            [KeyCode.u, KeyCode.t],
+            [KeyCode.u],
+
+            [KeyCode.a, KeyCode.p],
+            [KeyCode.a, KeyCode.t],
+            [KeyCode.a, KeyCode.m],
+
+            [KeyCode.a, KeyCode.n],
+            [KeyCode.a],
+            [KeyCode.a, KeyCode.c],
+            [KeyCode.a, KeyCode.c, KeyCode.h], [KeyCode.a, KeyCode.k | EC],
+
+            [KeyCode.o],
+            [KeyCode.u, KeyCode.u],
+        ],
+    ]
+}()
+
+/// Vowel-combination table — verbatim port of OpenKey _vowelCombine (Vietnamese.cpp:99-168).
+/// Key = leading vowel key code; value = list of patterns where each pattern's first element
+/// is the 0/1 "can have end consonant" flag, followed by key codes (with TONE/TONEW masks).
+let vowelCombine: [UInt16: [[UInt32]]] = {
+    let TM  = EngineMask.tone    // TONE_MASK  0x20000
+    let TWM = EngineMask.toneW   // TONEW_MASK 0x40000
+    let A   = UInt32(KeyCode.a)
+    let E   = UInt32(KeyCode.e)
+    let I   = UInt32(KeyCode.i)
+    let O   = UInt32(KeyCode.o)
+    let U   = UInt32(KeyCode.u)
+    let Y   = UInt32(KeyCode.y)
+    return [
+        KeyCode.a: [
+            //first elem can has end consonant or not
+            [0, A, I],
+            [0, A, O],
+            [0, A, U],
+            [0, A | TM, U],
+            [0, A, Y],
+            [0, A | TM, Y],
+        ],
+        KeyCode.e: [
+            [0, E, O],
+            [0, E | TM, U],
+        ],
+        KeyCode.i: [
+            [1, I, E | TM, U],
+            [0, I, A],
+            [1, I, E | TM],
+            [0, I, U],
+        ],
+        KeyCode.o: [
+            [0, O, A, I],
+            [0, O, A, O],
+            [0, O, A, Y],
+            [0, O, E, O],
+            [1, O, A],
+            [1, O, A | TWM],
+            [1, O, E],
+            [0, O, I],
+            [0, O | TM,  I],
+            [0, O | TWM, I],
+            [1, O, O],
+            [1, O | TM, O | TM],
+        ],
+        KeyCode.u: [
+            [0, U, Y, U],
+            [1, U, Y, E | TM],
+            [0, U, Y, A],
+            [0, U | TWM, O | TWM, U],
+            [0, U | TWM, O | TWM, I],
+            [0, U, O | TM,  I],
+            [0, U, A | TM,  Y],
+            [1, U, A, O],
+            [1, U, A],
+            [1, U, A | TWM],
+            [1, U, A | TM],
+            [0, U | TWM, A],
+            [1, U, E | TM],
+            [0, U, I],
+            [0, U | TWM, I],
+            [1, U, O],
+            [1, U, O | TM],
+            [0, U, O | TWM],
+            [1, U | TWM, O | TWM],
+            [0, U | TWM, U],
+            [1, U, Y],
+        ],
+        KeyCode.y: [
+            [0, Y, E | TM, U],
+            [1, Y, E | TM],
+        ],
+    ]
+}()
+
 /// Reverse map: engine key cell (low byte = keyCode, +caps) → ASCII character code.
 /// Verbatim behavior of OpenKey keyCodeToCharacter.
 func keyCodeToCharacter(_ keyCode: UInt32) -> UInt16 {

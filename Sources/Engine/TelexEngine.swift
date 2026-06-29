@@ -4,6 +4,11 @@ public final class TelexEngine: InputEngine {
     public var useModernOrthography: Bool = true
     var buffer = TypingBuffer()
 
+    // Vowel position state — set by findAndCalculateVowel (ported from Engine.cpp globals VSI/VEI/vowelCount)
+    var vowelStartIndex = 0
+    var vowelEndIndex   = 0
+    var vowelCount      = 0
+
     public init() {}
 
     public func newSession() { buffer.reset() }
@@ -36,6 +41,51 @@ public final class TelexEngine: InputEngine {
 
     // Stub — full implementation in Task 10.
     public func backspace() -> EngineOutput { .none }
+
+    // MARK: - Vowel detection (Engine.cpp:560-585)
+
+    /// Port of IS_CONSONANT macro: returns true if keyCode is not a Vietnamese vowel.
+    private func isConsonant(_ keyCode: UInt16) -> Bool {
+        return keyCode != KeyCode.a && keyCode != KeyCode.e &&
+               keyCode != KeyCode.u && keyCode != KeyCode.y &&
+               keyCode != KeyCode.i && keyCode != KeyCode.o
+    }
+
+    /// Scans the buffer backwards to locate the vowel cluster, setting
+    /// vowelStartIndex (VSI), vowelEndIndex (VEI), vowelCount.
+    /// Verbatim port of findAndCalculateVowel (Engine.cpp:560-585).
+    func findAndCalculateVowel(forGrammar: Bool) {
+        vowelCount      = 0
+        vowelStartIndex = 0
+        vowelEndIndex   = 0
+        var i = buffer.index - 1
+        while i >= 0 {
+            let chr = buffer[i].cellKeyCode
+            if isConsonant(chr) {
+                if vowelCount > 0 { break }
+            } else {  // is vowel
+                if vowelCount == 0 {
+                    vowelEndIndex = i
+                }
+                if !forGrammar {
+                    if (i - 1 >= 0 && chr == KeyCode.i && buffer[i - 1].cellKeyCode == KeyCode.g) ||
+                       (i - 1 >= 0 && chr == KeyCode.u && buffer[i - 1].cellKeyCode == KeyCode.q) {
+                        break
+                    }
+                }
+                vowelStartIndex = i
+                vowelCount += 1
+            }
+            i -= 1
+        }
+        // August 26th, 2019: don't count "u" at "qu" as a vowel
+        if vowelStartIndex - 1 >= 0 &&
+           buffer[vowelStartIndex].cellKeyCode == KeyCode.u &&
+           buffer[vowelStartIndex - 1].cellKeyCode == KeyCode.q {
+            vowelStartIndex += 1
+            vowelCount -= 1
+        }
+    }
 
     /// Port of OpenKey getCharacterCode (Engine.cpp:501-543), Unicode table only.
     ///
