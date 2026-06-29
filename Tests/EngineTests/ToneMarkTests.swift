@@ -23,4 +23,9 @@ final class ToneMarkTests: XCTestCase {
         // typing the mark key twice removes the tone (restore): "as" → á, second "s" → "as"
         XCTAssertEqual(type("ass"), "as")
     }
+    func testToggleOffMultiVowel() {
+        // restore branch must emit newChars over vwsm..<index (hBPC cells), not vsi..<index
+        XCTAssertEqual(type("hoaff", modern: false), "hoaf")
+        XCTAssertEqual(type("toanss"), "toans")
+    }
 }

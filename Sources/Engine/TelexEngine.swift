@@ -349,6 +349,10 @@ public final class TelexEngine: InputEngine {
             }
             if (buffer[vowelEndIndex] & EngineMask.tone) != 0 ||
                (buffer[vowelEndIndex] & EngineMask.toneW) != 0 {
+                // C++ `#define VWSM vowelWillSetMark` — VWSM and vowelWillSetMark are the
+                // SAME variable, so Engine.cpp:772-773 overrides the placement pointer too.
+                // hBPC is NOT updated here (C++ doesn't change it either).
+                vwsm = vowelEndIndex
                 vowelWillSetMark = vowelEndIndex
             }
         }
@@ -358,13 +362,18 @@ public final class TelexEngine: InputEngine {
         // if duplicate same mark → restore (toggle off)
         if (buffer[vwsm] & markMask) != 0 {
             buffer[vwsm] &= ~EngineMask.mark
-            // Remove all marks across the cluster and build newChars (forward display order)
-            var newChars: [Unicode.Scalar] = []
+            // Clear marks across the FULL cluster (Engine.cpp:784-787 loops VSI..<_index)
+            // — necessary for correct buffer state even though output only covers hBPC cells.
             for ii in vsi..<buffer.index {
                 buffer[ii] &= ~EngineMask.mark
+            }
+            // Emit newChars only for vwsm..<buffer.index (the last hBPC cells).
+            // C++ hNCC = hBPC (line 805) — consumer reads hData[0..hNCC-1] which maps to
+            // TypingWord[VWSM..<_index], NOT TypingWord[VSI..<_index].
+            var newChars: [Unicode.Scalar] = []
+            for ii in vwsm..<buffer.index {
                 if let s = cellToScalar(buffer[ii]) { newChars.append(s) }
             }
-            // hBPC stays at value set by vowelCount==1 branch or handleOldMark/handleModernMark
             return EngineOutput(backspaceCount: hBPC, newChars: newChars, action: .restore)
         } else {
             // add mark: clear any existing mark on VWSM, set new mark; clear marks on others
