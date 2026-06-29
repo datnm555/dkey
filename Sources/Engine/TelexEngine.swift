@@ -56,6 +56,30 @@ public final class TelexEngine: InputEngine {
             return insertKey(key, caps: caps)
         }
 
+        // Route double keys a/e/o for circumflex (insertAOE) — mirror handleMainKey vowel branch
+        // (Engine.cpp:1154-1168, IS_KEY_DOUBLE).
+        if isDoubleKey(key) && buffer.index > 0 {
+            let patterns = vowel[key] ?? []
+            for l in 0..<patterns.count {
+                if buffer.index < patterns[l].count { continue }
+                if checkCorrectVowel(patterns: patterns, patternIdx: l, markKey: key) {
+                    let aoeOut = insertAOE(key, caps: caps)
+                    // Restore + key != o: OS passes through the key (tempDisableKey=true).
+                    // Mirror with insertKey so the literal character is appended.
+                    // For KEY_O the C++ does NOT set tempDisableKey ("case thoòng").
+                    if aoeOut.action == .restore && key != KeyCode.o {
+                        let keyOut = insertKey(key, caps: caps)
+                        return EngineOutput(
+                            backspaceCount: aoeOut.backspaceCount,
+                            newChars: aoeOut.newChars + keyOut.newChars,
+                            action: .passthrough)
+                    }
+                    return aoeOut
+                }
+            }
+            // No vowel pattern matched — fall through to insertKey
+        }
+
         return insertKey(key, caps: caps)
     }
 
@@ -69,6 +93,63 @@ public final class TelexEngine: InputEngine {
         let ch = UInt16(keyCodeToCharacter(keyWithCaps))
         let scalars: [Unicode.Scalar] = ch != 0 ? (Unicode.Scalar(ch).map { [$0] } ?? []) : []
         return EngineOutput(backspaceCount: 0, newChars: scalars, action: .passthrough)
+    }
+
+    // MARK: - insertAOE (Engine.cpp:833-869)
+
+    /// Port of insertAOE — applies (or toggles off) circumflex diacritic on a/e/o.
+    /// Scans the buffer backwards for the matching vowel key; if already marked with
+    /// TONE_MASK, toggles it OFF (restore); otherwise sets TONE_MASK.
+    /// Removes TONEW_MASK from the entire vowel cluster before acting (Engine.cpp:837-839).
+    /// Returns action == .restore when toggling off (caller in handle must then also
+    /// call insertKey for the trigger key, mirroring C++ tempDisableKey passthrough).
+    func insertAOE(_ key: UInt16, caps: Bool) -> EngineOutput {
+        findAndCalculateVowel(forGrammar: false)
+
+        // Remove TONEW from the vowel cluster (C++ lines 837-839)
+        if vowelCount > 0 {
+            for ii in vowelStartIndex...vowelEndIndex {
+                buffer[ii] &= ~EngineMask.toneW
+            }
+        }
+
+        var hBPC = 0
+        var isRestore = false
+
+        // Scan backwards to find the matching vowel key (C++ lines 844-868)
+        var ii = buffer.index - 1
+        while ii >= 0 {
+            hBPC += 1
+            if buffer[ii].cellKeyCode == key {
+                if (buffer[ii] & EngineMask.tone) != 0 {
+                    // Toggle off (restore) — C++ lines 849-855
+                    isRestore = true
+                    buffer[ii] &= ~EngineMask.tone
+                    // C++ stores raw TypingWord[ii] (not GET) for the restore char
+                } else {
+                    // Set circumflex — C++ lines 857-860
+                    buffer[ii] |= EngineMask.tone
+                    buffer[ii] &= ~EngineMask.toneW  // IS_KEY_D check: a/e/o are not d
+                }
+                break
+            }
+            ii -= 1
+        }
+
+        // Build output left-to-right from the start of the changed range (hBPC chars)
+        // C++ hData is RIGHT-TO-LEFT (hData[_index-1-ii]), but Swift newChars is
+        // LEFT-TO-RIGHT — both produce the same screen result after backspace apply.
+        let startIdx = buffer.index - hBPC
+        var newChars: [Unicode.Scalar] = []
+        for idx in startIdx..<buffer.index {
+            if let s = cellToScalar(buffer[idx]) { newChars.append(s) }
+        }
+
+        return EngineOutput(
+            backspaceCount: hBPC,
+            newChars: newChars,
+            action: isRestore ? .restore : .process
+        )
     }
 
     static let breakCodes: Set<UInt16> = [
@@ -88,6 +169,12 @@ public final class TelexEngine: InputEngine {
     private func isMarkKey(_ key: UInt16) -> Bool {
         key == KeyCode.s || key == KeyCode.f || key == KeyCode.r ||
         key == KeyCode.x || key == KeyCode.j
+    }
+
+    /// Returns true for Telex double keys a/e/o (Engine.cpp IS_KEY_DOUBLE for Telex).
+    /// These keys double to insert circumflex: aa→â, ee→ê, oo→ô.
+    private func isDoubleKey(_ key: UInt16) -> Bool {
+        key == KeyCode.a || key == KeyCode.e || key == KeyCode.o
     }
 
     /// Port of checkCorrectVowel (Engine.cpp:468-499).
