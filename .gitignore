@@ -13,3 +13,6 @@ build/
 
 # Local MCP config (may contain tokens) — do not commit
 .mcp.json
+
+# Compiled oracle binary (oracle.cpp is committed; binary is not)
+scripts/openkey-oracle/oracle
