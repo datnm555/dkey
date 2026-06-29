@@ -191,3 +191,102 @@ func keyCodeToCharacter(_ keyCode: UInt32) -> UInt16 {
 }
 private let asciiTable: [Character] =
     Array("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789[] .,")
+
+// MARK: - Vowel-for-mark pattern table (Vietnamese.cpp:244-331)
+
+/// Ordered array of (vowelKey, patterns) — verbatim port of OpenKey _vowelForMark.
+/// C++ stores this as map<Uint16, ...> iterated by integer index 0..35, which visits
+/// the actual keys in ascending-key-code order: A(0), E(14), Y(16), O(31), U(32), I(34).
+/// Each pattern is a list of key codes (right-to-left from buffer end) that a vowel group
+/// must match for the engine to apply a tone mark.  END_CONSONANT_MASK (0x4000) on a
+/// pattern element is only stripped when vQuickEndConsonant is enabled (not yet ported).
+let vowelForMark: [(key: UInt16, patterns: [[UInt16]])] = {
+    let EC = UInt16(EngineMask.endConsonant)
+    return [
+        // KEY_A = 0
+        (KeyCode.a, [
+            [KeyCode.a, KeyCode.n, KeyCode.g], [KeyCode.a, KeyCode.g | EC],
+            [KeyCode.a, KeyCode.n],
+            [KeyCode.a, KeyCode.n, KeyCode.h], [KeyCode.a, KeyCode.h | EC],
+            [KeyCode.a, KeyCode.m],
+            [KeyCode.a, KeyCode.u],
+            [KeyCode.a, KeyCode.y],
+            [KeyCode.a, KeyCode.t],
+            [KeyCode.a, KeyCode.p],
+            [KeyCode.a],
+            [KeyCode.a, KeyCode.c],
+            [KeyCode.a, KeyCode.i],
+            [KeyCode.a, KeyCode.o],
+            [KeyCode.a, KeyCode.c, KeyCode.h], [KeyCode.a, KeyCode.k | EC],
+        ]),
+        // KEY_E = 14
+        (KeyCode.e, [
+            [KeyCode.e, KeyCode.n, KeyCode.h], [KeyCode.e, KeyCode.h | EC],
+            [KeyCode.e, KeyCode.n, KeyCode.g], [KeyCode.e, KeyCode.g | EC],
+            [KeyCode.e, KeyCode.c, KeyCode.h], [KeyCode.e, KeyCode.k | EC],
+            [KeyCode.e, KeyCode.c],
+            [KeyCode.e, KeyCode.t],
+            [KeyCode.e, KeyCode.y],
+            [KeyCode.e, KeyCode.u],
+            [KeyCode.e, KeyCode.p],
+            [KeyCode.e, KeyCode.c],
+            [KeyCode.e, KeyCode.n],
+            [KeyCode.e, KeyCode.m],
+            [KeyCode.e],
+        ]),
+        // KEY_Y = 16
+        (KeyCode.y, [
+            [KeyCode.y],
+        ]),
+        // KEY_O = 31
+        (KeyCode.o, [
+            [KeyCode.o, KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.o, KeyCode.o, KeyCode.g | EC],
+            [KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.o, KeyCode.g | EC],
+            [KeyCode.o, KeyCode.o, KeyCode.n],
+            [KeyCode.o, KeyCode.o, KeyCode.c],
+            [KeyCode.o, KeyCode.o],
+            [KeyCode.o, KeyCode.n],
+            [KeyCode.o, KeyCode.m],
+            [KeyCode.o, KeyCode.i],
+            [KeyCode.o, KeyCode.c],
+            [KeyCode.o, KeyCode.t],
+            [KeyCode.o, KeyCode.p],
+            [KeyCode.o],
+        ]),
+        // KEY_U = 32
+        (KeyCode.u, [
+            [KeyCode.u, KeyCode.n, KeyCode.g], [KeyCode.u, KeyCode.g | EC],
+            [KeyCode.u, KeyCode.i],
+            [KeyCode.u, KeyCode.o],
+            [KeyCode.u, KeyCode.y],
+            [KeyCode.u, KeyCode.y, KeyCode.n],
+            [KeyCode.u, KeyCode.y, KeyCode.t],
+            [KeyCode.u, KeyCode.y, KeyCode.p],
+            [KeyCode.u, KeyCode.y, KeyCode.n, KeyCode.h], [KeyCode.u, KeyCode.y, KeyCode.h | EC],
+            [KeyCode.u, KeyCode.t],
+            [KeyCode.u, KeyCode.u],
+            [KeyCode.u, KeyCode.a],
+            [KeyCode.u, KeyCode.i],
+            [KeyCode.u, KeyCode.c],
+            [KeyCode.u, KeyCode.n],
+            [KeyCode.u, KeyCode.m],
+            [KeyCode.u, KeyCode.p],
+            [KeyCode.u],
+        ]),
+        // KEY_I = 34
+        (KeyCode.i, [
+            [KeyCode.i, KeyCode.n, KeyCode.h], [KeyCode.i, KeyCode.h | EC],
+            [KeyCode.i, KeyCode.c, KeyCode.h], [KeyCode.i, KeyCode.k | EC],
+            [KeyCode.i, KeyCode.n],
+            [KeyCode.i, KeyCode.t],
+            [KeyCode.i, KeyCode.u],
+            [KeyCode.i, KeyCode.u, KeyCode.p],
+            [KeyCode.i, KeyCode.n],
+            [KeyCode.i, KeyCode.m],
+            [KeyCode.i, KeyCode.p],
+            [KeyCode.i, KeyCode.a],
+            [KeyCode.i, KeyCode.c],
+            [KeyCode.i],
+        ]),
+    ]
+}()
