@@ -20,10 +20,11 @@ public final class TelexEngine: InputEngine {
         guard buffer.index < TypingBuffer.maxBuff else {
             return EngineOutput(backspaceCount: 0, newChars: [], action: .passthrough)
         }
-        buffer[buffer.index] = UInt32(key) | (caps ? EngineMask.caps : 0)
+        let keyWithCaps = UInt32(key) | (caps ? EngineMask.caps : 0)
+        buffer[buffer.index] = keyWithCaps
         buffer.index += 1
-        let ch = UInt16(keyCodeToCharacter(UInt32(key) | (caps ? EngineMask.caps : 0)))
-        let scalars: [Unicode.Scalar] = ch != 0 ? [Unicode.Scalar(ch)!] : []
+        let ch = UInt16(keyCodeToCharacter(keyWithCaps))
+        let scalars: [Unicode.Scalar] = ch != 0 ? (Unicode.Scalar(ch).map { [$0] } ?? []) : []
         return EngineOutput(backspaceCount: 0, newChars: scalars, action: .passthrough)
     }
 
