@@ -527,10 +527,12 @@ public final class TelexEngine: InputEngine {
         findAndCalculateVowel(forGrammar: true)
         var isChanged = false
         if buffer.index > 0 {
-            for i in vowelStartIndex...vowelEndIndex {
-                if (buffer[i] & EngineMask.mark) != 0 {
-                    buffer[i] &= ~EngineMask.mark
-                    isChanged = true
+            if vowelStartIndex <= vowelEndIndex {
+                for i in vowelStartIndex...vowelEndIndex {
+                    if (buffer[i] & EngineMask.mark) != 0 {
+                        buffer[i] &= ~EngineMask.mark
+                        isChanged = true
+                    }
                 }
             }
         }

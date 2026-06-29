@@ -15,4 +15,9 @@ final class RemoveAndBackspaceTests: XCTestCase {
         // (single-vowel cluster after deletion), so mark doesn't move → just delete 1 char.
         XCTAssertEqual(type("hoaf\u{8}"), "hò")
     }
+
+    func testZAfterQuNoCrash() {
+        // "qu" leaves vowelStartIndex > vowelEndIndex; z must not crash, z inserted literally
+        XCTAssertEqual(type("quz"), "quz")
+    }
 }
