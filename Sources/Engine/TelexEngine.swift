@@ -94,6 +94,41 @@ public final class TelexEngine: InputEngine {
             return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
         }
 
+        // Route 'd' key → insertD (dd → đ) — mirror handleMainKey IS_KEY_D branch
+        // (Engine.cpp:1076-1101).
+        if key == KeyCode.d {
+            var isChanged = false
+            for l in 0..<consonantD.count {
+                if buffer.index < consonantD[l].count { continue }
+                var isCorect = checkCorrectVowel(patterns: consonantD, patternIdx: l, markKey: key)
+
+                // Allow d after a preceding consonant (Engine.cpp:1087-1089).
+                if !isCorect &&
+                   buffer.index >= 2 &&
+                   buffer[buffer.index - 1].cellKeyCode == KeyCode.d &&
+                   isConsonant(buffer[buffer.index - 2].cellKeyCode) {
+                    isCorect = true
+                }
+
+                if isCorect {
+                    isChanged = true
+                    let dOut = insertD(caps: caps)
+                    // On restore, Engine.cpp:1512-1513 also calls insertKey(trigger key).
+                    if dOut.action == .restore {
+                        let keyOut = insertKey(key, caps: caps)
+                        return EngineOutput(
+                            backspaceCount: dOut.backspaceCount,
+                            newChars: dOut.newChars + keyOut.newChars,
+                            action: .passthrough)
+                    }
+                    return dOut
+                }
+            }
+            if !isChanged {
+                return insertKey(key, caps: caps)
+            }
+        }
+
         // Route double keys a/e/o for circumflex (insertAOE) — mirror handleMainKey vowel branch
         // (Engine.cpp:1154-1168, IS_KEY_DOUBLE).
         if isDoubleKey(key) && buffer.index > 0 {
@@ -361,6 +396,44 @@ public final class TelexEngine: InputEngine {
 
         // 6. 3+ chars → plain insert (Engine.cpp:1039)
         return insertKey(data, caps: caps)
+    }
+
+    // MARK: - insertD (Engine.cpp:808-831)
+
+    /// Port of insertD — applies (or toggles off) the TONE_MASK on the KEY_D cell.
+    /// Scans backward from the tail; the first KEY_D cell found is toggled.
+    /// • No TONE set  → add TONE (KEY_D|TONE renders as đ via codeTableUnicode).
+    /// • TONE already → clear TONE, return action=.restore (caller adds the trigger key).
+    func insertD(caps: Bool) -> EngineOutput {
+        var hBPC = 0
+        var isRestore = false
+
+        // Scan backward to find KEY_D (Engine.cpp:811-829)
+        var ii = buffer.index - 1
+        while ii >= 0 {
+            hBPC += 1
+            if buffer[ii].cellKeyCode == KeyCode.d {
+                if (buffer[ii] & EngineMask.tone) != 0 {
+                    // Toggle off: clear TONE, store raw cell (Engine.cpp:816-819)
+                    isRestore = true
+                    buffer[ii] &= ~EngineMask.tone
+                    // hData[...] = TypingWord[ii]  (raw, not GET — C++ line 818)
+                } else {
+                    // Set TONE: KEY_D|TONE → đ via codeTableUnicode (Engine.cpp:822-823)
+                    buffer[ii] |= EngineMask.tone
+                }
+                break
+            }
+            ii -= 1
+        }
+
+        let startIdx = buffer.index - hBPC
+        var newChars: [Unicode.Scalar] = []
+        for idx in startIdx..<buffer.index {
+            if let s = cellToScalar(buffer[idx]) { newChars.append(s) }
+        }
+        return EngineOutput(backspaceCount: hBPC, newChars: newChars,
+                            action: isRestore ? .restore : .process)
     }
 
     func insertKey(_ key: UInt16, caps: Bool) -> EngineOutput {

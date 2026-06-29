@@ -18,6 +18,89 @@ let codeTableUnicode: [UInt32: [UInt16]] = [
     UInt32(KeyCode.y): [0x00DD,0x00FD,0x1EF2,0x1EF3,0x1EF6,0x1EF7,0x1EF8,0x1EF9,0x1EF4,0x1EF5],
 ]
 
+// MARK: - consonantD table (Vietnamese.cpp:170-241)
+
+/// Valid D-initial syllable skeletons — verbatim port of _consonantD (Vietnamese.cpp:170-241).
+/// checkCorrectVowel matches these right-to-left against the buffer tail; if matched,
+/// insertD fires.  END_CONSONANT_MASK (EC) entries never match during normal typing
+/// (vQuickEndConsonant=false, same as C++ default).
+let consonantD: [[UInt16]] = {
+    let EC = UInt16(EngineMask.endConsonant)
+    return [
+        [KeyCode.d, KeyCode.e, KeyCode.n, KeyCode.h], [KeyCode.d, KeyCode.e, KeyCode.h | EC],
+        [KeyCode.d, KeyCode.e, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.e, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.e, KeyCode.c, KeyCode.h], [KeyCode.d, KeyCode.e, KeyCode.k | EC],
+        [KeyCode.d, KeyCode.e, KeyCode.n],
+        [KeyCode.d, KeyCode.e, KeyCode.c],
+        [KeyCode.d, KeyCode.e, KeyCode.m],
+        [KeyCode.d, KeyCode.e],
+        [KeyCode.d, KeyCode.e, KeyCode.t],
+        [KeyCode.d, KeyCode.e, KeyCode.u],
+        [KeyCode.d, KeyCode.e, KeyCode.o],
+        [KeyCode.d, KeyCode.e, KeyCode.p],
+
+        [KeyCode.d, KeyCode.u, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.u, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.u, KeyCode.n],
+        [KeyCode.d, KeyCode.u, KeyCode.m],
+        [KeyCode.d, KeyCode.u, KeyCode.c],
+        [KeyCode.d, KeyCode.u, KeyCode.o],
+        [KeyCode.d, KeyCode.u, KeyCode.a],
+        [KeyCode.d, KeyCode.u, KeyCode.o, KeyCode.i],
+        [KeyCode.d, KeyCode.u, KeyCode.o, KeyCode.c],
+        [KeyCode.d, KeyCode.u, KeyCode.o, KeyCode.n],
+        [KeyCode.d, KeyCode.u, KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.u, KeyCode.o, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.u],
+        [KeyCode.d, KeyCode.u, KeyCode.p],
+        [KeyCode.d, KeyCode.u, KeyCode.t],
+        [KeyCode.d, KeyCode.u, KeyCode.i],
+
+        [KeyCode.d, KeyCode.i, KeyCode.c, KeyCode.h], [KeyCode.d, KeyCode.i, KeyCode.k | EC],
+        [KeyCode.d, KeyCode.i, KeyCode.c],
+        [KeyCode.d, KeyCode.i, KeyCode.n, KeyCode.h], [KeyCode.d, KeyCode.i, KeyCode.h | EC],
+        [KeyCode.d, KeyCode.i, KeyCode.n],
+        [KeyCode.d, KeyCode.i],
+        [KeyCode.d, KeyCode.i, KeyCode.a],
+        [KeyCode.d, KeyCode.i, KeyCode.e],
+        [KeyCode.d, KeyCode.i, KeyCode.e, KeyCode.c],
+        [KeyCode.d, KeyCode.i, KeyCode.e, KeyCode.u],
+        [KeyCode.d, KeyCode.i, KeyCode.e, KeyCode.n],
+        [KeyCode.d, KeyCode.i, KeyCode.e, KeyCode.m],
+        [KeyCode.d, KeyCode.i, KeyCode.e, KeyCode.p],
+        [KeyCode.d, KeyCode.i, KeyCode.t],
+
+        [KeyCode.d, KeyCode.o],
+        [KeyCode.d, KeyCode.o, KeyCode.a],
+        [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.n],
+        [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.n, KeyCode.h], [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.h | EC],
+        [KeyCode.d, KeyCode.o, KeyCode.a, KeyCode.m],
+        [KeyCode.d, KeyCode.o, KeyCode.e],
+        [KeyCode.d, KeyCode.o, KeyCode.i],
+        [KeyCode.d, KeyCode.o, KeyCode.p],
+        [KeyCode.d, KeyCode.o, KeyCode.c],
+        [KeyCode.d, KeyCode.o, KeyCode.n],
+        [KeyCode.d, KeyCode.o, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.o, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.o, KeyCode.m],
+        [KeyCode.d, KeyCode.o, KeyCode.t],
+
+        [KeyCode.d, KeyCode.a],
+        [KeyCode.d, KeyCode.a, KeyCode.t],
+        [KeyCode.d, KeyCode.a, KeyCode.y],
+        [KeyCode.d, KeyCode.a, KeyCode.u],
+        [KeyCode.d, KeyCode.a, KeyCode.i],
+        [KeyCode.d, KeyCode.a, KeyCode.o],
+        [KeyCode.d, KeyCode.a, KeyCode.p],
+        [KeyCode.d, KeyCode.a, KeyCode.c],
+        [KeyCode.d, KeyCode.a, KeyCode.c, KeyCode.h], [KeyCode.d, KeyCode.a, KeyCode.k | EC],
+        [KeyCode.d, KeyCode.a, KeyCode.n],
+        [KeyCode.d, KeyCode.a, KeyCode.n, KeyCode.h], [KeyCode.d, KeyCode.a, KeyCode.h | EC],
+        [KeyCode.d, KeyCode.a, KeyCode.n, KeyCode.g], [KeyCode.d, KeyCode.a, KeyCode.g | EC],
+        [KeyCode.d, KeyCode.a, KeyCode.m],
+
+        [KeyCode.d],
+    ]
+}()
+
 // MARK: - Horn/breve standalone tables (Vietnamese.cpp:375-389)
 
 /// Characters after which a standalone w/[/] is disallowed (1-char prefix).
