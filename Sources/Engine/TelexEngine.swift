@@ -143,7 +143,6 @@ public final class TelexEngine: InputEngine {
         }
 
         let vsi = vowelStartIndex
-        let vei = vowelEndIndex
         let idx = buffer.index
 
         // Multi-vowel branch (Engine.cpp:881-933)
@@ -179,13 +178,13 @@ public final class TelexEngine: InputEngine {
             if chr0 == KeyCode.u && chr1 == KeyCode.o {
                 // UO: context-sensitive (Engine.cpp:900-911)
                 if vsi - 2 >= 0 &&
-                   buffer[vsi - 2].cellKeyCode == KeyCode.t &&
-                   buffer[vsi - 1].cellKeyCode == KeyCode.h {
+                   buffer[vsi - 2] == UInt32(KeyCode.t) &&
+                   buffer[vsi - 1] == UInt32(KeyCode.h) {
                     buffer[vsi + 1] |= EngineMask.toneW
                     if vsi + 2 < idx && buffer[vsi + 2].cellKeyCode == KeyCode.n {
                         buffer[vsi] |= EngineMask.toneW
                     }
-                } else if vsi - 1 >= 0 && buffer[vsi - 1].cellKeyCode == KeyCode.q {
+                } else if vsi - 1 >= 0 && buffer[vsi - 1] == UInt32(KeyCode.q) {
                     buffer[vsi + 1] |= EngineMask.toneW
                 } else {
                     buffer[vsi] |= EngineMask.toneW

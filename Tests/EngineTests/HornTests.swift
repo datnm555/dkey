@@ -16,4 +16,14 @@ final class HornTests: XCTestCase {
         XCTAssertEqual(type("uowng"), "ương")  // ư + ơ + ng
         // NOTE: dduowngf ("đường") is deferred to Task 9 (requires insertD for đ via dd)
     }
+    func testThQCapsSensitivity() {
+        // OpenKey caps-quirk: capitalized "Th"+uo horns BOTH vowels → "Thương"
+        XCTAssertEqual(type("Thuowng"), "Thương")
+        // lowercase keeps th-branch (horn on o only) → "thuơng"
+        XCTAssertEqual(type("thuowng"), "thuơng")
+    }
+    func testStandaloneTables() {
+        XCTAssertEqual(type("ngw"), "ngư")  // "ng" in doubleWAllowed → standalone ư
+        XCTAssertEqual(type("fw"), "fw")    // 'f' in standaloneWbad → w not converted
+    }
 }
