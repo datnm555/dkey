@@ -42,6 +42,9 @@ targets:
     sources:
       - path: Tests/SmokeTests
       - path: Tests/EngineTests
+      - path: Tests/ParityTests
+      - path: Tests/Fixtures
+        buildPhase: resources
     dependencies:
       - target: dkey
     settings:

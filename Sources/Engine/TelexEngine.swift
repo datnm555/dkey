@@ -26,17 +26,20 @@ public final class TelexEngine: InputEngine {
         // If no mark present, fall through to insertKey (plain 'z').
         if key == KeyCode.z {
             let removeOut = removeMark()
-            return removeOut == .none ? insertKey(key, caps: caps) : removeOut
+            let out = removeOut == .none ? insertKey(key, caps: caps) : removeOut
+            return afterMainKey(out, plainInsert: removeOut == .none)
         }
 
         // Route '[' (KEY_LEFT_BRACKET) → standalone ơ (Engine.cpp:1065-1068)
         if key == KeyCode.leftBracket {
-            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
+            let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
+            return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
         // Route ']' (KEY_RIGHT_BRACKET) → standalone ư (Engine.cpp:1070-1073)
         if key == KeyCode.rightBracket {
-            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+            let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+            return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
         // Route mark keys s/f/r/x/j BEFORE plain insertKey — mirror handleMainKey mark branch
@@ -65,12 +68,13 @@ public final class TelexEngine: InputEngine {
                                 newChars: markOutput.newChars + keyOut.newChars,
                                 action: .passthrough)
                         }
-                        return markOutput
+                        // vWillProcess (mark added) → per-key checkGrammar(0)
+                        return afterMainKey(markOutput, plainInsert: false)
                     }
                 }
             }
-            // No vowel pattern matched — fall through to insertKey
-            return insertKey(key, caps: caps)
+            // No vowel pattern matched — fall through to insertKey (vDoNothing)
+            return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
         }
 
         // Route 'w' key → horn/breve via insertW (if vowel pattern matched) or standalone ư.
@@ -93,12 +97,14 @@ public final class TelexEngine: InputEngine {
                             newChars: wOut.newChars + keyOut.newChars,
                             action: .passthrough)
                     }
-                    return wOut
+                    // vWillProcess (horn/breve applied) → per-key checkGrammar(0)
+                    return afterMainKey(wOut, plainInsert: false)
                 }
             }
             // No pattern matched or insertW said "don't do anything" → standalone
             _ = wMatched  // consumed
-            return checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+            let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
+            return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
         // Route 'd' key → insertD (dd → đ) — mirror handleMainKey IS_KEY_D branch
@@ -154,13 +160,34 @@ public final class TelexEngine: InputEngine {
                             newChars: aoeOut.newChars + keyOut.newChars,
                             action: .passthrough)
                     }
-                    return aoeOut
+                    // vWillProcess (circumflex applied; or KEY_O "thoòng" restore which the
+                    // C++ does NOT pass through) → per-key checkGrammar(0)
+                    return afterMainKey(aoeOut, plainInsert: false)
                 }
             }
             // No vowel pattern matched — fall through to insertKey
         }
 
-        return insertKey(key, caps: caps)
+        // Plain literal key (vDoNothing) → per-key checkGrammar(-1)
+        return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
+    }
+
+    /// After a main key (non-break, non-d), C++ runs checkGrammar (Engine.cpp:1504-1510),
+    /// which re-places the tone mark when the vowel/consonant structure changed as the word
+    /// grew (e.g. typing the final consonant after the tone). The delta mirrors C++:
+    ///   • plainInsert (hCode==vDoNothing): checkGrammar(-1) — the just-typed literal is in the
+    ///     buffer but was not yet on the previous screen, so one fewer backspace.
+    ///   • transform   (hCode==vWillProcess): checkGrammar(0) — the trigger key added no buffer
+    ///     cell, so the on-screen cluster length equals (index - VSI).
+    /// When checkGrammar re-arranges, its full-cluster redraw REPLACES the key's own output,
+    /// mirroring how C++ overwrites hBPC/hNCC/hData/hExt (Engine.cpp:334-346). The restore
+    /// (vRestore) paths are handled inline before this is reached and intentionally skip
+    /// checkGrammar: a toggle-off removes the mark, so the re-placement loop is a no-op.
+    private func afterMainKey(_ keyOut: EngineOutput, plainInsert: Bool) -> EngineOutput {
+        if let regrammar = checkGrammar(plainInsert ? -1 : 0) {
+            return regrammar
+        }
+        return keyOut
     }
 
     // MARK: - insertW (Engine.cpp:871-984)
@@ -903,7 +930,15 @@ public final class TelexEngine: InputEngine {
         if vowelCount == 1 {
             vwsm = vowelEndIndex
             hBPC = buffer.index - vowelEndIndex
-        } else if vowelCount >= 2 {
+        } else {
+            // C++ Engine.cpp:767 uses a bare `else` here, so this branch covers BOTH
+            // vowelCount >= 2 AND vowelCount == 0. The vowelCount == 0 case occurs for
+            // "gi"/"ngi" words: findAndCalculateVowel(forGrammar:false) breaks the 'i' out
+            // of the cluster (gi rule), leaving vowelCount == 0 with VEI pointing at the 'i'.
+            // handleOldMark/handleModernMark then place the mark on that 'i'
+            // (handleOldMark's `vowelCount == 0 && CHR(VEI) == i → vwsm = VEI` rule), giving
+            // "gì"/"ngì". Narrowing this to `vowelCount >= 2` dropped the mark onto the
+            // preceding consonant (rendered bare) — fixed to match C++.
             // Swift: useModernOrthography=true → modern Vietnamese standard → handleOldMark
             //        useModernOrthography=false → classic style              → handleModernMark
             // (C++: vUseModernOrthography=0 → handleOldMark; =1 → handleModernMark)
