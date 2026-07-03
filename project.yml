@@ -21,6 +21,7 @@ targets:
     sources:
       - path: Sources/App
       - path: Sources/Engine
+      - path: Sources/Platform
       - path: Sources/Support
         includes:
           - "Assets.xcassets"
@@ -43,6 +44,7 @@ targets:
       - path: Tests/SmokeTests
       - path: Tests/EngineTests
       - path: Tests/ParityTests
+      - path: Tests/PlatformTests
       - path: Tests/Fixtures
         buildPhase: resources
     dependencies:
