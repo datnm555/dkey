@@ -66,7 +66,7 @@ public final class TelexEngine: InputEngine {
                             return EngineOutput(
                                 backspaceCount: markOutput.backspaceCount,
                                 newChars: markOutput.newChars + keyOut.newChars,
-                                action: .passthrough)
+                                action: .restore)
                         }
                         // vWillProcess (mark added) → per-key checkGrammar(0)
                         return afterMainKey(markOutput, plainInsert: false)
@@ -95,7 +95,7 @@ public final class TelexEngine: InputEngine {
                         return EngineOutput(
                             backspaceCount: wOut.backspaceCount,
                             newChars: wOut.newChars + keyOut.newChars,
-                            action: .passthrough)
+                            action: .restore)
                     }
                     // vWillProcess (horn/breve applied) → per-key checkGrammar(0)
                     return afterMainKey(wOut, plainInsert: false)
@@ -132,7 +132,7 @@ public final class TelexEngine: InputEngine {
                         return EngineOutput(
                             backspaceCount: dOut.backspaceCount,
                             newChars: dOut.newChars + keyOut.newChars,
-                            action: .passthrough)
+                            action: .restore)
                     }
                     return dOut
                 }
@@ -158,7 +158,7 @@ public final class TelexEngine: InputEngine {
                         return EngineOutput(
                             backspaceCount: aoeOut.backspaceCount,
                             newChars: aoeOut.newChars + keyOut.newChars,
-                            action: .passthrough)
+                            action: .restore)
                     }
                     // vWillProcess (circumflex applied; or KEY_O "thoòng" restore which the
                     // C++ does NOT pass through) → per-key checkGrammar(0)
@@ -990,7 +990,7 @@ public final class TelexEngine: InputEngine {
                 if let s = cellToScalar(buffer[ii]) { newChars.append(s) }
             }
             hBPC = buffer.index - vsi   // override (Engine.cpp:803)
-            return EngineOutput(backspaceCount: hBPC, newChars: newChars, action: .passthrough)
+            return EngineOutput(backspaceCount: hBPC, newChars: newChars, action: .process)
         }
     }
 
