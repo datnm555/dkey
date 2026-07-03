@@ -15,6 +15,7 @@ final class EventTap {
     /// Returns false if the tap could not be created (usually: Accessibility not granted).
     @discardableResult
     func start() -> Bool {
+        guard tap == nil else { return true }   // already running
         let mask: CGEventMask =
             (1 << CGEventType.keyDown.rawValue) |
             (1 << CGEventType.keyUp.rawValue) |
@@ -62,6 +63,7 @@ final class EventTap {
         let caps = flags.contains(.maskShift) || flags.contains(.maskAlphaShift)
         let hasOtherControl = flags.contains(.maskControl) || flags.contains(.maskCommand)
             || flags.contains(.maskAlternate) || flags.contains(.maskSecondaryFn)
+            || flags.contains(.maskNumericPad) || flags.contains(.maskHelp)
         let kind: KeyEvent.Kind = type == .keyDown ? .keyDown
             : (type == .keyUp ? .keyUp : .flagsChanged)
         let ke = KeyEvent(keyCode: keyCode, caps: caps, hasOtherControl: hasOtherControl,

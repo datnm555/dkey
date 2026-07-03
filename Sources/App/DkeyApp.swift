@@ -27,14 +27,9 @@ struct DkeyApp: App {
 /// Icon nằm cố định trên menu bar; cũng là nơi nhận yêu cầu mở Settings.
 struct MenuBarLabel: View {
     @EnvironmentObject private var state: AppState
-    @Environment(\.openWindow) private var openWindow
 
     var body: some View {
         Image(nsImage: StatusIcon.image(vietnamese: state.isVietnamese, gray: state.grayIcon))
-            .onReceive(NotificationCenter.default.publisher(for: .dkOpenSettingsWindow)) { _ in
-                openWindow(id: "settings")
-                NSApp.activate(ignoringOtherApps: true)
-            }
     }
 }
 
@@ -89,8 +84,4 @@ final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
             self?.eventTap?.reEnable()
         }
     }
-}
-
-extension Notification.Name {
-    static let dkOpenSettingsWindow = Notification.Name("dkOpenSettingsWindow")
 }
