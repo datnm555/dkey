@@ -62,10 +62,30 @@ struct MenuContent: View {
 }
 
 final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
+    private let synthesizer = KeySynthesizer()
+    private var eventTap: EventTap?
+
     func applicationDidFinishLaunching(_ notification: Notification) {
-        // Phase 0: chưa khởi động engine/event-tap. Chỉ mở Settings lần đầu
-        // để xác nhận app chạy.
-        NotificationCenter.default.post(name: .dkOpenSettingsWindow, object: nil)
+        let state = AppState.shared
+        // Hotkey → UI: reflect language flips back into AppState (icon/menu).
+        state.controller.onLanguageChanged = { [weak state] vi in
+            DispatchQueue.main.async { state?.reflectLanguageFromEngine(vi) }
+        }
+        let tap = EventTap(controller: state.controller, synthesizer: synthesizer)
+        eventTap = tap
+
+        PermissionMonitor.prompt()
+        PermissionMonitor.waitUntilTrusted { [weak state] in
+            state?.hasAccessibility = true
+            _ = tap.start()
+        }
+
+        // Re-arm the tap after the machine wakes (macOS disables taps on sleep).
+        NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification, object: nil, queue: .main
+        ) { [weak self] _ in
+            self?.eventTap?.reEnable()
+        }
     }
 }
 
