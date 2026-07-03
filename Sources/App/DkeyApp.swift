@@ -76,8 +76,10 @@ final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
 
         PermissionMonitor.prompt()
         PermissionMonitor.waitUntilTrusted { [weak state] in
-            state?.hasAccessibility = true
-            _ = tap.start()
+            DispatchQueue.main.async {
+                state?.hasAccessibility = true
+                _ = tap.start()
+            }
         }
 
         // Re-arm the tap after the machine wakes (macOS disables taps on sleep).

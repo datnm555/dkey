@@ -51,7 +51,9 @@ final class AppState: ObservableObject {
 
     private var _isReflecting = false
 
-    private init() {}
+    private init() {
+        controller.setVietnamese(isVietnamese)
+    }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.
     func reflectLanguageFromEngine(_ vi: Bool) {
