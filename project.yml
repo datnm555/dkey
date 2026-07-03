@@ -20,6 +20,7 @@ targets:
     platform: macOS
     sources:
       - path: Sources/App
+      - path: Sources/Engine
       - path: Sources/Support
         includes:
           - "Assets.xcassets"
@@ -40,6 +41,10 @@ targets:
     platform: macOS
     sources:
       - path: Tests/SmokeTests
+      - path: Tests/EngineTests
+      - path: Tests/ParityTests
+      - path: Tests/Fixtures
+        buildPhase: resources
     dependencies:
       - target: dkey
     settings:
