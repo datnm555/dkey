@@ -45,6 +45,11 @@ public final class TelexEngine: InputEngine {
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
+        // VNI circumflex/horn/breve (keys 6/7/8). Telex handles a/e/o + w separately below.
+        if inputMethod == .vni && (key == KeyCode.n6 || key == KeyCode.n7 || key == KeyCode.n8) {
+            return handleVNIAOEW(key: key, caps: caps)
+        }
+
         // Route mark keys (Telex: s/f/r/x/j; VNI: 1-5) BEFORE plain insertKey —
         // mirror handleMainKey mark branch (Engine.cpp:1104-1142).
         if isMarkKey(key) && buffer.index > 0 {
@@ -534,6 +539,70 @@ public final class TelexEngine: InputEngine {
             newChars: newChars,
             action: isRestore ? .restore : .process
         )
+    }
+
+    // MARK: - handleVNIAOEW (Engine.cpp:1145-1192, vInputType==vVNI)
+
+    /// VNI 6/7/8 → circumflex/horn/breve. Faithful port of OpenKey vKeyHandleEvent
+    /// (Engine.cpp:1145-1192, vInputType==vVNI): scan for the target vowel, compute
+    /// keyForAEO, then reuse the shared insertAOE / insertW.
+    private func handleVNIAOEW(key: UInt16, caps: Bool) -> EngineOutput {
+        // VEI = last O/A/E in the buffer — the circumflex target (Engine.cpp:1145-1152).
+        var vei = -1
+        for i in stride(from: buffer.index - 1, through: 0, by: -1) {
+            let c = buffer[i].cellKeyCode
+            if c == KeyCode.o || c == KeyCode.a || c == KeyCode.e { vei = i; break }
+        }
+        // keyForAEO (Engine.cpp:1154): 7/8 → W; 6 → the vowel at VEI; else the key itself.
+        let keyForAEO: UInt16
+        if key == KeyCode.n7 || key == KeyCode.n8 {
+            keyForAEO = KeyCode.w
+        } else if key == KeyCode.n6 {
+            keyForAEO = vei >= 0 ? buffer[vei].cellKeyCode : key
+        } else {
+            keyForAEO = key
+        }
+
+        let patterns = vowel[keyForAEO] ?? []
+        for l in 0..<patterns.count {
+            if buffer.index < patterns[l].count { continue }
+            if checkCorrectVowel(patterns: patterns, patternIdx: l, markKey: key) {
+                if key == KeyCode.n6 {
+                    let out = insertAOE(keyForAEO, caps: caps)
+                    if out.action == .restore {
+                        let k = insertKey(key, caps: caps)
+                        return EngineOutput(backspaceCount: out.backspaceCount,
+                                            newChars: out.newChars + k.newChars, action: .restore)
+                    }
+                    return afterMainKey(out, plainInsert: false)
+                } else {
+                    // Horn/breve target + guard (Engine.cpp:1170-1179).
+                    var vw = -1
+                    for j in stride(from: buffer.index - 1, through: 0, by: -1) {
+                        let c = buffer[j].cellKeyCode
+                        if c == KeyCode.o || c == KeyCode.u || c == KeyCode.a || c == KeyCode.e { vw = j; break }
+                    }
+                    if vw >= 0 {
+                        let cv = buffer[vw].cellKeyCode
+                        let prevNotU = vw - 1 >= 0 ? buffer[vw - 1].cellKeyCode != KeyCode.u : true
+                        if (key == KeyCode.n7 && cv == KeyCode.a && prevNotU) ||
+                           (key == KeyCode.n8 && (cv == KeyCode.o || cv == KeyCode.u)) {
+                            break   // blocked → literal digit
+                        }
+                    }
+                    let out = insertW(caps: caps)
+                    if out.action == .passthrough { break }
+                    if out.action == .restore {
+                        let k = insertKey(key, caps: caps)
+                        return EngineOutput(backspaceCount: out.backspaceCount,
+                                            newChars: out.newChars + k.newChars, action: .restore)
+                    }
+                    return afterMainKey(out, plainInsert: false)
+                }
+            }
+        }
+        // No vowel pattern matched (or guard blocked) → literal digit.
+        return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
     }
 
     static let breakCodes: Set<UInt16> = [

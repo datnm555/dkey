@@ -38,4 +38,30 @@ final class VNITests: XCTestCase {
         XCTAssertEqual(vni("["), "[")
         XCTAssertEqual(vni("]"), "]")
     }
+
+    func testCircumflex() {
+        XCTAssertEqual(vni("a6"), "â")
+        XCTAssertEqual(vni("e6"), "ê")
+        XCTAssertEqual(vni("o6"), "ô")
+        XCTAssertEqual(vni("a6s"), "âs")   // stray letter after is separate; core is a6→â, then s is literal
+    }
+
+    func testHorn() {
+        XCTAssertEqual(vni("o7"), "ơ")
+        XCTAssertEqual(vni("u7"), "ư")
+    }
+
+    func testBreve() {
+        XCTAssertEqual(vni("a8"), "ă")
+    }
+
+    func testCircumflexThenTone() {
+        XCTAssertEqual(vni("a61"), "ấ")   // â + sắc
+        XCTAssertEqual(vni("o62"), "ồ")   // ô + huyền
+    }
+
+    func testWord() {
+        XCTAssertEqual(vni("vie6t5"), "việt")   // v-i-ê-t + nặng
+        XCTAssertEqual(vni("d9o6ng2"), "đồng")  // đ(d9)-ô-ng + huyền; VNI uses d9 for đ, not dd
+    }
 }
