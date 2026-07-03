@@ -2,6 +2,7 @@ import Foundation
 
 public final class TelexEngine: InputEngine {
     public var useModernOrthography: Bool = true
+    public var inputMethod: InputMethod = .telex
     var buffer = TypingBuffer()
 
     // Vowel position state — set by findAndCalculateVowel (ported from Engine.cpp globals VSI/VEI/vowelCount)
@@ -22,37 +23,33 @@ public final class TelexEngine: InputEngine {
             return EngineOutput(backspaceCount: 0, newChars: [], action: .wordBreak)
         }
 
-        // Route 'z' → removeMark (IS_KEY_Z, Engine.cpp:1057-1062)
-        // If no mark present, fall through to insertKey (plain 'z').
-        if key == KeyCode.z {
+        // Route remove-tone key → removeMark (IS_KEY_Z, Engine.cpp:1057-1062)
+        // Telex: 'z'; VNI: '0'. If no mark present, fall through to insertKey.
+        if isKeyZ(key) {
             let removeOut = removeMark()
             let out = removeOut == .none ? insertKey(key, caps: caps) : removeOut
             return afterMainKey(out, plainInsert: removeOut == .none)
         }
 
         // Route '[' (KEY_LEFT_BRACKET) → standalone ơ (Engine.cpp:1065-1068)
-        if key == KeyCode.leftBracket {
+        // Telex only; in VNI brackets are literal.
+        if inputMethod == .telex && key == KeyCode.leftBracket {
             let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
         // Route ']' (KEY_RIGHT_BRACKET) → standalone ư (Engine.cpp:1070-1073)
-        if key == KeyCode.rightBracket {
+        // Telex only; in VNI brackets are literal.
+        if inputMethod == .telex && key == KeyCode.rightBracket {
             let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
-        // Route mark keys s/f/r/x/j BEFORE plain insertKey — mirror handleMainKey mark branch
-        // (Engine.cpp:1104-1142).
+        // Route mark keys (Telex: s/f/r/x/j; VNI: 1-5) BEFORE plain insertKey —
+        // mirror handleMainKey mark branch (Engine.cpp:1104-1142).
         if isMarkKey(key) && buffer.index > 0 {
-            let markMask: UInt32
-            switch key {
-            case KeyCode.s: markMask = EngineMask.mark1
-            case KeyCode.f: markMask = EngineMask.mark2
-            case KeyCode.r: markMask = EngineMask.mark3
-            case KeyCode.x: markMask = EngineMask.mark4
-            case KeyCode.j: markMask = EngineMask.mark5
-            default: return insertKey(key, caps: caps)
+            guard let markMask = markMask(for: key) else {
+                return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
             }
             for group in vowelForMark {
                 let patterns = group.patterns
@@ -107,9 +104,9 @@ public final class TelexEngine: InputEngine {
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
-        // Route 'd' key → insertD (dd → đ) — mirror handleMainKey IS_KEY_D branch
+        // Route đ key → insertD (Telex: dd→đ; VNI: d9→đ) — mirror handleMainKey IS_KEY_D branch
         // (Engine.cpp:1076-1101).
-        if key == KeyCode.d {
+        if isKeyD(key) {
             var isChanged = false
             for l in 0..<consonantD.count {
                 if buffer.index < consonantD[l].count { continue }
@@ -670,10 +667,41 @@ public final class TelexEngine: InputEngine {
 
     // MARK: - Mark key routing helpers
 
-    /// Returns true for Telex tone-mark keys s/f/r/x/j (Engine.cpp IS_MARK_KEY for Telex).
+    // Which physical key plays each role, per input method.
+    // Mirrors OpenKey ProcessingChar[vInputType] (Engine.cpp:35-36):
+    //   Telex row uses letters; VNI row: 1-5 tones, 6 circumflex, 7/8 horn/breve, 9 đ, 0 remove.
+    private func isKeyZ(_ key: UInt16) -> Bool {   // remove-tone key
+        inputMethod == .telex ? key == KeyCode.z : key == KeyCode.n0
+    }
+    private func isKeyD(_ key: UInt16) -> Bool {   // đ key
+        inputMethod == .telex ? key == KeyCode.d : key == KeyCode.n9
+    }
+    private func markMask(for key: UInt16) -> UInt32? {
+        switch inputMethod {
+        case .telex:
+            switch key {
+            case KeyCode.s: return EngineMask.mark1
+            case KeyCode.f: return EngineMask.mark2
+            case KeyCode.r: return EngineMask.mark3
+            case KeyCode.x: return EngineMask.mark4
+            case KeyCode.j: return EngineMask.mark5
+            default: return nil
+            }
+        case .vni:
+            switch key {
+            case KeyCode.n1: return EngineMask.mark1
+            case KeyCode.n2: return EngineMask.mark2
+            case KeyCode.n3: return EngineMask.mark3
+            case KeyCode.n4: return EngineMask.mark4
+            case KeyCode.n5: return EngineMask.mark5
+            default: return nil
+            }
+        }
+    }
+
+    /// Returns true for tone-mark keys (method-aware).
     private func isMarkKey(_ key: UInt16) -> Bool {
-        key == KeyCode.s || key == KeyCode.f || key == KeyCode.r ||
-        key == KeyCode.x || key == KeyCode.j
+        markMask(for: key) != nil
     }
 
     /// Returns true for Telex double keys a/e/o (Engine.cpp IS_KEY_DOUBLE for Telex).
