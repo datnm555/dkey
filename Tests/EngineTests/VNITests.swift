@@ -64,4 +64,14 @@ final class VNITests: XCTestCase {
         XCTAssertEqual(vni("vie6t5"), "việt")   // v-i-ê-t + nặng
         XCTAssertEqual(vni("d9o6ng2"), "đồng")  // đ(d9)-ô-ng + huyền; VNI uses d9 for đ, not dd
     }
+
+    func testDoubledVowelsAndWStayLiteralInVNI() {
+        XCTAssertEqual(vni("oo"), "oo")
+        XCTAssertEqual(vni("aa"), "aa")
+        XCTAssertEqual(vni("ee"), "ee")
+        XCTAssertEqual(vni("xoong"), "xoong")   // real VN word; must NOT become xông
+        XCTAssertEqual(vni("book"), "book")      // English; double-o stays literal
+        XCTAssertEqual(vni("w"), "w")            // literal w, not ư
+        XCTAssertEqual(vni("uw"), "uw")          // stays literal, not ư
+    }
 }

@@ -5,7 +5,7 @@ bash scripts/openkey-oracle/build.sh
 
 # VNI đ initial is "d9" (d then the 9 key), not "dd9" (that yields literal d + đ).
 INITIALS=( "" b c ch d d9 g gh h kh l m n ng ngh nh ph qu r s t th tr v x )
-VOWELS=( a a6 a8 e e6 i o o6 o7 u u7 oa oe uo u7o7 u7o7i ie6 ye6 )
+VOWELS=( a a6 a8 e e6 i o o6 o7 u u7 oa oe uo u7o7 u7o7i ie6 ye6 oo aa ee w uw uu )
 TONES=( "" 1 2 3 4 5 )
 FINALS=( "" c ch m n ng nh p t )
 

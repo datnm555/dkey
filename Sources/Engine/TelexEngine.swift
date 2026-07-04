@@ -81,7 +81,7 @@ public final class TelexEngine: InputEngine {
 
         // Route 'w' key → horn/breve via insertW (if vowel pattern matched) or standalone ư.
         // Mirror handleMainKey IS_KEY_W branch (Engine.cpp:1169-1191).
-        if key == KeyCode.w {
+        if inputMethod == .telex && key == KeyCode.w {
             let patterns = vowel[KeyCode.w] ?? []
             var wMatched = false
             for l in 0..<patterns.count {
@@ -146,7 +146,7 @@ public final class TelexEngine: InputEngine {
 
         // Route double keys a/e/o for circumflex (insertAOE) — mirror handleMainKey vowel branch
         // (Engine.cpp:1154-1168, IS_KEY_DOUBLE).
-        if isDoubleKey(key) && buffer.index > 0 {
+        if inputMethod == .telex && isDoubleKey(key) && buffer.index > 0 {
             let patterns = vowel[key] ?? []
             for l in 0..<patterns.count {
                 if buffer.index < patterns[l].count { continue }
