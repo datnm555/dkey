@@ -45,6 +45,7 @@ targets:
       - path: Tests/EngineTests
       - path: Tests/ParityTests
       - path: Tests/PlatformTests
+      - path: Tests/AppTests
       - path: Tests/Fixtures
         buildPhase: resources
     dependencies:
