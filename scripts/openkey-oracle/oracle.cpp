@@ -1,6 +1,7 @@
 // oracle.cpp — Minimal CLI driver over the real OpenKey C++ engine.
 //
-// Reads Telex input lines from stdin; for each line emits:
+// Reads input-keystroke lines from stdin (Telex by default, or VNI when invoked
+// as `oracle vni`); for each line emits:
 //   <input><TAB><modern_out><TAB><classic_out>
 // where "modern" means the linguistically-modern Vietnamese standard (hòa style)
 // and "classic" means the old/alternative placement (hoà style).

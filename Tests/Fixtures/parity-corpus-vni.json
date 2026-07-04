@@ -15390,6 +15390,4866 @@
 "classic": "cyêt"
 },
 {
+"input": "d9a",
+"modern": "đa",
+"classic": "đa"
+},
+{
+"input": "d9a1",
+"modern": "đá",
+"classic": "đá"
+},
+{
+"input": "d9a1c",
+"modern": "đác",
+"classic": "đác"
+},
+{
+"input": "d9a1ch",
+"modern": "đách",
+"classic": "đách"
+},
+{
+"input": "d9a1m",
+"modern": "đám",
+"classic": "đám"
+},
+{
+"input": "d9a1n",
+"modern": "đán",
+"classic": "đán"
+},
+{
+"input": "d9a1ng",
+"modern": "đáng",
+"classic": "đáng"
+},
+{
+"input": "d9a1nh",
+"modern": "đánh",
+"classic": "đánh"
+},
+{
+"input": "d9a1p",
+"modern": "đáp",
+"classic": "đáp"
+},
+{
+"input": "d9a1t",
+"modern": "đát",
+"classic": "đát"
+},
+{
+"input": "d9a2",
+"modern": "đà",
+"classic": "đà"
+},
+{
+"input": "d9a2c",
+"modern": "đàc",
+"classic": "đàc"
+},
+{
+"input": "d9a2ch",
+"modern": "đàch",
+"classic": "đàch"
+},
+{
+"input": "d9a2m",
+"modern": "đàm",
+"classic": "đàm"
+},
+{
+"input": "d9a2n",
+"modern": "đàn",
+"classic": "đàn"
+},
+{
+"input": "d9a2ng",
+"modern": "đàng",
+"classic": "đàng"
+},
+{
+"input": "d9a2nh",
+"modern": "đành",
+"classic": "đành"
+},
+{
+"input": "d9a2p",
+"modern": "đàp",
+"classic": "đàp"
+},
+{
+"input": "d9a2t",
+"modern": "đàt",
+"classic": "đàt"
+},
+{
+"input": "d9a3",
+"modern": "đả",
+"classic": "đả"
+},
+{
+"input": "d9a3c",
+"modern": "đảc",
+"classic": "đảc"
+},
+{
+"input": "d9a3ch",
+"modern": "đảch",
+"classic": "đảch"
+},
+{
+"input": "d9a3m",
+"modern": "đảm",
+"classic": "đảm"
+},
+{
+"input": "d9a3n",
+"modern": "đản",
+"classic": "đản"
+},
+{
+"input": "d9a3ng",
+"modern": "đảng",
+"classic": "đảng"
+},
+{
+"input": "d9a3nh",
+"modern": "đảnh",
+"classic": "đảnh"
+},
+{
+"input": "d9a3p",
+"modern": "đảp",
+"classic": "đảp"
+},
+{
+"input": "d9a3t",
+"modern": "đảt",
+"classic": "đảt"
+},
+{
+"input": "d9a4",
+"modern": "đã",
+"classic": "đã"
+},
+{
+"input": "d9a4c",
+"modern": "đãc",
+"classic": "đãc"
+},
+{
+"input": "d9a4ch",
+"modern": "đãch",
+"classic": "đãch"
+},
+{
+"input": "d9a4m",
+"modern": "đãm",
+"classic": "đãm"
+},
+{
+"input": "d9a4n",
+"modern": "đãn",
+"classic": "đãn"
+},
+{
+"input": "d9a4ng",
+"modern": "đãng",
+"classic": "đãng"
+},
+{
+"input": "d9a4nh",
+"modern": "đãnh",
+"classic": "đãnh"
+},
+{
+"input": "d9a4p",
+"modern": "đãp",
+"classic": "đãp"
+},
+{
+"input": "d9a4t",
+"modern": "đãt",
+"classic": "đãt"
+},
+{
+"input": "d9a5",
+"modern": "đạ",
+"classic": "đạ"
+},
+{
+"input": "d9a5c",
+"modern": "đạc",
+"classic": "đạc"
+},
+{
+"input": "d9a5ch",
+"modern": "đạch",
+"classic": "đạch"
+},
+{
+"input": "d9a5m",
+"modern": "đạm",
+"classic": "đạm"
+},
+{
+"input": "d9a5n",
+"modern": "đạn",
+"classic": "đạn"
+},
+{
+"input": "d9a5ng",
+"modern": "đạng",
+"classic": "đạng"
+},
+{
+"input": "d9a5nh",
+"modern": "đạnh",
+"classic": "đạnh"
+},
+{
+"input": "d9a5p",
+"modern": "đạp",
+"classic": "đạp"
+},
+{
+"input": "d9a5t",
+"modern": "đạt",
+"classic": "đạt"
+},
+{
+"input": "d9a6",
+"modern": "đâ",
+"classic": "đâ"
+},
+{
+"input": "d9a61",
+"modern": "đấ",
+"classic": "đấ"
+},
+{
+"input": "d9a61c",
+"modern": "đấc",
+"classic": "đấc"
+},
+{
+"input": "d9a61ch",
+"modern": "đấch",
+"classic": "đấch"
+},
+{
+"input": "d9a61m",
+"modern": "đấm",
+"classic": "đấm"
+},
+{
+"input": "d9a61n",
+"modern": "đấn",
+"classic": "đấn"
+},
+{
+"input": "d9a61ng",
+"modern": "đấng",
+"classic": "đấng"
+},
+{
+"input": "d9a61nh",
+"modern": "đấnh",
+"classic": "đấnh"
+},
+{
+"input": "d9a61p",
+"modern": "đấp",
+"classic": "đấp"
+},
+{
+"input": "d9a61t",
+"modern": "đất",
+"classic": "đất"
+},
+{
+"input": "d9a62",
+"modern": "đầ",
+"classic": "đầ"
+},
+{
+"input": "d9a62c",
+"modern": "đầc",
+"classic": "đầc"
+},
+{
+"input": "d9a62ch",
+"modern": "đầch",
+"classic": "đầch"
+},
+{
+"input": "d9a62m",
+"modern": "đầm",
+"classic": "đầm"
+},
+{
+"input": "d9a62n",
+"modern": "đần",
+"classic": "đần"
+},
+{
+"input": "d9a62ng",
+"modern": "đầng",
+"classic": "đầng"
+},
+{
+"input": "d9a62nh",
+"modern": "đầnh",
+"classic": "đầnh"
+},
+{
+"input": "d9a62p",
+"modern": "đầp",
+"classic": "đầp"
+},
+{
+"input": "d9a62t",
+"modern": "đầt",
+"classic": "đầt"
+},
+{
+"input": "d9a63",
+"modern": "đẩ",
+"classic": "đẩ"
+},
+{
+"input": "d9a63c",
+"modern": "đẩc",
+"classic": "đẩc"
+},
+{
+"input": "d9a63ch",
+"modern": "đẩch",
+"classic": "đẩch"
+},
+{
+"input": "d9a63m",
+"modern": "đẩm",
+"classic": "đẩm"
+},
+{
+"input": "d9a63n",
+"modern": "đẩn",
+"classic": "đẩn"
+},
+{
+"input": "d9a63ng",
+"modern": "đẩng",
+"classic": "đẩng"
+},
+{
+"input": "d9a63nh",
+"modern": "đẩnh",
+"classic": "đẩnh"
+},
+{
+"input": "d9a63p",
+"modern": "đẩp",
+"classic": "đẩp"
+},
+{
+"input": "d9a63t",
+"modern": "đẩt",
+"classic": "đẩt"
+},
+{
+"input": "d9a64",
+"modern": "đẫ",
+"classic": "đẫ"
+},
+{
+"input": "d9a64c",
+"modern": "đẫc",
+"classic": "đẫc"
+},
+{
+"input": "d9a64ch",
+"modern": "đẫch",
+"classic": "đẫch"
+},
+{
+"input": "d9a64m",
+"modern": "đẫm",
+"classic": "đẫm"
+},
+{
+"input": "d9a64n",
+"modern": "đẫn",
+"classic": "đẫn"
+},
+{
+"input": "d9a64ng",
+"modern": "đẫng",
+"classic": "đẫng"
+},
+{
+"input": "d9a64nh",
+"modern": "đẫnh",
+"classic": "đẫnh"
+},
+{
+"input": "d9a64p",
+"modern": "đẫp",
+"classic": "đẫp"
+},
+{
+"input": "d9a64t",
+"modern": "đẫt",
+"classic": "đẫt"
+},
+{
+"input": "d9a65",
+"modern": "đậ",
+"classic": "đậ"
+},
+{
+"input": "d9a65c",
+"modern": "đậc",
+"classic": "đậc"
+},
+{
+"input": "d9a65ch",
+"modern": "đậch",
+"classic": "đậch"
+},
+{
+"input": "d9a65m",
+"modern": "đậm",
+"classic": "đậm"
+},
+{
+"input": "d9a65n",
+"modern": "đận",
+"classic": "đận"
+},
+{
+"input": "d9a65ng",
+"modern": "đậng",
+"classic": "đậng"
+},
+{
+"input": "d9a65nh",
+"modern": "đậnh",
+"classic": "đậnh"
+},
+{
+"input": "d9a65p",
+"modern": "đập",
+"classic": "đập"
+},
+{
+"input": "d9a65t",
+"modern": "đật",
+"classic": "đật"
+},
+{
+"input": "d9a6c",
+"modern": "đâc",
+"classic": "đâc"
+},
+{
+"input": "d9a6ch",
+"modern": "đâch",
+"classic": "đâch"
+},
+{
+"input": "d9a6m",
+"modern": "đâm",
+"classic": "đâm"
+},
+{
+"input": "d9a6n",
+"modern": "đân",
+"classic": "đân"
+},
+{
+"input": "d9a6ng",
+"modern": "đâng",
+"classic": "đâng"
+},
+{
+"input": "d9a6nh",
+"modern": "đânh",
+"classic": "đânh"
+},
+{
+"input": "d9a6p",
+"modern": "đâp",
+"classic": "đâp"
+},
+{
+"input": "d9a6t",
+"modern": "đât",
+"classic": "đât"
+},
+{
+"input": "d9a8",
+"modern": "đă",
+"classic": "đă"
+},
+{
+"input": "d9a81",
+"modern": "đắ",
+"classic": "đắ"
+},
+{
+"input": "d9a81c",
+"modern": "đắc",
+"classic": "đắc"
+},
+{
+"input": "d9a81ch",
+"modern": "đắch",
+"classic": "đắch"
+},
+{
+"input": "d9a81m",
+"modern": "đắm",
+"classic": "đắm"
+},
+{
+"input": "d9a81n",
+"modern": "đắn",
+"classic": "đắn"
+},
+{
+"input": "d9a81ng",
+"modern": "đắng",
+"classic": "đắng"
+},
+{
+"input": "d9a81nh",
+"modern": "đắnh",
+"classic": "đắnh"
+},
+{
+"input": "d9a81p",
+"modern": "đắp",
+"classic": "đắp"
+},
+{
+"input": "d9a81t",
+"modern": "đắt",
+"classic": "đắt"
+},
+{
+"input": "d9a82",
+"modern": "đằ",
+"classic": "đằ"
+},
+{
+"input": "d9a82c",
+"modern": "đằc",
+"classic": "đằc"
+},
+{
+"input": "d9a82ch",
+"modern": "đằch",
+"classic": "đằch"
+},
+{
+"input": "d9a82m",
+"modern": "đằm",
+"classic": "đằm"
+},
+{
+"input": "d9a82n",
+"modern": "đằn",
+"classic": "đằn"
+},
+{
+"input": "d9a82ng",
+"modern": "đằng",
+"classic": "đằng"
+},
+{
+"input": "d9a82nh",
+"modern": "đằnh",
+"classic": "đằnh"
+},
+{
+"input": "d9a82p",
+"modern": "đằp",
+"classic": "đằp"
+},
+{
+"input": "d9a82t",
+"modern": "đằt",
+"classic": "đằt"
+},
+{
+"input": "d9a83",
+"modern": "đẳ",
+"classic": "đẳ"
+},
+{
+"input": "d9a83c",
+"modern": "đẳc",
+"classic": "đẳc"
+},
+{
+"input": "d9a83ch",
+"modern": "đẳch",
+"classic": "đẳch"
+},
+{
+"input": "d9a83m",
+"modern": "đẳm",
+"classic": "đẳm"
+},
+{
+"input": "d9a83n",
+"modern": "đẳn",
+"classic": "đẳn"
+},
+{
+"input": "d9a83ng",
+"modern": "đẳng",
+"classic": "đẳng"
+},
+{
+"input": "d9a83nh",
+"modern": "đẳnh",
+"classic": "đẳnh"
+},
+{
+"input": "d9a83p",
+"modern": "đẳp",
+"classic": "đẳp"
+},
+{
+"input": "d9a83t",
+"modern": "đẳt",
+"classic": "đẳt"
+},
+{
+"input": "d9a84",
+"modern": "đẵ",
+"classic": "đẵ"
+},
+{
+"input": "d9a84c",
+"modern": "đẵc",
+"classic": "đẵc"
+},
+{
+"input": "d9a84ch",
+"modern": "đẵch",
+"classic": "đẵch"
+},
+{
+"input": "d9a84m",
+"modern": "đẵm",
+"classic": "đẵm"
+},
+{
+"input": "d9a84n",
+"modern": "đẵn",
+"classic": "đẵn"
+},
+{
+"input": "d9a84ng",
+"modern": "đẵng",
+"classic": "đẵng"
+},
+{
+"input": "d9a84nh",
+"modern": "đẵnh",
+"classic": "đẵnh"
+},
+{
+"input": "d9a84p",
+"modern": "đẵp",
+"classic": "đẵp"
+},
+{
+"input": "d9a84t",
+"modern": "đẵt",
+"classic": "đẵt"
+},
+{
+"input": "d9a85",
+"modern": "đặ",
+"classic": "đặ"
+},
+{
+"input": "d9a85c",
+"modern": "đặc",
+"classic": "đặc"
+},
+{
+"input": "d9a85ch",
+"modern": "đặch",
+"classic": "đặch"
+},
+{
+"input": "d9a85m",
+"modern": "đặm",
+"classic": "đặm"
+},
+{
+"input": "d9a85n",
+"modern": "đặn",
+"classic": "đặn"
+},
+{
+"input": "d9a85ng",
+"modern": "đặng",
+"classic": "đặng"
+},
+{
+"input": "d9a85nh",
+"modern": "đặnh",
+"classic": "đặnh"
+},
+{
+"input": "d9a85p",
+"modern": "đặp",
+"classic": "đặp"
+},
+{
+"input": "d9a85t",
+"modern": "đặt",
+"classic": "đặt"
+},
+{
+"input": "d9a8c",
+"modern": "đăc",
+"classic": "đăc"
+},
+{
+"input": "d9a8ch",
+"modern": "đăch",
+"classic": "đăch"
+},
+{
+"input": "d9a8m",
+"modern": "đăm",
+"classic": "đăm"
+},
+{
+"input": "d9a8n",
+"modern": "đăn",
+"classic": "đăn"
+},
+{
+"input": "d9a8ng",
+"modern": "đăng",
+"classic": "đăng"
+},
+{
+"input": "d9a8nh",
+"modern": "đănh",
+"classic": "đănh"
+},
+{
+"input": "d9a8p",
+"modern": "đăp",
+"classic": "đăp"
+},
+{
+"input": "d9a8t",
+"modern": "đăt",
+"classic": "đăt"
+},
+{
+"input": "d9ac",
+"modern": "đac",
+"classic": "đac"
+},
+{
+"input": "d9ach",
+"modern": "đach",
+"classic": "đach"
+},
+{
+"input": "d9am",
+"modern": "đam",
+"classic": "đam"
+},
+{
+"input": "d9an",
+"modern": "đan",
+"classic": "đan"
+},
+{
+"input": "d9ang",
+"modern": "đang",
+"classic": "đang"
+},
+{
+"input": "d9anh",
+"modern": "đanh",
+"classic": "đanh"
+},
+{
+"input": "d9ap",
+"modern": "đap",
+"classic": "đap"
+},
+{
+"input": "d9at",
+"modern": "đat",
+"classic": "đat"
+},
+{
+"input": "d9e",
+"modern": "đe",
+"classic": "đe"
+},
+{
+"input": "d9e1",
+"modern": "đé",
+"classic": "đé"
+},
+{
+"input": "d9e1c",
+"modern": "đéc",
+"classic": "đéc"
+},
+{
+"input": "d9e1ch",
+"modern": "đéch",
+"classic": "đéch"
+},
+{
+"input": "d9e1m",
+"modern": "đém",
+"classic": "đém"
+},
+{
+"input": "d9e1n",
+"modern": "đén",
+"classic": "đén"
+},
+{
+"input": "d9e1ng",
+"modern": "đéng",
+"classic": "đéng"
+},
+{
+"input": "d9e1nh",
+"modern": "đénh",
+"classic": "đénh"
+},
+{
+"input": "d9e1p",
+"modern": "đép",
+"classic": "đép"
+},
+{
+"input": "d9e1t",
+"modern": "đét",
+"classic": "đét"
+},
+{
+"input": "d9e2",
+"modern": "đè",
+"classic": "đè"
+},
+{
+"input": "d9e2c",
+"modern": "đèc",
+"classic": "đèc"
+},
+{
+"input": "d9e2ch",
+"modern": "đèch",
+"classic": "đèch"
+},
+{
+"input": "d9e2m",
+"modern": "đèm",
+"classic": "đèm"
+},
+{
+"input": "d9e2n",
+"modern": "đèn",
+"classic": "đèn"
+},
+{
+"input": "d9e2ng",
+"modern": "đèng",
+"classic": "đèng"
+},
+{
+"input": "d9e2nh",
+"modern": "đènh",
+"classic": "đènh"
+},
+{
+"input": "d9e2p",
+"modern": "đèp",
+"classic": "đèp"
+},
+{
+"input": "d9e2t",
+"modern": "đèt",
+"classic": "đèt"
+},
+{
+"input": "d9e3",
+"modern": "đẻ",
+"classic": "đẻ"
+},
+{
+"input": "d9e3c",
+"modern": "đẻc",
+"classic": "đẻc"
+},
+{
+"input": "d9e3ch",
+"modern": "đẻch",
+"classic": "đẻch"
+},
+{
+"input": "d9e3m",
+"modern": "đẻm",
+"classic": "đẻm"
+},
+{
+"input": "d9e3n",
+"modern": "đẻn",
+"classic": "đẻn"
+},
+{
+"input": "d9e3ng",
+"modern": "đẻng",
+"classic": "đẻng"
+},
+{
+"input": "d9e3nh",
+"modern": "đẻnh",
+"classic": "đẻnh"
+},
+{
+"input": "d9e3p",
+"modern": "đẻp",
+"classic": "đẻp"
+},
+{
+"input": "d9e3t",
+"modern": "đẻt",
+"classic": "đẻt"
+},
+{
+"input": "d9e4",
+"modern": "đẽ",
+"classic": "đẽ"
+},
+{
+"input": "d9e4c",
+"modern": "đẽc",
+"classic": "đẽc"
+},
+{
+"input": "d9e4ch",
+"modern": "đẽch",
+"classic": "đẽch"
+},
+{
+"input": "d9e4m",
+"modern": "đẽm",
+"classic": "đẽm"
+},
+{
+"input": "d9e4n",
+"modern": "đẽn",
+"classic": "đẽn"
+},
+{
+"input": "d9e4ng",
+"modern": "đẽng",
+"classic": "đẽng"
+},
+{
+"input": "d9e4nh",
+"modern": "đẽnh",
+"classic": "đẽnh"
+},
+{
+"input": "d9e4p",
+"modern": "đẽp",
+"classic": "đẽp"
+},
+{
+"input": "d9e4t",
+"modern": "đẽt",
+"classic": "đẽt"
+},
+{
+"input": "d9e5",
+"modern": "đẹ",
+"classic": "đẹ"
+},
+{
+"input": "d9e5c",
+"modern": "đẹc",
+"classic": "đẹc"
+},
+{
+"input": "d9e5ch",
+"modern": "đẹch",
+"classic": "đẹch"
+},
+{
+"input": "d9e5m",
+"modern": "đẹm",
+"classic": "đẹm"
+},
+{
+"input": "d9e5n",
+"modern": "đẹn",
+"classic": "đẹn"
+},
+{
+"input": "d9e5ng",
+"modern": "đẹng",
+"classic": "đẹng"
+},
+{
+"input": "d9e5nh",
+"modern": "đẹnh",
+"classic": "đẹnh"
+},
+{
+"input": "d9e5p",
+"modern": "đẹp",
+"classic": "đẹp"
+},
+{
+"input": "d9e5t",
+"modern": "đẹt",
+"classic": "đẹt"
+},
+{
+"input": "d9e6",
+"modern": "đê",
+"classic": "đê"
+},
+{
+"input": "d9e61",
+"modern": "đế",
+"classic": "đế"
+},
+{
+"input": "d9e61c",
+"modern": "đếc",
+"classic": "đếc"
+},
+{
+"input": "d9e61ch",
+"modern": "đếch",
+"classic": "đếch"
+},
+{
+"input": "d9e61m",
+"modern": "đếm",
+"classic": "đếm"
+},
+{
+"input": "d9e61n",
+"modern": "đến",
+"classic": "đến"
+},
+{
+"input": "d9e61ng",
+"modern": "đếng",
+"classic": "đếng"
+},
+{
+"input": "d9e61nh",
+"modern": "đếnh",
+"classic": "đếnh"
+},
+{
+"input": "d9e61p",
+"modern": "đếp",
+"classic": "đếp"
+},
+{
+"input": "d9e61t",
+"modern": "đết",
+"classic": "đết"
+},
+{
+"input": "d9e62",
+"modern": "đề",
+"classic": "đề"
+},
+{
+"input": "d9e62c",
+"modern": "đềc",
+"classic": "đềc"
+},
+{
+"input": "d9e62ch",
+"modern": "đềch",
+"classic": "đềch"
+},
+{
+"input": "d9e62m",
+"modern": "đềm",
+"classic": "đềm"
+},
+{
+"input": "d9e62n",
+"modern": "đền",
+"classic": "đền"
+},
+{
+"input": "d9e62ng",
+"modern": "đềng",
+"classic": "đềng"
+},
+{
+"input": "d9e62nh",
+"modern": "đềnh",
+"classic": "đềnh"
+},
+{
+"input": "d9e62p",
+"modern": "đềp",
+"classic": "đềp"
+},
+{
+"input": "d9e62t",
+"modern": "đềt",
+"classic": "đềt"
+},
+{
+"input": "d9e63",
+"modern": "để",
+"classic": "để"
+},
+{
+"input": "d9e63c",
+"modern": "đểc",
+"classic": "đểc"
+},
+{
+"input": "d9e63ch",
+"modern": "đểch",
+"classic": "đểch"
+},
+{
+"input": "d9e63m",
+"modern": "đểm",
+"classic": "đểm"
+},
+{
+"input": "d9e63n",
+"modern": "đển",
+"classic": "đển"
+},
+{
+"input": "d9e63ng",
+"modern": "đểng",
+"classic": "đểng"
+},
+{
+"input": "d9e63nh",
+"modern": "đểnh",
+"classic": "đểnh"
+},
+{
+"input": "d9e63p",
+"modern": "đểp",
+"classic": "đểp"
+},
+{
+"input": "d9e63t",
+"modern": "đểt",
+"classic": "đểt"
+},
+{
+"input": "d9e64",
+"modern": "đễ",
+"classic": "đễ"
+},
+{
+"input": "d9e64c",
+"modern": "đễc",
+"classic": "đễc"
+},
+{
+"input": "d9e64ch",
+"modern": "đễch",
+"classic": "đễch"
+},
+{
+"input": "d9e64m",
+"modern": "đễm",
+"classic": "đễm"
+},
+{
+"input": "d9e64n",
+"modern": "đễn",
+"classic": "đễn"
+},
+{
+"input": "d9e64ng",
+"modern": "đễng",
+"classic": "đễng"
+},
+{
+"input": "d9e64nh",
+"modern": "đễnh",
+"classic": "đễnh"
+},
+{
+"input": "d9e64p",
+"modern": "đễp",
+"classic": "đễp"
+},
+{
+"input": "d9e64t",
+"modern": "đễt",
+"classic": "đễt"
+},
+{
+"input": "d9e65",
+"modern": "đệ",
+"classic": "đệ"
+},
+{
+"input": "d9e65c",
+"modern": "đệc",
+"classic": "đệc"
+},
+{
+"input": "d9e65ch",
+"modern": "đệch",
+"classic": "đệch"
+},
+{
+"input": "d9e65m",
+"modern": "đệm",
+"classic": "đệm"
+},
+{
+"input": "d9e65n",
+"modern": "đện",
+"classic": "đện"
+},
+{
+"input": "d9e65ng",
+"modern": "đệng",
+"classic": "đệng"
+},
+{
+"input": "d9e65nh",
+"modern": "đệnh",
+"classic": "đệnh"
+},
+{
+"input": "d9e65p",
+"modern": "đệp",
+"classic": "đệp"
+},
+{
+"input": "d9e65t",
+"modern": "đệt",
+"classic": "đệt"
+},
+{
+"input": "d9e6c",
+"modern": "đêc",
+"classic": "đêc"
+},
+{
+"input": "d9e6ch",
+"modern": "đêch",
+"classic": "đêch"
+},
+{
+"input": "d9e6m",
+"modern": "đêm",
+"classic": "đêm"
+},
+{
+"input": "d9e6n",
+"modern": "đên",
+"classic": "đên"
+},
+{
+"input": "d9e6ng",
+"modern": "đêng",
+"classic": "đêng"
+},
+{
+"input": "d9e6nh",
+"modern": "đênh",
+"classic": "đênh"
+},
+{
+"input": "d9e6p",
+"modern": "đêp",
+"classic": "đêp"
+},
+{
+"input": "d9e6t",
+"modern": "đêt",
+"classic": "đêt"
+},
+{
+"input": "d9ec",
+"modern": "đec",
+"classic": "đec"
+},
+{
+"input": "d9ech",
+"modern": "đech",
+"classic": "đech"
+},
+{
+"input": "d9em",
+"modern": "đem",
+"classic": "đem"
+},
+{
+"input": "d9en",
+"modern": "đen",
+"classic": "đen"
+},
+{
+"input": "d9eng",
+"modern": "đeng",
+"classic": "đeng"
+},
+{
+"input": "d9enh",
+"modern": "đenh",
+"classic": "đenh"
+},
+{
+"input": "d9ep",
+"modern": "đep",
+"classic": "đep"
+},
+{
+"input": "d9et",
+"modern": "đet",
+"classic": "đet"
+},
+{
+"input": "d9i",
+"modern": "đi",
+"classic": "đi"
+},
+{
+"input": "d9i1",
+"modern": "đí",
+"classic": "đí"
+},
+{
+"input": "d9i1c",
+"modern": "đíc",
+"classic": "đíc"
+},
+{
+"input": "d9i1ch",
+"modern": "đích",
+"classic": "đích"
+},
+{
+"input": "d9i1m",
+"modern": "đím",
+"classic": "đím"
+},
+{
+"input": "d9i1n",
+"modern": "đín",
+"classic": "đín"
+},
+{
+"input": "d9i1ng",
+"modern": "đíng",
+"classic": "đíng"
+},
+{
+"input": "d9i1nh",
+"modern": "đính",
+"classic": "đính"
+},
+{
+"input": "d9i1p",
+"modern": "đíp",
+"classic": "đíp"
+},
+{
+"input": "d9i1t",
+"modern": "đít",
+"classic": "đít"
+},
+{
+"input": "d9i2",
+"modern": "đì",
+"classic": "đì"
+},
+{
+"input": "d9i2c",
+"modern": "đìc",
+"classic": "đìc"
+},
+{
+"input": "d9i2ch",
+"modern": "đìch",
+"classic": "đìch"
+},
+{
+"input": "d9i2m",
+"modern": "đìm",
+"classic": "đìm"
+},
+{
+"input": "d9i2n",
+"modern": "đìn",
+"classic": "đìn"
+},
+{
+"input": "d9i2ng",
+"modern": "đìng",
+"classic": "đìng"
+},
+{
+"input": "d9i2nh",
+"modern": "đình",
+"classic": "đình"
+},
+{
+"input": "d9i2p",
+"modern": "đìp",
+"classic": "đìp"
+},
+{
+"input": "d9i2t",
+"modern": "đìt",
+"classic": "đìt"
+},
+{
+"input": "d9i3",
+"modern": "đỉ",
+"classic": "đỉ"
+},
+{
+"input": "d9i3c",
+"modern": "đỉc",
+"classic": "đỉc"
+},
+{
+"input": "d9i3ch",
+"modern": "đỉch",
+"classic": "đỉch"
+},
+{
+"input": "d9i3m",
+"modern": "đỉm",
+"classic": "đỉm"
+},
+{
+"input": "d9i3n",
+"modern": "đỉn",
+"classic": "đỉn"
+},
+{
+"input": "d9i3ng",
+"modern": "đỉng",
+"classic": "đỉng"
+},
+{
+"input": "d9i3nh",
+"modern": "đỉnh",
+"classic": "đỉnh"
+},
+{
+"input": "d9i3p",
+"modern": "đỉp",
+"classic": "đỉp"
+},
+{
+"input": "d9i3t",
+"modern": "đỉt",
+"classic": "đỉt"
+},
+{
+"input": "d9i4",
+"modern": "đĩ",
+"classic": "đĩ"
+},
+{
+"input": "d9i4c",
+"modern": "đĩc",
+"classic": "đĩc"
+},
+{
+"input": "d9i4ch",
+"modern": "đĩch",
+"classic": "đĩch"
+},
+{
+"input": "d9i4m",
+"modern": "đĩm",
+"classic": "đĩm"
+},
+{
+"input": "d9i4n",
+"modern": "đĩn",
+"classic": "đĩn"
+},
+{
+"input": "d9i4ng",
+"modern": "đĩng",
+"classic": "đĩng"
+},
+{
+"input": "d9i4nh",
+"modern": "đĩnh",
+"classic": "đĩnh"
+},
+{
+"input": "d9i4p",
+"modern": "đĩp",
+"classic": "đĩp"
+},
+{
+"input": "d9i4t",
+"modern": "đĩt",
+"classic": "đĩt"
+},
+{
+"input": "d9i5",
+"modern": "đị",
+"classic": "đị"
+},
+{
+"input": "d9i5c",
+"modern": "địc",
+"classic": "địc"
+},
+{
+"input": "d9i5ch",
+"modern": "địch",
+"classic": "địch"
+},
+{
+"input": "d9i5m",
+"modern": "địm",
+"classic": "địm"
+},
+{
+"input": "d9i5n",
+"modern": "địn",
+"classic": "địn"
+},
+{
+"input": "d9i5ng",
+"modern": "địng",
+"classic": "địng"
+},
+{
+"input": "d9i5nh",
+"modern": "định",
+"classic": "định"
+},
+{
+"input": "d9i5p",
+"modern": "địp",
+"classic": "địp"
+},
+{
+"input": "d9i5t",
+"modern": "địt",
+"classic": "địt"
+},
+{
+"input": "d9ic",
+"modern": "đic",
+"classic": "đic"
+},
+{
+"input": "d9ich",
+"modern": "đich",
+"classic": "đich"
+},
+{
+"input": "d9ie6",
+"modern": "điê",
+"classic": "điê"
+},
+{
+"input": "d9ie61",
+"modern": "điế",
+"classic": "điế"
+},
+{
+"input": "d9ie61c",
+"modern": "điếc",
+"classic": "điếc"
+},
+{
+"input": "d9ie61ch",
+"modern": "điếch",
+"classic": "điếch"
+},
+{
+"input": "d9ie61m",
+"modern": "điếm",
+"classic": "điếm"
+},
+{
+"input": "d9ie61n",
+"modern": "điến",
+"classic": "điến"
+},
+{
+"input": "d9ie61ng",
+"modern": "điếng",
+"classic": "điếng"
+},
+{
+"input": "d9ie61nh",
+"modern": "điếnh",
+"classic": "điếnh"
+},
+{
+"input": "d9ie61p",
+"modern": "điếp",
+"classic": "điếp"
+},
+{
+"input": "d9ie61t",
+"modern": "điết",
+"classic": "điết"
+},
+{
+"input": "d9ie62",
+"modern": "điề",
+"classic": "điề"
+},
+{
+"input": "d9ie62c",
+"modern": "điềc",
+"classic": "điềc"
+},
+{
+"input": "d9ie62ch",
+"modern": "điềch",
+"classic": "điềch"
+},
+{
+"input": "d9ie62m",
+"modern": "điềm",
+"classic": "điềm"
+},
+{
+"input": "d9ie62n",
+"modern": "điền",
+"classic": "điền"
+},
+{
+"input": "d9ie62ng",
+"modern": "điềng",
+"classic": "điềng"
+},
+{
+"input": "d9ie62nh",
+"modern": "điềnh",
+"classic": "điềnh"
+},
+{
+"input": "d9ie62p",
+"modern": "điềp",
+"classic": "điềp"
+},
+{
+"input": "d9ie62t",
+"modern": "điềt",
+"classic": "điềt"
+},
+{
+"input": "d9ie63",
+"modern": "điể",
+"classic": "điể"
+},
+{
+"input": "d9ie63c",
+"modern": "điểc",
+"classic": "điểc"
+},
+{
+"input": "d9ie63ch",
+"modern": "điểch",
+"classic": "điểch"
+},
+{
+"input": "d9ie63m",
+"modern": "điểm",
+"classic": "điểm"
+},
+{
+"input": "d9ie63n",
+"modern": "điển",
+"classic": "điển"
+},
+{
+"input": "d9ie63ng",
+"modern": "điểng",
+"classic": "điểng"
+},
+{
+"input": "d9ie63nh",
+"modern": "điểnh",
+"classic": "điểnh"
+},
+{
+"input": "d9ie63p",
+"modern": "điểp",
+"classic": "điểp"
+},
+{
+"input": "d9ie63t",
+"modern": "điểt",
+"classic": "điểt"
+},
+{
+"input": "d9ie64",
+"modern": "điễ",
+"classic": "điễ"
+},
+{
+"input": "d9ie64c",
+"modern": "điễc",
+"classic": "điễc"
+},
+{
+"input": "d9ie64ch",
+"modern": "điễch",
+"classic": "điễch"
+},
+{
+"input": "d9ie64m",
+"modern": "điễm",
+"classic": "điễm"
+},
+{
+"input": "d9ie64n",
+"modern": "điễn",
+"classic": "điễn"
+},
+{
+"input": "d9ie64ng",
+"modern": "điễng",
+"classic": "điễng"
+},
+{
+"input": "d9ie64nh",
+"modern": "điễnh",
+"classic": "điễnh"
+},
+{
+"input": "d9ie64p",
+"modern": "điễp",
+"classic": "điễp"
+},
+{
+"input": "d9ie64t",
+"modern": "điễt",
+"classic": "điễt"
+},
+{
+"input": "d9ie65",
+"modern": "điệ",
+"classic": "điệ"
+},
+{
+"input": "d9ie65c",
+"modern": "điệc",
+"classic": "điệc"
+},
+{
+"input": "d9ie65ch",
+"modern": "điệch",
+"classic": "điệch"
+},
+{
+"input": "d9ie65m",
+"modern": "điệm",
+"classic": "điệm"
+},
+{
+"input": "d9ie65n",
+"modern": "điện",
+"classic": "điện"
+},
+{
+"input": "d9ie65ng",
+"modern": "điệng",
+"classic": "điệng"
+},
+{
+"input": "d9ie65nh",
+"modern": "điệnh",
+"classic": "điệnh"
+},
+{
+"input": "d9ie65p",
+"modern": "điệp",
+"classic": "điệp"
+},
+{
+"input": "d9ie65t",
+"modern": "điệt",
+"classic": "điệt"
+},
+{
+"input": "d9ie6c",
+"modern": "điêc",
+"classic": "điêc"
+},
+{
+"input": "d9ie6ch",
+"modern": "điêch",
+"classic": "điêch"
+},
+{
+"input": "d9ie6m",
+"modern": "điêm",
+"classic": "điêm"
+},
+{
+"input": "d9ie6n",
+"modern": "điên",
+"classic": "điên"
+},
+{
+"input": "d9ie6ng",
+"modern": "điêng",
+"classic": "điêng"
+},
+{
+"input": "d9ie6nh",
+"modern": "điênh",
+"classic": "điênh"
+},
+{
+"input": "d9ie6p",
+"modern": "điêp",
+"classic": "điêp"
+},
+{
+"input": "d9ie6t",
+"modern": "điêt",
+"classic": "điêt"
+},
+{
+"input": "d9im",
+"modern": "đim",
+"classic": "đim"
+},
+{
+"input": "d9in",
+"modern": "đin",
+"classic": "đin"
+},
+{
+"input": "d9ing",
+"modern": "đing",
+"classic": "đing"
+},
+{
+"input": "d9inh",
+"modern": "đinh",
+"classic": "đinh"
+},
+{
+"input": "d9ip",
+"modern": "đip",
+"classic": "đip"
+},
+{
+"input": "d9it",
+"modern": "đit",
+"classic": "đit"
+},
+{
+"input": "d9o",
+"modern": "đo",
+"classic": "đo"
+},
+{
+"input": "d9o1",
+"modern": "đó",
+"classic": "đó"
+},
+{
+"input": "d9o1c",
+"modern": "đóc",
+"classic": "đóc"
+},
+{
+"input": "d9o1ch",
+"modern": "đóch",
+"classic": "đóch"
+},
+{
+"input": "d9o1m",
+"modern": "đóm",
+"classic": "đóm"
+},
+{
+"input": "d9o1n",
+"modern": "đón",
+"classic": "đón"
+},
+{
+"input": "d9o1ng",
+"modern": "đóng",
+"classic": "đóng"
+},
+{
+"input": "d9o1nh",
+"modern": "đónh",
+"classic": "đónh"
+},
+{
+"input": "d9o1p",
+"modern": "đóp",
+"classic": "đóp"
+},
+{
+"input": "d9o1t",
+"modern": "đót",
+"classic": "đót"
+},
+{
+"input": "d9o2",
+"modern": "đò",
+"classic": "đò"
+},
+{
+"input": "d9o2c",
+"modern": "đòc",
+"classic": "đòc"
+},
+{
+"input": "d9o2ch",
+"modern": "đòch",
+"classic": "đòch"
+},
+{
+"input": "d9o2m",
+"modern": "đòm",
+"classic": "đòm"
+},
+{
+"input": "d9o2n",
+"modern": "đòn",
+"classic": "đòn"
+},
+{
+"input": "d9o2ng",
+"modern": "đòng",
+"classic": "đòng"
+},
+{
+"input": "d9o2nh",
+"modern": "đònh",
+"classic": "đònh"
+},
+{
+"input": "d9o2p",
+"modern": "đòp",
+"classic": "đòp"
+},
+{
+"input": "d9o2t",
+"modern": "đòt",
+"classic": "đòt"
+},
+{
+"input": "d9o3",
+"modern": "đỏ",
+"classic": "đỏ"
+},
+{
+"input": "d9o3c",
+"modern": "đỏc",
+"classic": "đỏc"
+},
+{
+"input": "d9o3ch",
+"modern": "đỏch",
+"classic": "đỏch"
+},
+{
+"input": "d9o3m",
+"modern": "đỏm",
+"classic": "đỏm"
+},
+{
+"input": "d9o3n",
+"modern": "đỏn",
+"classic": "đỏn"
+},
+{
+"input": "d9o3ng",
+"modern": "đỏng",
+"classic": "đỏng"
+},
+{
+"input": "d9o3nh",
+"modern": "đỏnh",
+"classic": "đỏnh"
+},
+{
+"input": "d9o3p",
+"modern": "đỏp",
+"classic": "đỏp"
+},
+{
+"input": "d9o3t",
+"modern": "đỏt",
+"classic": "đỏt"
+},
+{
+"input": "d9o4",
+"modern": "đõ",
+"classic": "đõ"
+},
+{
+"input": "d9o4c",
+"modern": "đõc",
+"classic": "đõc"
+},
+{
+"input": "d9o4ch",
+"modern": "đõch",
+"classic": "đõch"
+},
+{
+"input": "d9o4m",
+"modern": "đõm",
+"classic": "đõm"
+},
+{
+"input": "d9o4n",
+"modern": "đõn",
+"classic": "đõn"
+},
+{
+"input": "d9o4ng",
+"modern": "đõng",
+"classic": "đõng"
+},
+{
+"input": "d9o4nh",
+"modern": "đõnh",
+"classic": "đõnh"
+},
+{
+"input": "d9o4p",
+"modern": "đõp",
+"classic": "đõp"
+},
+{
+"input": "d9o4t",
+"modern": "đõt",
+"classic": "đõt"
+},
+{
+"input": "d9o5",
+"modern": "đọ",
+"classic": "đọ"
+},
+{
+"input": "d9o5c",
+"modern": "đọc",
+"classic": "đọc"
+},
+{
+"input": "d9o5ch",
+"modern": "đọch",
+"classic": "đọch"
+},
+{
+"input": "d9o5m",
+"modern": "đọm",
+"classic": "đọm"
+},
+{
+"input": "d9o5n",
+"modern": "đọn",
+"classic": "đọn"
+},
+{
+"input": "d9o5ng",
+"modern": "đọng",
+"classic": "đọng"
+},
+{
+"input": "d9o5nh",
+"modern": "đọnh",
+"classic": "đọnh"
+},
+{
+"input": "d9o5p",
+"modern": "đọp",
+"classic": "đọp"
+},
+{
+"input": "d9o5t",
+"modern": "đọt",
+"classic": "đọt"
+},
+{
+"input": "d9o6",
+"modern": "đô",
+"classic": "đô"
+},
+{
+"input": "d9o61",
+"modern": "đố",
+"classic": "đố"
+},
+{
+"input": "d9o61c",
+"modern": "đốc",
+"classic": "đốc"
+},
+{
+"input": "d9o61ch",
+"modern": "đốch",
+"classic": "đốch"
+},
+{
+"input": "d9o61m",
+"modern": "đốm",
+"classic": "đốm"
+},
+{
+"input": "d9o61n",
+"modern": "đốn",
+"classic": "đốn"
+},
+{
+"input": "d9o61ng",
+"modern": "đống",
+"classic": "đống"
+},
+{
+"input": "d9o61nh",
+"modern": "đốnh",
+"classic": "đốnh"
+},
+{
+"input": "d9o61p",
+"modern": "đốp",
+"classic": "đốp"
+},
+{
+"input": "d9o61t",
+"modern": "đốt",
+"classic": "đốt"
+},
+{
+"input": "d9o62",
+"modern": "đồ",
+"classic": "đồ"
+},
+{
+"input": "d9o62c",
+"modern": "đồc",
+"classic": "đồc"
+},
+{
+"input": "d9o62ch",
+"modern": "đồch",
+"classic": "đồch"
+},
+{
+"input": "d9o62m",
+"modern": "đồm",
+"classic": "đồm"
+},
+{
+"input": "d9o62n",
+"modern": "đồn",
+"classic": "đồn"
+},
+{
+"input": "d9o62ng",
+"modern": "đồng",
+"classic": "đồng"
+},
+{
+"input": "d9o62nh",
+"modern": "đồnh",
+"classic": "đồnh"
+},
+{
+"input": "d9o62p",
+"modern": "đồp",
+"classic": "đồp"
+},
+{
+"input": "d9o62t",
+"modern": "đồt",
+"classic": "đồt"
+},
+{
+"input": "d9o63",
+"modern": "đổ",
+"classic": "đổ"
+},
+{
+"input": "d9o63c",
+"modern": "đổc",
+"classic": "đổc"
+},
+{
+"input": "d9o63ch",
+"modern": "đổch",
+"classic": "đổch"
+},
+{
+"input": "d9o63m",
+"modern": "đổm",
+"classic": "đổm"
+},
+{
+"input": "d9o63n",
+"modern": "đổn",
+"classic": "đổn"
+},
+{
+"input": "d9o63ng",
+"modern": "đổng",
+"classic": "đổng"
+},
+{
+"input": "d9o63nh",
+"modern": "đổnh",
+"classic": "đổnh"
+},
+{
+"input": "d9o63p",
+"modern": "đổp",
+"classic": "đổp"
+},
+{
+"input": "d9o63t",
+"modern": "đổt",
+"classic": "đổt"
+},
+{
+"input": "d9o64",
+"modern": "đỗ",
+"classic": "đỗ"
+},
+{
+"input": "d9o64c",
+"modern": "đỗc",
+"classic": "đỗc"
+},
+{
+"input": "d9o64ch",
+"modern": "đỗch",
+"classic": "đỗch"
+},
+{
+"input": "d9o64m",
+"modern": "đỗm",
+"classic": "đỗm"
+},
+{
+"input": "d9o64n",
+"modern": "đỗn",
+"classic": "đỗn"
+},
+{
+"input": "d9o64ng",
+"modern": "đỗng",
+"classic": "đỗng"
+},
+{
+"input": "d9o64nh",
+"modern": "đỗnh",
+"classic": "đỗnh"
+},
+{
+"input": "d9o64p",
+"modern": "đỗp",
+"classic": "đỗp"
+},
+{
+"input": "d9o64t",
+"modern": "đỗt",
+"classic": "đỗt"
+},
+{
+"input": "d9o65",
+"modern": "độ",
+"classic": "độ"
+},
+{
+"input": "d9o65c",
+"modern": "độc",
+"classic": "độc"
+},
+{
+"input": "d9o65ch",
+"modern": "độch",
+"classic": "độch"
+},
+{
+"input": "d9o65m",
+"modern": "độm",
+"classic": "độm"
+},
+{
+"input": "d9o65n",
+"modern": "độn",
+"classic": "độn"
+},
+{
+"input": "d9o65ng",
+"modern": "động",
+"classic": "động"
+},
+{
+"input": "d9o65nh",
+"modern": "độnh",
+"classic": "độnh"
+},
+{
+"input": "d9o65p",
+"modern": "độp",
+"classic": "độp"
+},
+{
+"input": "d9o65t",
+"modern": "đột",
+"classic": "đột"
+},
+{
+"input": "d9o6c",
+"modern": "đôc",
+"classic": "đôc"
+},
+{
+"input": "d9o6ch",
+"modern": "đôch",
+"classic": "đôch"
+},
+{
+"input": "d9o6m",
+"modern": "đôm",
+"classic": "đôm"
+},
+{
+"input": "d9o6n",
+"modern": "đôn",
+"classic": "đôn"
+},
+{
+"input": "d9o6ng",
+"modern": "đông",
+"classic": "đông"
+},
+{
+"input": "d9o6nh",
+"modern": "đônh",
+"classic": "đônh"
+},
+{
+"input": "d9o6p",
+"modern": "đôp",
+"classic": "đôp"
+},
+{
+"input": "d9o6t",
+"modern": "đôt",
+"classic": "đôt"
+},
+{
+"input": "d9o7",
+"modern": "đơ",
+"classic": "đơ"
+},
+{
+"input": "d9o71",
+"modern": "đớ",
+"classic": "đớ"
+},
+{
+"input": "d9o71c",
+"modern": "đớc",
+"classic": "đớc"
+},
+{
+"input": "d9o71ch",
+"modern": "đớch",
+"classic": "đớch"
+},
+{
+"input": "d9o71m",
+"modern": "đớm",
+"classic": "đớm"
+},
+{
+"input": "d9o71n",
+"modern": "đớn",
+"classic": "đớn"
+},
+{
+"input": "d9o71ng",
+"modern": "đớng",
+"classic": "đớng"
+},
+{
+"input": "d9o71nh",
+"modern": "đớnh",
+"classic": "đớnh"
+},
+{
+"input": "d9o71p",
+"modern": "đớp",
+"classic": "đớp"
+},
+{
+"input": "d9o71t",
+"modern": "đớt",
+"classic": "đớt"
+},
+{
+"input": "d9o72",
+"modern": "đờ",
+"classic": "đờ"
+},
+{
+"input": "d9o72c",
+"modern": "đờc",
+"classic": "đờc"
+},
+{
+"input": "d9o72ch",
+"modern": "đờch",
+"classic": "đờch"
+},
+{
+"input": "d9o72m",
+"modern": "đờm",
+"classic": "đờm"
+},
+{
+"input": "d9o72n",
+"modern": "đờn",
+"classic": "đờn"
+},
+{
+"input": "d9o72ng",
+"modern": "đờng",
+"classic": "đờng"
+},
+{
+"input": "d9o72nh",
+"modern": "đờnh",
+"classic": "đờnh"
+},
+{
+"input": "d9o72p",
+"modern": "đờp",
+"classic": "đờp"
+},
+{
+"input": "d9o72t",
+"modern": "đờt",
+"classic": "đờt"
+},
+{
+"input": "d9o73",
+"modern": "đở",
+"classic": "đở"
+},
+{
+"input": "d9o73c",
+"modern": "đởc",
+"classic": "đởc"
+},
+{
+"input": "d9o73ch",
+"modern": "đởch",
+"classic": "đởch"
+},
+{
+"input": "d9o73m",
+"modern": "đởm",
+"classic": "đởm"
+},
+{
+"input": "d9o73n",
+"modern": "đởn",
+"classic": "đởn"
+},
+{
+"input": "d9o73ng",
+"modern": "đởng",
+"classic": "đởng"
+},
+{
+"input": "d9o73nh",
+"modern": "đởnh",
+"classic": "đởnh"
+},
+{
+"input": "d9o73p",
+"modern": "đởp",
+"classic": "đởp"
+},
+{
+"input": "d9o73t",
+"modern": "đởt",
+"classic": "đởt"
+},
+{
+"input": "d9o74",
+"modern": "đỡ",
+"classic": "đỡ"
+},
+{
+"input": "d9o74c",
+"modern": "đỡc",
+"classic": "đỡc"
+},
+{
+"input": "d9o74ch",
+"modern": "đỡch",
+"classic": "đỡch"
+},
+{
+"input": "d9o74m",
+"modern": "đỡm",
+"classic": "đỡm"
+},
+{
+"input": "d9o74n",
+"modern": "đỡn",
+"classic": "đỡn"
+},
+{
+"input": "d9o74ng",
+"modern": "đỡng",
+"classic": "đỡng"
+},
+{
+"input": "d9o74nh",
+"modern": "đỡnh",
+"classic": "đỡnh"
+},
+{
+"input": "d9o74p",
+"modern": "đỡp",
+"classic": "đỡp"
+},
+{
+"input": "d9o74t",
+"modern": "đỡt",
+"classic": "đỡt"
+},
+{
+"input": "d9o75",
+"modern": "đợ",
+"classic": "đợ"
+},
+{
+"input": "d9o75c",
+"modern": "đợc",
+"classic": "đợc"
+},
+{
+"input": "d9o75ch",
+"modern": "đợch",
+"classic": "đợch"
+},
+{
+"input": "d9o75m",
+"modern": "đợm",
+"classic": "đợm"
+},
+{
+"input": "d9o75n",
+"modern": "đợn",
+"classic": "đợn"
+},
+{
+"input": "d9o75ng",
+"modern": "đợng",
+"classic": "đợng"
+},
+{
+"input": "d9o75nh",
+"modern": "đợnh",
+"classic": "đợnh"
+},
+{
+"input": "d9o75p",
+"modern": "đợp",
+"classic": "đợp"
+},
+{
+"input": "d9o75t",
+"modern": "đợt",
+"classic": "đợt"
+},
+{
+"input": "d9o7c",
+"modern": "đơc",
+"classic": "đơc"
+},
+{
+"input": "d9o7ch",
+"modern": "đơch",
+"classic": "đơch"
+},
+{
+"input": "d9o7m",
+"modern": "đơm",
+"classic": "đơm"
+},
+{
+"input": "d9o7n",
+"modern": "đơn",
+"classic": "đơn"
+},
+{
+"input": "d9o7ng",
+"modern": "đơng",
+"classic": "đơng"
+},
+{
+"input": "d9o7nh",
+"modern": "đơnh",
+"classic": "đơnh"
+},
+{
+"input": "d9o7p",
+"modern": "đơp",
+"classic": "đơp"
+},
+{
+"input": "d9o7t",
+"modern": "đơt",
+"classic": "đơt"
+},
+{
+"input": "d9oa",
+"modern": "đoa",
+"classic": "đoa"
+},
+{
+"input": "d9oa1",
+"modern": "đóa",
+"classic": "đoá"
+},
+{
+"input": "d9oa1c",
+"modern": "đoác",
+"classic": "đoác"
+},
+{
+"input": "d9oa1ch",
+"modern": "đoách",
+"classic": "đoách"
+},
+{
+"input": "d9oa1m",
+"modern": "đoám",
+"classic": "đoám"
+},
+{
+"input": "d9oa1n",
+"modern": "đoán",
+"classic": "đoán"
+},
+{
+"input": "d9oa1ng",
+"modern": "đoáng",
+"classic": "đoáng"
+},
+{
+"input": "d9oa1nh",
+"modern": "đoánh",
+"classic": "đoánh"
+},
+{
+"input": "d9oa1p",
+"modern": "đoáp",
+"classic": "đoáp"
+},
+{
+"input": "d9oa1t",
+"modern": "đoát",
+"classic": "đoát"
+},
+{
+"input": "d9oa2",
+"modern": "đòa",
+"classic": "đoà"
+},
+{
+"input": "d9oa2c",
+"modern": "đoàc",
+"classic": "đoàc"
+},
+{
+"input": "d9oa2ch",
+"modern": "đoàch",
+"classic": "đoàch"
+},
+{
+"input": "d9oa2m",
+"modern": "đoàm",
+"classic": "đoàm"
+},
+{
+"input": "d9oa2n",
+"modern": "đoàn",
+"classic": "đoàn"
+},
+{
+"input": "d9oa2ng",
+"modern": "đoàng",
+"classic": "đoàng"
+},
+{
+"input": "d9oa2nh",
+"modern": "đoành",
+"classic": "đoành"
+},
+{
+"input": "d9oa2p",
+"modern": "đoàp",
+"classic": "đoàp"
+},
+{
+"input": "d9oa2t",
+"modern": "đoàt",
+"classic": "đoàt"
+},
+{
+"input": "d9oa3",
+"modern": "đỏa",
+"classic": "đoả"
+},
+{
+"input": "d9oa3c",
+"modern": "đoảc",
+"classic": "đoảc"
+},
+{
+"input": "d9oa3ch",
+"modern": "đoảch",
+"classic": "đoảch"
+},
+{
+"input": "d9oa3m",
+"modern": "đoảm",
+"classic": "đoảm"
+},
+{
+"input": "d9oa3n",
+"modern": "đoản",
+"classic": "đoản"
+},
+{
+"input": "d9oa3ng",
+"modern": "đoảng",
+"classic": "đoảng"
+},
+{
+"input": "d9oa3nh",
+"modern": "đoảnh",
+"classic": "đoảnh"
+},
+{
+"input": "d9oa3p",
+"modern": "đoảp",
+"classic": "đoảp"
+},
+{
+"input": "d9oa3t",
+"modern": "đoảt",
+"classic": "đoảt"
+},
+{
+"input": "d9oa4",
+"modern": "đõa",
+"classic": "đoã"
+},
+{
+"input": "d9oa4c",
+"modern": "đoãc",
+"classic": "đoãc"
+},
+{
+"input": "d9oa4ch",
+"modern": "đoãch",
+"classic": "đoãch"
+},
+{
+"input": "d9oa4m",
+"modern": "đoãm",
+"classic": "đoãm"
+},
+{
+"input": "d9oa4n",
+"modern": "đoãn",
+"classic": "đoãn"
+},
+{
+"input": "d9oa4ng",
+"modern": "đoãng",
+"classic": "đoãng"
+},
+{
+"input": "d9oa4nh",
+"modern": "đoãnh",
+"classic": "đoãnh"
+},
+{
+"input": "d9oa4p",
+"modern": "đoãp",
+"classic": "đoãp"
+},
+{
+"input": "d9oa4t",
+"modern": "đoãt",
+"classic": "đoãt"
+},
+{
+"input": "d9oa5",
+"modern": "đọa",
+"classic": "đoạ"
+},
+{
+"input": "d9oa5c",
+"modern": "đoạc",
+"classic": "đoạc"
+},
+{
+"input": "d9oa5ch",
+"modern": "đoạch",
+"classic": "đoạch"
+},
+{
+"input": "d9oa5m",
+"modern": "đoạm",
+"classic": "đoạm"
+},
+{
+"input": "d9oa5n",
+"modern": "đoạn",
+"classic": "đoạn"
+},
+{
+"input": "d9oa5ng",
+"modern": "đoạng",
+"classic": "đoạng"
+},
+{
+"input": "d9oa5nh",
+"modern": "đoạnh",
+"classic": "đoạnh"
+},
+{
+"input": "d9oa5p",
+"modern": "đoạp",
+"classic": "đoạp"
+},
+{
+"input": "d9oa5t",
+"modern": "đoạt",
+"classic": "đoạt"
+},
+{
+"input": "d9oac",
+"modern": "đoac",
+"classic": "đoac"
+},
+{
+"input": "d9oach",
+"modern": "đoach",
+"classic": "đoach"
+},
+{
+"input": "d9oam",
+"modern": "đoam",
+"classic": "đoam"
+},
+{
+"input": "d9oan",
+"modern": "đoan",
+"classic": "đoan"
+},
+{
+"input": "d9oang",
+"modern": "đoang",
+"classic": "đoang"
+},
+{
+"input": "d9oanh",
+"modern": "đoanh",
+"classic": "đoanh"
+},
+{
+"input": "d9oap",
+"modern": "đoap",
+"classic": "đoap"
+},
+{
+"input": "d9oat",
+"modern": "đoat",
+"classic": "đoat"
+},
+{
+"input": "d9oc",
+"modern": "đoc",
+"classic": "đoc"
+},
+{
+"input": "d9och",
+"modern": "đoch",
+"classic": "đoch"
+},
+{
+"input": "d9oe",
+"modern": "đoe",
+"classic": "đoe"
+},
+{
+"input": "d9oe1",
+"modern": "đóe",
+"classic": "đoé"
+},
+{
+"input": "d9oe1c",
+"modern": "đoéc",
+"classic": "đoéc"
+},
+{
+"input": "d9oe1ch",
+"modern": "đoéch",
+"classic": "đoéch"
+},
+{
+"input": "d9oe1m",
+"modern": "đoém",
+"classic": "đoém"
+},
+{
+"input": "d9oe1n",
+"modern": "đoén",
+"classic": "đoén"
+},
+{
+"input": "d9oe1ng",
+"modern": "đoéng",
+"classic": "đoéng"
+},
+{
+"input": "d9oe1nh",
+"modern": "đoénh",
+"classic": "đoénh"
+},
+{
+"input": "d9oe1p",
+"modern": "đoép",
+"classic": "đoép"
+},
+{
+"input": "d9oe1t",
+"modern": "đoét",
+"classic": "đoét"
+},
+{
+"input": "d9oe2",
+"modern": "đòe",
+"classic": "đoè"
+},
+{
+"input": "d9oe2c",
+"modern": "đoèc",
+"classic": "đoèc"
+},
+{
+"input": "d9oe2ch",
+"modern": "đoèch",
+"classic": "đoèch"
+},
+{
+"input": "d9oe2m",
+"modern": "đoèm",
+"classic": "đoèm"
+},
+{
+"input": "d9oe2n",
+"modern": "đoèn",
+"classic": "đoèn"
+},
+{
+"input": "d9oe2ng",
+"modern": "đoèng",
+"classic": "đoèng"
+},
+{
+"input": "d9oe2nh",
+"modern": "đoènh",
+"classic": "đoènh"
+},
+{
+"input": "d9oe2p",
+"modern": "đoèp",
+"classic": "đoèp"
+},
+{
+"input": "d9oe2t",
+"modern": "đoèt",
+"classic": "đoèt"
+},
+{
+"input": "d9oe3",
+"modern": "đỏe",
+"classic": "đoẻ"
+},
+{
+"input": "d9oe3c",
+"modern": "đoẻc",
+"classic": "đoẻc"
+},
+{
+"input": "d9oe3ch",
+"modern": "đoẻch",
+"classic": "đoẻch"
+},
+{
+"input": "d9oe3m",
+"modern": "đoẻm",
+"classic": "đoẻm"
+},
+{
+"input": "d9oe3n",
+"modern": "đoẻn",
+"classic": "đoẻn"
+},
+{
+"input": "d9oe3ng",
+"modern": "đoẻng",
+"classic": "đoẻng"
+},
+{
+"input": "d9oe3nh",
+"modern": "đoẻnh",
+"classic": "đoẻnh"
+},
+{
+"input": "d9oe3p",
+"modern": "đoẻp",
+"classic": "đoẻp"
+},
+{
+"input": "d9oe3t",
+"modern": "đoẻt",
+"classic": "đoẻt"
+},
+{
+"input": "d9oe4",
+"modern": "đõe",
+"classic": "đoẽ"
+},
+{
+"input": "d9oe4c",
+"modern": "đoẽc",
+"classic": "đoẽc"
+},
+{
+"input": "d9oe4ch",
+"modern": "đoẽch",
+"classic": "đoẽch"
+},
+{
+"input": "d9oe4m",
+"modern": "đoẽm",
+"classic": "đoẽm"
+},
+{
+"input": "d9oe4n",
+"modern": "đoẽn",
+"classic": "đoẽn"
+},
+{
+"input": "d9oe4ng",
+"modern": "đoẽng",
+"classic": "đoẽng"
+},
+{
+"input": "d9oe4nh",
+"modern": "đoẽnh",
+"classic": "đoẽnh"
+},
+{
+"input": "d9oe4p",
+"modern": "đoẽp",
+"classic": "đoẽp"
+},
+{
+"input": "d9oe4t",
+"modern": "đoẽt",
+"classic": "đoẽt"
+},
+{
+"input": "d9oe5",
+"modern": "đọe",
+"classic": "đoẹ"
+},
+{
+"input": "d9oe5c",
+"modern": "đoẹc",
+"classic": "đoẹc"
+},
+{
+"input": "d9oe5ch",
+"modern": "đoẹch",
+"classic": "đoẹch"
+},
+{
+"input": "d9oe5m",
+"modern": "đoẹm",
+"classic": "đoẹm"
+},
+{
+"input": "d9oe5n",
+"modern": "đoẹn",
+"classic": "đoẹn"
+},
+{
+"input": "d9oe5ng",
+"modern": "đoẹng",
+"classic": "đoẹng"
+},
+{
+"input": "d9oe5nh",
+"modern": "đoẹnh",
+"classic": "đoẹnh"
+},
+{
+"input": "d9oe5p",
+"modern": "đoẹp",
+"classic": "đoẹp"
+},
+{
+"input": "d9oe5t",
+"modern": "đoẹt",
+"classic": "đoẹt"
+},
+{
+"input": "d9oec",
+"modern": "đoec",
+"classic": "đoec"
+},
+{
+"input": "d9oech",
+"modern": "đoech",
+"classic": "đoech"
+},
+{
+"input": "d9oem",
+"modern": "đoem",
+"classic": "đoem"
+},
+{
+"input": "d9oen",
+"modern": "đoen",
+"classic": "đoen"
+},
+{
+"input": "d9oeng",
+"modern": "đoeng",
+"classic": "đoeng"
+},
+{
+"input": "d9oenh",
+"modern": "đoenh",
+"classic": "đoenh"
+},
+{
+"input": "d9oep",
+"modern": "đoep",
+"classic": "đoep"
+},
+{
+"input": "d9oet",
+"modern": "đoet",
+"classic": "đoet"
+},
+{
+"input": "d9om",
+"modern": "đom",
+"classic": "đom"
+},
+{
+"input": "d9on",
+"modern": "đon",
+"classic": "đon"
+},
+{
+"input": "d9ong",
+"modern": "đong",
+"classic": "đong"
+},
+{
+"input": "d9onh",
+"modern": "đonh",
+"classic": "đonh"
+},
+{
+"input": "d9op",
+"modern": "đop",
+"classic": "đop"
+},
+{
+"input": "d9ot",
+"modern": "đot",
+"classic": "đot"
+},
+{
+"input": "d9u",
+"modern": "đu",
+"classic": "đu"
+},
+{
+"input": "d9u1",
+"modern": "đú",
+"classic": "đú"
+},
+{
+"input": "d9u1c",
+"modern": "đúc",
+"classic": "đúc"
+},
+{
+"input": "d9u1ch",
+"modern": "đúch",
+"classic": "đúch"
+},
+{
+"input": "d9u1m",
+"modern": "đúm",
+"classic": "đúm"
+},
+{
+"input": "d9u1n",
+"modern": "đún",
+"classic": "đún"
+},
+{
+"input": "d9u1ng",
+"modern": "đúng",
+"classic": "đúng"
+},
+{
+"input": "d9u1nh",
+"modern": "đúnh",
+"classic": "đúnh"
+},
+{
+"input": "d9u1p",
+"modern": "đúp",
+"classic": "đúp"
+},
+{
+"input": "d9u1t",
+"modern": "đút",
+"classic": "đút"
+},
+{
+"input": "d9u2",
+"modern": "đù",
+"classic": "đù"
+},
+{
+"input": "d9u2c",
+"modern": "đùc",
+"classic": "đùc"
+},
+{
+"input": "d9u2ch",
+"modern": "đùch",
+"classic": "đùch"
+},
+{
+"input": "d9u2m",
+"modern": "đùm",
+"classic": "đùm"
+},
+{
+"input": "d9u2n",
+"modern": "đùn",
+"classic": "đùn"
+},
+{
+"input": "d9u2ng",
+"modern": "đùng",
+"classic": "đùng"
+},
+{
+"input": "d9u2nh",
+"modern": "đùnh",
+"classic": "đùnh"
+},
+{
+"input": "d9u2p",
+"modern": "đùp",
+"classic": "đùp"
+},
+{
+"input": "d9u2t",
+"modern": "đùt",
+"classic": "đùt"
+},
+{
+"input": "d9u3",
+"modern": "đủ",
+"classic": "đủ"
+},
+{
+"input": "d9u3c",
+"modern": "đủc",
+"classic": "đủc"
+},
+{
+"input": "d9u3ch",
+"modern": "đủch",
+"classic": "đủch"
+},
+{
+"input": "d9u3m",
+"modern": "đủm",
+"classic": "đủm"
+},
+{
+"input": "d9u3n",
+"modern": "đủn",
+"classic": "đủn"
+},
+{
+"input": "d9u3ng",
+"modern": "đủng",
+"classic": "đủng"
+},
+{
+"input": "d9u3nh",
+"modern": "đủnh",
+"classic": "đủnh"
+},
+{
+"input": "d9u3p",
+"modern": "đủp",
+"classic": "đủp"
+},
+{
+"input": "d9u3t",
+"modern": "đủt",
+"classic": "đủt"
+},
+{
+"input": "d9u4",
+"modern": "đũ",
+"classic": "đũ"
+},
+{
+"input": "d9u4c",
+"modern": "đũc",
+"classic": "đũc"
+},
+{
+"input": "d9u4ch",
+"modern": "đũch",
+"classic": "đũch"
+},
+{
+"input": "d9u4m",
+"modern": "đũm",
+"classic": "đũm"
+},
+{
+"input": "d9u4n",
+"modern": "đũn",
+"classic": "đũn"
+},
+{
+"input": "d9u4ng",
+"modern": "đũng",
+"classic": "đũng"
+},
+{
+"input": "d9u4nh",
+"modern": "đũnh",
+"classic": "đũnh"
+},
+{
+"input": "d9u4p",
+"modern": "đũp",
+"classic": "đũp"
+},
+{
+"input": "d9u4t",
+"modern": "đũt",
+"classic": "đũt"
+},
+{
+"input": "d9u5",
+"modern": "đụ",
+"classic": "đụ"
+},
+{
+"input": "d9u5c",
+"modern": "đục",
+"classic": "đục"
+},
+{
+"input": "d9u5ch",
+"modern": "đụch",
+"classic": "đụch"
+},
+{
+"input": "d9u5m",
+"modern": "đụm",
+"classic": "đụm"
+},
+{
+"input": "d9u5n",
+"modern": "đụn",
+"classic": "đụn"
+},
+{
+"input": "d9u5ng",
+"modern": "đụng",
+"classic": "đụng"
+},
+{
+"input": "d9u5nh",
+"modern": "đụnh",
+"classic": "đụnh"
+},
+{
+"input": "d9u5p",
+"modern": "đụp",
+"classic": "đụp"
+},
+{
+"input": "d9u5t",
+"modern": "đụt",
+"classic": "đụt"
+},
+{
+"input": "d9u7",
+"modern": "đư",
+"classic": "đư"
+},
+{
+"input": "d9u71",
+"modern": "đứ",
+"classic": "đứ"
+},
+{
+"input": "d9u71c",
+"modern": "đức",
+"classic": "đức"
+},
+{
+"input": "d9u71ch",
+"modern": "đứch",
+"classic": "đứch"
+},
+{
+"input": "d9u71m",
+"modern": "đứm",
+"classic": "đứm"
+},
+{
+"input": "d9u71n",
+"modern": "đứn",
+"classic": "đứn"
+},
+{
+"input": "d9u71ng",
+"modern": "đứng",
+"classic": "đứng"
+},
+{
+"input": "d9u71nh",
+"modern": "đứnh",
+"classic": "đứnh"
+},
+{
+"input": "d9u71p",
+"modern": "đứp",
+"classic": "đứp"
+},
+{
+"input": "d9u71t",
+"modern": "đứt",
+"classic": "đứt"
+},
+{
+"input": "d9u72",
+"modern": "đừ",
+"classic": "đừ"
+},
+{
+"input": "d9u72c",
+"modern": "đừc",
+"classic": "đừc"
+},
+{
+"input": "d9u72ch",
+"modern": "đừch",
+"classic": "đừch"
+},
+{
+"input": "d9u72m",
+"modern": "đừm",
+"classic": "đừm"
+},
+{
+"input": "d9u72n",
+"modern": "đừn",
+"classic": "đừn"
+},
+{
+"input": "d9u72ng",
+"modern": "đừng",
+"classic": "đừng"
+},
+{
+"input": "d9u72nh",
+"modern": "đừnh",
+"classic": "đừnh"
+},
+{
+"input": "d9u72p",
+"modern": "đừp",
+"classic": "đừp"
+},
+{
+"input": "d9u72t",
+"modern": "đừt",
+"classic": "đừt"
+},
+{
+"input": "d9u73",
+"modern": "đử",
+"classic": "đử"
+},
+{
+"input": "d9u73c",
+"modern": "đửc",
+"classic": "đửc"
+},
+{
+"input": "d9u73ch",
+"modern": "đửch",
+"classic": "đửch"
+},
+{
+"input": "d9u73m",
+"modern": "đửm",
+"classic": "đửm"
+},
+{
+"input": "d9u73n",
+"modern": "đửn",
+"classic": "đửn"
+},
+{
+"input": "d9u73ng",
+"modern": "đửng",
+"classic": "đửng"
+},
+{
+"input": "d9u73nh",
+"modern": "đửnh",
+"classic": "đửnh"
+},
+{
+"input": "d9u73p",
+"modern": "đửp",
+"classic": "đửp"
+},
+{
+"input": "d9u73t",
+"modern": "đửt",
+"classic": "đửt"
+},
+{
+"input": "d9u74",
+"modern": "đữ",
+"classic": "đữ"
+},
+{
+"input": "d9u74c",
+"modern": "đữc",
+"classic": "đữc"
+},
+{
+"input": "d9u74ch",
+"modern": "đữch",
+"classic": "đữch"
+},
+{
+"input": "d9u74m",
+"modern": "đữm",
+"classic": "đữm"
+},
+{
+"input": "d9u74n",
+"modern": "đữn",
+"classic": "đữn"
+},
+{
+"input": "d9u74ng",
+"modern": "đững",
+"classic": "đững"
+},
+{
+"input": "d9u74nh",
+"modern": "đữnh",
+"classic": "đữnh"
+},
+{
+"input": "d9u74p",
+"modern": "đữp",
+"classic": "đữp"
+},
+{
+"input": "d9u74t",
+"modern": "đữt",
+"classic": "đữt"
+},
+{
+"input": "d9u75",
+"modern": "đự",
+"classic": "đự"
+},
+{
+"input": "d9u75c",
+"modern": "đực",
+"classic": "đực"
+},
+{
+"input": "d9u75ch",
+"modern": "đựch",
+"classic": "đựch"
+},
+{
+"input": "d9u75m",
+"modern": "đựm",
+"classic": "đựm"
+},
+{
+"input": "d9u75n",
+"modern": "đựn",
+"classic": "đựn"
+},
+{
+"input": "d9u75ng",
+"modern": "đựng",
+"classic": "đựng"
+},
+{
+"input": "d9u75nh",
+"modern": "đựnh",
+"classic": "đựnh"
+},
+{
+"input": "d9u75p",
+"modern": "đựp",
+"classic": "đựp"
+},
+{
+"input": "d9u75t",
+"modern": "đựt",
+"classic": "đựt"
+},
+{
+"input": "d9u7c",
+"modern": "đưc",
+"classic": "đưc"
+},
+{
+"input": "d9u7ch",
+"modern": "đưch",
+"classic": "đưch"
+},
+{
+"input": "d9u7m",
+"modern": "đưm",
+"classic": "đưm"
+},
+{
+"input": "d9u7n",
+"modern": "đưn",
+"classic": "đưn"
+},
+{
+"input": "d9u7ng",
+"modern": "đưng",
+"classic": "đưng"
+},
+{
+"input": "d9u7nh",
+"modern": "đưnh",
+"classic": "đưnh"
+},
+{
+"input": "d9u7o7",
+"modern": "đươ",
+"classic": "đươ"
+},
+{
+"input": "d9u7o71",
+"modern": "đướ",
+"classic": "đướ"
+},
+{
+"input": "d9u7o71c",
+"modern": "đước",
+"classic": "đước"
+},
+{
+"input": "d9u7o71ch",
+"modern": "đướch",
+"classic": "đướch"
+},
+{
+"input": "d9u7o71m",
+"modern": "đướm",
+"classic": "đướm"
+},
+{
+"input": "d9u7o71n",
+"modern": "đướn",
+"classic": "đướn"
+},
+{
+"input": "d9u7o71ng",
+"modern": "đướng",
+"classic": "đướng"
+},
+{
+"input": "d9u7o71nh",
+"modern": "đướnh",
+"classic": "đướnh"
+},
+{
+"input": "d9u7o71p",
+"modern": "đướp",
+"classic": "đướp"
+},
+{
+"input": "d9u7o71t",
+"modern": "đướt",
+"classic": "đướt"
+},
+{
+"input": "d9u7o72",
+"modern": "đườ",
+"classic": "đườ"
+},
+{
+"input": "d9u7o72c",
+"modern": "đườc",
+"classic": "đườc"
+},
+{
+"input": "d9u7o72ch",
+"modern": "đườch",
+"classic": "đườch"
+},
+{
+"input": "d9u7o72m",
+"modern": "đườm",
+"classic": "đườm"
+},
+{
+"input": "d9u7o72n",
+"modern": "đườn",
+"classic": "đườn"
+},
+{
+"input": "d9u7o72ng",
+"modern": "đường",
+"classic": "đường"
+},
+{
+"input": "d9u7o72nh",
+"modern": "đườnh",
+"classic": "đườnh"
+},
+{
+"input": "d9u7o72p",
+"modern": "đườp",
+"classic": "đườp"
+},
+{
+"input": "d9u7o72t",
+"modern": "đườt",
+"classic": "đườt"
+},
+{
+"input": "d9u7o73",
+"modern": "đưở",
+"classic": "đưở"
+},
+{
+"input": "d9u7o73c",
+"modern": "đưởc",
+"classic": "đưởc"
+},
+{
+"input": "d9u7o73ch",
+"modern": "đưởch",
+"classic": "đưởch"
+},
+{
+"input": "d9u7o73m",
+"modern": "đưởm",
+"classic": "đưởm"
+},
+{
+"input": "d9u7o73n",
+"modern": "đưởn",
+"classic": "đưởn"
+},
+{
+"input": "d9u7o73ng",
+"modern": "đưởng",
+"classic": "đưởng"
+},
+{
+"input": "d9u7o73nh",
+"modern": "đưởnh",
+"classic": "đưởnh"
+},
+{
+"input": "d9u7o73p",
+"modern": "đưởp",
+"classic": "đưởp"
+},
+{
+"input": "d9u7o73t",
+"modern": "đưởt",
+"classic": "đưởt"
+},
+{
+"input": "d9u7o74",
+"modern": "đưỡ",
+"classic": "đưỡ"
+},
+{
+"input": "d9u7o74c",
+"modern": "đưỡc",
+"classic": "đưỡc"
+},
+{
+"input": "d9u7o74ch",
+"modern": "đưỡch",
+"classic": "đưỡch"
+},
+{
+"input": "d9u7o74m",
+"modern": "đưỡm",
+"classic": "đưỡm"
+},
+{
+"input": "d9u7o74n",
+"modern": "đưỡn",
+"classic": "đưỡn"
+},
+{
+"input": "d9u7o74ng",
+"modern": "đưỡng",
+"classic": "đưỡng"
+},
+{
+"input": "d9u7o74nh",
+"modern": "đưỡnh",
+"classic": "đưỡnh"
+},
+{
+"input": "d9u7o74p",
+"modern": "đưỡp",
+"classic": "đưỡp"
+},
+{
+"input": "d9u7o74t",
+"modern": "đưỡt",
+"classic": "đưỡt"
+},
+{
+"input": "d9u7o75",
+"modern": "đượ",
+"classic": "đượ"
+},
+{
+"input": "d9u7o75c",
+"modern": "được",
+"classic": "được"
+},
+{
+"input": "d9u7o75ch",
+"modern": "đượch",
+"classic": "đượch"
+},
+{
+"input": "d9u7o75m",
+"modern": "đượm",
+"classic": "đượm"
+},
+{
+"input": "d9u7o75n",
+"modern": "đượn",
+"classic": "đượn"
+},
+{
+"input": "d9u7o75ng",
+"modern": "đượng",
+"classic": "đượng"
+},
+{
+"input": "d9u7o75nh",
+"modern": "đượnh",
+"classic": "đượnh"
+},
+{
+"input": "d9u7o75p",
+"modern": "đượp",
+"classic": "đượp"
+},
+{
+"input": "d9u7o75t",
+"modern": "đượt",
+"classic": "đượt"
+},
+{
+"input": "d9u7o7c",
+"modern": "đươc",
+"classic": "đươc"
+},
+{
+"input": "d9u7o7ch",
+"modern": "đươch",
+"classic": "đươch"
+},
+{
+"input": "d9u7o7i",
+"modern": "đươi",
+"classic": "đươi"
+},
+{
+"input": "d9u7o7i1",
+"modern": "đưới",
+"classic": "đưới"
+},
+{
+"input": "d9u7o7i1c",
+"modern": "đướic",
+"classic": "đướic"
+},
+{
+"input": "d9u7o7i1ch",
+"modern": "đướich",
+"classic": "đướich"
+},
+{
+"input": "d9u7o7i1m",
+"modern": "đướim",
+"classic": "đướim"
+},
+{
+"input": "d9u7o7i1n",
+"modern": "đướin",
+"classic": "đướin"
+},
+{
+"input": "d9u7o7i1ng",
+"modern": "đướing",
+"classic": "đướing"
+},
+{
+"input": "d9u7o7i1nh",
+"modern": "đướinh",
+"classic": "đướinh"
+},
+{
+"input": "d9u7o7i1p",
+"modern": "đướip",
+"classic": "đướip"
+},
+{
+"input": "d9u7o7i1t",
+"modern": "đướit",
+"classic": "đướit"
+},
+{
+"input": "d9u7o7i2",
+"modern": "đười",
+"classic": "đười"
+},
+{
+"input": "d9u7o7i2c",
+"modern": "đườic",
+"classic": "đườic"
+},
+{
+"input": "d9u7o7i2ch",
+"modern": "đườich",
+"classic": "đườich"
+},
+{
+"input": "d9u7o7i2m",
+"modern": "đườim",
+"classic": "đườim"
+},
+{
+"input": "d9u7o7i2n",
+"modern": "đườin",
+"classic": "đườin"
+},
+{
+"input": "d9u7o7i2ng",
+"modern": "đườing",
+"classic": "đườing"
+},
+{
+"input": "d9u7o7i2nh",
+"modern": "đườinh",
+"classic": "đườinh"
+},
+{
+"input": "d9u7o7i2p",
+"modern": "đườip",
+"classic": "đườip"
+},
+{
+"input": "d9u7o7i2t",
+"modern": "đườit",
+"classic": "đườit"
+},
+{
+"input": "d9u7o7i3",
+"modern": "đưởi",
+"classic": "đưởi"
+},
+{
+"input": "d9u7o7i3c",
+"modern": "đưởic",
+"classic": "đưởic"
+},
+{
+"input": "d9u7o7i3ch",
+"modern": "đưởich",
+"classic": "đưởich"
+},
+{
+"input": "d9u7o7i3m",
+"modern": "đưởim",
+"classic": "đưởim"
+},
+{
+"input": "d9u7o7i3n",
+"modern": "đưởin",
+"classic": "đưởin"
+},
+{
+"input": "d9u7o7i3ng",
+"modern": "đưởing",
+"classic": "đưởing"
+},
+{
+"input": "d9u7o7i3nh",
+"modern": "đưởinh",
+"classic": "đưởinh"
+},
+{
+"input": "d9u7o7i3p",
+"modern": "đưởip",
+"classic": "đưởip"
+},
+{
+"input": "d9u7o7i3t",
+"modern": "đưởit",
+"classic": "đưởit"
+},
+{
+"input": "d9u7o7i4",
+"modern": "đưỡi",
+"classic": "đưỡi"
+},
+{
+"input": "d9u7o7i4c",
+"modern": "đưỡic",
+"classic": "đưỡic"
+},
+{
+"input": "d9u7o7i4ch",
+"modern": "đưỡich",
+"classic": "đưỡich"
+},
+{
+"input": "d9u7o7i4m",
+"modern": "đưỡim",
+"classic": "đưỡim"
+},
+{
+"input": "d9u7o7i4n",
+"modern": "đưỡin",
+"classic": "đưỡin"
+},
+{
+"input": "d9u7o7i4ng",
+"modern": "đưỡing",
+"classic": "đưỡing"
+},
+{
+"input": "d9u7o7i4nh",
+"modern": "đưỡinh",
+"classic": "đưỡinh"
+},
+{
+"input": "d9u7o7i4p",
+"modern": "đưỡip",
+"classic": "đưỡip"
+},
+{
+"input": "d9u7o7i4t",
+"modern": "đưỡit",
+"classic": "đưỡit"
+},
+{
+"input": "d9u7o7i5",
+"modern": "đượi",
+"classic": "đượi"
+},
+{
+"input": "d9u7o7i5c",
+"modern": "đượic",
+"classic": "đượic"
+},
+{
+"input": "d9u7o7i5ch",
+"modern": "đượich",
+"classic": "đượich"
+},
+{
+"input": "d9u7o7i5m",
+"modern": "đượim",
+"classic": "đượim"
+},
+{
+"input": "d9u7o7i5n",
+"modern": "đượin",
+"classic": "đượin"
+},
+{
+"input": "d9u7o7i5ng",
+"modern": "đượing",
+"classic": "đượing"
+},
+{
+"input": "d9u7o7i5nh",
+"modern": "đượinh",
+"classic": "đượinh"
+},
+{
+"input": "d9u7o7i5p",
+"modern": "đượip",
+"classic": "đượip"
+},
+{
+"input": "d9u7o7i5t",
+"modern": "đượit",
+"classic": "đượit"
+},
+{
+"input": "d9u7o7ic",
+"modern": "đươic",
+"classic": "đươic"
+},
+{
+"input": "d9u7o7ich",
+"modern": "đươich",
+"classic": "đươich"
+},
+{
+"input": "d9u7o7im",
+"modern": "đươim",
+"classic": "đươim"
+},
+{
+"input": "d9u7o7in",
+"modern": "đươin",
+"classic": "đươin"
+},
+{
+"input": "d9u7o7ing",
+"modern": "đươing",
+"classic": "đươing"
+},
+{
+"input": "d9u7o7inh",
+"modern": "đươinh",
+"classic": "đươinh"
+},
+{
+"input": "d9u7o7ip",
+"modern": "đươip",
+"classic": "đươip"
+},
+{
+"input": "d9u7o7it",
+"modern": "đươit",
+"classic": "đươit"
+},
+{
+"input": "d9u7o7m",
+"modern": "đươm",
+"classic": "đươm"
+},
+{
+"input": "d9u7o7n",
+"modern": "đươn",
+"classic": "đươn"
+},
+{
+"input": "d9u7o7ng",
+"modern": "đương",
+"classic": "đương"
+},
+{
+"input": "d9u7o7nh",
+"modern": "đươnh",
+"classic": "đươnh"
+},
+{
+"input": "d9u7o7p",
+"modern": "đươp",
+"classic": "đươp"
+},
+{
+"input": "d9u7o7t",
+"modern": "đươt",
+"classic": "đươt"
+},
+{
+"input": "d9u7p",
+"modern": "đưp",
+"classic": "đưp"
+},
+{
+"input": "d9u7t",
+"modern": "đưt",
+"classic": "đưt"
+},
+{
+"input": "d9uc",
+"modern": "đuc",
+"classic": "đuc"
+},
+{
+"input": "d9uch",
+"modern": "đuch",
+"classic": "đuch"
+},
+{
+"input": "d9um",
+"modern": "đum",
+"classic": "đum"
+},
+{
+"input": "d9un",
+"modern": "đun",
+"classic": "đun"
+},
+{
+"input": "d9ung",
+"modern": "đung",
+"classic": "đung"
+},
+{
+"input": "d9unh",
+"modern": "đunh",
+"classic": "đunh"
+},
+{
+"input": "d9uo",
+"modern": "đuo",
+"classic": "đuo"
+},
+{
+"input": "d9uo1",
+"modern": "đúo",
+"classic": "đuó"
+},
+{
+"input": "d9uo1c",
+"modern": "đuóc",
+"classic": "đuóc"
+},
+{
+"input": "d9uo1ch",
+"modern": "đuóch",
+"classic": "đuóch"
+},
+{
+"input": "d9uo1m",
+"modern": "đuóm",
+"classic": "đuóm"
+},
+{
+"input": "d9uo1n",
+"modern": "đuón",
+"classic": "đuón"
+},
+{
+"input": "d9uo1ng",
+"modern": "đuóng",
+"classic": "đuóng"
+},
+{
+"input": "d9uo1nh",
+"modern": "đuónh",
+"classic": "đuónh"
+},
+{
+"input": "d9uo1p",
+"modern": "đuóp",
+"classic": "đuóp"
+},
+{
+"input": "d9uo1t",
+"modern": "đuót",
+"classic": "đuót"
+},
+{
+"input": "d9uo2",
+"modern": "đùo",
+"classic": "đuò"
+},
+{
+"input": "d9uo2c",
+"modern": "đuòc",
+"classic": "đuòc"
+},
+{
+"input": "d9uo2ch",
+"modern": "đuòch",
+"classic": "đuòch"
+},
+{
+"input": "d9uo2m",
+"modern": "đuòm",
+"classic": "đuòm"
+},
+{
+"input": "d9uo2n",
+"modern": "đuòn",
+"classic": "đuòn"
+},
+{
+"input": "d9uo2ng",
+"modern": "đuòng",
+"classic": "đuòng"
+},
+{
+"input": "d9uo2nh",
+"modern": "đuònh",
+"classic": "đuònh"
+},
+{
+"input": "d9uo2p",
+"modern": "đuòp",
+"classic": "đuòp"
+},
+{
+"input": "d9uo2t",
+"modern": "đuòt",
+"classic": "đuòt"
+},
+{
+"input": "d9uo3",
+"modern": "đủo",
+"classic": "đuỏ"
+},
+{
+"input": "d9uo3c",
+"modern": "đuỏc",
+"classic": "đuỏc"
+},
+{
+"input": "d9uo3ch",
+"modern": "đuỏch",
+"classic": "đuỏch"
+},
+{
+"input": "d9uo3m",
+"modern": "đuỏm",
+"classic": "đuỏm"
+},
+{
+"input": "d9uo3n",
+"modern": "đuỏn",
+"classic": "đuỏn"
+},
+{
+"input": "d9uo3ng",
+"modern": "đuỏng",
+"classic": "đuỏng"
+},
+{
+"input": "d9uo3nh",
+"modern": "đuỏnh",
+"classic": "đuỏnh"
+},
+{
+"input": "d9uo3p",
+"modern": "đuỏp",
+"classic": "đuỏp"
+},
+{
+"input": "d9uo3t",
+"modern": "đuỏt",
+"classic": "đuỏt"
+},
+{
+"input": "d9uo4",
+"modern": "đũo",
+"classic": "đuõ"
+},
+{
+"input": "d9uo4c",
+"modern": "đuõc",
+"classic": "đuõc"
+},
+{
+"input": "d9uo4ch",
+"modern": "đuõch",
+"classic": "đuõch"
+},
+{
+"input": "d9uo4m",
+"modern": "đuõm",
+"classic": "đuõm"
+},
+{
+"input": "d9uo4n",
+"modern": "đuõn",
+"classic": "đuõn"
+},
+{
+"input": "d9uo4ng",
+"modern": "đuõng",
+"classic": "đuõng"
+},
+{
+"input": "d9uo4nh",
+"modern": "đuõnh",
+"classic": "đuõnh"
+},
+{
+"input": "d9uo4p",
+"modern": "đuõp",
+"classic": "đuõp"
+},
+{
+"input": "d9uo4t",
+"modern": "đuõt",
+"classic": "đuõt"
+},
+{
+"input": "d9uo5",
+"modern": "đụo",
+"classic": "đuọ"
+},
+{
+"input": "d9uo5c",
+"modern": "đuọc",
+"classic": "đuọc"
+},
+{
+"input": "d9uo5ch",
+"modern": "đuọch",
+"classic": "đuọch"
+},
+{
+"input": "d9uo5m",
+"modern": "đuọm",
+"classic": "đuọm"
+},
+{
+"input": "d9uo5n",
+"modern": "đuọn",
+"classic": "đuọn"
+},
+{
+"input": "d9uo5ng",
+"modern": "đuọng",
+"classic": "đuọng"
+},
+{
+"input": "d9uo5nh",
+"modern": "đuọnh",
+"classic": "đuọnh"
+},
+{
+"input": "d9uo5p",
+"modern": "đuọp",
+"classic": "đuọp"
+},
+{
+"input": "d9uo5t",
+"modern": "đuọt",
+"classic": "đuọt"
+},
+{
+"input": "d9uoc",
+"modern": "đuoc",
+"classic": "đuoc"
+},
+{
+"input": "d9uoch",
+"modern": "đuoch",
+"classic": "đuoch"
+},
+{
+"input": "d9uom",
+"modern": "đuom",
+"classic": "đuom"
+},
+{
+"input": "d9uon",
+"modern": "đuon",
+"classic": "đuon"
+},
+{
+"input": "d9uong",
+"modern": "đuong",
+"classic": "đuong"
+},
+{
+"input": "d9uonh",
+"modern": "đuonh",
+"classic": "đuonh"
+},
+{
+"input": "d9uop",
+"modern": "đuop",
+"classic": "đuop"
+},
+{
+"input": "d9uot",
+"modern": "đuot",
+"classic": "đuot"
+},
+{
+"input": "d9up",
+"modern": "đup",
+"classic": "đup"
+},
+{
+"input": "d9ut",
+"modern": "đut",
+"classic": "đut"
+},
+{
+"input": "d9ye6",
+"modern": "đyê",
+"classic": "đyê"
+},
+{
+"input": "d9ye61",
+"modern": "đyế",
+"classic": "đyế"
+},
+{
+"input": "d9ye61c",
+"modern": "đyếc",
+"classic": "đyếc"
+},
+{
+"input": "d9ye61ch",
+"modern": "đyếch",
+"classic": "đyếch"
+},
+{
+"input": "d9ye61m",
+"modern": "đyếm",
+"classic": "đyếm"
+},
+{
+"input": "d9ye61n",
+"modern": "đyến",
+"classic": "đyến"
+},
+{
+"input": "d9ye61ng",
+"modern": "đyếng",
+"classic": "đyếng"
+},
+{
+"input": "d9ye61nh",
+"modern": "đyếnh",
+"classic": "đyếnh"
+},
+{
+"input": "d9ye61p",
+"modern": "đyếp",
+"classic": "đyếp"
+},
+{
+"input": "d9ye61t",
+"modern": "đyết",
+"classic": "đyết"
+},
+{
+"input": "d9ye62",
+"modern": "đyề",
+"classic": "đyề"
+},
+{
+"input": "d9ye62c",
+"modern": "đyềc",
+"classic": "đyềc"
+},
+{
+"input": "d9ye62ch",
+"modern": "đyềch",
+"classic": "đyềch"
+},
+{
+"input": "d9ye62m",
+"modern": "đyềm",
+"classic": "đyềm"
+},
+{
+"input": "d9ye62n",
+"modern": "đyền",
+"classic": "đyền"
+},
+{
+"input": "d9ye62ng",
+"modern": "đyềng",
+"classic": "đyềng"
+},
+{
+"input": "d9ye62nh",
+"modern": "đyềnh",
+"classic": "đyềnh"
+},
+{
+"input": "d9ye62p",
+"modern": "đyềp",
+"classic": "đyềp"
+},
+{
+"input": "d9ye62t",
+"modern": "đyềt",
+"classic": "đyềt"
+},
+{
+"input": "d9ye63",
+"modern": "đyể",
+"classic": "đyể"
+},
+{
+"input": "d9ye63c",
+"modern": "đyểc",
+"classic": "đyểc"
+},
+{
+"input": "d9ye63ch",
+"modern": "đyểch",
+"classic": "đyểch"
+},
+{
+"input": "d9ye63m",
+"modern": "đyểm",
+"classic": "đyểm"
+},
+{
+"input": "d9ye63n",
+"modern": "đyển",
+"classic": "đyển"
+},
+{
+"input": "d9ye63ng",
+"modern": "đyểng",
+"classic": "đyểng"
+},
+{
+"input": "d9ye63nh",
+"modern": "đyểnh",
+"classic": "đyểnh"
+},
+{
+"input": "d9ye63p",
+"modern": "đyểp",
+"classic": "đyểp"
+},
+{
+"input": "d9ye63t",
+"modern": "đyểt",
+"classic": "đyểt"
+},
+{
+"input": "d9ye64",
+"modern": "đyễ",
+"classic": "đyễ"
+},
+{
+"input": "d9ye64c",
+"modern": "đyễc",
+"classic": "đyễc"
+},
+{
+"input": "d9ye64ch",
+"modern": "đyễch",
+"classic": "đyễch"
+},
+{
+"input": "d9ye64m",
+"modern": "đyễm",
+"classic": "đyễm"
+},
+{
+"input": "d9ye64n",
+"modern": "đyễn",
+"classic": "đyễn"
+},
+{
+"input": "d9ye64ng",
+"modern": "đyễng",
+"classic": "đyễng"
+},
+{
+"input": "d9ye64nh",
+"modern": "đyễnh",
+"classic": "đyễnh"
+},
+{
+"input": "d9ye64p",
+"modern": "đyễp",
+"classic": "đyễp"
+},
+{
+"input": "d9ye64t",
+"modern": "đyễt",
+"classic": "đyễt"
+},
+{
+"input": "d9ye65",
+"modern": "đyệ",
+"classic": "đyệ"
+},
+{
+"input": "d9ye65c",
+"modern": "đyệc",
+"classic": "đyệc"
+},
+{
+"input": "d9ye65ch",
+"modern": "đyệch",
+"classic": "đyệch"
+},
+{
+"input": "d9ye65m",
+"modern": "đyệm",
+"classic": "đyệm"
+},
+{
+"input": "d9ye65n",
+"modern": "đyện",
+"classic": "đyện"
+},
+{
+"input": "d9ye65ng",
+"modern": "đyệng",
+"classic": "đyệng"
+},
+{
+"input": "d9ye65nh",
+"modern": "đyệnh",
+"classic": "đyệnh"
+},
+{
+"input": "d9ye65p",
+"modern": "đyệp",
+"classic": "đyệp"
+},
+{
+"input": "d9ye65t",
+"modern": "đyệt",
+"classic": "đyệt"
+},
+{
+"input": "d9ye6c",
+"modern": "đyêc",
+"classic": "đyêc"
+},
+{
+"input": "d9ye6ch",
+"modern": "đyêch",
+"classic": "đyêch"
+},
+{
+"input": "d9ye6m",
+"modern": "đyêm",
+"classic": "đyêm"
+},
+{
+"input": "d9ye6n",
+"modern": "đyên",
+"classic": "đyên"
+},
+{
+"input": "d9ye6ng",
+"modern": "đyêng",
+"classic": "đyêng"
+},
+{
+"input": "d9ye6nh",
+"modern": "đyênh",
+"classic": "đyênh"
+},
+{
+"input": "d9ye6p",
+"modern": "đyêp",
+"classic": "đyêp"
+},
+{
+"input": "d9ye6t",
+"modern": "đyêt",
+"classic": "đyêt"
+},
+{
 "input": "da",
 "modern": "da",
 "classic": "da"
@@ -16198,4866 +21058,6 @@
 "input": "dat",
 "modern": "dat",
 "classic": "dat"
-},
-{
-"input": "dd9a",
-"modern": "dđa",
-"classic": "dđa"
-},
-{
-"input": "dd9a1",
-"modern": "dđá",
-"classic": "dđá"
-},
-{
-"input": "dd9a1c",
-"modern": "dđác",
-"classic": "dđác"
-},
-{
-"input": "dd9a1ch",
-"modern": "dđách",
-"classic": "dđách"
-},
-{
-"input": "dd9a1m",
-"modern": "dđám",
-"classic": "dđám"
-},
-{
-"input": "dd9a1n",
-"modern": "dđán",
-"classic": "dđán"
-},
-{
-"input": "dd9a1ng",
-"modern": "dđáng",
-"classic": "dđáng"
-},
-{
-"input": "dd9a1nh",
-"modern": "dđánh",
-"classic": "dđánh"
-},
-{
-"input": "dd9a1p",
-"modern": "dđáp",
-"classic": "dđáp"
-},
-{
-"input": "dd9a1t",
-"modern": "dđát",
-"classic": "dđát"
-},
-{
-"input": "dd9a2",
-"modern": "dđà",
-"classic": "dđà"
-},
-{
-"input": "dd9a2c",
-"modern": "dđàc",
-"classic": "dđàc"
-},
-{
-"input": "dd9a2ch",
-"modern": "dđàch",
-"classic": "dđàch"
-},
-{
-"input": "dd9a2m",
-"modern": "dđàm",
-"classic": "dđàm"
-},
-{
-"input": "dd9a2n",
-"modern": "dđàn",
-"classic": "dđàn"
-},
-{
-"input": "dd9a2ng",
-"modern": "dđàng",
-"classic": "dđàng"
-},
-{
-"input": "dd9a2nh",
-"modern": "dđành",
-"classic": "dđành"
-},
-{
-"input": "dd9a2p",
-"modern": "dđàp",
-"classic": "dđàp"
-},
-{
-"input": "dd9a2t",
-"modern": "dđàt",
-"classic": "dđàt"
-},
-{
-"input": "dd9a3",
-"modern": "dđả",
-"classic": "dđả"
-},
-{
-"input": "dd9a3c",
-"modern": "dđảc",
-"classic": "dđảc"
-},
-{
-"input": "dd9a3ch",
-"modern": "dđảch",
-"classic": "dđảch"
-},
-{
-"input": "dd9a3m",
-"modern": "dđảm",
-"classic": "dđảm"
-},
-{
-"input": "dd9a3n",
-"modern": "dđản",
-"classic": "dđản"
-},
-{
-"input": "dd9a3ng",
-"modern": "dđảng",
-"classic": "dđảng"
-},
-{
-"input": "dd9a3nh",
-"modern": "dđảnh",
-"classic": "dđảnh"
-},
-{
-"input": "dd9a3p",
-"modern": "dđảp",
-"classic": "dđảp"
-},
-{
-"input": "dd9a3t",
-"modern": "dđảt",
-"classic": "dđảt"
-},
-{
-"input": "dd9a4",
-"modern": "dđã",
-"classic": "dđã"
-},
-{
-"input": "dd9a4c",
-"modern": "dđãc",
-"classic": "dđãc"
-},
-{
-"input": "dd9a4ch",
-"modern": "dđãch",
-"classic": "dđãch"
-},
-{
-"input": "dd9a4m",
-"modern": "dđãm",
-"classic": "dđãm"
-},
-{
-"input": "dd9a4n",
-"modern": "dđãn",
-"classic": "dđãn"
-},
-{
-"input": "dd9a4ng",
-"modern": "dđãng",
-"classic": "dđãng"
-},
-{
-"input": "dd9a4nh",
-"modern": "dđãnh",
-"classic": "dđãnh"
-},
-{
-"input": "dd9a4p",
-"modern": "dđãp",
-"classic": "dđãp"
-},
-{
-"input": "dd9a4t",
-"modern": "dđãt",
-"classic": "dđãt"
-},
-{
-"input": "dd9a5",
-"modern": "dđạ",
-"classic": "dđạ"
-},
-{
-"input": "dd9a5c",
-"modern": "dđạc",
-"classic": "dđạc"
-},
-{
-"input": "dd9a5ch",
-"modern": "dđạch",
-"classic": "dđạch"
-},
-{
-"input": "dd9a5m",
-"modern": "dđạm",
-"classic": "dđạm"
-},
-{
-"input": "dd9a5n",
-"modern": "dđạn",
-"classic": "dđạn"
-},
-{
-"input": "dd9a5ng",
-"modern": "dđạng",
-"classic": "dđạng"
-},
-{
-"input": "dd9a5nh",
-"modern": "dđạnh",
-"classic": "dđạnh"
-},
-{
-"input": "dd9a5p",
-"modern": "dđạp",
-"classic": "dđạp"
-},
-{
-"input": "dd9a5t",
-"modern": "dđạt",
-"classic": "dđạt"
-},
-{
-"input": "dd9a6",
-"modern": "dđâ",
-"classic": "dđâ"
-},
-{
-"input": "dd9a61",
-"modern": "dđấ",
-"classic": "dđấ"
-},
-{
-"input": "dd9a61c",
-"modern": "dđấc",
-"classic": "dđấc"
-},
-{
-"input": "dd9a61ch",
-"modern": "dđấch",
-"classic": "dđấch"
-},
-{
-"input": "dd9a61m",
-"modern": "dđấm",
-"classic": "dđấm"
-},
-{
-"input": "dd9a61n",
-"modern": "dđấn",
-"classic": "dđấn"
-},
-{
-"input": "dd9a61ng",
-"modern": "dđấng",
-"classic": "dđấng"
-},
-{
-"input": "dd9a61nh",
-"modern": "dđấnh",
-"classic": "dđấnh"
-},
-{
-"input": "dd9a61p",
-"modern": "dđấp",
-"classic": "dđấp"
-},
-{
-"input": "dd9a61t",
-"modern": "dđất",
-"classic": "dđất"
-},
-{
-"input": "dd9a62",
-"modern": "dđầ",
-"classic": "dđầ"
-},
-{
-"input": "dd9a62c",
-"modern": "dđầc",
-"classic": "dđầc"
-},
-{
-"input": "dd9a62ch",
-"modern": "dđầch",
-"classic": "dđầch"
-},
-{
-"input": "dd9a62m",
-"modern": "dđầm",
-"classic": "dđầm"
-},
-{
-"input": "dd9a62n",
-"modern": "dđần",
-"classic": "dđần"
-},
-{
-"input": "dd9a62ng",
-"modern": "dđầng",
-"classic": "dđầng"
-},
-{
-"input": "dd9a62nh",
-"modern": "dđầnh",
-"classic": "dđầnh"
-},
-{
-"input": "dd9a62p",
-"modern": "dđầp",
-"classic": "dđầp"
-},
-{
-"input": "dd9a62t",
-"modern": "dđầt",
-"classic": "dđầt"
-},
-{
-"input": "dd9a63",
-"modern": "dđẩ",
-"classic": "dđẩ"
-},
-{
-"input": "dd9a63c",
-"modern": "dđẩc",
-"classic": "dđẩc"
-},
-{
-"input": "dd9a63ch",
-"modern": "dđẩch",
-"classic": "dđẩch"
-},
-{
-"input": "dd9a63m",
-"modern": "dđẩm",
-"classic": "dđẩm"
-},
-{
-"input": "dd9a63n",
-"modern": "dđẩn",
-"classic": "dđẩn"
-},
-{
-"input": "dd9a63ng",
-"modern": "dđẩng",
-"classic": "dđẩng"
-},
-{
-"input": "dd9a63nh",
-"modern": "dđẩnh",
-"classic": "dđẩnh"
-},
-{
-"input": "dd9a63p",
-"modern": "dđẩp",
-"classic": "dđẩp"
-},
-{
-"input": "dd9a63t",
-"modern": "dđẩt",
-"classic": "dđẩt"
-},
-{
-"input": "dd9a64",
-"modern": "dđẫ",
-"classic": "dđẫ"
-},
-{
-"input": "dd9a64c",
-"modern": "dđẫc",
-"classic": "dđẫc"
-},
-{
-"input": "dd9a64ch",
-"modern": "dđẫch",
-"classic": "dđẫch"
-},
-{
-"input": "dd9a64m",
-"modern": "dđẫm",
-"classic": "dđẫm"
-},
-{
-"input": "dd9a64n",
-"modern": "dđẫn",
-"classic": "dđẫn"
-},
-{
-"input": "dd9a64ng",
-"modern": "dđẫng",
-"classic": "dđẫng"
-},
-{
-"input": "dd9a64nh",
-"modern": "dđẫnh",
-"classic": "dđẫnh"
-},
-{
-"input": "dd9a64p",
-"modern": "dđẫp",
-"classic": "dđẫp"
-},
-{
-"input": "dd9a64t",
-"modern": "dđẫt",
-"classic": "dđẫt"
-},
-{
-"input": "dd9a65",
-"modern": "dđậ",
-"classic": "dđậ"
-},
-{
-"input": "dd9a65c",
-"modern": "dđậc",
-"classic": "dđậc"
-},
-{
-"input": "dd9a65ch",
-"modern": "dđậch",
-"classic": "dđậch"
-},
-{
-"input": "dd9a65m",
-"modern": "dđậm",
-"classic": "dđậm"
-},
-{
-"input": "dd9a65n",
-"modern": "dđận",
-"classic": "dđận"
-},
-{
-"input": "dd9a65ng",
-"modern": "dđậng",
-"classic": "dđậng"
-},
-{
-"input": "dd9a65nh",
-"modern": "dđậnh",
-"classic": "dđậnh"
-},
-{
-"input": "dd9a65p",
-"modern": "dđập",
-"classic": "dđập"
-},
-{
-"input": "dd9a65t",
-"modern": "dđật",
-"classic": "dđật"
-},
-{
-"input": "dd9a6c",
-"modern": "dđâc",
-"classic": "dđâc"
-},
-{
-"input": "dd9a6ch",
-"modern": "dđâch",
-"classic": "dđâch"
-},
-{
-"input": "dd9a6m",
-"modern": "dđâm",
-"classic": "dđâm"
-},
-{
-"input": "dd9a6n",
-"modern": "dđân",
-"classic": "dđân"
-},
-{
-"input": "dd9a6ng",
-"modern": "dđâng",
-"classic": "dđâng"
-},
-{
-"input": "dd9a6nh",
-"modern": "dđânh",
-"classic": "dđânh"
-},
-{
-"input": "dd9a6p",
-"modern": "dđâp",
-"classic": "dđâp"
-},
-{
-"input": "dd9a6t",
-"modern": "dđât",
-"classic": "dđât"
-},
-{
-"input": "dd9a8",
-"modern": "dđă",
-"classic": "dđă"
-},
-{
-"input": "dd9a81",
-"modern": "dđắ",
-"classic": "dđắ"
-},
-{
-"input": "dd9a81c",
-"modern": "dđắc",
-"classic": "dđắc"
-},
-{
-"input": "dd9a81ch",
-"modern": "dđắch",
-"classic": "dđắch"
-},
-{
-"input": "dd9a81m",
-"modern": "dđắm",
-"classic": "dđắm"
-},
-{
-"input": "dd9a81n",
-"modern": "dđắn",
-"classic": "dđắn"
-},
-{
-"input": "dd9a81ng",
-"modern": "dđắng",
-"classic": "dđắng"
-},
-{
-"input": "dd9a81nh",
-"modern": "dđắnh",
-"classic": "dđắnh"
-},
-{
-"input": "dd9a81p",
-"modern": "dđắp",
-"classic": "dđắp"
-},
-{
-"input": "dd9a81t",
-"modern": "dđắt",
-"classic": "dđắt"
-},
-{
-"input": "dd9a82",
-"modern": "dđằ",
-"classic": "dđằ"
-},
-{
-"input": "dd9a82c",
-"modern": "dđằc",
-"classic": "dđằc"
-},
-{
-"input": "dd9a82ch",
-"modern": "dđằch",
-"classic": "dđằch"
-},
-{
-"input": "dd9a82m",
-"modern": "dđằm",
-"classic": "dđằm"
-},
-{
-"input": "dd9a82n",
-"modern": "dđằn",
-"classic": "dđằn"
-},
-{
-"input": "dd9a82ng",
-"modern": "dđằng",
-"classic": "dđằng"
-},
-{
-"input": "dd9a82nh",
-"modern": "dđằnh",
-"classic": "dđằnh"
-},
-{
-"input": "dd9a82p",
-"modern": "dđằp",
-"classic": "dđằp"
-},
-{
-"input": "dd9a82t",
-"modern": "dđằt",
-"classic": "dđằt"
-},
-{
-"input": "dd9a83",
-"modern": "dđẳ",
-"classic": "dđẳ"
-},
-{
-"input": "dd9a83c",
-"modern": "dđẳc",
-"classic": "dđẳc"
-},
-{
-"input": "dd9a83ch",
-"modern": "dđẳch",
-"classic": "dđẳch"
-},
-{
-"input": "dd9a83m",
-"modern": "dđẳm",
-"classic": "dđẳm"
-},
-{
-"input": "dd9a83n",
-"modern": "dđẳn",
-"classic": "dđẳn"
-},
-{
-"input": "dd9a83ng",
-"modern": "dđẳng",
-"classic": "dđẳng"
-},
-{
-"input": "dd9a83nh",
-"modern": "dđẳnh",
-"classic": "dđẳnh"
-},
-{
-"input": "dd9a83p",
-"modern": "dđẳp",
-"classic": "dđẳp"
-},
-{
-"input": "dd9a83t",
-"modern": "dđẳt",
-"classic": "dđẳt"
-},
-{
-"input": "dd9a84",
-"modern": "dđẵ",
-"classic": "dđẵ"
-},
-{
-"input": "dd9a84c",
-"modern": "dđẵc",
-"classic": "dđẵc"
-},
-{
-"input": "dd9a84ch",
-"modern": "dđẵch",
-"classic": "dđẵch"
-},
-{
-"input": "dd9a84m",
-"modern": "dđẵm",
-"classic": "dđẵm"
-},
-{
-"input": "dd9a84n",
-"modern": "dđẵn",
-"classic": "dđẵn"
-},
-{
-"input": "dd9a84ng",
-"modern": "dđẵng",
-"classic": "dđẵng"
-},
-{
-"input": "dd9a84nh",
-"modern": "dđẵnh",
-"classic": "dđẵnh"
-},
-{
-"input": "dd9a84p",
-"modern": "dđẵp",
-"classic": "dđẵp"
-},
-{
-"input": "dd9a84t",
-"modern": "dđẵt",
-"classic": "dđẵt"
-},
-{
-"input": "dd9a85",
-"modern": "dđặ",
-"classic": "dđặ"
-},
-{
-"input": "dd9a85c",
-"modern": "dđặc",
-"classic": "dđặc"
-},
-{
-"input": "dd9a85ch",
-"modern": "dđặch",
-"classic": "dđặch"
-},
-{
-"input": "dd9a85m",
-"modern": "dđặm",
-"classic": "dđặm"
-},
-{
-"input": "dd9a85n",
-"modern": "dđặn",
-"classic": "dđặn"
-},
-{
-"input": "dd9a85ng",
-"modern": "dđặng",
-"classic": "dđặng"
-},
-{
-"input": "dd9a85nh",
-"modern": "dđặnh",
-"classic": "dđặnh"
-},
-{
-"input": "dd9a85p",
-"modern": "dđặp",
-"classic": "dđặp"
-},
-{
-"input": "dd9a85t",
-"modern": "dđặt",
-"classic": "dđặt"
-},
-{
-"input": "dd9a8c",
-"modern": "dđăc",
-"classic": "dđăc"
-},
-{
-"input": "dd9a8ch",
-"modern": "dđăch",
-"classic": "dđăch"
-},
-{
-"input": "dd9a8m",
-"modern": "dđăm",
-"classic": "dđăm"
-},
-{
-"input": "dd9a8n",
-"modern": "dđăn",
-"classic": "dđăn"
-},
-{
-"input": "dd9a8ng",
-"modern": "dđăng",
-"classic": "dđăng"
-},
-{
-"input": "dd9a8nh",
-"modern": "dđănh",
-"classic": "dđănh"
-},
-{
-"input": "dd9a8p",
-"modern": "dđăp",
-"classic": "dđăp"
-},
-{
-"input": "dd9a8t",
-"modern": "dđăt",
-"classic": "dđăt"
-},
-{
-"input": "dd9ac",
-"modern": "dđac",
-"classic": "dđac"
-},
-{
-"input": "dd9ach",
-"modern": "dđach",
-"classic": "dđach"
-},
-{
-"input": "dd9am",
-"modern": "dđam",
-"classic": "dđam"
-},
-{
-"input": "dd9an",
-"modern": "dđan",
-"classic": "dđan"
-},
-{
-"input": "dd9ang",
-"modern": "dđang",
-"classic": "dđang"
-},
-{
-"input": "dd9anh",
-"modern": "dđanh",
-"classic": "dđanh"
-},
-{
-"input": "dd9ap",
-"modern": "dđap",
-"classic": "dđap"
-},
-{
-"input": "dd9at",
-"modern": "dđat",
-"classic": "dđat"
-},
-{
-"input": "dd9e",
-"modern": "dđe",
-"classic": "dđe"
-},
-{
-"input": "dd9e1",
-"modern": "dđé",
-"classic": "dđé"
-},
-{
-"input": "dd9e1c",
-"modern": "dđéc",
-"classic": "dđéc"
-},
-{
-"input": "dd9e1ch",
-"modern": "dđéch",
-"classic": "dđéch"
-},
-{
-"input": "dd9e1m",
-"modern": "dđém",
-"classic": "dđém"
-},
-{
-"input": "dd9e1n",
-"modern": "dđén",
-"classic": "dđén"
-},
-{
-"input": "dd9e1ng",
-"modern": "dđéng",
-"classic": "dđéng"
-},
-{
-"input": "dd9e1nh",
-"modern": "dđénh",
-"classic": "dđénh"
-},
-{
-"input": "dd9e1p",
-"modern": "dđép",
-"classic": "dđép"
-},
-{
-"input": "dd9e1t",
-"modern": "dđét",
-"classic": "dđét"
-},
-{
-"input": "dd9e2",
-"modern": "dđè",
-"classic": "dđè"
-},
-{
-"input": "dd9e2c",
-"modern": "dđèc",
-"classic": "dđèc"
-},
-{
-"input": "dd9e2ch",
-"modern": "dđèch",
-"classic": "dđèch"
-},
-{
-"input": "dd9e2m",
-"modern": "dđèm",
-"classic": "dđèm"
-},
-{
-"input": "dd9e2n",
-"modern": "dđèn",
-"classic": "dđèn"
-},
-{
-"input": "dd9e2ng",
-"modern": "dđèng",
-"classic": "dđèng"
-},
-{
-"input": "dd9e2nh",
-"modern": "dđènh",
-"classic": "dđènh"
-},
-{
-"input": "dd9e2p",
-"modern": "dđèp",
-"classic": "dđèp"
-},
-{
-"input": "dd9e2t",
-"modern": "dđèt",
-"classic": "dđèt"
-},
-{
-"input": "dd9e3",
-"modern": "dđẻ",
-"classic": "dđẻ"
-},
-{
-"input": "dd9e3c",
-"modern": "dđẻc",
-"classic": "dđẻc"
-},
-{
-"input": "dd9e3ch",
-"modern": "dđẻch",
-"classic": "dđẻch"
-},
-{
-"input": "dd9e3m",
-"modern": "dđẻm",
-"classic": "dđẻm"
-},
-{
-"input": "dd9e3n",
-"modern": "dđẻn",
-"classic": "dđẻn"
-},
-{
-"input": "dd9e3ng",
-"modern": "dđẻng",
-"classic": "dđẻng"
-},
-{
-"input": "dd9e3nh",
-"modern": "dđẻnh",
-"classic": "dđẻnh"
-},
-{
-"input": "dd9e3p",
-"modern": "dđẻp",
-"classic": "dđẻp"
-},
-{
-"input": "dd9e3t",
-"modern": "dđẻt",
-"classic": "dđẻt"
-},
-{
-"input": "dd9e4",
-"modern": "dđẽ",
-"classic": "dđẽ"
-},
-{
-"input": "dd9e4c",
-"modern": "dđẽc",
-"classic": "dđẽc"
-},
-{
-"input": "dd9e4ch",
-"modern": "dđẽch",
-"classic": "dđẽch"
-},
-{
-"input": "dd9e4m",
-"modern": "dđẽm",
-"classic": "dđẽm"
-},
-{
-"input": "dd9e4n",
-"modern": "dđẽn",
-"classic": "dđẽn"
-},
-{
-"input": "dd9e4ng",
-"modern": "dđẽng",
-"classic": "dđẽng"
-},
-{
-"input": "dd9e4nh",
-"modern": "dđẽnh",
-"classic": "dđẽnh"
-},
-{
-"input": "dd9e4p",
-"modern": "dđẽp",
-"classic": "dđẽp"
-},
-{
-"input": "dd9e4t",
-"modern": "dđẽt",
-"classic": "dđẽt"
-},
-{
-"input": "dd9e5",
-"modern": "dđẹ",
-"classic": "dđẹ"
-},
-{
-"input": "dd9e5c",
-"modern": "dđẹc",
-"classic": "dđẹc"
-},
-{
-"input": "dd9e5ch",
-"modern": "dđẹch",
-"classic": "dđẹch"
-},
-{
-"input": "dd9e5m",
-"modern": "dđẹm",
-"classic": "dđẹm"
-},
-{
-"input": "dd9e5n",
-"modern": "dđẹn",
-"classic": "dđẹn"
-},
-{
-"input": "dd9e5ng",
-"modern": "dđẹng",
-"classic": "dđẹng"
-},
-{
-"input": "dd9e5nh",
-"modern": "dđẹnh",
-"classic": "dđẹnh"
-},
-{
-"input": "dd9e5p",
-"modern": "dđẹp",
-"classic": "dđẹp"
-},
-{
-"input": "dd9e5t",
-"modern": "dđẹt",
-"classic": "dđẹt"
-},
-{
-"input": "dd9e6",
-"modern": "dđê",
-"classic": "dđê"
-},
-{
-"input": "dd9e61",
-"modern": "dđế",
-"classic": "dđế"
-},
-{
-"input": "dd9e61c",
-"modern": "dđếc",
-"classic": "dđếc"
-},
-{
-"input": "dd9e61ch",
-"modern": "dđếch",
-"classic": "dđếch"
-},
-{
-"input": "dd9e61m",
-"modern": "dđếm",
-"classic": "dđếm"
-},
-{
-"input": "dd9e61n",
-"modern": "dđến",
-"classic": "dđến"
-},
-{
-"input": "dd9e61ng",
-"modern": "dđếng",
-"classic": "dđếng"
-},
-{
-"input": "dd9e61nh",
-"modern": "dđếnh",
-"classic": "dđếnh"
-},
-{
-"input": "dd9e61p",
-"modern": "dđếp",
-"classic": "dđếp"
-},
-{
-"input": "dd9e61t",
-"modern": "dđết",
-"classic": "dđết"
-},
-{
-"input": "dd9e62",
-"modern": "dđề",
-"classic": "dđề"
-},
-{
-"input": "dd9e62c",
-"modern": "dđềc",
-"classic": "dđềc"
-},
-{
-"input": "dd9e62ch",
-"modern": "dđềch",
-"classic": "dđềch"
-},
-{
-"input": "dd9e62m",
-"modern": "dđềm",
-"classic": "dđềm"
-},
-{
-"input": "dd9e62n",
-"modern": "dđền",
-"classic": "dđền"
-},
-{
-"input": "dd9e62ng",
-"modern": "dđềng",
-"classic": "dđềng"
-},
-{
-"input": "dd9e62nh",
-"modern": "dđềnh",
-"classic": "dđềnh"
-},
-{
-"input": "dd9e62p",
-"modern": "dđềp",
-"classic": "dđềp"
-},
-{
-"input": "dd9e62t",
-"modern": "dđềt",
-"classic": "dđềt"
-},
-{
-"input": "dd9e63",
-"modern": "dđể",
-"classic": "dđể"
-},
-{
-"input": "dd9e63c",
-"modern": "dđểc",
-"classic": "dđểc"
-},
-{
-"input": "dd9e63ch",
-"modern": "dđểch",
-"classic": "dđểch"
-},
-{
-"input": "dd9e63m",
-"modern": "dđểm",
-"classic": "dđểm"
-},
-{
-"input": "dd9e63n",
-"modern": "dđển",
-"classic": "dđển"
-},
-{
-"input": "dd9e63ng",
-"modern": "dđểng",
-"classic": "dđểng"
-},
-{
-"input": "dd9e63nh",
-"modern": "dđểnh",
-"classic": "dđểnh"
-},
-{
-"input": "dd9e63p",
-"modern": "dđểp",
-"classic": "dđểp"
-},
-{
-"input": "dd9e63t",
-"modern": "dđểt",
-"classic": "dđểt"
-},
-{
-"input": "dd9e64",
-"modern": "dđễ",
-"classic": "dđễ"
-},
-{
-"input": "dd9e64c",
-"modern": "dđễc",
-"classic": "dđễc"
-},
-{
-"input": "dd9e64ch",
-"modern": "dđễch",
-"classic": "dđễch"
-},
-{
-"input": "dd9e64m",
-"modern": "dđễm",
-"classic": "dđễm"
-},
-{
-"input": "dd9e64n",
-"modern": "dđễn",
-"classic": "dđễn"
-},
-{
-"input": "dd9e64ng",
-"modern": "dđễng",
-"classic": "dđễng"
-},
-{
-"input": "dd9e64nh",
-"modern": "dđễnh",
-"classic": "dđễnh"
-},
-{
-"input": "dd9e64p",
-"modern": "dđễp",
-"classic": "dđễp"
-},
-{
-"input": "dd9e64t",
-"modern": "dđễt",
-"classic": "dđễt"
-},
-{
-"input": "dd9e65",
-"modern": "dđệ",
-"classic": "dđệ"
-},
-{
-"input": "dd9e65c",
-"modern": "dđệc",
-"classic": "dđệc"
-},
-{
-"input": "dd9e65ch",
-"modern": "dđệch",
-"classic": "dđệch"
-},
-{
-"input": "dd9e65m",
-"modern": "dđệm",
-"classic": "dđệm"
-},
-{
-"input": "dd9e65n",
-"modern": "dđện",
-"classic": "dđện"
-},
-{
-"input": "dd9e65ng",
-"modern": "dđệng",
-"classic": "dđệng"
-},
-{
-"input": "dd9e65nh",
-"modern": "dđệnh",
-"classic": "dđệnh"
-},
-{
-"input": "dd9e65p",
-"modern": "dđệp",
-"classic": "dđệp"
-},
-{
-"input": "dd9e65t",
-"modern": "dđệt",
-"classic": "dđệt"
-},
-{
-"input": "dd9e6c",
-"modern": "dđêc",
-"classic": "dđêc"
-},
-{
-"input": "dd9e6ch",
-"modern": "dđêch",
-"classic": "dđêch"
-},
-{
-"input": "dd9e6m",
-"modern": "dđêm",
-"classic": "dđêm"
-},
-{
-"input": "dd9e6n",
-"modern": "dđên",
-"classic": "dđên"
-},
-{
-"input": "dd9e6ng",
-"modern": "dđêng",
-"classic": "dđêng"
-},
-{
-"input": "dd9e6nh",
-"modern": "dđênh",
-"classic": "dđênh"
-},
-{
-"input": "dd9e6p",
-"modern": "dđêp",
-"classic": "dđêp"
-},
-{
-"input": "dd9e6t",
-"modern": "dđêt",
-"classic": "dđêt"
-},
-{
-"input": "dd9ec",
-"modern": "dđec",
-"classic": "dđec"
-},
-{
-"input": "dd9ech",
-"modern": "dđech",
-"classic": "dđech"
-},
-{
-"input": "dd9em",
-"modern": "dđem",
-"classic": "dđem"
-},
-{
-"input": "dd9en",
-"modern": "dđen",
-"classic": "dđen"
-},
-{
-"input": "dd9eng",
-"modern": "dđeng",
-"classic": "dđeng"
-},
-{
-"input": "dd9enh",
-"modern": "dđenh",
-"classic": "dđenh"
-},
-{
-"input": "dd9ep",
-"modern": "dđep",
-"classic": "dđep"
-},
-{
-"input": "dd9et",
-"modern": "dđet",
-"classic": "dđet"
-},
-{
-"input": "dd9i",
-"modern": "dđi",
-"classic": "dđi"
-},
-{
-"input": "dd9i1",
-"modern": "dđí",
-"classic": "dđí"
-},
-{
-"input": "dd9i1c",
-"modern": "dđíc",
-"classic": "dđíc"
-},
-{
-"input": "dd9i1ch",
-"modern": "dđích",
-"classic": "dđích"
-},
-{
-"input": "dd9i1m",
-"modern": "dđím",
-"classic": "dđím"
-},
-{
-"input": "dd9i1n",
-"modern": "dđín",
-"classic": "dđín"
-},
-{
-"input": "dd9i1ng",
-"modern": "dđíng",
-"classic": "dđíng"
-},
-{
-"input": "dd9i1nh",
-"modern": "dđính",
-"classic": "dđính"
-},
-{
-"input": "dd9i1p",
-"modern": "dđíp",
-"classic": "dđíp"
-},
-{
-"input": "dd9i1t",
-"modern": "dđít",
-"classic": "dđít"
-},
-{
-"input": "dd9i2",
-"modern": "dđì",
-"classic": "dđì"
-},
-{
-"input": "dd9i2c",
-"modern": "dđìc",
-"classic": "dđìc"
-},
-{
-"input": "dd9i2ch",
-"modern": "dđìch",
-"classic": "dđìch"
-},
-{
-"input": "dd9i2m",
-"modern": "dđìm",
-"classic": "dđìm"
-},
-{
-"input": "dd9i2n",
-"modern": "dđìn",
-"classic": "dđìn"
-},
-{
-"input": "dd9i2ng",
-"modern": "dđìng",
-"classic": "dđìng"
-},
-{
-"input": "dd9i2nh",
-"modern": "dđình",
-"classic": "dđình"
-},
-{
-"input": "dd9i2p",
-"modern": "dđìp",
-"classic": "dđìp"
-},
-{
-"input": "dd9i2t",
-"modern": "dđìt",
-"classic": "dđìt"
-},
-{
-"input": "dd9i3",
-"modern": "dđỉ",
-"classic": "dđỉ"
-},
-{
-"input": "dd9i3c",
-"modern": "dđỉc",
-"classic": "dđỉc"
-},
-{
-"input": "dd9i3ch",
-"modern": "dđỉch",
-"classic": "dđỉch"
-},
-{
-"input": "dd9i3m",
-"modern": "dđỉm",
-"classic": "dđỉm"
-},
-{
-"input": "dd9i3n",
-"modern": "dđỉn",
-"classic": "dđỉn"
-},
-{
-"input": "dd9i3ng",
-"modern": "dđỉng",
-"classic": "dđỉng"
-},
-{
-"input": "dd9i3nh",
-"modern": "dđỉnh",
-"classic": "dđỉnh"
-},
-{
-"input": "dd9i3p",
-"modern": "dđỉp",
-"classic": "dđỉp"
-},
-{
-"input": "dd9i3t",
-"modern": "dđỉt",
-"classic": "dđỉt"
-},
-{
-"input": "dd9i4",
-"modern": "dđĩ",
-"classic": "dđĩ"
-},
-{
-"input": "dd9i4c",
-"modern": "dđĩc",
-"classic": "dđĩc"
-},
-{
-"input": "dd9i4ch",
-"modern": "dđĩch",
-"classic": "dđĩch"
-},
-{
-"input": "dd9i4m",
-"modern": "dđĩm",
-"classic": "dđĩm"
-},
-{
-"input": "dd9i4n",
-"modern": "dđĩn",
-"classic": "dđĩn"
-},
-{
-"input": "dd9i4ng",
-"modern": "dđĩng",
-"classic": "dđĩng"
-},
-{
-"input": "dd9i4nh",
-"modern": "dđĩnh",
-"classic": "dđĩnh"
-},
-{
-"input": "dd9i4p",
-"modern": "dđĩp",
-"classic": "dđĩp"
-},
-{
-"input": "dd9i4t",
-"modern": "dđĩt",
-"classic": "dđĩt"
-},
-{
-"input": "dd9i5",
-"modern": "dđị",
-"classic": "dđị"
-},
-{
-"input": "dd9i5c",
-"modern": "dđịc",
-"classic": "dđịc"
-},
-{
-"input": "dd9i5ch",
-"modern": "dđịch",
-"classic": "dđịch"
-},
-{
-"input": "dd9i5m",
-"modern": "dđịm",
-"classic": "dđịm"
-},
-{
-"input": "dd9i5n",
-"modern": "dđịn",
-"classic": "dđịn"
-},
-{
-"input": "dd9i5ng",
-"modern": "dđịng",
-"classic": "dđịng"
-},
-{
-"input": "dd9i5nh",
-"modern": "dđịnh",
-"classic": "dđịnh"
-},
-{
-"input": "dd9i5p",
-"modern": "dđịp",
-"classic": "dđịp"
-},
-{
-"input": "dd9i5t",
-"modern": "dđịt",
-"classic": "dđịt"
-},
-{
-"input": "dd9ic",
-"modern": "dđic",
-"classic": "dđic"
-},
-{
-"input": "dd9ich",
-"modern": "dđich",
-"classic": "dđich"
-},
-{
-"input": "dd9ie6",
-"modern": "dđiê",
-"classic": "dđiê"
-},
-{
-"input": "dd9ie61",
-"modern": "dđiế",
-"classic": "dđiế"
-},
-{
-"input": "dd9ie61c",
-"modern": "dđiếc",
-"classic": "dđiếc"
-},
-{
-"input": "dd9ie61ch",
-"modern": "dđiếch",
-"classic": "dđiếch"
-},
-{
-"input": "dd9ie61m",
-"modern": "dđiếm",
-"classic": "dđiếm"
-},
-{
-"input": "dd9ie61n",
-"modern": "dđiến",
-"classic": "dđiến"
-},
-{
-"input": "dd9ie61ng",
-"modern": "dđiếng",
-"classic": "dđiếng"
-},
-{
-"input": "dd9ie61nh",
-"modern": "dđiếnh",
-"classic": "dđiếnh"
-},
-{
-"input": "dd9ie61p",
-"modern": "dđiếp",
-"classic": "dđiếp"
-},
-{
-"input": "dd9ie61t",
-"modern": "dđiết",
-"classic": "dđiết"
-},
-{
-"input": "dd9ie62",
-"modern": "dđiề",
-"classic": "dđiề"
-},
-{
-"input": "dd9ie62c",
-"modern": "dđiềc",
-"classic": "dđiềc"
-},
-{
-"input": "dd9ie62ch",
-"modern": "dđiềch",
-"classic": "dđiềch"
-},
-{
-"input": "dd9ie62m",
-"modern": "dđiềm",
-"classic": "dđiềm"
-},
-{
-"input": "dd9ie62n",
-"modern": "dđiền",
-"classic": "dđiền"
-},
-{
-"input": "dd9ie62ng",
-"modern": "dđiềng",
-"classic": "dđiềng"
-},
-{
-"input": "dd9ie62nh",
-"modern": "dđiềnh",
-"classic": "dđiềnh"
-},
-{
-"input": "dd9ie62p",
-"modern": "dđiềp",
-"classic": "dđiềp"
-},
-{
-"input": "dd9ie62t",
-"modern": "dđiềt",
-"classic": "dđiềt"
-},
-{
-"input": "dd9ie63",
-"modern": "dđiể",
-"classic": "dđiể"
-},
-{
-"input": "dd9ie63c",
-"modern": "dđiểc",
-"classic": "dđiểc"
-},
-{
-"input": "dd9ie63ch",
-"modern": "dđiểch",
-"classic": "dđiểch"
-},
-{
-"input": "dd9ie63m",
-"modern": "dđiểm",
-"classic": "dđiểm"
-},
-{
-"input": "dd9ie63n",
-"modern": "dđiển",
-"classic": "dđiển"
-},
-{
-"input": "dd9ie63ng",
-"modern": "dđiểng",
-"classic": "dđiểng"
-},
-{
-"input": "dd9ie63nh",
-"modern": "dđiểnh",
-"classic": "dđiểnh"
-},
-{
-"input": "dd9ie63p",
-"modern": "dđiểp",
-"classic": "dđiểp"
-},
-{
-"input": "dd9ie63t",
-"modern": "dđiểt",
-"classic": "dđiểt"
-},
-{
-"input": "dd9ie64",
-"modern": "dđiễ",
-"classic": "dđiễ"
-},
-{
-"input": "dd9ie64c",
-"modern": "dđiễc",
-"classic": "dđiễc"
-},
-{
-"input": "dd9ie64ch",
-"modern": "dđiễch",
-"classic": "dđiễch"
-},
-{
-"input": "dd9ie64m",
-"modern": "dđiễm",
-"classic": "dđiễm"
-},
-{
-"input": "dd9ie64n",
-"modern": "dđiễn",
-"classic": "dđiễn"
-},
-{
-"input": "dd9ie64ng",
-"modern": "dđiễng",
-"classic": "dđiễng"
-},
-{
-"input": "dd9ie64nh",
-"modern": "dđiễnh",
-"classic": "dđiễnh"
-},
-{
-"input": "dd9ie64p",
-"modern": "dđiễp",
-"classic": "dđiễp"
-},
-{
-"input": "dd9ie64t",
-"modern": "dđiễt",
-"classic": "dđiễt"
-},
-{
-"input": "dd9ie65",
-"modern": "dđiệ",
-"classic": "dđiệ"
-},
-{
-"input": "dd9ie65c",
-"modern": "dđiệc",
-"classic": "dđiệc"
-},
-{
-"input": "dd9ie65ch",
-"modern": "dđiệch",
-"classic": "dđiệch"
-},
-{
-"input": "dd9ie65m",
-"modern": "dđiệm",
-"classic": "dđiệm"
-},
-{
-"input": "dd9ie65n",
-"modern": "dđiện",
-"classic": "dđiện"
-},
-{
-"input": "dd9ie65ng",
-"modern": "dđiệng",
-"classic": "dđiệng"
-},
-{
-"input": "dd9ie65nh",
-"modern": "dđiệnh",
-"classic": "dđiệnh"
-},
-{
-"input": "dd9ie65p",
-"modern": "dđiệp",
-"classic": "dđiệp"
-},
-{
-"input": "dd9ie65t",
-"modern": "dđiệt",
-"classic": "dđiệt"
-},
-{
-"input": "dd9ie6c",
-"modern": "dđiêc",
-"classic": "dđiêc"
-},
-{
-"input": "dd9ie6ch",
-"modern": "dđiêch",
-"classic": "dđiêch"
-},
-{
-"input": "dd9ie6m",
-"modern": "dđiêm",
-"classic": "dđiêm"
-},
-{
-"input": "dd9ie6n",
-"modern": "dđiên",
-"classic": "dđiên"
-},
-{
-"input": "dd9ie6ng",
-"modern": "dđiêng",
-"classic": "dđiêng"
-},
-{
-"input": "dd9ie6nh",
-"modern": "dđiênh",
-"classic": "dđiênh"
-},
-{
-"input": "dd9ie6p",
-"modern": "dđiêp",
-"classic": "dđiêp"
-},
-{
-"input": "dd9ie6t",
-"modern": "dđiêt",
-"classic": "dđiêt"
-},
-{
-"input": "dd9im",
-"modern": "dđim",
-"classic": "dđim"
-},
-{
-"input": "dd9in",
-"modern": "dđin",
-"classic": "dđin"
-},
-{
-"input": "dd9ing",
-"modern": "dđing",
-"classic": "dđing"
-},
-{
-"input": "dd9inh",
-"modern": "dđinh",
-"classic": "dđinh"
-},
-{
-"input": "dd9ip",
-"modern": "dđip",
-"classic": "dđip"
-},
-{
-"input": "dd9it",
-"modern": "dđit",
-"classic": "dđit"
-},
-{
-"input": "dd9o",
-"modern": "dđo",
-"classic": "dđo"
-},
-{
-"input": "dd9o1",
-"modern": "dđó",
-"classic": "dđó"
-},
-{
-"input": "dd9o1c",
-"modern": "dđóc",
-"classic": "dđóc"
-},
-{
-"input": "dd9o1ch",
-"modern": "dđóch",
-"classic": "dđóch"
-},
-{
-"input": "dd9o1m",
-"modern": "dđóm",
-"classic": "dđóm"
-},
-{
-"input": "dd9o1n",
-"modern": "dđón",
-"classic": "dđón"
-},
-{
-"input": "dd9o1ng",
-"modern": "dđóng",
-"classic": "dđóng"
-},
-{
-"input": "dd9o1nh",
-"modern": "dđónh",
-"classic": "dđónh"
-},
-{
-"input": "dd9o1p",
-"modern": "dđóp",
-"classic": "dđóp"
-},
-{
-"input": "dd9o1t",
-"modern": "dđót",
-"classic": "dđót"
-},
-{
-"input": "dd9o2",
-"modern": "dđò",
-"classic": "dđò"
-},
-{
-"input": "dd9o2c",
-"modern": "dđòc",
-"classic": "dđòc"
-},
-{
-"input": "dd9o2ch",
-"modern": "dđòch",
-"classic": "dđòch"
-},
-{
-"input": "dd9o2m",
-"modern": "dđòm",
-"classic": "dđòm"
-},
-{
-"input": "dd9o2n",
-"modern": "dđòn",
-"classic": "dđòn"
-},
-{
-"input": "dd9o2ng",
-"modern": "dđòng",
-"classic": "dđòng"
-},
-{
-"input": "dd9o2nh",
-"modern": "dđònh",
-"classic": "dđònh"
-},
-{
-"input": "dd9o2p",
-"modern": "dđòp",
-"classic": "dđòp"
-},
-{
-"input": "dd9o2t",
-"modern": "dđòt",
-"classic": "dđòt"
-},
-{
-"input": "dd9o3",
-"modern": "dđỏ",
-"classic": "dđỏ"
-},
-{
-"input": "dd9o3c",
-"modern": "dđỏc",
-"classic": "dđỏc"
-},
-{
-"input": "dd9o3ch",
-"modern": "dđỏch",
-"classic": "dđỏch"
-},
-{
-"input": "dd9o3m",
-"modern": "dđỏm",
-"classic": "dđỏm"
-},
-{
-"input": "dd9o3n",
-"modern": "dđỏn",
-"classic": "dđỏn"
-},
-{
-"input": "dd9o3ng",
-"modern": "dđỏng",
-"classic": "dđỏng"
-},
-{
-"input": "dd9o3nh",
-"modern": "dđỏnh",
-"classic": "dđỏnh"
-},
-{
-"input": "dd9o3p",
-"modern": "dđỏp",
-"classic": "dđỏp"
-},
-{
-"input": "dd9o3t",
-"modern": "dđỏt",
-"classic": "dđỏt"
-},
-{
-"input": "dd9o4",
-"modern": "dđõ",
-"classic": "dđõ"
-},
-{
-"input": "dd9o4c",
-"modern": "dđõc",
-"classic": "dđõc"
-},
-{
-"input": "dd9o4ch",
-"modern": "dđõch",
-"classic": "dđõch"
-},
-{
-"input": "dd9o4m",
-"modern": "dđõm",
-"classic": "dđõm"
-},
-{
-"input": "dd9o4n",
-"modern": "dđõn",
-"classic": "dđõn"
-},
-{
-"input": "dd9o4ng",
-"modern": "dđõng",
-"classic": "dđõng"
-},
-{
-"input": "dd9o4nh",
-"modern": "dđõnh",
-"classic": "dđõnh"
-},
-{
-"input": "dd9o4p",
-"modern": "dđõp",
-"classic": "dđõp"
-},
-{
-"input": "dd9o4t",
-"modern": "dđõt",
-"classic": "dđõt"
-},
-{
-"input": "dd9o5",
-"modern": "dđọ",
-"classic": "dđọ"
-},
-{
-"input": "dd9o5c",
-"modern": "dđọc",
-"classic": "dđọc"
-},
-{
-"input": "dd9o5ch",
-"modern": "dđọch",
-"classic": "dđọch"
-},
-{
-"input": "dd9o5m",
-"modern": "dđọm",
-"classic": "dđọm"
-},
-{
-"input": "dd9o5n",
-"modern": "dđọn",
-"classic": "dđọn"
-},
-{
-"input": "dd9o5ng",
-"modern": "dđọng",
-"classic": "dđọng"
-},
-{
-"input": "dd9o5nh",
-"modern": "dđọnh",
-"classic": "dđọnh"
-},
-{
-"input": "dd9o5p",
-"modern": "dđọp",
-"classic": "dđọp"
-},
-{
-"input": "dd9o5t",
-"modern": "dđọt",
-"classic": "dđọt"
-},
-{
-"input": "dd9o6",
-"modern": "dđô",
-"classic": "dđô"
-},
-{
-"input": "dd9o61",
-"modern": "dđố",
-"classic": "dđố"
-},
-{
-"input": "dd9o61c",
-"modern": "dđốc",
-"classic": "dđốc"
-},
-{
-"input": "dd9o61ch",
-"modern": "dđốch",
-"classic": "dđốch"
-},
-{
-"input": "dd9o61m",
-"modern": "dđốm",
-"classic": "dđốm"
-},
-{
-"input": "dd9o61n",
-"modern": "dđốn",
-"classic": "dđốn"
-},
-{
-"input": "dd9o61ng",
-"modern": "dđống",
-"classic": "dđống"
-},
-{
-"input": "dd9o61nh",
-"modern": "dđốnh",
-"classic": "dđốnh"
-},
-{
-"input": "dd9o61p",
-"modern": "dđốp",
-"classic": "dđốp"
-},
-{
-"input": "dd9o61t",
-"modern": "dđốt",
-"classic": "dđốt"
-},
-{
-"input": "dd9o62",
-"modern": "dđồ",
-"classic": "dđồ"
-},
-{
-"input": "dd9o62c",
-"modern": "dđồc",
-"classic": "dđồc"
-},
-{
-"input": "dd9o62ch",
-"modern": "dđồch",
-"classic": "dđồch"
-},
-{
-"input": "dd9o62m",
-"modern": "dđồm",
-"classic": "dđồm"
-},
-{
-"input": "dd9o62n",
-"modern": "dđồn",
-"classic": "dđồn"
-},
-{
-"input": "dd9o62ng",
-"modern": "dđồng",
-"classic": "dđồng"
-},
-{
-"input": "dd9o62nh",
-"modern": "dđồnh",
-"classic": "dđồnh"
-},
-{
-"input": "dd9o62p",
-"modern": "dđồp",
-"classic": "dđồp"
-},
-{
-"input": "dd9o62t",
-"modern": "dđồt",
-"classic": "dđồt"
-},
-{
-"input": "dd9o63",
-"modern": "dđổ",
-"classic": "dđổ"
-},
-{
-"input": "dd9o63c",
-"modern": "dđổc",
-"classic": "dđổc"
-},
-{
-"input": "dd9o63ch",
-"modern": "dđổch",
-"classic": "dđổch"
-},
-{
-"input": "dd9o63m",
-"modern": "dđổm",
-"classic": "dđổm"
-},
-{
-"input": "dd9o63n",
-"modern": "dđổn",
-"classic": "dđổn"
-},
-{
-"input": "dd9o63ng",
-"modern": "dđổng",
-"classic": "dđổng"
-},
-{
-"input": "dd9o63nh",
-"modern": "dđổnh",
-"classic": "dđổnh"
-},
-{
-"input": "dd9o63p",
-"modern": "dđổp",
-"classic": "dđổp"
-},
-{
-"input": "dd9o63t",
-"modern": "dđổt",
-"classic": "dđổt"
-},
-{
-"input": "dd9o64",
-"modern": "dđỗ",
-"classic": "dđỗ"
-},
-{
-"input": "dd9o64c",
-"modern": "dđỗc",
-"classic": "dđỗc"
-},
-{
-"input": "dd9o64ch",
-"modern": "dđỗch",
-"classic": "dđỗch"
-},
-{
-"input": "dd9o64m",
-"modern": "dđỗm",
-"classic": "dđỗm"
-},
-{
-"input": "dd9o64n",
-"modern": "dđỗn",
-"classic": "dđỗn"
-},
-{
-"input": "dd9o64ng",
-"modern": "dđỗng",
-"classic": "dđỗng"
-},
-{
-"input": "dd9o64nh",
-"modern": "dđỗnh",
-"classic": "dđỗnh"
-},
-{
-"input": "dd9o64p",
-"modern": "dđỗp",
-"classic": "dđỗp"
-},
-{
-"input": "dd9o64t",
-"modern": "dđỗt",
-"classic": "dđỗt"
-},
-{
-"input": "dd9o65",
-"modern": "dđộ",
-"classic": "dđộ"
-},
-{
-"input": "dd9o65c",
-"modern": "dđộc",
-"classic": "dđộc"
-},
-{
-"input": "dd9o65ch",
-"modern": "dđộch",
-"classic": "dđộch"
-},
-{
-"input": "dd9o65m",
-"modern": "dđộm",
-"classic": "dđộm"
-},
-{
-"input": "dd9o65n",
-"modern": "dđộn",
-"classic": "dđộn"
-},
-{
-"input": "dd9o65ng",
-"modern": "dđộng",
-"classic": "dđộng"
-},
-{
-"input": "dd9o65nh",
-"modern": "dđộnh",
-"classic": "dđộnh"
-},
-{
-"input": "dd9o65p",
-"modern": "dđộp",
-"classic": "dđộp"
-},
-{
-"input": "dd9o65t",
-"modern": "dđột",
-"classic": "dđột"
-},
-{
-"input": "dd9o6c",
-"modern": "dđôc",
-"classic": "dđôc"
-},
-{
-"input": "dd9o6ch",
-"modern": "dđôch",
-"classic": "dđôch"
-},
-{
-"input": "dd9o6m",
-"modern": "dđôm",
-"classic": "dđôm"
-},
-{
-"input": "dd9o6n",
-"modern": "dđôn",
-"classic": "dđôn"
-},
-{
-"input": "dd9o6ng",
-"modern": "dđông",
-"classic": "dđông"
-},
-{
-"input": "dd9o6nh",
-"modern": "dđônh",
-"classic": "dđônh"
-},
-{
-"input": "dd9o6p",
-"modern": "dđôp",
-"classic": "dđôp"
-},
-{
-"input": "dd9o6t",
-"modern": "dđôt",
-"classic": "dđôt"
-},
-{
-"input": "dd9o7",
-"modern": "dđơ",
-"classic": "dđơ"
-},
-{
-"input": "dd9o71",
-"modern": "dđớ",
-"classic": "dđớ"
-},
-{
-"input": "dd9o71c",
-"modern": "dđớc",
-"classic": "dđớc"
-},
-{
-"input": "dd9o71ch",
-"modern": "dđớch",
-"classic": "dđớch"
-},
-{
-"input": "dd9o71m",
-"modern": "dđớm",
-"classic": "dđớm"
-},
-{
-"input": "dd9o71n",
-"modern": "dđớn",
-"classic": "dđớn"
-},
-{
-"input": "dd9o71ng",
-"modern": "dđớng",
-"classic": "dđớng"
-},
-{
-"input": "dd9o71nh",
-"modern": "dđớnh",
-"classic": "dđớnh"
-},
-{
-"input": "dd9o71p",
-"modern": "dđớp",
-"classic": "dđớp"
-},
-{
-"input": "dd9o71t",
-"modern": "dđớt",
-"classic": "dđớt"
-},
-{
-"input": "dd9o72",
-"modern": "dđờ",
-"classic": "dđờ"
-},
-{
-"input": "dd9o72c",
-"modern": "dđờc",
-"classic": "dđờc"
-},
-{
-"input": "dd9o72ch",
-"modern": "dđờch",
-"classic": "dđờch"
-},
-{
-"input": "dd9o72m",
-"modern": "dđờm",
-"classic": "dđờm"
-},
-{
-"input": "dd9o72n",
-"modern": "dđờn",
-"classic": "dđờn"
-},
-{
-"input": "dd9o72ng",
-"modern": "dđờng",
-"classic": "dđờng"
-},
-{
-"input": "dd9o72nh",
-"modern": "dđờnh",
-"classic": "dđờnh"
-},
-{
-"input": "dd9o72p",
-"modern": "dđờp",
-"classic": "dđờp"
-},
-{
-"input": "dd9o72t",
-"modern": "dđờt",
-"classic": "dđờt"
-},
-{
-"input": "dd9o73",
-"modern": "dđở",
-"classic": "dđở"
-},
-{
-"input": "dd9o73c",
-"modern": "dđởc",
-"classic": "dđởc"
-},
-{
-"input": "dd9o73ch",
-"modern": "dđởch",
-"classic": "dđởch"
-},
-{
-"input": "dd9o73m",
-"modern": "dđởm",
-"classic": "dđởm"
-},
-{
-"input": "dd9o73n",
-"modern": "dđởn",
-"classic": "dđởn"
-},
-{
-"input": "dd9o73ng",
-"modern": "dđởng",
-"classic": "dđởng"
-},
-{
-"input": "dd9o73nh",
-"modern": "dđởnh",
-"classic": "dđởnh"
-},
-{
-"input": "dd9o73p",
-"modern": "dđởp",
-"classic": "dđởp"
-},
-{
-"input": "dd9o73t",
-"modern": "dđởt",
-"classic": "dđởt"
-},
-{
-"input": "dd9o74",
-"modern": "dđỡ",
-"classic": "dđỡ"
-},
-{
-"input": "dd9o74c",
-"modern": "dđỡc",
-"classic": "dđỡc"
-},
-{
-"input": "dd9o74ch",
-"modern": "dđỡch",
-"classic": "dđỡch"
-},
-{
-"input": "dd9o74m",
-"modern": "dđỡm",
-"classic": "dđỡm"
-},
-{
-"input": "dd9o74n",
-"modern": "dđỡn",
-"classic": "dđỡn"
-},
-{
-"input": "dd9o74ng",
-"modern": "dđỡng",
-"classic": "dđỡng"
-},
-{
-"input": "dd9o74nh",
-"modern": "dđỡnh",
-"classic": "dđỡnh"
-},
-{
-"input": "dd9o74p",
-"modern": "dđỡp",
-"classic": "dđỡp"
-},
-{
-"input": "dd9o74t",
-"modern": "dđỡt",
-"classic": "dđỡt"
-},
-{
-"input": "dd9o75",
-"modern": "dđợ",
-"classic": "dđợ"
-},
-{
-"input": "dd9o75c",
-"modern": "dđợc",
-"classic": "dđợc"
-},
-{
-"input": "dd9o75ch",
-"modern": "dđợch",
-"classic": "dđợch"
-},
-{
-"input": "dd9o75m",
-"modern": "dđợm",
-"classic": "dđợm"
-},
-{
-"input": "dd9o75n",
-"modern": "dđợn",
-"classic": "dđợn"
-},
-{
-"input": "dd9o75ng",
-"modern": "dđợng",
-"classic": "dđợng"
-},
-{
-"input": "dd9o75nh",
-"modern": "dđợnh",
-"classic": "dđợnh"
-},
-{
-"input": "dd9o75p",
-"modern": "dđợp",
-"classic": "dđợp"
-},
-{
-"input": "dd9o75t",
-"modern": "dđợt",
-"classic": "dđợt"
-},
-{
-"input": "dd9o7c",
-"modern": "dđơc",
-"classic": "dđơc"
-},
-{
-"input": "dd9o7ch",
-"modern": "dđơch",
-"classic": "dđơch"
-},
-{
-"input": "dd9o7m",
-"modern": "dđơm",
-"classic": "dđơm"
-},
-{
-"input": "dd9o7n",
-"modern": "dđơn",
-"classic": "dđơn"
-},
-{
-"input": "dd9o7ng",
-"modern": "dđơng",
-"classic": "dđơng"
-},
-{
-"input": "dd9o7nh",
-"modern": "dđơnh",
-"classic": "dđơnh"
-},
-{
-"input": "dd9o7p",
-"modern": "dđơp",
-"classic": "dđơp"
-},
-{
-"input": "dd9o7t",
-"modern": "dđơt",
-"classic": "dđơt"
-},
-{
-"input": "dd9oa",
-"modern": "dđoa",
-"classic": "dđoa"
-},
-{
-"input": "dd9oa1",
-"modern": "dđóa",
-"classic": "dđoá"
-},
-{
-"input": "dd9oa1c",
-"modern": "dđoác",
-"classic": "dđoác"
-},
-{
-"input": "dd9oa1ch",
-"modern": "dđoách",
-"classic": "dđoách"
-},
-{
-"input": "dd9oa1m",
-"modern": "dđoám",
-"classic": "dđoám"
-},
-{
-"input": "dd9oa1n",
-"modern": "dđoán",
-"classic": "dđoán"
-},
-{
-"input": "dd9oa1ng",
-"modern": "dđoáng",
-"classic": "dđoáng"
-},
-{
-"input": "dd9oa1nh",
-"modern": "dđoánh",
-"classic": "dđoánh"
-},
-{
-"input": "dd9oa1p",
-"modern": "dđoáp",
-"classic": "dđoáp"
-},
-{
-"input": "dd9oa1t",
-"modern": "dđoát",
-"classic": "dđoát"
-},
-{
-"input": "dd9oa2",
-"modern": "dđòa",
-"classic": "dđoà"
-},
-{
-"input": "dd9oa2c",
-"modern": "dđoàc",
-"classic": "dđoàc"
-},
-{
-"input": "dd9oa2ch",
-"modern": "dđoàch",
-"classic": "dđoàch"
-},
-{
-"input": "dd9oa2m",
-"modern": "dđoàm",
-"classic": "dđoàm"
-},
-{
-"input": "dd9oa2n",
-"modern": "dđoàn",
-"classic": "dđoàn"
-},
-{
-"input": "dd9oa2ng",
-"modern": "dđoàng",
-"classic": "dđoàng"
-},
-{
-"input": "dd9oa2nh",
-"modern": "dđoành",
-"classic": "dđoành"
-},
-{
-"input": "dd9oa2p",
-"modern": "dđoàp",
-"classic": "dđoàp"
-},
-{
-"input": "dd9oa2t",
-"modern": "dđoàt",
-"classic": "dđoàt"
-},
-{
-"input": "dd9oa3",
-"modern": "dđỏa",
-"classic": "dđoả"
-},
-{
-"input": "dd9oa3c",
-"modern": "dđoảc",
-"classic": "dđoảc"
-},
-{
-"input": "dd9oa3ch",
-"modern": "dđoảch",
-"classic": "dđoảch"
-},
-{
-"input": "dd9oa3m",
-"modern": "dđoảm",
-"classic": "dđoảm"
-},
-{
-"input": "dd9oa3n",
-"modern": "dđoản",
-"classic": "dđoản"
-},
-{
-"input": "dd9oa3ng",
-"modern": "dđoảng",
-"classic": "dđoảng"
-},
-{
-"input": "dd9oa3nh",
-"modern": "dđoảnh",
-"classic": "dđoảnh"
-},
-{
-"input": "dd9oa3p",
-"modern": "dđoảp",
-"classic": "dđoảp"
-},
-{
-"input": "dd9oa3t",
-"modern": "dđoảt",
-"classic": "dđoảt"
-},
-{
-"input": "dd9oa4",
-"modern": "dđõa",
-"classic": "dđoã"
-},
-{
-"input": "dd9oa4c",
-"modern": "dđoãc",
-"classic": "dđoãc"
-},
-{
-"input": "dd9oa4ch",
-"modern": "dđoãch",
-"classic": "dđoãch"
-},
-{
-"input": "dd9oa4m",
-"modern": "dđoãm",
-"classic": "dđoãm"
-},
-{
-"input": "dd9oa4n",
-"modern": "dđoãn",
-"classic": "dđoãn"
-},
-{
-"input": "dd9oa4ng",
-"modern": "dđoãng",
-"classic": "dđoãng"
-},
-{
-"input": "dd9oa4nh",
-"modern": "dđoãnh",
-"classic": "dđoãnh"
-},
-{
-"input": "dd9oa4p",
-"modern": "dđoãp",
-"classic": "dđoãp"
-},
-{
-"input": "dd9oa4t",
-"modern": "dđoãt",
-"classic": "dđoãt"
-},
-{
-"input": "dd9oa5",
-"modern": "dđọa",
-"classic": "dđoạ"
-},
-{
-"input": "dd9oa5c",
-"modern": "dđoạc",
-"classic": "dđoạc"
-},
-{
-"input": "dd9oa5ch",
-"modern": "dđoạch",
-"classic": "dđoạch"
-},
-{
-"input": "dd9oa5m",
-"modern": "dđoạm",
-"classic": "dđoạm"
-},
-{
-"input": "dd9oa5n",
-"modern": "dđoạn",
-"classic": "dđoạn"
-},
-{
-"input": "dd9oa5ng",
-"modern": "dđoạng",
-"classic": "dđoạng"
-},
-{
-"input": "dd9oa5nh",
-"modern": "dđoạnh",
-"classic": "dđoạnh"
-},
-{
-"input": "dd9oa5p",
-"modern": "dđoạp",
-"classic": "dđoạp"
-},
-{
-"input": "dd9oa5t",
-"modern": "dđoạt",
-"classic": "dđoạt"
-},
-{
-"input": "dd9oac",
-"modern": "dđoac",
-"classic": "dđoac"
-},
-{
-"input": "dd9oach",
-"modern": "dđoach",
-"classic": "dđoach"
-},
-{
-"input": "dd9oam",
-"modern": "dđoam",
-"classic": "dđoam"
-},
-{
-"input": "dd9oan",
-"modern": "dđoan",
-"classic": "dđoan"
-},
-{
-"input": "dd9oang",
-"modern": "dđoang",
-"classic": "dđoang"
-},
-{
-"input": "dd9oanh",
-"modern": "dđoanh",
-"classic": "dđoanh"
-},
-{
-"input": "dd9oap",
-"modern": "dđoap",
-"classic": "dđoap"
-},
-{
-"input": "dd9oat",
-"modern": "dđoat",
-"classic": "dđoat"
-},
-{
-"input": "dd9oc",
-"modern": "dđoc",
-"classic": "dđoc"
-},
-{
-"input": "dd9och",
-"modern": "dđoch",
-"classic": "dđoch"
-},
-{
-"input": "dd9oe",
-"modern": "dđoe",
-"classic": "dđoe"
-},
-{
-"input": "dd9oe1",
-"modern": "dđóe",
-"classic": "dđoé"
-},
-{
-"input": "dd9oe1c",
-"modern": "dđoéc",
-"classic": "dđoéc"
-},
-{
-"input": "dd9oe1ch",
-"modern": "dđoéch",
-"classic": "dđoéch"
-},
-{
-"input": "dd9oe1m",
-"modern": "dđoém",
-"classic": "dđoém"
-},
-{
-"input": "dd9oe1n",
-"modern": "dđoén",
-"classic": "dđoén"
-},
-{
-"input": "dd9oe1ng",
-"modern": "dđoéng",
-"classic": "dđoéng"
-},
-{
-"input": "dd9oe1nh",
-"modern": "dđoénh",
-"classic": "dđoénh"
-},
-{
-"input": "dd9oe1p",
-"modern": "dđoép",
-"classic": "dđoép"
-},
-{
-"input": "dd9oe1t",
-"modern": "dđoét",
-"classic": "dđoét"
-},
-{
-"input": "dd9oe2",
-"modern": "dđòe",
-"classic": "dđoè"
-},
-{
-"input": "dd9oe2c",
-"modern": "dđoèc",
-"classic": "dđoèc"
-},
-{
-"input": "dd9oe2ch",
-"modern": "dđoèch",
-"classic": "dđoèch"
-},
-{
-"input": "dd9oe2m",
-"modern": "dđoèm",
-"classic": "dđoèm"
-},
-{
-"input": "dd9oe2n",
-"modern": "dđoèn",
-"classic": "dđoèn"
-},
-{
-"input": "dd9oe2ng",
-"modern": "dđoèng",
-"classic": "dđoèng"
-},
-{
-"input": "dd9oe2nh",
-"modern": "dđoènh",
-"classic": "dđoènh"
-},
-{
-"input": "dd9oe2p",
-"modern": "dđoèp",
-"classic": "dđoèp"
-},
-{
-"input": "dd9oe2t",
-"modern": "dđoèt",
-"classic": "dđoèt"
-},
-{
-"input": "dd9oe3",
-"modern": "dđỏe",
-"classic": "dđoẻ"
-},
-{
-"input": "dd9oe3c",
-"modern": "dđoẻc",
-"classic": "dđoẻc"
-},
-{
-"input": "dd9oe3ch",
-"modern": "dđoẻch",
-"classic": "dđoẻch"
-},
-{
-"input": "dd9oe3m",
-"modern": "dđoẻm",
-"classic": "dđoẻm"
-},
-{
-"input": "dd9oe3n",
-"modern": "dđoẻn",
-"classic": "dđoẻn"
-},
-{
-"input": "dd9oe3ng",
-"modern": "dđoẻng",
-"classic": "dđoẻng"
-},
-{
-"input": "dd9oe3nh",
-"modern": "dđoẻnh",
-"classic": "dđoẻnh"
-},
-{
-"input": "dd9oe3p",
-"modern": "dđoẻp",
-"classic": "dđoẻp"
-},
-{
-"input": "dd9oe3t",
-"modern": "dđoẻt",
-"classic": "dđoẻt"
-},
-{
-"input": "dd9oe4",
-"modern": "dđõe",
-"classic": "dđoẽ"
-},
-{
-"input": "dd9oe4c",
-"modern": "dđoẽc",
-"classic": "dđoẽc"
-},
-{
-"input": "dd9oe4ch",
-"modern": "dđoẽch",
-"classic": "dđoẽch"
-},
-{
-"input": "dd9oe4m",
-"modern": "dđoẽm",
-"classic": "dđoẽm"
-},
-{
-"input": "dd9oe4n",
-"modern": "dđoẽn",
-"classic": "dđoẽn"
-},
-{
-"input": "dd9oe4ng",
-"modern": "dđoẽng",
-"classic": "dđoẽng"
-},
-{
-"input": "dd9oe4nh",
-"modern": "dđoẽnh",
-"classic": "dđoẽnh"
-},
-{
-"input": "dd9oe4p",
-"modern": "dđoẽp",
-"classic": "dđoẽp"
-},
-{
-"input": "dd9oe4t",
-"modern": "dđoẽt",
-"classic": "dđoẽt"
-},
-{
-"input": "dd9oe5",
-"modern": "dđọe",
-"classic": "dđoẹ"
-},
-{
-"input": "dd9oe5c",
-"modern": "dđoẹc",
-"classic": "dđoẹc"
-},
-{
-"input": "dd9oe5ch",
-"modern": "dđoẹch",
-"classic": "dđoẹch"
-},
-{
-"input": "dd9oe5m",
-"modern": "dđoẹm",
-"classic": "dđoẹm"
-},
-{
-"input": "dd9oe5n",
-"modern": "dđoẹn",
-"classic": "dđoẹn"
-},
-{
-"input": "dd9oe5ng",
-"modern": "dđoẹng",
-"classic": "dđoẹng"
-},
-{
-"input": "dd9oe5nh",
-"modern": "dđoẹnh",
-"classic": "dđoẹnh"
-},
-{
-"input": "dd9oe5p",
-"modern": "dđoẹp",
-"classic": "dđoẹp"
-},
-{
-"input": "dd9oe5t",
-"modern": "dđoẹt",
-"classic": "dđoẹt"
-},
-{
-"input": "dd9oec",
-"modern": "dđoec",
-"classic": "dđoec"
-},
-{
-"input": "dd9oech",
-"modern": "dđoech",
-"classic": "dđoech"
-},
-{
-"input": "dd9oem",
-"modern": "dđoem",
-"classic": "dđoem"
-},
-{
-"input": "dd9oen",
-"modern": "dđoen",
-"classic": "dđoen"
-},
-{
-"input": "dd9oeng",
-"modern": "dđoeng",
-"classic": "dđoeng"
-},
-{
-"input": "dd9oenh",
-"modern": "dđoenh",
-"classic": "dđoenh"
-},
-{
-"input": "dd9oep",
-"modern": "dđoep",
-"classic": "dđoep"
-},
-{
-"input": "dd9oet",
-"modern": "dđoet",
-"classic": "dđoet"
-},
-{
-"input": "dd9om",
-"modern": "dđom",
-"classic": "dđom"
-},
-{
-"input": "dd9on",
-"modern": "dđon",
-"classic": "dđon"
-},
-{
-"input": "dd9ong",
-"modern": "dđong",
-"classic": "dđong"
-},
-{
-"input": "dd9onh",
-"modern": "dđonh",
-"classic": "dđonh"
-},
-{
-"input": "dd9op",
-"modern": "dđop",
-"classic": "dđop"
-},
-{
-"input": "dd9ot",
-"modern": "dđot",
-"classic": "dđot"
-},
-{
-"input": "dd9u",
-"modern": "dđu",
-"classic": "dđu"
-},
-{
-"input": "dd9u1",
-"modern": "dđú",
-"classic": "dđú"
-},
-{
-"input": "dd9u1c",
-"modern": "dđúc",
-"classic": "dđúc"
-},
-{
-"input": "dd9u1ch",
-"modern": "dđúch",
-"classic": "dđúch"
-},
-{
-"input": "dd9u1m",
-"modern": "dđúm",
-"classic": "dđúm"
-},
-{
-"input": "dd9u1n",
-"modern": "dđún",
-"classic": "dđún"
-},
-{
-"input": "dd9u1ng",
-"modern": "dđúng",
-"classic": "dđúng"
-},
-{
-"input": "dd9u1nh",
-"modern": "dđúnh",
-"classic": "dđúnh"
-},
-{
-"input": "dd9u1p",
-"modern": "dđúp",
-"classic": "dđúp"
-},
-{
-"input": "dd9u1t",
-"modern": "dđút",
-"classic": "dđút"
-},
-{
-"input": "dd9u2",
-"modern": "dđù",
-"classic": "dđù"
-},
-{
-"input": "dd9u2c",
-"modern": "dđùc",
-"classic": "dđùc"
-},
-{
-"input": "dd9u2ch",
-"modern": "dđùch",
-"classic": "dđùch"
-},
-{
-"input": "dd9u2m",
-"modern": "dđùm",
-"classic": "dđùm"
-},
-{
-"input": "dd9u2n",
-"modern": "dđùn",
-"classic": "dđùn"
-},
-{
-"input": "dd9u2ng",
-"modern": "dđùng",
-"classic": "dđùng"
-},
-{
-"input": "dd9u2nh",
-"modern": "dđùnh",
-"classic": "dđùnh"
-},
-{
-"input": "dd9u2p",
-"modern": "dđùp",
-"classic": "dđùp"
-},
-{
-"input": "dd9u2t",
-"modern": "dđùt",
-"classic": "dđùt"
-},
-{
-"input": "dd9u3",
-"modern": "dđủ",
-"classic": "dđủ"
-},
-{
-"input": "dd9u3c",
-"modern": "dđủc",
-"classic": "dđủc"
-},
-{
-"input": "dd9u3ch",
-"modern": "dđủch",
-"classic": "dđủch"
-},
-{
-"input": "dd9u3m",
-"modern": "dđủm",
-"classic": "dđủm"
-},
-{
-"input": "dd9u3n",
-"modern": "dđủn",
-"classic": "dđủn"
-},
-{
-"input": "dd9u3ng",
-"modern": "dđủng",
-"classic": "dđủng"
-},
-{
-"input": "dd9u3nh",
-"modern": "dđủnh",
-"classic": "dđủnh"
-},
-{
-"input": "dd9u3p",
-"modern": "dđủp",
-"classic": "dđủp"
-},
-{
-"input": "dd9u3t",
-"modern": "dđủt",
-"classic": "dđủt"
-},
-{
-"input": "dd9u4",
-"modern": "dđũ",
-"classic": "dđũ"
-},
-{
-"input": "dd9u4c",
-"modern": "dđũc",
-"classic": "dđũc"
-},
-{
-"input": "dd9u4ch",
-"modern": "dđũch",
-"classic": "dđũch"
-},
-{
-"input": "dd9u4m",
-"modern": "dđũm",
-"classic": "dđũm"
-},
-{
-"input": "dd9u4n",
-"modern": "dđũn",
-"classic": "dđũn"
-},
-{
-"input": "dd9u4ng",
-"modern": "dđũng",
-"classic": "dđũng"
-},
-{
-"input": "dd9u4nh",
-"modern": "dđũnh",
-"classic": "dđũnh"
-},
-{
-"input": "dd9u4p",
-"modern": "dđũp",
-"classic": "dđũp"
-},
-{
-"input": "dd9u4t",
-"modern": "dđũt",
-"classic": "dđũt"
-},
-{
-"input": "dd9u5",
-"modern": "dđụ",
-"classic": "dđụ"
-},
-{
-"input": "dd9u5c",
-"modern": "dđục",
-"classic": "dđục"
-},
-{
-"input": "dd9u5ch",
-"modern": "dđụch",
-"classic": "dđụch"
-},
-{
-"input": "dd9u5m",
-"modern": "dđụm",
-"classic": "dđụm"
-},
-{
-"input": "dd9u5n",
-"modern": "dđụn",
-"classic": "dđụn"
-},
-{
-"input": "dd9u5ng",
-"modern": "dđụng",
-"classic": "dđụng"
-},
-{
-"input": "dd9u5nh",
-"modern": "dđụnh",
-"classic": "dđụnh"
-},
-{
-"input": "dd9u5p",
-"modern": "dđụp",
-"classic": "dđụp"
-},
-{
-"input": "dd9u5t",
-"modern": "dđụt",
-"classic": "dđụt"
-},
-{
-"input": "dd9u7",
-"modern": "dđư",
-"classic": "dđư"
-},
-{
-"input": "dd9u71",
-"modern": "dđứ",
-"classic": "dđứ"
-},
-{
-"input": "dd9u71c",
-"modern": "dđức",
-"classic": "dđức"
-},
-{
-"input": "dd9u71ch",
-"modern": "dđứch",
-"classic": "dđứch"
-},
-{
-"input": "dd9u71m",
-"modern": "dđứm",
-"classic": "dđứm"
-},
-{
-"input": "dd9u71n",
-"modern": "dđứn",
-"classic": "dđứn"
-},
-{
-"input": "dd9u71ng",
-"modern": "dđứng",
-"classic": "dđứng"
-},
-{
-"input": "dd9u71nh",
-"modern": "dđứnh",
-"classic": "dđứnh"
-},
-{
-"input": "dd9u71p",
-"modern": "dđứp",
-"classic": "dđứp"
-},
-{
-"input": "dd9u71t",
-"modern": "dđứt",
-"classic": "dđứt"
-},
-{
-"input": "dd9u72",
-"modern": "dđừ",
-"classic": "dđừ"
-},
-{
-"input": "dd9u72c",
-"modern": "dđừc",
-"classic": "dđừc"
-},
-{
-"input": "dd9u72ch",
-"modern": "dđừch",
-"classic": "dđừch"
-},
-{
-"input": "dd9u72m",
-"modern": "dđừm",
-"classic": "dđừm"
-},
-{
-"input": "dd9u72n",
-"modern": "dđừn",
-"classic": "dđừn"
-},
-{
-"input": "dd9u72ng",
-"modern": "dđừng",
-"classic": "dđừng"
-},
-{
-"input": "dd9u72nh",
-"modern": "dđừnh",
-"classic": "dđừnh"
-},
-{
-"input": "dd9u72p",
-"modern": "dđừp",
-"classic": "dđừp"
-},
-{
-"input": "dd9u72t",
-"modern": "dđừt",
-"classic": "dđừt"
-},
-{
-"input": "dd9u73",
-"modern": "dđử",
-"classic": "dđử"
-},
-{
-"input": "dd9u73c",
-"modern": "dđửc",
-"classic": "dđửc"
-},
-{
-"input": "dd9u73ch",
-"modern": "dđửch",
-"classic": "dđửch"
-},
-{
-"input": "dd9u73m",
-"modern": "dđửm",
-"classic": "dđửm"
-},
-{
-"input": "dd9u73n",
-"modern": "dđửn",
-"classic": "dđửn"
-},
-{
-"input": "dd9u73ng",
-"modern": "dđửng",
-"classic": "dđửng"
-},
-{
-"input": "dd9u73nh",
-"modern": "dđửnh",
-"classic": "dđửnh"
-},
-{
-"input": "dd9u73p",
-"modern": "dđửp",
-"classic": "dđửp"
-},
-{
-"input": "dd9u73t",
-"modern": "dđửt",
-"classic": "dđửt"
-},
-{
-"input": "dd9u74",
-"modern": "dđữ",
-"classic": "dđữ"
-},
-{
-"input": "dd9u74c",
-"modern": "dđữc",
-"classic": "dđữc"
-},
-{
-"input": "dd9u74ch",
-"modern": "dđữch",
-"classic": "dđữch"
-},
-{
-"input": "dd9u74m",
-"modern": "dđữm",
-"classic": "dđữm"
-},
-{
-"input": "dd9u74n",
-"modern": "dđữn",
-"classic": "dđữn"
-},
-{
-"input": "dd9u74ng",
-"modern": "dđững",
-"classic": "dđững"
-},
-{
-"input": "dd9u74nh",
-"modern": "dđữnh",
-"classic": "dđữnh"
-},
-{
-"input": "dd9u74p",
-"modern": "dđữp",
-"classic": "dđữp"
-},
-{
-"input": "dd9u74t",
-"modern": "dđữt",
-"classic": "dđữt"
-},
-{
-"input": "dd9u75",
-"modern": "dđự",
-"classic": "dđự"
-},
-{
-"input": "dd9u75c",
-"modern": "dđực",
-"classic": "dđực"
-},
-{
-"input": "dd9u75ch",
-"modern": "dđựch",
-"classic": "dđựch"
-},
-{
-"input": "dd9u75m",
-"modern": "dđựm",
-"classic": "dđựm"
-},
-{
-"input": "dd9u75n",
-"modern": "dđựn",
-"classic": "dđựn"
-},
-{
-"input": "dd9u75ng",
-"modern": "dđựng",
-"classic": "dđựng"
-},
-{
-"input": "dd9u75nh",
-"modern": "dđựnh",
-"classic": "dđựnh"
-},
-{
-"input": "dd9u75p",
-"modern": "dđựp",
-"classic": "dđựp"
-},
-{
-"input": "dd9u75t",
-"modern": "dđựt",
-"classic": "dđựt"
-},
-{
-"input": "dd9u7c",
-"modern": "dđưc",
-"classic": "dđưc"
-},
-{
-"input": "dd9u7ch",
-"modern": "dđưch",
-"classic": "dđưch"
-},
-{
-"input": "dd9u7m",
-"modern": "dđưm",
-"classic": "dđưm"
-},
-{
-"input": "dd9u7n",
-"modern": "dđưn",
-"classic": "dđưn"
-},
-{
-"input": "dd9u7ng",
-"modern": "dđưng",
-"classic": "dđưng"
-},
-{
-"input": "dd9u7nh",
-"modern": "dđưnh",
-"classic": "dđưnh"
-},
-{
-"input": "dd9u7o7",
-"modern": "dđươ",
-"classic": "dđươ"
-},
-{
-"input": "dd9u7o71",
-"modern": "dđướ",
-"classic": "dđướ"
-},
-{
-"input": "dd9u7o71c",
-"modern": "dđước",
-"classic": "dđước"
-},
-{
-"input": "dd9u7o71ch",
-"modern": "dđướch",
-"classic": "dđướch"
-},
-{
-"input": "dd9u7o71m",
-"modern": "dđướm",
-"classic": "dđướm"
-},
-{
-"input": "dd9u7o71n",
-"modern": "dđướn",
-"classic": "dđướn"
-},
-{
-"input": "dd9u7o71ng",
-"modern": "dđướng",
-"classic": "dđướng"
-},
-{
-"input": "dd9u7o71nh",
-"modern": "dđướnh",
-"classic": "dđướnh"
-},
-{
-"input": "dd9u7o71p",
-"modern": "dđướp",
-"classic": "dđướp"
-},
-{
-"input": "dd9u7o71t",
-"modern": "dđướt",
-"classic": "dđướt"
-},
-{
-"input": "dd9u7o72",
-"modern": "dđườ",
-"classic": "dđườ"
-},
-{
-"input": "dd9u7o72c",
-"modern": "dđườc",
-"classic": "dđườc"
-},
-{
-"input": "dd9u7o72ch",
-"modern": "dđườch",
-"classic": "dđườch"
-},
-{
-"input": "dd9u7o72m",
-"modern": "dđườm",
-"classic": "dđườm"
-},
-{
-"input": "dd9u7o72n",
-"modern": "dđườn",
-"classic": "dđườn"
-},
-{
-"input": "dd9u7o72ng",
-"modern": "dđường",
-"classic": "dđường"
-},
-{
-"input": "dd9u7o72nh",
-"modern": "dđườnh",
-"classic": "dđườnh"
-},
-{
-"input": "dd9u7o72p",
-"modern": "dđườp",
-"classic": "dđườp"
-},
-{
-"input": "dd9u7o72t",
-"modern": "dđườt",
-"classic": "dđườt"
-},
-{
-"input": "dd9u7o73",
-"modern": "dđưở",
-"classic": "dđưở"
-},
-{
-"input": "dd9u7o73c",
-"modern": "dđưởc",
-"classic": "dđưởc"
-},
-{
-"input": "dd9u7o73ch",
-"modern": "dđưởch",
-"classic": "dđưởch"
-},
-{
-"input": "dd9u7o73m",
-"modern": "dđưởm",
-"classic": "dđưởm"
-},
-{
-"input": "dd9u7o73n",
-"modern": "dđưởn",
-"classic": "dđưởn"
-},
-{
-"input": "dd9u7o73ng",
-"modern": "dđưởng",
-"classic": "dđưởng"
-},
-{
-"input": "dd9u7o73nh",
-"modern": "dđưởnh",
-"classic": "dđưởnh"
-},
-{
-"input": "dd9u7o73p",
-"modern": "dđưởp",
-"classic": "dđưởp"
-},
-{
-"input": "dd9u7o73t",
-"modern": "dđưởt",
-"classic": "dđưởt"
-},
-{
-"input": "dd9u7o74",
-"modern": "dđưỡ",
-"classic": "dđưỡ"
-},
-{
-"input": "dd9u7o74c",
-"modern": "dđưỡc",
-"classic": "dđưỡc"
-},
-{
-"input": "dd9u7o74ch",
-"modern": "dđưỡch",
-"classic": "dđưỡch"
-},
-{
-"input": "dd9u7o74m",
-"modern": "dđưỡm",
-"classic": "dđưỡm"
-},
-{
-"input": "dd9u7o74n",
-"modern": "dđưỡn",
-"classic": "dđưỡn"
-},
-{
-"input": "dd9u7o74ng",
-"modern": "dđưỡng",
-"classic": "dđưỡng"
-},
-{
-"input": "dd9u7o74nh",
-"modern": "dđưỡnh",
-"classic": "dđưỡnh"
-},
-{
-"input": "dd9u7o74p",
-"modern": "dđưỡp",
-"classic": "dđưỡp"
-},
-{
-"input": "dd9u7o74t",
-"modern": "dđưỡt",
-"classic": "dđưỡt"
-},
-{
-"input": "dd9u7o75",
-"modern": "dđượ",
-"classic": "dđượ"
-},
-{
-"input": "dd9u7o75c",
-"modern": "dđược",
-"classic": "dđược"
-},
-{
-"input": "dd9u7o75ch",
-"modern": "dđượch",
-"classic": "dđượch"
-},
-{
-"input": "dd9u7o75m",
-"modern": "dđượm",
-"classic": "dđượm"
-},
-{
-"input": "dd9u7o75n",
-"modern": "dđượn",
-"classic": "dđượn"
-},
-{
-"input": "dd9u7o75ng",
-"modern": "dđượng",
-"classic": "dđượng"
-},
-{
-"input": "dd9u7o75nh",
-"modern": "dđượnh",
-"classic": "dđượnh"
-},
-{
-"input": "dd9u7o75p",
-"modern": "dđượp",
-"classic": "dđượp"
-},
-{
-"input": "dd9u7o75t",
-"modern": "dđượt",
-"classic": "dđượt"
-},
-{
-"input": "dd9u7o7c",
-"modern": "dđươc",
-"classic": "dđươc"
-},
-{
-"input": "dd9u7o7ch",
-"modern": "dđươch",
-"classic": "dđươch"
-},
-{
-"input": "dd9u7o7i",
-"modern": "dđươi",
-"classic": "dđươi"
-},
-{
-"input": "dd9u7o7i1",
-"modern": "dđưới",
-"classic": "dđưới"
-},
-{
-"input": "dd9u7o7i1c",
-"modern": "dđướic",
-"classic": "dđướic"
-},
-{
-"input": "dd9u7o7i1ch",
-"modern": "dđướich",
-"classic": "dđướich"
-},
-{
-"input": "dd9u7o7i1m",
-"modern": "dđướim",
-"classic": "dđướim"
-},
-{
-"input": "dd9u7o7i1n",
-"modern": "dđướin",
-"classic": "dđướin"
-},
-{
-"input": "dd9u7o7i1ng",
-"modern": "dđướing",
-"classic": "dđướing"
-},
-{
-"input": "dd9u7o7i1nh",
-"modern": "dđướinh",
-"classic": "dđướinh"
-},
-{
-"input": "dd9u7o7i1p",
-"modern": "dđướip",
-"classic": "dđướip"
-},
-{
-"input": "dd9u7o7i1t",
-"modern": "dđướit",
-"classic": "dđướit"
-},
-{
-"input": "dd9u7o7i2",
-"modern": "dđười",
-"classic": "dđười"
-},
-{
-"input": "dd9u7o7i2c",
-"modern": "dđườic",
-"classic": "dđườic"
-},
-{
-"input": "dd9u7o7i2ch",
-"modern": "dđườich",
-"classic": "dđườich"
-},
-{
-"input": "dd9u7o7i2m",
-"modern": "dđườim",
-"classic": "dđườim"
-},
-{
-"input": "dd9u7o7i2n",
-"modern": "dđườin",
-"classic": "dđườin"
-},
-{
-"input": "dd9u7o7i2ng",
-"modern": "dđườing",
-"classic": "dđườing"
-},
-{
-"input": "dd9u7o7i2nh",
-"modern": "dđườinh",
-"classic": "dđườinh"
-},
-{
-"input": "dd9u7o7i2p",
-"modern": "dđườip",
-"classic": "dđườip"
-},
-{
-"input": "dd9u7o7i2t",
-"modern": "dđườit",
-"classic": "dđườit"
-},
-{
-"input": "dd9u7o7i3",
-"modern": "dđưởi",
-"classic": "dđưởi"
-},
-{
-"input": "dd9u7o7i3c",
-"modern": "dđưởic",
-"classic": "dđưởic"
-},
-{
-"input": "dd9u7o7i3ch",
-"modern": "dđưởich",
-"classic": "dđưởich"
-},
-{
-"input": "dd9u7o7i3m",
-"modern": "dđưởim",
-"classic": "dđưởim"
-},
-{
-"input": "dd9u7o7i3n",
-"modern": "dđưởin",
-"classic": "dđưởin"
-},
-{
-"input": "dd9u7o7i3ng",
-"modern": "dđưởing",
-"classic": "dđưởing"
-},
-{
-"input": "dd9u7o7i3nh",
-"modern": "dđưởinh",
-"classic": "dđưởinh"
-},
-{
-"input": "dd9u7o7i3p",
-"modern": "dđưởip",
-"classic": "dđưởip"
-},
-{
-"input": "dd9u7o7i3t",
-"modern": "dđưởit",
-"classic": "dđưởit"
-},
-{
-"input": "dd9u7o7i4",
-"modern": "dđưỡi",
-"classic": "dđưỡi"
-},
-{
-"input": "dd9u7o7i4c",
-"modern": "dđưỡic",
-"classic": "dđưỡic"
-},
-{
-"input": "dd9u7o7i4ch",
-"modern": "dđưỡich",
-"classic": "dđưỡich"
-},
-{
-"input": "dd9u7o7i4m",
-"modern": "dđưỡim",
-"classic": "dđưỡim"
-},
-{
-"input": "dd9u7o7i4n",
-"modern": "dđưỡin",
-"classic": "dđưỡin"
-},
-{
-"input": "dd9u7o7i4ng",
-"modern": "dđưỡing",
-"classic": "dđưỡing"
-},
-{
-"input": "dd9u7o7i4nh",
-"modern": "dđưỡinh",
-"classic": "dđưỡinh"
-},
-{
-"input": "dd9u7o7i4p",
-"modern": "dđưỡip",
-"classic": "dđưỡip"
-},
-{
-"input": "dd9u7o7i4t",
-"modern": "dđưỡit",
-"classic": "dđưỡit"
-},
-{
-"input": "dd9u7o7i5",
-"modern": "dđượi",
-"classic": "dđượi"
-},
-{
-"input": "dd9u7o7i5c",
-"modern": "dđượic",
-"classic": "dđượic"
-},
-{
-"input": "dd9u7o7i5ch",
-"modern": "dđượich",
-"classic": "dđượich"
-},
-{
-"input": "dd9u7o7i5m",
-"modern": "dđượim",
-"classic": "dđượim"
-},
-{
-"input": "dd9u7o7i5n",
-"modern": "dđượin",
-"classic": "dđượin"
-},
-{
-"input": "dd9u7o7i5ng",
-"modern": "dđượing",
-"classic": "dđượing"
-},
-{
-"input": "dd9u7o7i5nh",
-"modern": "dđượinh",
-"classic": "dđượinh"
-},
-{
-"input": "dd9u7o7i5p",
-"modern": "dđượip",
-"classic": "dđượip"
-},
-{
-"input": "dd9u7o7i5t",
-"modern": "dđượit",
-"classic": "dđượit"
-},
-{
-"input": "dd9u7o7ic",
-"modern": "dđươic",
-"classic": "dđươic"
-},
-{
-"input": "dd9u7o7ich",
-"modern": "dđươich",
-"classic": "dđươich"
-},
-{
-"input": "dd9u7o7im",
-"modern": "dđươim",
-"classic": "dđươim"
-},
-{
-"input": "dd9u7o7in",
-"modern": "dđươin",
-"classic": "dđươin"
-},
-{
-"input": "dd9u7o7ing",
-"modern": "dđươing",
-"classic": "dđươing"
-},
-{
-"input": "dd9u7o7inh",
-"modern": "dđươinh",
-"classic": "dđươinh"
-},
-{
-"input": "dd9u7o7ip",
-"modern": "dđươip",
-"classic": "dđươip"
-},
-{
-"input": "dd9u7o7it",
-"modern": "dđươit",
-"classic": "dđươit"
-},
-{
-"input": "dd9u7o7m",
-"modern": "dđươm",
-"classic": "dđươm"
-},
-{
-"input": "dd9u7o7n",
-"modern": "dđươn",
-"classic": "dđươn"
-},
-{
-"input": "dd9u7o7ng",
-"modern": "dđương",
-"classic": "dđương"
-},
-{
-"input": "dd9u7o7nh",
-"modern": "dđươnh",
-"classic": "dđươnh"
-},
-{
-"input": "dd9u7o7p",
-"modern": "dđươp",
-"classic": "dđươp"
-},
-{
-"input": "dd9u7o7t",
-"modern": "dđươt",
-"classic": "dđươt"
-},
-{
-"input": "dd9u7p",
-"modern": "dđưp",
-"classic": "dđưp"
-},
-{
-"input": "dd9u7t",
-"modern": "dđưt",
-"classic": "dđưt"
-},
-{
-"input": "dd9uc",
-"modern": "dđuc",
-"classic": "dđuc"
-},
-{
-"input": "dd9uch",
-"modern": "dđuch",
-"classic": "dđuch"
-},
-{
-"input": "dd9um",
-"modern": "dđum",
-"classic": "dđum"
-},
-{
-"input": "dd9un",
-"modern": "dđun",
-"classic": "dđun"
-},
-{
-"input": "dd9ung",
-"modern": "dđung",
-"classic": "dđung"
-},
-{
-"input": "dd9unh",
-"modern": "dđunh",
-"classic": "dđunh"
-},
-{
-"input": "dd9uo",
-"modern": "dđuo",
-"classic": "dđuo"
-},
-{
-"input": "dd9uo1",
-"modern": "dđúo",
-"classic": "dđuó"
-},
-{
-"input": "dd9uo1c",
-"modern": "dđuóc",
-"classic": "dđuóc"
-},
-{
-"input": "dd9uo1ch",
-"modern": "dđuóch",
-"classic": "dđuóch"
-},
-{
-"input": "dd9uo1m",
-"modern": "dđuóm",
-"classic": "dđuóm"
-},
-{
-"input": "dd9uo1n",
-"modern": "dđuón",
-"classic": "dđuón"
-},
-{
-"input": "dd9uo1ng",
-"modern": "dđuóng",
-"classic": "dđuóng"
-},
-{
-"input": "dd9uo1nh",
-"modern": "dđuónh",
-"classic": "dđuónh"
-},
-{
-"input": "dd9uo1p",
-"modern": "dđuóp",
-"classic": "dđuóp"
-},
-{
-"input": "dd9uo1t",
-"modern": "dđuót",
-"classic": "dđuót"
-},
-{
-"input": "dd9uo2",
-"modern": "dđùo",
-"classic": "dđuò"
-},
-{
-"input": "dd9uo2c",
-"modern": "dđuòc",
-"classic": "dđuòc"
-},
-{
-"input": "dd9uo2ch",
-"modern": "dđuòch",
-"classic": "dđuòch"
-},
-{
-"input": "dd9uo2m",
-"modern": "dđuòm",
-"classic": "dđuòm"
-},
-{
-"input": "dd9uo2n",
-"modern": "dđuòn",
-"classic": "dđuòn"
-},
-{
-"input": "dd9uo2ng",
-"modern": "dđuòng",
-"classic": "dđuòng"
-},
-{
-"input": "dd9uo2nh",
-"modern": "dđuònh",
-"classic": "dđuònh"
-},
-{
-"input": "dd9uo2p",
-"modern": "dđuòp",
-"classic": "dđuòp"
-},
-{
-"input": "dd9uo2t",
-"modern": "dđuòt",
-"classic": "dđuòt"
-},
-{
-"input": "dd9uo3",
-"modern": "dđủo",
-"classic": "dđuỏ"
-},
-{
-"input": "dd9uo3c",
-"modern": "dđuỏc",
-"classic": "dđuỏc"
-},
-{
-"input": "dd9uo3ch",
-"modern": "dđuỏch",
-"classic": "dđuỏch"
-},
-{
-"input": "dd9uo3m",
-"modern": "dđuỏm",
-"classic": "dđuỏm"
-},
-{
-"input": "dd9uo3n",
-"modern": "dđuỏn",
-"classic": "dđuỏn"
-},
-{
-"input": "dd9uo3ng",
-"modern": "dđuỏng",
-"classic": "dđuỏng"
-},
-{
-"input": "dd9uo3nh",
-"modern": "dđuỏnh",
-"classic": "dđuỏnh"
-},
-{
-"input": "dd9uo3p",
-"modern": "dđuỏp",
-"classic": "dđuỏp"
-},
-{
-"input": "dd9uo3t",
-"modern": "dđuỏt",
-"classic": "dđuỏt"
-},
-{
-"input": "dd9uo4",
-"modern": "dđũo",
-"classic": "dđuõ"
-},
-{
-"input": "dd9uo4c",
-"modern": "dđuõc",
-"classic": "dđuõc"
-},
-{
-"input": "dd9uo4ch",
-"modern": "dđuõch",
-"classic": "dđuõch"
-},
-{
-"input": "dd9uo4m",
-"modern": "dđuõm",
-"classic": "dđuõm"
-},
-{
-"input": "dd9uo4n",
-"modern": "dđuõn",
-"classic": "dđuõn"
-},
-{
-"input": "dd9uo4ng",
-"modern": "dđuõng",
-"classic": "dđuõng"
-},
-{
-"input": "dd9uo4nh",
-"modern": "dđuõnh",
-"classic": "dđuõnh"
-},
-{
-"input": "dd9uo4p",
-"modern": "dđuõp",
-"classic": "dđuõp"
-},
-{
-"input": "dd9uo4t",
-"modern": "dđuõt",
-"classic": "dđuõt"
-},
-{
-"input": "dd9uo5",
-"modern": "dđụo",
-"classic": "dđuọ"
-},
-{
-"input": "dd9uo5c",
-"modern": "dđuọc",
-"classic": "dđuọc"
-},
-{
-"input": "dd9uo5ch",
-"modern": "dđuọch",
-"classic": "dđuọch"
-},
-{
-"input": "dd9uo5m",
-"modern": "dđuọm",
-"classic": "dđuọm"
-},
-{
-"input": "dd9uo5n",
-"modern": "dđuọn",
-"classic": "dđuọn"
-},
-{
-"input": "dd9uo5ng",
-"modern": "dđuọng",
-"classic": "dđuọng"
-},
-{
-"input": "dd9uo5nh",
-"modern": "dđuọnh",
-"classic": "dđuọnh"
-},
-{
-"input": "dd9uo5p",
-"modern": "dđuọp",
-"classic": "dđuọp"
-},
-{
-"input": "dd9uo5t",
-"modern": "dđuọt",
-"classic": "dđuọt"
-},
-{
-"input": "dd9uoc",
-"modern": "dđuoc",
-"classic": "dđuoc"
-},
-{
-"input": "dd9uoch",
-"modern": "dđuoch",
-"classic": "dđuoch"
-},
-{
-"input": "dd9uom",
-"modern": "dđuom",
-"classic": "dđuom"
-},
-{
-"input": "dd9uon",
-"modern": "dđuon",
-"classic": "dđuon"
-},
-{
-"input": "dd9uong",
-"modern": "dđuong",
-"classic": "dđuong"
-},
-{
-"input": "dd9uonh",
-"modern": "dđuonh",
-"classic": "dđuonh"
-},
-{
-"input": "dd9uop",
-"modern": "dđuop",
-"classic": "dđuop"
-},
-{
-"input": "dd9uot",
-"modern": "dđuot",
-"classic": "dđuot"
-},
-{
-"input": "dd9up",
-"modern": "dđup",
-"classic": "dđup"
-},
-{
-"input": "dd9ut",
-"modern": "dđut",
-"classic": "dđut"
-},
-{
-"input": "dd9ye6",
-"modern": "dđyê",
-"classic": "dđyê"
-},
-{
-"input": "dd9ye61",
-"modern": "dđyế",
-"classic": "dđyế"
-},
-{
-"input": "dd9ye61c",
-"modern": "dđyếc",
-"classic": "dđyếc"
-},
-{
-"input": "dd9ye61ch",
-"modern": "dđyếch",
-"classic": "dđyếch"
-},
-{
-"input": "dd9ye61m",
-"modern": "dđyếm",
-"classic": "dđyếm"
-},
-{
-"input": "dd9ye61n",
-"modern": "dđyến",
-"classic": "dđyến"
-},
-{
-"input": "dd9ye61ng",
-"modern": "dđyếng",
-"classic": "dđyếng"
-},
-{
-"input": "dd9ye61nh",
-"modern": "dđyếnh",
-"classic": "dđyếnh"
-},
-{
-"input": "dd9ye61p",
-"modern": "dđyếp",
-"classic": "dđyếp"
-},
-{
-"input": "dd9ye61t",
-"modern": "dđyết",
-"classic": "dđyết"
-},
-{
-"input": "dd9ye62",
-"modern": "dđyề",
-"classic": "dđyề"
-},
-{
-"input": "dd9ye62c",
-"modern": "dđyềc",
-"classic": "dđyềc"
-},
-{
-"input": "dd9ye62ch",
-"modern": "dđyềch",
-"classic": "dđyềch"
-},
-{
-"input": "dd9ye62m",
-"modern": "dđyềm",
-"classic": "dđyềm"
-},
-{
-"input": "dd9ye62n",
-"modern": "dđyền",
-"classic": "dđyền"
-},
-{
-"input": "dd9ye62ng",
-"modern": "dđyềng",
-"classic": "dđyềng"
-},
-{
-"input": "dd9ye62nh",
-"modern": "dđyềnh",
-"classic": "dđyềnh"
-},
-{
-"input": "dd9ye62p",
-"modern": "dđyềp",
-"classic": "dđyềp"
-},
-{
-"input": "dd9ye62t",
-"modern": "dđyềt",
-"classic": "dđyềt"
-},
-{
-"input": "dd9ye63",
-"modern": "dđyể",
-"classic": "dđyể"
-},
-{
-"input": "dd9ye63c",
-"modern": "dđyểc",
-"classic": "dđyểc"
-},
-{
-"input": "dd9ye63ch",
-"modern": "dđyểch",
-"classic": "dđyểch"
-},
-{
-"input": "dd9ye63m",
-"modern": "dđyểm",
-"classic": "dđyểm"
-},
-{
-"input": "dd9ye63n",
-"modern": "dđyển",
-"classic": "dđyển"
-},
-{
-"input": "dd9ye63ng",
-"modern": "dđyểng",
-"classic": "dđyểng"
-},
-{
-"input": "dd9ye63nh",
-"modern": "dđyểnh",
-"classic": "dđyểnh"
-},
-{
-"input": "dd9ye63p",
-"modern": "dđyểp",
-"classic": "dđyểp"
-},
-{
-"input": "dd9ye63t",
-"modern": "dđyểt",
-"classic": "dđyểt"
-},
-{
-"input": "dd9ye64",
-"modern": "dđyễ",
-"classic": "dđyễ"
-},
-{
-"input": "dd9ye64c",
-"modern": "dđyễc",
-"classic": "dđyễc"
-},
-{
-"input": "dd9ye64ch",
-"modern": "dđyễch",
-"classic": "dđyễch"
-},
-{
-"input": "dd9ye64m",
-"modern": "dđyễm",
-"classic": "dđyễm"
-},
-{
-"input": "dd9ye64n",
-"modern": "dđyễn",
-"classic": "dđyễn"
-},
-{
-"input": "dd9ye64ng",
-"modern": "dđyễng",
-"classic": "dđyễng"
-},
-{
-"input": "dd9ye64nh",
-"modern": "dđyễnh",
-"classic": "dđyễnh"
-},
-{
-"input": "dd9ye64p",
-"modern": "dđyễp",
-"classic": "dđyễp"
-},
-{
-"input": "dd9ye64t",
-"modern": "dđyễt",
-"classic": "dđyễt"
-},
-{
-"input": "dd9ye65",
-"modern": "dđyệ",
-"classic": "dđyệ"
-},
-{
-"input": "dd9ye65c",
-"modern": "dđyệc",
-"classic": "dđyệc"
-},
-{
-"input": "dd9ye65ch",
-"modern": "dđyệch",
-"classic": "dđyệch"
-},
-{
-"input": "dd9ye65m",
-"modern": "dđyệm",
-"classic": "dđyệm"
-},
-{
-"input": "dd9ye65n",
-"modern": "dđyện",
-"classic": "dđyện"
-},
-{
-"input": "dd9ye65ng",
-"modern": "dđyệng",
-"classic": "dđyệng"
-},
-{
-"input": "dd9ye65nh",
-"modern": "dđyệnh",
-"classic": "dđyệnh"
-},
-{
-"input": "dd9ye65p",
-"modern": "dđyệp",
-"classic": "dđyệp"
-},
-{
-"input": "dd9ye65t",
-"modern": "dđyệt",
-"classic": "dđyệt"
-},
-{
-"input": "dd9ye6c",
-"modern": "dđyêc",
-"classic": "dđyêc"
-},
-{
-"input": "dd9ye6ch",
-"modern": "dđyêch",
-"classic": "dđyêch"
-},
-{
-"input": "dd9ye6m",
-"modern": "dđyêm",
-"classic": "dđyêm"
-},
-{
-"input": "dd9ye6n",
-"modern": "dđyên",
-"classic": "dđyên"
-},
-{
-"input": "dd9ye6ng",
-"modern": "dđyêng",
-"classic": "dđyêng"
-},
-{
-"input": "dd9ye6nh",
-"modern": "dđyênh",
-"classic": "dđyênh"
-},
-{
-"input": "dd9ye6p",
-"modern": "dđyêp",
-"classic": "dđyêp"
-},
-{
-"input": "dd9ye6t",
-"modern": "dđyêt",
-"classic": "dđyêt"
 },
 {
 "input": "de",
