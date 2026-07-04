@@ -160,8 +160,12 @@ static std::string runOne(const std::string& telex, int orthography) {
 
 // ---------------------------------------------------------------------------
 // main — read lines from stdin, emit TSV
+// Usage: oracle [telex|vni]   (default: telex)
 // ---------------------------------------------------------------------------
-int main() {
+int main(int argc, char* argv[]) {
+    // Set input method before processing any input.
+    if (argc > 1 && std::string(argv[1]) == "vni") vInputType = 1;  // vVNI
+
     char buf[4096];
     while (fgets(buf, sizeof(buf), stdin)) {
         std::string telex(buf);
