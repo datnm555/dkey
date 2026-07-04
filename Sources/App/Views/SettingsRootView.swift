@@ -16,9 +16,14 @@ struct SettingsRootView: View {
             }
             .navigationSplitViewColumnWidth(180)
         } detail: {
-            placeholder(for: state.selectedPage)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .padding()
+            Group {
+                switch state.selectedPage {
+                case .typing: TypingSettingsView()
+                default:      placeholder(for: state.selectedPage)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding()
         }
     }
 
