@@ -43,16 +43,40 @@ final class AppState: ObservableObject {
     @Published var hasAccessibility: Bool = false
 
     @Published var isVietnamese: Bool = true {
-        didSet { if !_isReflecting { controller.setVietnamese(isVietnamese) } }
+        didSet { if !_isReflecting { controller.setVietnamese(isVietnamese); persist() } }
+    }
+    @Published var inputMethod: InputMethod = .telex {
+        didSet { if !_isReflecting { controller.engine.inputMethod = inputMethod; controller.engine.newSession(); persist() } }
+    }
+    @Published var useModernOrthography: Bool = true {
+        didSet { if !_isReflecting { controller.engine.useModernOrthography = useModernOrthography; controller.engine.newSession(); persist() } }
     }
     @Published var grayIcon: Bool = false
     @Published var selectedPage: SettingsPage = .typing
-    @Published var switchKeyStatus: Int32 = AppState.defaultSwitchKeyStatus
+    @Published var switchKeyStatus: Int32 = AppState.defaultSwitchKeyStatus {
+        didSet { if !_isReflecting { controller.switchKeyStatus = switchKeyStatus; persist() } }
+    }
 
+    private let store = SettingsStore()
     private var _isReflecting = false
 
     private init() {
-        controller.setVietnamese(isVietnamese)
+        let s = store.load()
+        _isReflecting = true
+        isVietnamese = s.isVietnamese
+        inputMethod = s.inputMethod
+        useModernOrthography = s.useModernOrthography
+        switchKeyStatus = s.switchKeyStatus
+        _isReflecting = false
+        controller.apply(inputMethod: s.inputMethod, modernOrthography: s.useModernOrthography, switchKeyStatus: s.switchKeyStatus)
+        controller.setVietnamese(s.isVietnamese)
+    }
+
+    private func persist() {
+        store.save(DkeySettings(inputMethod: inputMethod,
+                                useModernOrthography: useModernOrthography,
+                                switchKeyStatus: switchKeyStatus,
+                                isVietnamese: isVietnamese))
     }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.

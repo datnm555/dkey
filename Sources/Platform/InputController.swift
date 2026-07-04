@@ -24,6 +24,14 @@ public final class InputController {
         engine.newSession()
     }
 
+    /// Apply UI-driven config to the engine + hotkey. Resets the session.
+    public func apply(inputMethod: InputMethod, modernOrthography: Bool, switchKeyStatus: Int32) {
+        engine.inputMethod = inputMethod
+        engine.useModernOrthography = modernOrthography
+        self.switchKeyStatus = switchKeyStatus
+        engine.newSession()
+    }
+
     public func handle(_ e: KeyEvent) -> SynthesisPlan {
         switch e.kind {
         case .flagsChanged, .keyUp:

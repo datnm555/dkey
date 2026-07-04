@@ -29,4 +29,13 @@ final class SettingsStoreTests: XCTestCase {
         let store = SettingsStore(defaults: d)
         XCTAssertEqual(store.load(), DkeySettings.defaults)
     }
+
+    @MainActor
+    func testControllerApplyReachesEngine() {
+        let c = InputController()
+        c.apply(inputMethod: .vni, modernOrthography: false, switchKeyStatus: 0x7A000206)
+        XCTAssertEqual(c.engine.inputMethod, .vni)
+        XCTAssertFalse(c.engine.useModernOrthography)
+        XCTAssertEqual(c.switchKeyStatus, 0x7A000206)
+    }
 }
