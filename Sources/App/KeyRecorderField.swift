@@ -38,7 +38,11 @@ private struct KeyCaptureView: NSViewRepresentable {
     }
     func updateNSView(_ v: CaptureNSView, context: Context) {
         v.onCapture = onCapture
-        if recording { DispatchQueue.main.async { v.window?.makeFirstResponder(v) } }
+        if recording {
+            DispatchQueue.main.async { v.window?.makeFirstResponder(v) }
+        } else if v.window?.firstResponder === v {
+            v.window?.makeFirstResponder(nil)
+        }
     }
 
     final class CaptureNSView: NSView {
