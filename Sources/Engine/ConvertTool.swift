@@ -11,9 +11,13 @@ public enum ConvertTool {
         return UInt16((i + 1) << 13)
     }
 
+    // Fix B: iterate keys in sorted order — mirrors C++ std::map ascending-key iteration, making
+    // results deterministic when multiple entries share a value.
     private static func findKeyCode(_ value: UInt16, in table: [UInt32: [UInt16]]) -> (j: UInt32, k: Int)? {
-        for (key, vals) in table {
-            if let k = vals.firstIndex(of: value) { return (key, k) }
+        for key in table.keys.sorted() {
+            // Use lastIndex so that TCVN3 duplicate pairs (same byte for upper/lower) resolve to the
+            // odd (lowercase) canonical index; for tables with unique values lastIndex == firstIndex.
+            if let vals = table[key], let k = vals.lastIndex(of: value) { return (key, k) }
         }
         return nil
     }
@@ -24,21 +28,23 @@ public enum ConvertTool {
         let dst = CodeTable.table(to)
         let scalars = Array(text.unicodeScalars)
         var out: [Unicode.Scalar] = []
-        let allCaps = caseMode == .upper, allNon = caseMode == .lower
         var shouldUpper = caseMode == .sentence || caseMode == .title
         var hasBreak = false
         var i = 0
 
         // Map a matched (j,k) to the target-table output scalars.
+        // Fix A: derive wantUpper/wantLower per call; in .keep mode both are false → no case change.
         func emit(_ j: UInt32, _ k0: Int) {
+            let wantUpper = (caseMode == .upper) || ((caseMode == .sentence || caseMode == .title) && shouldUpper)
+            let wantLower = (caseMode == .lower) || ((caseMode == .sentence || caseMode == .title) && !shouldUpper)
             var k = k0
-            if (allCaps || shouldUpper) && k % 2 != 0 { k -= 1 }
-            else if (allNon || !shouldUpper) && k % 2 == 0 { k += 1 }
-            var target = dst[j]?[k] ?? 0
+            if wantUpper && k % 2 != 0 { k -= 1 }
+            else if wantLower && k % 2 == 0 { k += 1 }
+            let target = dst[j]?[k] ?? 0
             if removeMark {
                 var ch = keyCodeToCharacter(j)               // ASCII base letter
-                if allCaps { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).uppercased().unicodeScalars.first!.value) }
-                else if allNon { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).lowercased().unicodeScalars.first!.value) }
+                if wantUpper { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).uppercased().unicodeScalars.first!.value) }
+                else if wantLower { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).lowercased().unicodeScalars.first!.value) }
                 out.append(Unicode.Scalar(ch) ?? " ")
                 return
             }
@@ -60,32 +66,40 @@ public enum ConvertTool {
 
         while i < scalars.count {
             let cur = scalars[i]
-            // Two-unit / compound source detection (ConvertTool.cpp:66-86).
-            if i < scalars.count - 1 {
-                var t: UInt16? = nil, consume2 = false
-                switch from {
-                case .vniWindows, .cp1258:
-                    t = UInt16(truncatingIfNeeded: cur.value) | (UInt16(truncatingIfNeeded: scalars[i+1].value) << 8); consume2 = true
-                case .unicodeCompound:
-                    if let m = compoundMarkMarker(scalars[i+1]) { t = UInt16(truncatingIfNeeded: cur.value) | m; consume2 = true }
-                default: break
+            // Fix C: skip non-BMP scalars for table lookup — a scalar > 0xFFFF must go straight to
+            // passthrough rather than be truncated into a false table match.
+            if cur.value <= 0xFFFF {
+                // Two-unit / compound source detection (ConvertTool.cpp:66-86).
+                if i < scalars.count - 1 {
+                    let next = scalars[i+1]
+                    var t: UInt16? = nil, consume2 = false
+                    switch from {
+                    case .vniWindows, .cp1258:
+                        // Fix C: guard next scalar too — a non-BMP next byte would produce a garbage high byte.
+                        if next.value <= 0xFFFF {
+                            t = UInt16(truncatingIfNeeded: cur.value) | (UInt16(truncatingIfNeeded: next.value) << 8)
+                            consume2 = true
+                        }
+                    case .unicodeCompound:
+                        if let m = compoundMarkMarker(next) { t = UInt16(truncatingIfNeeded: cur.value) | m; consume2 = true }
+                    default: break
+                    }
+                    if let t, let (j, k) = findKeyCode(t, in: src) {
+                        emit(j, k); i += consume2 ? 2 : 1; shouldUpper = false; hasBreak = false; continue
+                    }
                 }
-                if let t, let (j, k) = findKeyCode(t, in: src) {
-                    emit(j, k); i += consume2 ? 2 : 1; shouldUpper = false; hasBreak = false; continue
+                // Single-unit source (ConvertTool.cpp:130-154).
+                if let (j, k) = findKeyCode(UInt16(truncatingIfNeeded: cur.value), in: src) {
+                    emit(j, k); i += 1; shouldUpper = false; hasBreak = false; continue
                 }
-            }
-            // Single-unit source (ConvertTool.cpp:130-154).
-            if let (j, k) = findKeyCode(UInt16(truncatingIfNeeded: cur.value), in: src) {
-                emit(j, k); i += 1; shouldUpper = false; hasBreak = false; continue
             }
             // Passthrough — preserve original, apply case (ConvertTool.cpp:156-174).
-            // Port note: C++ lowercases when shouldUpperCase=false (even in keep mode) due to
-            // unreachable else branch. For keep mode, we preserve the original scalar so that
-            // round-trip tests pass (uppercase non-Vietnamese passthrough chars like 'T','V' survive).
-            if allCaps || shouldUpper { out.append(contentsOf: String(cur).uppercased().unicodeScalars) }
-            else if allNon || (!shouldUpper && (caseMode == .sentence || caseMode == .title)) {
-                out.append(contentsOf: String(cur).lowercased().unicodeScalars)
-            } else { out.append(cur) }
+            // Fix A: use wantUpper/wantLower; in .keep mode both false → preserve scalar as-is.
+            let wantUpper = (caseMode == .upper) || ((caseMode == .sentence || caseMode == .title) && shouldUpper)
+            let wantLower = (caseMode == .lower) || ((caseMode == .sentence || caseMode == .title) && !shouldUpper)
+            if wantUpper { out.append(contentsOf: String(cur).uppercased().unicodeScalars) }
+            else if wantLower { out.append(contentsOf: String(cur).lowercased().unicodeScalars) }
+            else { out.append(cur) }
 
             let v = cur.value
             if v == 10 || (hasBreak && v == 32) { if caseMode == .sentence || caseMode == .title { shouldUpper = true } }

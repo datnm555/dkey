@@ -29,4 +29,29 @@ final class ConvertToolTests: XCTestCase {
     func testRemoveMark() {
         XCTAssertEqual(ConvertTool.convert("tiếng Việt", from: .unicode, to: .unicode, removeMark: true), "tieng Viet")
     }
+
+    // Fix A: keep mode must preserve case on in-table vowels (not just passthrough chars).
+    // Previously, uppercase Vietnamese vowels (e.g. Ế in TIẾNG) were force-lowercased.
+    func testKeepModePreservesCase() {
+        XCTAssertEqual(
+            ConvertTool.convert("TIẾNG Việt", from: .unicode, to: .unicode, caseMode: .keep),
+            "TIẾNG Việt"
+        )
+    }
+
+    // Sentence mode: capitalize only the first letter after a sentence break (. ? !) + space.
+    func testCaseSentence() {
+        XCTAssertEqual(
+            ConvertTool.convert("tiếng việt. xin chào", from: .unicode, to: .unicode, caseMode: .sentence),
+            "Tiếng việt. Xin chào"
+        )
+    }
+
+    // Title mode: capitalize the first letter of every word (space-separated).
+    func testCaseTitle() {
+        XCTAssertEqual(
+            ConvertTool.convert("tiếng việt. xin chào", from: .unicode, to: .unicode, caseMode: .title),
+            "Tiếng Việt. Xin Chào"
+        )
+    }
 }
