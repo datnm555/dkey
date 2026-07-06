@@ -20,6 +20,7 @@ public struct MacroTable {
 
         let chars = Array(word)
         let firstUpper = chars[0].isUppercase
+        guard firstUpper else { return nil }
         let secondUpper = chars.count > 1 && chars[1].isUppercase
         if firstUpper && secondUpper { return content.uppercased() }
         if firstUpper { return content.prefix(1).uppercased() + content.dropFirst() }

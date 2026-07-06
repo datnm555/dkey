@@ -28,4 +28,8 @@ final class MacroTableTests: XCTestCase {
     func testAutoCapsLowerStillExact() {
         XCTAssertEqual(table.expansion(for: "btw", autoCaps: true), "by the way")
     }
+
+    func testAutoCapsFirstLowerDoesNotMatch() {
+        XCTAssertNil(table.expansion(for: "bTw", autoCaps: true))
+    }
 }
