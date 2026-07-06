@@ -19,6 +19,7 @@ struct SettingsRootView: View {
             Group {
                 switch state.selectedPage {
                 case .typing: TypingSettingsView()
+                case .about:  AboutView()
                 default:      placeholder(for: state.selectedPage)
                 }
             }
