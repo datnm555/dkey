@@ -18,9 +18,10 @@ struct SettingsRootView: View {
         } detail: {
             Group {
                 switch state.selectedPage {
-                case .typing: TypingSettingsView()
-                case .about:  AboutView()
-                default:      placeholder(for: state.selectedPage)
+                case .typing:   TypingSettingsView()
+                case .about:    AboutView()
+                case .convert:  ConvertView()
+                default:        placeholder(for: state.selectedPage)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
