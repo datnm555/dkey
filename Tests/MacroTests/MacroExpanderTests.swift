@@ -32,7 +32,9 @@ final class MacroExpanderTests: XCTestCase {
 
     func testAutoCaps() {
         let e = expander(); e.autoCaps = true; type("Btw", into: e)
-        XCTAssertEqual(String(String.UnicodeScalarView(e.expand()?.content ?? [])), "By the way")
+        let hit = e.expand()
+        XCTAssertEqual(hit?.backspaces, 3)
+        XCTAssertEqual(String(String.UnicodeScalarView(hit?.content ?? [])), "By the way")
     }
 
     func testResetClearsWord() {
