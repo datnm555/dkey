@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// Cửa sổ Settings: sidebar 5 tab. Phase 0 nội dung tab còn rỗng,
-/// sẽ thay bằng TypingPage/MacroPage/... ở phase sau.
+/// Cửa sổ Settings: sidebar 5 tab. Tab `typing` và `about` đã có nội dung thật;
+/// `macro`/`convert`/`system` còn là placeholder (sẽ làm ở các sub-project sau).
 struct SettingsRootView: View {
     @EnvironmentObject private var state: AppState
 
