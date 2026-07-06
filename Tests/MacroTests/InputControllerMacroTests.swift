@@ -43,4 +43,24 @@ final class InputControllerMacroTests: XCTestCase {
         _ = c.handle(down(KeyCode.v)); _ = c.handle(down(KeyCode.n))
         XCTAssertEqual(c.handle(down(KeyCode.space)), .passthrough)
     }
+
+    func testExpandsAfterTelexTransform() {
+        // Type "as" in Telex → displayed "á"; a macro keyed on the displayed char must match.
+        let c = InputController()
+        c.macro.isEnabled = true
+        c.macro.setMacros([Macro(key: "á", content: "Anh")])
+        _ = c.handle(down(KeyCode.a))          // 'a'
+        _ = c.handle(down(KeyCode.s))          // Telex 's' → á (backspaces:1, chars:["á"])
+        let plan = c.handle(down(KeyCode.space))
+        XCTAssertEqual(plan, .consume(backspaces: 1, chars: Array("Anh ".unicodeScalars)))
+    }
+
+    func testDeleteKeepsMacroWordInSync() {
+        let c = controller()   // macro "vn" → "Việt Nam", enabled
+        _ = c.handle(down(KeyCode.v)); _ = c.handle(down(KeyCode.n))
+        let delPlan = c.handle(down(KeyCode.delete))   // pops 'n' from the macro word
+        XCTAssertEqual(delPlan, .passthrough)
+        // Word is now "v" — not a macro — so space does NOT expand.
+        XCTAssertEqual(c.handle(down(KeyCode.space)), .passthrough)
+    }
 }

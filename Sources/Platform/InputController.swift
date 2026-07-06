@@ -46,7 +46,11 @@ public final class InputController {
             return .toggleLanguage
         }
         // 2. Control/command shortcut → break the word, pass through.
-        if e.hasOtherControl { engine.newSession(); macro.reset(); return .passthrough }
+        if e.hasOtherControl {
+            if isVietnamese { engine.newSession() }  // gated: original code never called engine in English mode
+            macro.reset()
+            return .passthrough
+        }
 
         // 3. Backspace (only intercepted when macro is active — otherwise behaviour is 100%
         //    unchanged). Keep the macro word in sync and pass through. We deliberately do NOT wire
