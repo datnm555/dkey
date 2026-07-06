@@ -1,0 +1,5522 @@
+[
+{
+"from": 0,
+"to": 1,
+"text": "tiếng ",
+"expected": "tiÕng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tiếng ",
+"expected": "tieáng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tiếng ",
+"expected": "tiếng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tiếng ",
+"expected": "tiêìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "việt ",
+"expected": "viÖt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "việt ",
+"expected": "vieät "
+},
+{
+"from": 0,
+"to": 3,
+"text": "việt ",
+"expected": "việt "
+},
+{
+"from": 0,
+"to": 4,
+"text": "việt ",
+"expected": "viêòt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đồng ",
+"expected": "®ång "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đồng ",
+"expected": "ñoàng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đồng ",
+"expected": "đồng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đồng ",
+"expected": "ðôÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xin chào ",
+"expected": "xin chµo "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xin chào ",
+"expected": "xin chaøo "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xin chào ",
+"expected": "xin chào "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xin chào ",
+"expected": "xin chaÌo "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ngôn ngữ ",
+"expected": "ng«n ng÷ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ngôn ngữ ",
+"expected": "ngoân ngöõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ngôn ngữ ",
+"expected": "ngôn ngữ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ngôn ngữ ",
+"expected": "ngôn ngýÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "phát triển ",
+"expected": "ph¸t triÓn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "phát triển ",
+"expected": "phaùt trieån "
+},
+{
+"from": 0,
+"to": 3,
+"text": "phát triển ",
+"expected": "phát triển "
+},
+{
+"from": 0,
+"to": 4,
+"text": "phát triển ",
+"expected": "phaìt triêÒn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "những ",
+"expected": "nh÷ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "những ",
+"expected": "nhöõng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "những ",
+"expected": "những "
+},
+{
+"from": 0,
+"to": 4,
+"text": "những ",
+"expected": "nhýÞng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ương ",
+"expected": "­¬ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ương ",
+"expected": "öông "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ương ",
+"expected": "ương "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ương ",
+"expected": "ýõng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "quốc ",
+"expected": "quèc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "quốc ",
+"expected": "quoác "
+},
+{
+"from": 0,
+"to": 3,
+"text": "quốc ",
+"expected": "quốc "
+},
+{
+"from": 0,
+"to": 4,
+"text": "quốc ",
+"expected": "quôìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hoà ",
+"expected": "hoµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hoà ",
+"expected": "hoaø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hoà ",
+"expected": "hoà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hoà ",
+"expected": "hoaÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ân ",
+"expected": "©n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ân ",
+"expected": "aân "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ân ",
+"expected": "ân "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ân ",
+"expected": "ân "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ân đức ",
+"expected": "©n ®øc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ân đức ",
+"expected": "aân ñöùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ân đức ",
+"expected": "ân đức "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ân đức ",
+"expected": "ân ðýìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bác ",
+"expected": "b¸c "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bác ",
+"expected": "baùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bác ",
+"expected": "bác "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bác ",
+"expected": "baìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bàn ",
+"expected": "bµn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bàn ",
+"expected": "baøn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bàn ",
+"expected": "bàn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bàn ",
+"expected": "baÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bằng ",
+"expected": "b»ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bằng ",
+"expected": "baèng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bằng ",
+"expected": "bằng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bằng ",
+"expected": "bãÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bề ",
+"expected": "bÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bề ",
+"expected": "beà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bề ",
+"expected": "bề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bề ",
+"expected": "bêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bếp ",
+"expected": "bÕp "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bếp ",
+"expected": "beáp "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bếp ",
+"expected": "bếp "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bếp ",
+"expected": "bêìp "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bị ",
+"expected": "bÞ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bị ",
+"expected": "bò "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bị ",
+"expected": "bị "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bị ",
+"expected": "biò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bộ ",
+"expected": "bé "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bộ ",
+"expected": "boä "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bộ ",
+"expected": "bộ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bộ ",
+"expected": "bôò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "bởi ",
+"expected": "bëi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "bởi ",
+"expected": "bôûi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "bởi ",
+"expected": "bởi "
+},
+{
+"from": 0,
+"to": 4,
+"text": "bởi ",
+"expected": "bõÒi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cả ",
+"expected": "c¶ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cả ",
+"expected": "caû "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cả ",
+"expected": "cả "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cả ",
+"expected": "caÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cần ",
+"expected": "cÇn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cần ",
+"expected": "caàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cần ",
+"expected": "cần "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cần ",
+"expected": "câÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cất ",
+"expected": "cÊt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cất ",
+"expected": "caát "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cất ",
+"expected": "cất "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cất ",
+"expected": "câìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cầu ",
+"expected": "cÇu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cầu ",
+"expected": "caàu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cầu ",
+"expected": "cầu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cầu ",
+"expected": "câÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cây ",
+"expected": "c©y "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cây ",
+"expected": "caây "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cây ",
+"expected": "cây "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cây ",
+"expected": "cây "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cố ",
+"expected": "cè "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cố ",
+"expected": "coá "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cố ",
+"expected": "cố "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cố ",
+"expected": "côì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cổ ",
+"expected": "cæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cổ ",
+"expected": "coå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cổ ",
+"expected": "cổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cổ ",
+"expected": "côÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cổ phần ",
+"expected": "cæ phÇn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cổ phần ",
+"expected": "coå phaàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cổ phần ",
+"expected": "cổ phần "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cổ phần ",
+"expected": "côÒ phâÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cột ",
+"expected": "cét "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cột ",
+"expected": "coät "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cột ",
+"expected": "cột "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cột ",
+"expected": "côòt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "cùng ",
+"expected": "cïng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "cùng ",
+"expected": "cuøng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "cùng ",
+"expected": "cùng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "cùng ",
+"expected": "cuÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "dài ",
+"expected": "dµi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "dài ",
+"expected": "daøi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "dài ",
+"expected": "dài "
+},
+{
+"from": 0,
+"to": 4,
+"text": "dài ",
+"expected": "daÌi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "dạy ",
+"expected": "d¹y "
+},
+{
+"from": 0,
+"to": 2,
+"text": "dạy ",
+"expected": "daïy "
+},
+{
+"from": 0,
+"to": 3,
+"text": "dạy ",
+"expected": "dạy "
+},
+{
+"from": 0,
+"to": 4,
+"text": "dạy ",
+"expected": "daòy "
+},
+{
+"from": 0,
+"to": 1,
+"text": "diệt ",
+"expected": "diÖt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "diệt ",
+"expected": "dieät "
+},
+{
+"from": 0,
+"to": 3,
+"text": "diệt ",
+"expected": "diệt "
+},
+{
+"from": 0,
+"to": 4,
+"text": "diệt ",
+"expected": "diêòt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "diều ",
+"expected": "diÒu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "diều ",
+"expected": "dieàu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "diều ",
+"expected": "diều "
+},
+{
+"from": 0,
+"to": 4,
+"text": "diều ",
+"expected": "diêÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "dù ",
+"expected": "dï "
+},
+{
+"from": 0,
+"to": 2,
+"text": "dù ",
+"expected": "duø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "dù ",
+"expected": "dù "
+},
+{
+"from": 0,
+"to": 4,
+"text": "dù ",
+"expected": "duÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "dưới ",
+"expected": "d­íi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "dưới ",
+"expected": "döôùi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "dưới ",
+"expected": "dưới "
+},
+{
+"from": 0,
+"to": 4,
+"text": "dưới ",
+"expected": "dýõìi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đã ",
+"expected": "®· "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đã ",
+"expected": "ñaõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đã ",
+"expected": "đã "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đã ",
+"expected": "ðaÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đất ",
+"expected": "®Êt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đất ",
+"expected": "ñaát "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đất ",
+"expected": "đất "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đất ",
+"expected": "ðâìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đầu ",
+"expected": "®Çu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đầu ",
+"expected": "ñaàu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đầu ",
+"expected": "đầu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đầu ",
+"expected": "ðâÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đình ",
+"expected": "®×nh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đình ",
+"expected": "ñình "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đình ",
+"expected": "đình "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đình ",
+"expected": "ðiÌnh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đô ",
+"expected": "®« "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đô ",
+"expected": "ñoâ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đô ",
+"expected": "đô "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đô ",
+"expected": "ðô "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đồ ",
+"expected": "®å "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đồ ",
+"expected": "ñoà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đồ ",
+"expected": "đồ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đồ ",
+"expected": "ðôÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đủ ",
+"expected": "®ñ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đủ ",
+"expected": "ñuû "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đủ ",
+"expected": "đủ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đủ ",
+"expected": "ðuÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đức ",
+"expected": "®øc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đức ",
+"expected": "ñöùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đức ",
+"expected": "đức "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đức ",
+"expected": "ðýìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "đường ",
+"expected": "®­êng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "đường ",
+"expected": "ñöôøng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "đường ",
+"expected": "đường "
+},
+{
+"from": 0,
+"to": 4,
+"text": "đường ",
+"expected": "ðýõÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giá ",
+"expected": "gi¸ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giá ",
+"expected": "giaù "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giá ",
+"expected": "giá "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giá ",
+"expected": "giaì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giải ",
+"expected": "gi¶i "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giải ",
+"expected": "giaûi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giải ",
+"expected": "giải "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giải ",
+"expected": "giaÒi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giọng ",
+"expected": "giäng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giọng ",
+"expected": "gioïng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giọng ",
+"expected": "giọng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giọng ",
+"expected": "gioòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giống ",
+"expected": "gièng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giống ",
+"expected": "gioáng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giống ",
+"expected": "giống "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giống ",
+"expected": "giôìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giúp ",
+"expected": "gióp "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giúp ",
+"expected": "giuùp "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giúp ",
+"expected": "giúp "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giúp ",
+"expected": "giuìp "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hà ",
+"expected": "hµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hà ",
+"expected": "haø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hà ",
+"expected": "hà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hà ",
+"expected": "haÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hành ",
+"expected": "hµnh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hành ",
+"expected": "haønh "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hành ",
+"expected": "hành "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hành ",
+"expected": "haÌnh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hẹ ",
+"expected": "hÑ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hẹ ",
+"expected": "heï "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hẹ ",
+"expected": "hẹ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hẹ ",
+"expected": "heò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hết ",
+"expected": "hÕt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hết ",
+"expected": "heát "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hết ",
+"expected": "hết "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hết ",
+"expected": "hêìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hình ",
+"expected": "h×nh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hình ",
+"expected": "hình "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hình ",
+"expected": "hình "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hình ",
+"expected": "hiÌnh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hò ",
+"expected": "hß "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hò ",
+"expected": "hoø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hò ",
+"expected": "hò "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hò ",
+"expected": "hoÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hỏ ",
+"expected": "há "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hỏ ",
+"expected": "hoû "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hỏ ",
+"expected": "hỏ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hỏ ",
+"expected": "hoÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "học ",
+"expected": "häc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "học ",
+"expected": "hoïc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "học ",
+"expected": "học "
+},
+{
+"from": 0,
+"to": 4,
+"text": "học ",
+"expected": "hoòc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hồ ",
+"expected": "hå "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hồ ",
+"expected": "hoà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hồ ",
+"expected": "hồ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hồ ",
+"expected": "hôÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "hổ ",
+"expected": "hæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "hổ ",
+"expected": "hoå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "hổ ",
+"expected": "hổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "hổ ",
+"expected": "hôÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "già ",
+"expected": "giµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "già ",
+"expected": "giaø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "già ",
+"expected": "già "
+},
+{
+"from": 0,
+"to": 4,
+"text": "già ",
+"expected": "giaÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "giàu ",
+"expected": "giµu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "giàu ",
+"expected": "giaøu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "giàu ",
+"expected": "giàu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "giàu ",
+"expected": "giaÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "kể ",
+"expected": "kÓ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "kể ",
+"expected": "keå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "kể ",
+"expected": "kể "
+},
+{
+"from": 0,
+"to": 4,
+"text": "kể ",
+"expected": "kêÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khó ",
+"expected": "khã "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khó ",
+"expected": "khoù "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khó ",
+"expected": "khó "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khó ",
+"expected": "khoì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khỏe ",
+"expected": "kháe "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khỏe ",
+"expected": "khoûe "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khỏe ",
+"expected": "khỏe "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khỏe ",
+"expected": "khoÒe "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khổ ",
+"expected": "khæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khổ ",
+"expected": "khoå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khổ ",
+"expected": "khổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khổ ",
+"expected": "khôÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khỗ ",
+"expected": "khç "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khỗ ",
+"expected": "khoã "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khỗ ",
+"expected": "khỗ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khỗ ",
+"expected": "khôÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khởi ",
+"expected": "khëi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khởi ",
+"expected": "khôûi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khởi ",
+"expected": "khởi "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khởi ",
+"expected": "khõÒi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khống ",
+"expected": "khèng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khống ",
+"expected": "khoáng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khống ",
+"expected": "khống "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khống ",
+"expected": "khôìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "khuôn ",
+"expected": "khu«n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "khuôn ",
+"expected": "khuoân "
+},
+{
+"from": 0,
+"to": 3,
+"text": "khuôn ",
+"expected": "khuôn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "khuôn ",
+"expected": "khuôn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "là ",
+"expected": "lµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "là ",
+"expected": "laø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "là ",
+"expected": "là "
+},
+{
+"from": 0,
+"to": 4,
+"text": "là ",
+"expected": "laÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lành ",
+"expected": "lµnh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lành ",
+"expected": "laønh "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lành ",
+"expected": "lành "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lành ",
+"expected": "laÌnh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lần ",
+"expected": "lÇn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lần ",
+"expected": "laàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lần ",
+"expected": "lần "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lần ",
+"expected": "lâÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lặng ",
+"expected": "lÆng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lặng ",
+"expected": "laëng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lặng ",
+"expected": "lặng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lặng ",
+"expected": "lãòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lắm ",
+"expected": "l¾m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lắm ",
+"expected": "laém "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lắm ",
+"expected": "lắm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lắm ",
+"expected": "lãìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lẽ ",
+"expected": "lÏ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lẽ ",
+"expected": "leõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lẽ ",
+"expected": "lẽ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lẽ ",
+"expected": "leÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lề ",
+"expected": "lÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lề ",
+"expected": "leà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lề ",
+"expected": "lề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lề ",
+"expected": "lêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lệ ",
+"expected": "lÖ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lệ ",
+"expected": "leä "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lệ ",
+"expected": "lệ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lệ ",
+"expected": "lêò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lề lối ",
+"expected": "lÒ lèi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lề lối ",
+"expected": "leà loái "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lề lối ",
+"expected": "lề lối "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lề lối ",
+"expected": "lêÌ lôìi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "lịch ",
+"expected": "lÞch "
+},
+{
+"from": 0,
+"to": 2,
+"text": "lịch ",
+"expected": "lòch "
+},
+{
+"from": 0,
+"to": 3,
+"text": "lịch ",
+"expected": "lịch "
+},
+{
+"from": 0,
+"to": 4,
+"text": "lịch ",
+"expected": "liòch "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mà ",
+"expected": "mµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mà ",
+"expected": "maø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mà ",
+"expected": "mà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mà ",
+"expected": "maÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mặc ",
+"expected": "mÆc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mặc ",
+"expected": "maëc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mặc ",
+"expected": "mặc "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mặc ",
+"expected": "mãòc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mạnh ",
+"expected": "m¹nh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mạnh ",
+"expected": "maïnh "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mạnh ",
+"expected": "mạnh "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mạnh ",
+"expected": "maònh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mắt ",
+"expected": "m¾t "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mắt ",
+"expected": "maét "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mắt ",
+"expected": "mắt "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mắt ",
+"expected": "mãìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mẫu ",
+"expected": "mÉu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mẫu ",
+"expected": "maãu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mẫu ",
+"expected": "mẫu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mẫu ",
+"expected": "mâÞu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mề ",
+"expected": "mÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mề ",
+"expected": "meà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mề ",
+"expected": "mề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mề ",
+"expected": "mêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mẹ ",
+"expected": "mÑ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mẹ ",
+"expected": "meï "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mẹ ",
+"expected": "mẹ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mẹ ",
+"expected": "meò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mọi ",
+"expected": "mäi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mọi ",
+"expected": "moïi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mọi ",
+"expected": "mọi "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mọi ",
+"expected": "moòi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "mổ ",
+"expected": "mæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "mổ ",
+"expected": "moå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "mổ ",
+"expected": "mổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "mổ ",
+"expected": "môÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "một ",
+"expected": "mét "
+},
+{
+"from": 0,
+"to": 2,
+"text": "một ",
+"expected": "moät "
+},
+{
+"from": 0,
+"to": 3,
+"text": "một ",
+"expected": "một "
+},
+{
+"from": 0,
+"to": 4,
+"text": "một ",
+"expected": "môòt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nào ",
+"expected": "nµo "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nào ",
+"expected": "naøo "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nào ",
+"expected": "nào "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nào ",
+"expected": "naÌo "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nặng ",
+"expected": "nÆng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nặng ",
+"expected": "naëng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nặng ",
+"expected": "nặng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nặng ",
+"expected": "nãòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nắng ",
+"expected": "n¾ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nắng ",
+"expected": "naéng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nắng ",
+"expected": "nắng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nắng ",
+"expected": "nãìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nếu ",
+"expected": "nÕu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nếu ",
+"expected": "neáu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nếu ",
+"expected": "nếu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nếu ",
+"expected": "nêìu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ngã ",
+"expected": "ng· "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ngã ",
+"expected": "ngaõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ngã ",
+"expected": "ngã "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ngã ",
+"expected": "ngaÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nhà ",
+"expected": "nhµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nhà ",
+"expected": "nhaø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nhà ",
+"expected": "nhà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nhà ",
+"expected": "nhaÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nhề ",
+"expected": "nhÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nhề ",
+"expected": "nheà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nhề ",
+"expected": "nhề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nhề ",
+"expected": "nhêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "như ",
+"expected": "nh­ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "như ",
+"expected": "nhö "
+},
+{
+"from": 0,
+"to": 3,
+"text": "như ",
+"expected": "như "
+},
+{
+"from": 0,
+"to": 4,
+"text": "như ",
+"expected": "nhý "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nữa ",
+"expected": "n÷a "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nữa ",
+"expected": "nöõa "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nữa ",
+"expected": "nữa "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nữa ",
+"expected": "nýÞa "
+},
+{
+"from": 0,
+"to": 1,
+"text": "nước ",
+"expected": "n­íc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "nước ",
+"expected": "nöôùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "nước ",
+"expected": "nước "
+},
+{
+"from": 0,
+"to": 4,
+"text": "nước ",
+"expected": "nýõìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ồn ",
+"expected": "ån "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ồn ",
+"expected": "oàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ồn ",
+"expected": "ồn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ồn ",
+"expected": "ôÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ổn ",
+"expected": "æn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ổn ",
+"expected": "oån "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ổn ",
+"expected": "ổn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ổn ",
+"expected": "ôÒn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ổng ",
+"expected": "æng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ổng ",
+"expected": "oång "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ổng ",
+"expected": "ổng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ổng ",
+"expected": "ôÒng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ơi ",
+"expected": "¬i "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ơi ",
+"expected": "ôi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ơi ",
+"expected": "ơi "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ơi ",
+"expected": "õi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ơn ",
+"expected": "¬n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ơn ",
+"expected": "ôn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ơn ",
+"expected": "ơn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ơn ",
+"expected": "õn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ớn ",
+"expected": "ín "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ớn ",
+"expected": "ôùn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ớn ",
+"expected": "ớn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ớn ",
+"expected": "õìn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ướt ",
+"expected": "­ít "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ướt ",
+"expected": "öôùt "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ướt ",
+"expected": "ướt "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ướt ",
+"expected": "ýõìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ướng ",
+"expected": "­íng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ướng ",
+"expected": "öôùng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ướng ",
+"expected": "ướng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ướng ",
+"expected": "ýõìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ười ",
+"expected": "­êi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ười ",
+"expected": "öôøi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ười ",
+"expected": "ười "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ười ",
+"expected": "ýõÌi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ường ",
+"expected": "­êng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ường ",
+"expected": "öôøng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ường ",
+"expected": "ường "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ường ",
+"expected": "ýõÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "phải ",
+"expected": "ph¶i "
+},
+{
+"from": 0,
+"to": 2,
+"text": "phải ",
+"expected": "phaûi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "phải ",
+"expected": "phải "
+},
+{
+"from": 0,
+"to": 4,
+"text": "phải ",
+"expected": "phaÒi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "phần ",
+"expected": "phÇn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "phần ",
+"expected": "phaàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "phần ",
+"expected": "phần "
+},
+{
+"from": 0,
+"to": 4,
+"text": "phần ",
+"expected": "phâÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "phố ",
+"expected": "phè "
+},
+{
+"from": 0,
+"to": 2,
+"text": "phố ",
+"expected": "phoá "
+},
+{
+"from": 0,
+"to": 3,
+"text": "phố ",
+"expected": "phố "
+},
+{
+"from": 0,
+"to": 4,
+"text": "phố ",
+"expected": "phôì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "quả ",
+"expected": "qu¶ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "quả ",
+"expected": "quaû "
+},
+{
+"from": 0,
+"to": 3,
+"text": "quả ",
+"expected": "quả "
+},
+{
+"from": 0,
+"to": 4,
+"text": "quả ",
+"expected": "quaÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "quan ",
+"expected": "quan "
+},
+{
+"from": 0,
+"to": 2,
+"text": "quan ",
+"expected": "quan "
+},
+{
+"from": 0,
+"to": 3,
+"text": "quan ",
+"expected": "quan "
+},
+{
+"from": 0,
+"to": 4,
+"text": "quan ",
+"expected": "quan "
+},
+{
+"from": 0,
+"to": 1,
+"text": "quân ",
+"expected": "qu©n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "quân ",
+"expected": "quaân "
+},
+{
+"from": 0,
+"to": 3,
+"text": "quân ",
+"expected": "quân "
+},
+{
+"from": 0,
+"to": 4,
+"text": "quân ",
+"expected": "quân "
+},
+{
+"from": 0,
+"to": 1,
+"text": "què ",
+"expected": "quÌ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "què ",
+"expected": "queø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "què ",
+"expected": "què "
+},
+{
+"from": 0,
+"to": 4,
+"text": "què ",
+"expected": "queÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "rẽ ",
+"expected": "rÏ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "rẽ ",
+"expected": "reõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "rẽ ",
+"expected": "rẽ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "rẽ ",
+"expected": "reÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "rề ",
+"expected": "rÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "rề ",
+"expected": "reà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "rề ",
+"expected": "rề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "rề ",
+"expected": "rêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "rộng ",
+"expected": "réng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "rộng ",
+"expected": "roäng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "rộng ",
+"expected": "rộng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "rộng ",
+"expected": "rôòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "sách ",
+"expected": "s¸ch "
+},
+{
+"from": 0,
+"to": 2,
+"text": "sách ",
+"expected": "saùch "
+},
+{
+"from": 0,
+"to": 3,
+"text": "sách ",
+"expected": "sách "
+},
+{
+"from": 0,
+"to": 4,
+"text": "sách ",
+"expected": "saìch "
+},
+{
+"from": 0,
+"to": 1,
+"text": "sẽ ",
+"expected": "sÏ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "sẽ ",
+"expected": "seõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "sẽ ",
+"expected": "sẽ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "sẽ ",
+"expected": "seÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "siêu ",
+"expected": "siªu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "siêu ",
+"expected": "sieâu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "siêu ",
+"expected": "siêu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "siêu ",
+"expected": "siêu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "sợ ",
+"expected": "sî "
+},
+{
+"from": 0,
+"to": 2,
+"text": "sợ ",
+"expected": "sôï "
+},
+{
+"from": 0,
+"to": 3,
+"text": "sợ ",
+"expected": "sợ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "sợ ",
+"expected": "sõò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "sứ ",
+"expected": "sø "
+},
+{
+"from": 0,
+"to": 2,
+"text": "sứ ",
+"expected": "söù "
+},
+{
+"from": 0,
+"to": 3,
+"text": "sứ ",
+"expected": "sứ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "sứ ",
+"expected": "sýì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tài ",
+"expected": "tµi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tài ",
+"expected": "taøi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tài ",
+"expected": "tài "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tài ",
+"expected": "taÌi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tặng ",
+"expected": "tÆng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tặng ",
+"expected": "taëng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tặng ",
+"expected": "tặng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tặng ",
+"expected": "tãòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tất ",
+"expected": "tÊt "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tất ",
+"expected": "taát "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tất ",
+"expected": "tất "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tất ",
+"expected": "tâìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tầm ",
+"expected": "tÇm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tầm ",
+"expected": "taàm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tầm ",
+"expected": "tầm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tầm ",
+"expected": "tâÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tế ",
+"expected": "tÕ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tế ",
+"expected": "teá "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tế ",
+"expected": "tế "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tế ",
+"expected": "têì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thà ",
+"expected": "thµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thà ",
+"expected": "thaø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thà ",
+"expected": "thà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thà ",
+"expected": "thaÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thấy ",
+"expected": "thÊy "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thấy ",
+"expected": "thaáy "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thấy ",
+"expected": "thấy "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thấy ",
+"expected": "thâìy "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thề ",
+"expected": "thÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thề ",
+"expected": "theà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thề ",
+"expected": "thề "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thề ",
+"expected": "thêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thế ",
+"expected": "thÕ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thế ",
+"expected": "theá "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thế ",
+"expected": "thế "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thế ",
+"expected": "thêì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thể ",
+"expected": "thÓ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thể ",
+"expected": "theå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thể ",
+"expected": "thể "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thể ",
+"expected": "thêÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thị ",
+"expected": "thÞ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thị ",
+"expected": "thò "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thị ",
+"expected": "thị "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thị ",
+"expected": "thiò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thọ ",
+"expected": "thä "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thọ ",
+"expected": "thoï "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thọ ",
+"expected": "thọ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thọ ",
+"expected": "thoò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thổ ",
+"expected": "thæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thổ ",
+"expected": "thoå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thổ ",
+"expected": "thổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thổ ",
+"expected": "thôÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thời ",
+"expected": "thêi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thời ",
+"expected": "thôøi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thời ",
+"expected": "thời "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thời ",
+"expected": "thõÌi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "thuần ",
+"expected": "thuÇn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "thuần ",
+"expected": "thuaàn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "thuần ",
+"expected": "thuần "
+},
+{
+"from": 0,
+"to": 4,
+"text": "thuần ",
+"expected": "thuâÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "trà ",
+"expected": "trµ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "trà ",
+"expected": "traø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "trà ",
+"expected": "trà "
+},
+{
+"from": 0,
+"to": 4,
+"text": "trà ",
+"expected": "traÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tránh ",
+"expected": "tr¸nh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tránh ",
+"expected": "traùnh "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tránh ",
+"expected": "tránh "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tránh ",
+"expected": "traình "
+},
+{
+"from": 0,
+"to": 1,
+"text": "trị ",
+"expected": "trÞ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "trị ",
+"expected": "trò "
+},
+{
+"from": 0,
+"to": 3,
+"text": "trị ",
+"expected": "trị "
+},
+{
+"from": 0,
+"to": 4,
+"text": "trị ",
+"expected": "triò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "triều ",
+"expected": "triÒu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "triều ",
+"expected": "trieàu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "triều ",
+"expected": "triều "
+},
+{
+"from": 0,
+"to": 4,
+"text": "triều ",
+"expected": "triêÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tróc ",
+"expected": "trãc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tróc ",
+"expected": "troùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tróc ",
+"expected": "tróc "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tróc ",
+"expected": "troìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "trộm ",
+"expected": "trém "
+},
+{
+"from": 0,
+"to": 2,
+"text": "trộm ",
+"expected": "troäm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "trộm ",
+"expected": "trộm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "trộm ",
+"expected": "trôòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "từ ",
+"expected": "tõ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "từ ",
+"expected": "töø "
+},
+{
+"from": 0,
+"to": 3,
+"text": "từ ",
+"expected": "từ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "từ ",
+"expected": "týÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tứ ",
+"expected": "tø "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tứ ",
+"expected": "töù "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tứ ",
+"expected": "tứ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tứ ",
+"expected": "týì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "tường ",
+"expected": "t­êng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "tường ",
+"expected": "töôøng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "tường ",
+"expected": "tường "
+},
+{
+"from": 0,
+"to": 4,
+"text": "tường ",
+"expected": "týõÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ưa ",
+"expected": "­a "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ưa ",
+"expected": "öa "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ưa ",
+"expected": "ưa "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ưa ",
+"expected": "ýa "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vài ",
+"expected": "vµi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vài ",
+"expected": "vaøi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vài ",
+"expected": "vài "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vài ",
+"expected": "vaÌi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vẫn ",
+"expected": "vÉn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vẫn ",
+"expected": "vaãn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vẫn ",
+"expected": "vẫn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vẫn ",
+"expected": "vâÞn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "về ",
+"expected": "vÒ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "về ",
+"expected": "veà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "về ",
+"expected": "về "
+},
+{
+"from": 0,
+"to": 4,
+"text": "về ",
+"expected": "vêÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vẽ ",
+"expected": "vÏ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vẽ ",
+"expected": "veõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vẽ ",
+"expected": "vẽ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vẽ ",
+"expected": "veÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vị ",
+"expected": "vÞ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vị ",
+"expected": "vò "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vị ",
+"expected": "vị "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vị ",
+"expected": "viò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vồ ",
+"expected": "vå "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vồ ",
+"expected": "voà "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vồ ",
+"expected": "vồ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vồ ",
+"expected": "vôÌ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vợ ",
+"expected": "vî "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vợ ",
+"expected": "vôï "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vợ ",
+"expected": "vợ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vợ ",
+"expected": "võò "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vội ",
+"expected": "véi "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vội ",
+"expected": "voäi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vội ",
+"expected": "vội "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vội ",
+"expected": "vôòi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vùng ",
+"expected": "vïng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vùng ",
+"expected": "vuøng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vùng ",
+"expected": "vùng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vùng ",
+"expected": "vuÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "vưng ",
+"expected": "v­ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "vưng ",
+"expected": "vöng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "vưng ",
+"expected": "vưng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "vưng ",
+"expected": "výng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xã ",
+"expected": "x· "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xã ",
+"expected": "xaõ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xã ",
+"expected": "xã "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xã ",
+"expected": "xaÞ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xảy ",
+"expected": "x¶y "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xảy ",
+"expected": "xaûy "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xảy ",
+"expected": "xảy "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xảy ",
+"expected": "xaÒy "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xem ",
+"expected": "xem "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xem ",
+"expected": "xem "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xem ",
+"expected": "xem "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xem ",
+"expected": "xem "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xế ",
+"expected": "xÕ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xế ",
+"expected": "xeá "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xế ",
+"expected": "xế "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xế ",
+"expected": "xêì "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xiêu ",
+"expected": "xiªu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xiêu ",
+"expected": "xieâu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xiêu ",
+"expected": "xiêu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xiêu ",
+"expected": "xiêu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xin ",
+"expected": "xin "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xin ",
+"expected": "xin "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xin ",
+"expected": "xin "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xin ",
+"expected": "xin "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xổ ",
+"expected": "xæ "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xổ ",
+"expected": "xoå "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xổ ",
+"expected": "xổ "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xổ ",
+"expected": "xôÒ "
+},
+{
+"from": 0,
+"to": 1,
+"text": "xứng ",
+"expected": "xøng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "xứng ",
+"expected": "xöùng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "xứng ",
+"expected": "xứng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "xứng ",
+"expected": "xýìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "yên ",
+"expected": "yªn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "yên ",
+"expected": "yeân "
+},
+{
+"from": 0,
+"to": 3,
+"text": "yên ",
+"expected": "yên "
+},
+{
+"from": 0,
+"to": 4,
+"text": "yên ",
+"expected": "yên "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ýu ",
+"expected": "ýu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ýu ",
+"expected": "yùu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ýu ",
+"expected": "ýu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ýu ",
+"expected": "yìu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "âm ",
+"expected": "©m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "âm ",
+"expected": "aâm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "âm ",
+"expected": "âm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "âm ",
+"expected": "âm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "âu ",
+"expected": "©u "
+},
+{
+"from": 0,
+"to": 2,
+"text": "âu ",
+"expected": "aâu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "âu ",
+"expected": "âu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "âu ",
+"expected": "âu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ầu ",
+"expected": "Çu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ầu ",
+"expected": "aàu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ầu ",
+"expected": "ầu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ầu ",
+"expected": "âÌu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ầm ",
+"expected": "Çm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ầm ",
+"expected": "aàm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ầm ",
+"expected": "ầm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ầm ",
+"expected": "âÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ấm ",
+"expected": "Êm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ấm ",
+"expected": "aám "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ấm ",
+"expected": "ấm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ấm ",
+"expected": "âìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ấn ",
+"expected": "Ên "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ấn ",
+"expected": "aán "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ấn ",
+"expected": "ấn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ấn ",
+"expected": "âìn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ẩm ",
+"expected": "Èm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ẩm ",
+"expected": "aåm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ẩm ",
+"expected": "ẩm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ẩm ",
+"expected": "âÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ẩn ",
+"expected": "Èn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ẩn ",
+"expected": "aån "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ẩn ",
+"expected": "ẩn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ẩn ",
+"expected": "âÒn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ẫu ",
+"expected": "Éu "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ẫu ",
+"expected": "aãu "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ẫu ",
+"expected": "ẫu "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ẫu ",
+"expected": "âÞu "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ận ",
+"expected": "Ën "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ận ",
+"expected": "aän "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ận ",
+"expected": "ận "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ận ",
+"expected": "âòn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ê ",
+"expected": "ª "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ê ",
+"expected": "eâ "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ê ",
+"expected": "ê "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ê ",
+"expected": "ê "
+},
+{
+"from": 0,
+"to": 1,
+"text": "êm ",
+"expected": "ªm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "êm ",
+"expected": "eâm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "êm ",
+"expected": "êm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "êm ",
+"expected": "êm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ếm ",
+"expected": "Õm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ếm ",
+"expected": "eám "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ếm ",
+"expected": "ếm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ếm ",
+"expected": "êìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ềm ",
+"expected": "Òm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ềm ",
+"expected": "eàm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ềm ",
+"expected": "ềm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ềm ",
+"expected": "êÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ểm ",
+"expected": "Óm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ểm ",
+"expected": "eåm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ểm ",
+"expected": "ểm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ểm ",
+"expected": "êÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ễm ",
+"expected": "Ôm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ễm ",
+"expected": "eãm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ễm ",
+"expected": "ễm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ễm ",
+"expected": "êÞm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ệm ",
+"expected": "Öm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ệm ",
+"expected": "eäm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ệm ",
+"expected": "ệm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ệm ",
+"expected": "êòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ôm ",
+"expected": "«m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ôm ",
+"expected": "oâm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ôm ",
+"expected": "ôm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ôm ",
+"expected": "ôm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ốm ",
+"expected": "èm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ốm ",
+"expected": "oám "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ốm ",
+"expected": "ốm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ốm ",
+"expected": "ôìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ồm ",
+"expected": "åm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ồm ",
+"expected": "oàm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ồm ",
+"expected": "ồm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ồm ",
+"expected": "ôÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ổm ",
+"expected": "æm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ổm ",
+"expected": "oåm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ổm ",
+"expected": "ổm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ổm ",
+"expected": "ôÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ỗm ",
+"expected": "çm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ỗm ",
+"expected": "oãm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ỗm ",
+"expected": "ỗm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ỗm ",
+"expected": "ôÞm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ộm ",
+"expected": "ém "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ộm ",
+"expected": "oäm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ộm ",
+"expected": "ộm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ộm ",
+"expected": "ôòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ơm ",
+"expected": "¬m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ơm ",
+"expected": "ôm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ơm ",
+"expected": "ơm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ơm ",
+"expected": "õm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ớm ",
+"expected": "ím "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ớm ",
+"expected": "ôùm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ớm ",
+"expected": "ớm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ớm ",
+"expected": "õìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ờm ",
+"expected": "êm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ờm ",
+"expected": "ôøm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ờm ",
+"expected": "ờm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ờm ",
+"expected": "õÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ởm ",
+"expected": "ëm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ởm ",
+"expected": "ôûm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ởm ",
+"expected": "ởm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ởm ",
+"expected": "õÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ỡm ",
+"expected": "ìm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ỡm ",
+"expected": "ôõm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ỡm ",
+"expected": "ỡm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ỡm ",
+"expected": "õÞm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ợm ",
+"expected": "îm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ợm ",
+"expected": "ôïm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ợm ",
+"expected": "ợm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ợm ",
+"expected": "õòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "úm ",
+"expected": "óm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "úm ",
+"expected": "uùm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "úm ",
+"expected": "úm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "úm ",
+"expected": "uìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ùm ",
+"expected": "ïm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ùm ",
+"expected": "uøm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ùm ",
+"expected": "ùm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ùm ",
+"expected": "uÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ủm ",
+"expected": "ñm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ủm ",
+"expected": "uûm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ủm ",
+"expected": "ủm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ủm ",
+"expected": "uÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ũm ",
+"expected": "òm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ũm ",
+"expected": "uõm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ũm ",
+"expected": "ũm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ũm ",
+"expected": "uÞm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ụm ",
+"expected": "ôm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ụm ",
+"expected": "uïm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ụm ",
+"expected": "ụm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ụm ",
+"expected": "uòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ưm ",
+"expected": "­m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ưm ",
+"expected": "öm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ưm ",
+"expected": "ưm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ưm ",
+"expected": "ým "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ứm ",
+"expected": "øm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ứm ",
+"expected": "öùm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ứm ",
+"expected": "ứm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ứm ",
+"expected": "ýìm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ừm ",
+"expected": "õm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ừm ",
+"expected": "öøm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ừm ",
+"expected": "ừm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ừm ",
+"expected": "ýÌm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ửm ",
+"expected": "öm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ửm ",
+"expected": "öûm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ửm ",
+"expected": "ửm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ửm ",
+"expected": "ýÒm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ữm ",
+"expected": "÷m "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ữm ",
+"expected": "öõm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ữm ",
+"expected": "ữm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ữm ",
+"expected": "ýÞm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ựm ",
+"expected": "ùm "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ựm ",
+"expected": "öïm "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ựm ",
+"expected": "ựm "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ựm ",
+"expected": "ýòm "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ia ",
+"expected": "ia "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ia ",
+"expected": "ia "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ia ",
+"expected": "ia "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ia ",
+"expected": "ia "
+},
+{
+"from": 0,
+"to": 1,
+"text": "iên ",
+"expected": "iªn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "iên ",
+"expected": "ieân "
+},
+{
+"from": 0,
+"to": 3,
+"text": "iên ",
+"expected": "iên "
+},
+{
+"from": 0,
+"to": 4,
+"text": "iên ",
+"expected": "iên "
+},
+{
+"from": 0,
+"to": 1,
+"text": "iếng ",
+"expected": "iÕng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "iếng ",
+"expected": "ieáng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "iếng ",
+"expected": "iếng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "iếng ",
+"expected": "iêìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "iệng ",
+"expected": "iÖng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "iệng ",
+"expected": "ieäng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "iệng ",
+"expected": "iệng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "iệng ",
+"expected": "iêòng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ưa ",
+"expected": "­a "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ưa ",
+"expected": "öa "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ưa ",
+"expected": "ưa "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ưa ",
+"expected": "ýa "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ươi ",
+"expected": "­¬i "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ươi ",
+"expected": "öôi "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ươi ",
+"expected": "ươi "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ươi ",
+"expected": "ýõi "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ương ",
+"expected": "­¬ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ương ",
+"expected": "öông "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ương ",
+"expected": "ương "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ương ",
+"expected": "ýõng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ướng ",
+"expected": "­íng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ướng ",
+"expected": "öôùng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ướng ",
+"expected": "ướng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ướng ",
+"expected": "ýõìng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ướt ",
+"expected": "­ít "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ướt ",
+"expected": "öôùt "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ướt ",
+"expected": "ướt "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ướt ",
+"expected": "ýõìt "
+},
+{
+"from": 0,
+"to": 1,
+"text": "ước ",
+"expected": "­íc "
+},
+{
+"from": 0,
+"to": 2,
+"text": "ước ",
+"expected": "öôùc "
+},
+{
+"from": 0,
+"to": 3,
+"text": "ước ",
+"expected": "ước "
+},
+{
+"from": 0,
+"to": 4,
+"text": "ước ",
+"expected": "ýõìc "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oa ",
+"expected": "oa "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oa ",
+"expected": "oa "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oa ",
+"expected": "oa "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oa ",
+"expected": "oa "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oam ",
+"expected": "oam "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oam ",
+"expected": "oam "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oam ",
+"expected": "oam "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oam ",
+"expected": "oam "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oàn ",
+"expected": "oµn "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oàn ",
+"expected": "oaøn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oàn ",
+"expected": "oàn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oàn ",
+"expected": "oaÌn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oảnh ",
+"expected": "o¶nh "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oảnh ",
+"expected": "oaûnh "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oảnh ",
+"expected": "oảnh "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oảnh ",
+"expected": "oaÒnh "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oãn ",
+"expected": "o·n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oãn ",
+"expected": "oaõn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oãn ",
+"expected": "oãn "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oãn ",
+"expected": "oaÞn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oan ",
+"expected": "oan "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oan ",
+"expected": "oan "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oan ",
+"expected": "oan "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oan ",
+"expected": "oan "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oán ",
+"expected": "o¸n "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oán ",
+"expected": "oaùn "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oán ",
+"expected": "oán "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oán ",
+"expected": "oaìn "
+},
+{
+"from": 0,
+"to": 1,
+"text": "oằng ",
+"expected": "o»ng "
+},
+{
+"from": 0,
+"to": 2,
+"text": "oằng ",
+"expected": "oaèng "
+},
+{
+"from": 0,
+"to": 3,
+"text": "oằng ",
+"expected": "oằng "
+},
+{
+"from": 0,
+"to": 4,
+"text": "oằng ",
+"expected": "oãÌng "
+},
+{
+"from": 0,
+"to": 1,
+"text": "wang ",
+"expected": "wang "
+},
+{
+"from": 0,
+"to": 2,
+"text": "wang ",
+"expected": "wang "
+},
+{
+"from": 0,
+"to": 3,
+"text": "wang ",
+"expected": "wang "
+},
+{
+"from": 0,
+"to": 4,
+"text": "wang ",
+"expected": "wang "
+},
+{
+"from": 0,
+"to": 1,
+"text": "woan ",
+"expected": "woan "
+},
+{
+"from": 0,
+"to": 2,
+"text": "woan ",
+"expected": "woan "
+},
+{
+"from": 0,
+"to": 3,
+"text": "woan ",
+"expected": "woan "
+},
+{
+"from": 0,
+"to": 4,
+"text": "woan ",
+"expected": "woan "
+}
+]

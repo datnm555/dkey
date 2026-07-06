@@ -17,3 +17,14 @@ clang++ -std=c++17 -I"$ENG" -DNDEBUG \
   -o oracle
 
 echo "built ./oracle"
+
+clang++ -std=c++17 -I"$ENG" -DNDEBUG \
+  convert-oracle.cpp \
+  "$ENG/Engine.cpp" \
+  "$ENG/Vietnamese.cpp" \
+  "$ENG/Macro.cpp" \
+  "$ENG/SmartSwitchKey.cpp" \
+  "$ENG/ConvertTool.cpp" \
+  -o convert-oracle
+
+echo "built ./convert-oracle"
