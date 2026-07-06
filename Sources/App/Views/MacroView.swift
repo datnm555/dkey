@@ -25,7 +25,11 @@ struct MacroView: View {
             }
             .frame(minHeight: 160)
             .onChange(of: selection) { _, id in
-                if let m = state.macros.first(where: { $0.id == id }) { keyField = m.key; contentField = m.content }
+                if let m = state.macros.first(where: { $0.id == id }) {
+                    keyField = m.key; contentField = m.content
+                } else {   // deselected → clear the editor fields so the button reverts to "Thêm"
+                    keyField = ""; contentField = ""
+                }
             }
 
             HStack {
