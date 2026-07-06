@@ -3,9 +3,10 @@ import XCTest
 
 /// Drive the engine from an ASCII Telex string; return the resulting text.
 /// Applies backspaceCount + newChars to a mutable [Character] buffer per key.
-func type(_ telex: String, modern: Bool = true, engine: TelexEngine? = nil) -> String {
+func type(_ telex: String, modern: Bool = true, method: InputMethod = .telex, engine: TelexEngine? = nil) -> String {
     let e = engine ?? TelexEngine()
     e.useModernOrthography = modern
+    e.inputMethod = method
     e.newSession()
     var screen: [Character] = []
     for ch in telex {

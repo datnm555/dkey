@@ -2,6 +2,7 @@ import Foundation
 
 public final class TelexEngine: InputEngine {
     public var useModernOrthography: Bool = true
+    public var inputMethod: InputMethod = .telex
     var buffer = TypingBuffer()
 
     // Vowel position state — set by findAndCalculateVowel (ported from Engine.cpp globals VSI/VEI/vowelCount)
@@ -22,37 +23,38 @@ public final class TelexEngine: InputEngine {
             return EngineOutput(backspaceCount: 0, newChars: [], action: .wordBreak)
         }
 
-        // Route 'z' → removeMark (IS_KEY_Z, Engine.cpp:1057-1062)
-        // If no mark present, fall through to insertKey (plain 'z').
-        if key == KeyCode.z {
+        // Route remove-tone key → removeMark (IS_KEY_Z, Engine.cpp:1057-1062)
+        // Telex: 'z'; VNI: '0'. If no mark present, fall through to insertKey.
+        if isKeyZ(key) {
             let removeOut = removeMark()
             let out = removeOut == .none ? insertKey(key, caps: caps) : removeOut
             return afterMainKey(out, plainInsert: removeOut == .none)
         }
 
         // Route '[' (KEY_LEFT_BRACKET) → standalone ơ (Engine.cpp:1065-1068)
-        if key == KeyCode.leftBracket {
+        // Telex only; in VNI brackets are literal.
+        if inputMethod == .telex && key == KeyCode.leftBracket {
             let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.o)
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
         // Route ']' (KEY_RIGHT_BRACKET) → standalone ư (Engine.cpp:1070-1073)
-        if key == KeyCode.rightBracket {
+        // Telex only; in VNI brackets are literal.
+        if inputMethod == .telex && key == KeyCode.rightBracket {
             let out = checkForStandaloneChar(key, caps: caps, keyWillReverse: KeyCode.u)
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
-        // Route mark keys s/f/r/x/j BEFORE plain insertKey — mirror handleMainKey mark branch
-        // (Engine.cpp:1104-1142).
+        // VNI circumflex/horn/breve (keys 6/7/8). Telex handles a/e/o + w separately below.
+        if inputMethod == .vni && (key == KeyCode.n6 || key == KeyCode.n7 || key == KeyCode.n8) {
+            return handleVNIAOEW(key: key, caps: caps)
+        }
+
+        // Route mark keys (Telex: s/f/r/x/j; VNI: 1-5) BEFORE plain insertKey —
+        // mirror handleMainKey mark branch (Engine.cpp:1104-1142).
         if isMarkKey(key) && buffer.index > 0 {
-            let markMask: UInt32
-            switch key {
-            case KeyCode.s: markMask = EngineMask.mark1
-            case KeyCode.f: markMask = EngineMask.mark2
-            case KeyCode.r: markMask = EngineMask.mark3
-            case KeyCode.x: markMask = EngineMask.mark4
-            case KeyCode.j: markMask = EngineMask.mark5
-            default: return insertKey(key, caps: caps)
+            guard let markMask = markMask(for: key) else {
+                return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
             }
             for group in vowelForMark {
                 let patterns = group.patterns
@@ -79,7 +81,7 @@ public final class TelexEngine: InputEngine {
 
         // Route 'w' key → horn/breve via insertW (if vowel pattern matched) or standalone ư.
         // Mirror handleMainKey IS_KEY_W branch (Engine.cpp:1169-1191).
-        if key == KeyCode.w {
+        if inputMethod == .telex && key == KeyCode.w {
             let patterns = vowel[KeyCode.w] ?? []
             var wMatched = false
             for l in 0..<patterns.count {
@@ -107,9 +109,9 @@ public final class TelexEngine: InputEngine {
             return afterMainKey(out, plainInsert: out.action == .passthrough)
         }
 
-        // Route 'd' key → insertD (dd → đ) — mirror handleMainKey IS_KEY_D branch
+        // Route đ key → insertD (Telex: dd→đ; VNI: d9→đ) — mirror handleMainKey IS_KEY_D branch
         // (Engine.cpp:1076-1101).
-        if key == KeyCode.d {
+        if isKeyD(key) {
             var isChanged = false
             for l in 0..<consonantD.count {
                 if buffer.index < consonantD[l].count { continue }
@@ -144,7 +146,7 @@ public final class TelexEngine: InputEngine {
 
         // Route double keys a/e/o for circumflex (insertAOE) — mirror handleMainKey vowel branch
         // (Engine.cpp:1154-1168, IS_KEY_DOUBLE).
-        if isDoubleKey(key) && buffer.index > 0 {
+        if inputMethod == .telex && isDoubleKey(key) && buffer.index > 0 {
             let patterns = vowel[key] ?? []
             for l in 0..<patterns.count {
                 if buffer.index < patterns[l].count { continue }
@@ -539,6 +541,70 @@ public final class TelexEngine: InputEngine {
         )
     }
 
+    // MARK: - handleVNIAOEW (Engine.cpp:1145-1192, vInputType==vVNI)
+
+    /// VNI 6/7/8 → circumflex/horn/breve. Faithful port of OpenKey vKeyHandleEvent
+    /// (Engine.cpp:1145-1192, vInputType==vVNI): scan for the target vowel, compute
+    /// keyForAEO, then reuse the shared insertAOE / insertW.
+    private func handleVNIAOEW(key: UInt16, caps: Bool) -> EngineOutput {
+        // VEI = last O/A/E in the buffer — the circumflex target (Engine.cpp:1145-1152).
+        var vei = -1
+        for i in stride(from: buffer.index - 1, through: 0, by: -1) {
+            let c = buffer[i].cellKeyCode
+            if c == KeyCode.o || c == KeyCode.a || c == KeyCode.e { vei = i; break }
+        }
+        // keyForAEO (Engine.cpp:1154): 7/8 → W; 6 → the vowel at VEI; else the key itself.
+        let keyForAEO: UInt16
+        if key == KeyCode.n7 || key == KeyCode.n8 {
+            keyForAEO = KeyCode.w
+        } else if key == KeyCode.n6 {
+            keyForAEO = vei >= 0 ? buffer[vei].cellKeyCode : key
+        } else {
+            keyForAEO = key
+        }
+
+        let patterns = vowel[keyForAEO] ?? []
+        for l in 0..<patterns.count {
+            if buffer.index < patterns[l].count { continue }
+            if checkCorrectVowel(patterns: patterns, patternIdx: l, markKey: key) {
+                if key == KeyCode.n6 {
+                    let out = insertAOE(keyForAEO, caps: caps)
+                    if out.action == .restore {
+                        let k = insertKey(key, caps: caps)
+                        return EngineOutput(backspaceCount: out.backspaceCount,
+                                            newChars: out.newChars + k.newChars, action: .restore)
+                    }
+                    return afterMainKey(out, plainInsert: false)
+                } else {
+                    // Horn/breve target + guard (Engine.cpp:1170-1179).
+                    var vw = -1
+                    for j in stride(from: buffer.index - 1, through: 0, by: -1) {
+                        let c = buffer[j].cellKeyCode
+                        if c == KeyCode.o || c == KeyCode.u || c == KeyCode.a || c == KeyCode.e { vw = j; break }
+                    }
+                    if vw >= 0 {
+                        let cv = buffer[vw].cellKeyCode
+                        let prevNotU = vw - 1 >= 0 ? buffer[vw - 1].cellKeyCode != KeyCode.u : true
+                        if (key == KeyCode.n7 && cv == KeyCode.a && prevNotU) ||
+                           (key == KeyCode.n8 && (cv == KeyCode.o || cv == KeyCode.u)) {
+                            break   // blocked → literal digit
+                        }
+                    }
+                    let out = insertW(caps: caps)
+                    if out.action == .passthrough { break }
+                    if out.action == .restore {
+                        let k = insertKey(key, caps: caps)
+                        return EngineOutput(backspaceCount: out.backspaceCount,
+                                            newChars: out.newChars + k.newChars, action: .restore)
+                    }
+                    return afterMainKey(out, plainInsert: false)
+                }
+            }
+        }
+        // No vowel pattern matched (or guard blocked) → literal digit.
+        return afterMainKey(insertKey(key, caps: caps), plainInsert: true)
+    }
+
     static let breakCodes: Set<UInt16> = [
         KeyCode.esc, KeyCode.tab, KeyCode.enter, KeyCode.ret, KeyCode.left, KeyCode.right,
         KeyCode.down, KeyCode.up, KeyCode.comma, KeyCode.dot, KeyCode.slash, KeyCode.semicolon,
@@ -670,10 +736,41 @@ public final class TelexEngine: InputEngine {
 
     // MARK: - Mark key routing helpers
 
-    /// Returns true for Telex tone-mark keys s/f/r/x/j (Engine.cpp IS_MARK_KEY for Telex).
+    // Which physical key plays each role, per input method.
+    // Mirrors OpenKey ProcessingChar[vInputType] (Engine.cpp:35-36):
+    //   Telex row uses letters; VNI row: 1-5 tones, 6 circumflex, 7/8 horn/breve, 9 đ, 0 remove.
+    private func isKeyZ(_ key: UInt16) -> Bool {   // remove-tone key
+        inputMethod == .telex ? key == KeyCode.z : key == KeyCode.n0
+    }
+    private func isKeyD(_ key: UInt16) -> Bool {   // đ key
+        inputMethod == .telex ? key == KeyCode.d : key == KeyCode.n9
+    }
+    private func markMask(for key: UInt16) -> UInt32? {
+        switch inputMethod {
+        case .telex:
+            switch key {
+            case KeyCode.s: return EngineMask.mark1
+            case KeyCode.f: return EngineMask.mark2
+            case KeyCode.r: return EngineMask.mark3
+            case KeyCode.x: return EngineMask.mark4
+            case KeyCode.j: return EngineMask.mark5
+            default: return nil
+            }
+        case .vni:
+            switch key {
+            case KeyCode.n1: return EngineMask.mark1
+            case KeyCode.n2: return EngineMask.mark2
+            case KeyCode.n3: return EngineMask.mark3
+            case KeyCode.n4: return EngineMask.mark4
+            case KeyCode.n5: return EngineMask.mark5
+            default: return nil
+            }
+        }
+    }
+
+    /// Returns true for tone-mark keys (method-aware).
     private func isMarkKey(_ key: UInt16) -> Bool {
-        key == KeyCode.s || key == KeyCode.f || key == KeyCode.r ||
-        key == KeyCode.x || key == KeyCode.j
+        markMask(for: key) != nil
     }
 
     /// Returns true for Telex double keys a/e/o (Engine.cpp IS_KEY_DOUBLE for Telex).

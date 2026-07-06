@@ -29,4 +29,5 @@ public protocol InputEngine: AnyObject {
     func backspace() -> EngineOutput
     func newSession()
     var useModernOrthography: Bool { get set }
+    var inputMethod: InputMethod { get set }
 }
