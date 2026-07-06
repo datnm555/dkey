@@ -48,7 +48,7 @@ OUT=Tests/Fixtures/convert-corpus.json
       printf '%s\t%s\t%s \n' "0" "$to" "$w"
     done
   done <<< "$WORDS"
-} | /Users/dat.nguyenmanh/Desktop/dat/my-git/dkey/scripts/openkey-oracle/convert-oracle | python3 -c '
+} | scripts/openkey-oracle/convert-oracle | python3 -c '
 import sys, json
 rows=[]
 for line in sys.stdin:
