@@ -58,7 +58,21 @@ final class AppState: ObservableObject {
     }
 
     private let store = SettingsStore()
+    private let macroStore = MacroStore()
     private var _isReflecting = false
+
+    @Published var macros: [Macro] = [] {
+        didSet { if !_isReflecting { controller.macro.setMacros(macros); macroStore.save(macros) } }
+    }
+    @Published var useMacro: Bool = false {
+        didSet { if !_isReflecting { applyMacroFlags(); persist() } }
+    }
+    @Published var useMacroInEnglishMode: Bool = false {
+        didSet { if !_isReflecting { applyMacroFlags(); persist() } }
+    }
+    @Published var autoCapsMacro: Bool = false {
+        didSet { if !_isReflecting { applyMacroFlags(); persist() } }
+    }
 
     private init() {
         let s = store.load()
@@ -67,16 +81,31 @@ final class AppState: ObservableObject {
         inputMethod = s.inputMethod
         useModernOrthography = s.useModernOrthography
         switchKeyStatus = s.switchKeyStatus
+        useMacro = s.useMacro
+        useMacroInEnglishMode = s.useMacroInEnglishMode
+        autoCapsMacro = s.autoCapsMacro
+        macros = macroStore.load()
         _isReflecting = false
         controller.apply(inputMethod: s.inputMethod, modernOrthography: s.useModernOrthography, switchKeyStatus: s.switchKeyStatus)
         controller.setVietnamese(s.isVietnamese)
+        applyMacroFlags()
+        controller.macro.setMacros(macros)
+    }
+
+    private func applyMacroFlags() {
+        controller.macro.isEnabled = useMacro
+        controller.macro.autoCaps = autoCapsMacro
+        controller.useMacroInEnglishMode = useMacroInEnglishMode
     }
 
     private func persist() {
         store.save(DkeySettings(inputMethod: inputMethod,
                                 useModernOrthography: useModernOrthography,
                                 switchKeyStatus: switchKeyStatus,
-                                isVietnamese: isVietnamese))
+                                isVietnamese: isVietnamese,
+                                useMacro: useMacro,
+                                useMacroInEnglishMode: useMacroInEnglishMode,
+                                autoCapsMacro: autoCapsMacro))
     }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.

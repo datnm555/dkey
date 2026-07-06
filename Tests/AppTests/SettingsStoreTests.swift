@@ -19,6 +19,9 @@ final class SettingsStoreTests: XCTestCase {
         s.useModernOrthography = false
         s.switchKeyStatus = 0x7A000206
         s.isVietnamese = false
+        s.useMacro = true
+        s.useMacroInEnglishMode = true
+        s.autoCapsMacro = true
         store.save(s)
         XCTAssertEqual(store.load(), s)
     }
