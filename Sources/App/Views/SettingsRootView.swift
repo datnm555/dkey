@@ -21,6 +21,7 @@ struct SettingsRootView: View {
                 case .typing:   TypingSettingsView()
                 case .about:    AboutView()
                 case .convert:  ConvertView()
+                case .macro:    MacroView()
                 default:        placeholder(for: state.selectedPage)
                 }
             }
