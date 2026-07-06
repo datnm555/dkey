@@ -16,3 +16,4 @@ build/
 
 # Compiled oracle binary (oracle.cpp is committed; binary is not)
 scripts/openkey-oracle/oracle
+scripts/openkey-oracle/convert-oracle

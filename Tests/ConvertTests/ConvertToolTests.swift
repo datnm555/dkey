@@ -30,6 +30,11 @@ final class ConvertToolTests: XCTestCase {
         XCTAssertEqual(ConvertTool.convert("tiếng Việt", from: .unicode, to: .unicode, removeMark: true), "tieng Viet")
     }
 
+    func testRemoveMarkPreservesCaseInKeep() {
+        XCTAssertEqual(ConvertTool.convert("VIỆT", from: .unicode, to: .unicode, removeMark: true), "VIET")
+        XCTAssertEqual(ConvertTool.convert("Tiếng", from: .unicode, to: .unicode, removeMark: true), "Tieng")
+    }
+
     // Fix A: keep mode must preserve case on in-table vowels (not just passthrough chars).
     // Previously, uppercase Vietnamese vowels (e.g. Ế in TIẾNG) were force-lowercased.
     func testKeepModePreservesCase() {

@@ -29,11 +29,7 @@ struct ConvertView: View {
                 }
             }
             Picker("Kiểu chữ:", selection: $caseRaw) {
-                Text("Giữ nguyên").tag(CaseMode.keep.rawValue)
-                Text("IN HOA TOÀN BỘ").tag(CaseMode.upper.rawValue)
-                Text("in thường toàn bộ").tag(CaseMode.lower.rawValue)
-                Text("Hoa đầu câu").tag(CaseMode.sentence.rawValue)
-                Text("Hoa Mỗi Đầu Từ").tag(CaseMode.title.rawValue)
+                ForEach(CaseMode.allCases, id: \.rawValue) { Text($0.displayName).tag($0.rawValue) }
             }
             Toggle("Loại bỏ dấu thanh (tiếng Việt → khong dau)", isOn: $removeMark)
             Section("Văn bản") {

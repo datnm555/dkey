@@ -1,6 +1,18 @@
 import Foundation
 
-public enum CaseMode: Int, CaseIterable { case keep = 0, upper, lower, sentence, title }
+public enum CaseMode: Int, CaseIterable {
+    case keep = 0, upper, lower, sentence, title
+
+    public var displayName: String {
+        switch self {
+        case .keep:     return "Giữ nguyên"
+        case .upper:    return "IN HOA TOÀN BỘ"
+        case .lower:    return "in thường toàn bộ"
+        case .sentence: return "Hoa đầu câu"
+        case .title:    return "Hoa Mỗi Đầu Từ"
+        }
+    }
+}
 
 public enum ConvertTool {
     private static let breakChars: Set<UInt32> = [46, 63, 33] // . ? !
@@ -42,9 +54,10 @@ public enum ConvertTool {
             else if wantLower && k % 2 == 0 { k += 1 }
             let target = dst[j]?[k] ?? 0
             if removeMark {
-                var ch = keyCodeToCharacter(j)               // ASCII base letter
+                var ch = keyCodeToCharacter(j)               // ASCII base letter (always lowercase)
                 if wantUpper { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).uppercased().unicodeScalars.first!.value) }
                 else if wantLower { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).lowercased().unicodeScalars.first!.value) }
+                else if k0 % 2 == 0 { ch = UInt16(Character(Unicode.Scalar(UInt8(ch))).uppercased().unicodeScalars.first!.value) }
                 out.append(Unicode.Scalar(ch) ?? " ")
                 return
             }
@@ -81,7 +94,7 @@ public enum ConvertTool {
                             consume2 = true
                         }
                     case .unicodeCompound:
-                        if let m = compoundMarkMarker(next) { t = UInt16(truncatingIfNeeded: cur.value) | m; consume2 = true }
+                        if next.value <= 0xFFFF, let m = compoundMarkMarker(next) { t = UInt16(truncatingIfNeeded: cur.value) | m; consume2 = true }
                     default: break
                     }
                     if let t, let (j, k) = findKeyCode(t, in: src) {
