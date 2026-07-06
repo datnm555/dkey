@@ -63,4 +63,11 @@ final class InputControllerMacroTests: XCTestCase {
         // Word is now "v" — not a macro — so space does NOT expand.
         XCTAssertEqual(c.handle(down(KeyCode.space)), .passthrough)
     }
+
+    func testExpandsOnSemicolon() {
+        let c = controller()
+        _ = c.handle(down(KeyCode.v)); _ = c.handle(down(KeyCode.n))
+        XCTAssertEqual(c.handle(down(KeyCode.semicolon)),
+                       .consume(backspaces: 2, chars: Array("Việt Nam;".unicodeScalars)))
+    }
 }

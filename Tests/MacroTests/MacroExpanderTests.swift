@@ -49,4 +49,15 @@ final class MacroExpanderTests: XCTestCase {
         XCTAssertEqual(hit?.backspaces, 2)
         XCTAssertEqual(String(String.UnicodeScalarView(hit?.content ?? [])), "Việt Nam")
     }
+
+    func testOverDeleteDoesNotCrash() {
+        let e = expander(); type("vn", into: e)
+        e.apply(backspaces: 99, chars: [])   // delete past the start — must not crash
+        XCTAssertNil(e.expand())
+    }
+
+    func testDisabledAfterTyping() {
+        let e = expander(); type("vn", into: e); e.isEnabled = false
+        XCTAssertNil(e.expand())
+    }
 }

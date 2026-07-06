@@ -63,7 +63,7 @@ public final class InputController {
 
         // 4. Word-break key: try macro expansion first.
         if TelexEngine.breakCodes.contains(e.keyCode) {
-            if macroActive, let (bs, content) = macro.expand(), let brk = Self.breakScalar(for: e.keyCode) {
+            if macroActive, let (bs, content) = macro.expand(), let brk = Self.breakScalar(for: e.keyCode, caps: e.caps) {
                 macro.reset(); engine.newSession()
                 return .consume(backspaces: bs, chars: content + [brk])
             }
@@ -89,12 +89,21 @@ public final class InputController {
     }
 
     /// The scalar a printable break key inserts (space/enter/tab + punctuation), else nil.
-    static func breakScalar(for keyCode: UInt16) -> Unicode.Scalar? {
+    static func breakScalar(for keyCode: UInt16, caps: Bool) -> Unicode.Scalar? {
         switch keyCode {
         case KeyCode.space: return " "
         case KeyCode.enter, KeyCode.ret: return "\n"
         case KeyCode.tab: return "\t"
-        default: return literalScalar(keyCode: keyCode, caps: false)
+        case KeyCode.comma:     return caps ? "<" : ","
+        case KeyCode.dot:       return caps ? ">" : "."
+        case KeyCode.semicolon: return caps ? ":" : ";"
+        case KeyCode.quote:     return caps ? "\"" : "'"
+        case KeyCode.slash:     return caps ? "?" : "/"
+        case KeyCode.backSlash: return caps ? "|" : "\\"
+        case KeyCode.minus:     return caps ? "_" : "-"
+        case KeyCode.equals:    return caps ? "+" : "="
+        case KeyCode.backquote: return caps ? "~" : "`"
+        default: return literalScalar(keyCode: keyCode, caps: caps)  // arrows/esc → nil → reset without expanding
         }
     }
 

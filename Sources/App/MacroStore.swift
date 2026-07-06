@@ -33,7 +33,7 @@ struct MacroStore {
         return text.split(separator: "\n").compactMap { line in
             let parts = line.components(separatedBy: "\t")
             guard parts.count >= 2, !parts[0].isEmpty else { return nil }
-            return Macro(key: parts[0], content: parts[1])
+            return Macro(key: parts[0], content: parts[1...].joined(separator: "\t"))
         }
     }
 
