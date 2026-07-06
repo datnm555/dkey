@@ -342,7 +342,9 @@ git commit -m "feat(engine): ConvertTool text encoding conversion"
 
 ## Task 3: Convert oracle + parity corpus
 
-Byte-for-byte validation against OpenKey's real `ConvertTool`.
+Validates dkey's **byte-mapping** against OpenKey's real `ConvertTool` — but ONLY under conditions where OpenKey is correct.
+
+> **Why constrained (decision from Task 2 review):** OpenKey's `ConvertTool.cpp` has two bugs dkey deliberately does NOT replicate: (a) "keep" mode force-lowercases all text; (b) the last char of a run isn't 2-byte-split for VNI/CP1258. A naive byte-for-byte corpus would therefore force those bugs. So the corpus is generated in **lower case-mode** (dkey `.lower` and OpenKey `allNonCaps` both lowercase → they agree on case) and every input text gets a **trailing space** (so no Vietnamese char is ever last → OpenKey's last-char bug can't fire). We also test the **encode direction only** (`from = 0 Unicode` → each legacy table), which is the actual table-transcription risk and has no source ambiguity (Unicode values are unique). Decode (legacy → Unicode) is covered by Task 2's round-trip curated tests. This validates the ported byte tables where OpenKey is trustworthy, without baking in its bugs.
 
 **Files:**
 - Create: `scripts/openkey-oracle/convert-oracle.cpp`, `scripts/gen-convert-corpus.sh`
@@ -351,27 +353,28 @@ Byte-for-byte validation against OpenKey's real `ConvertTool`.
 
 **Interfaces:**
 - Consumes: `ConvertTool.convert(_:from:to:caseMode:removeMark:)`.
-- Produces: `Tests/Fixtures/convert-corpus.json` — array of `{text, from, to, expected}` (from/to are `CodeTable` raw ints; caseMode=keep, removeMark=false).
+- Produces: `Tests/Fixtures/convert-corpus.json` — array of `{text, from, to, expected}` (from/to `CodeTable` raw ints; **caseMode = lower**, removeMark=false; each `text` ends with a trailing space).
 
 - [ ] **Step 1: Write the convert oracle**
 
-Create `scripts/openkey-oracle/convert-oracle.cpp`: compile OpenKey's `ConvertTool.cpp` + engine data; read stdin lines `<from>\t<to>\t<utf8-text>`; for each, set globals `convertToolFromCode`/`convertToolToCode` (case/remove off), call `convertUtil(text)`, print `<from>\t<to>\t<text>\t<result>` (result UTF-8). Mirror the include/stub setup of the existing `scripts/openkey-oracle/oracle.cpp` (reuse its `build.sh` pattern — extend it to also build this target).
+Create `scripts/openkey-oracle/convert-oracle.cpp`: compile OpenKey's `ConvertTool.cpp` + engine data; read stdin lines `<from>\t<to>\t<utf8-text>`; for each, set globals `convertToolFromCode`/`convertToolToCode`, set **`convertToolToAllNonCaps = true`** (lower mode — the condition where dkey and OpenKey agree on case) and `convertToolRemoveMark = false`, call `convertUtil(text)`, print `<from>\t<to>\t<text>\t<result>` (result UTF-8). Mirror the include/stub setup of the existing `scripts/openkey-oracle/oracle.cpp` (reuse its `build.sh` pattern — extend it to also build this target).
 
 - [ ] **Step 2: Write the corpus generator**
 
-Create `scripts/gen-convert-corpus.sh` (mirror `gen-parity-corpus-vni.sh`): a Vietnamese wordlist (reuse the syllable combinations already used for the VNI corpus, converted to Unicode text) piped with each `(from,to)` pair where from=0 (Unicode) to each of {1,2,3,4} and the reverse, through `convert-oracle`, into `Tests/Fixtures/convert-corpus.json`:
+Create `scripts/gen-convert-corpus.sh` (mirror `gen-parity-corpus-vni.sh`): a Vietnamese wordlist (real lowercase syllables) piped with each **encode** pair `from=0 (Unicode) → to ∈ {1,2,3,4}`, each input given a **trailing space**, through `convert-oracle`, into `Tests/Fixtures/convert-corpus.json`:
 
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
 bash scripts/openkey-oracle/build.sh   # builds convert-oracle too
-WORDS=$(cat Tests/Fixtures/vietnamese-words.txt 2>/dev/null || printf 'Tiếng\nViệt\nđồng\nxin chào\nngôn ngữ\nphát triển\n')
+# Lowercase Vietnamese syllables (encode direction; lower-mode oracle => case-agnostic).
+WORDS=$(cat Tests/Fixtures/vietnamese-words.txt 2>/dev/null || printf 'tiếng\nviệt\nđồng\nxin chào\nngôn ngữ\nphát triển\nnhững\nương\nquốc\nhoà\n')
 OUT=Tests/Fixtures/convert-corpus.json
 {
   while IFS= read -r w; do
-    for pair in "0 1" "1 0" "0 2" "2 0" "0 3" "3 0" "0 4" "4 0"; do
-      set -- $pair; printf '%s\t%s\t%s\n' "$1" "$2" "$w"
+    for to in 1 2 3 4; do
+      printf '%s\t%s\t%s \n' "0" "$to" "$w"   # NOTE trailing space after %s so no Vietnamese char is last
     done
   done <<< "$WORDS"
 } | scripts/openkey-oracle/convert-oracle | python3 -c '
@@ -407,7 +410,8 @@ final class ConvertParityTests: XCTestCase {
         let rows = try JSONDecoder().decode([Row].self, from: Data(contentsOf: url))
         var fails: [String] = []
         for r in rows {
-            let got = ConvertTool.convert(r.text, from: CodeTable(rawValue: r.from)!, to: CodeTable(rawValue: r.to)!)
+            // Corpus is generated in lower case-mode (the condition where dkey and OpenKey agree — see Task 3 note).
+            let got = ConvertTool.convert(r.text, from: CodeTable(rawValue: r.from)!, to: CodeTable(rawValue: r.to)!, caseMode: .lower)
             if got != r.expected { fails.append("\(r.text) \(r.from)->\(r.to): got \(got) want \(r.expected)") }
         }
         XCTAssertTrue(fails.isEmpty, "convert parity failures (\(fails.count)):\n" + fails.prefix(40).joined(separator: "\n"))
