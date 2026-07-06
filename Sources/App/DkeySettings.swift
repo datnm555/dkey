@@ -34,8 +34,8 @@ extension DkeySettings: Codable {
         switchKeyStatus      = try c.decode(Int32.self,       forKey: .switchKeyStatus)
         isVietnamese         = try c.decode(Bool.self,        forKey: .isVietnamese)
         // New fields: fall back to false so old persisted JSON still loads cleanly.
-        useMacro             = (try? c.decodeIfPresent(Bool.self, forKey: .useMacro))             ?? false
-        useMacroInEnglishMode = (try? c.decodeIfPresent(Bool.self, forKey: .useMacroInEnglishMode)) ?? false
-        autoCapsMacro        = (try? c.decodeIfPresent(Bool.self, forKey: .autoCapsMacro))        ?? false
+        useMacro             = try c.decodeIfPresent(Bool.self, forKey: .useMacro)             ?? false
+        useMacroInEnglishMode = try c.decodeIfPresent(Bool.self, forKey: .useMacroInEnglishMode) ?? false
+        autoCapsMacro        = try c.decodeIfPresent(Bool.self, forKey: .autoCapsMacro)        ?? false
     }
 }
