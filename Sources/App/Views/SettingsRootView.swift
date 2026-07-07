@@ -22,6 +22,7 @@ struct SettingsRootView: View {
                 case .about:    AboutView()
                 case .convert:  ConvertView()
                 case .macro:    MacroView()
+                case .system:   SystemView()
                 default:        placeholder(for: state.selectedPage)
                 }
             }
