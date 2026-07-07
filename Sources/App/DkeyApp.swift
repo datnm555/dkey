@@ -27,9 +27,19 @@ struct DkeyApp: App {
 /// Icon nằm cố định trên menu bar; cũng là nơi nhận yêu cầu mở Settings.
 struct MenuBarLabel: View {
     @EnvironmentObject private var state: AppState
+    @Environment(\.openWindow) private var openWindow
+    @State private var didOpenOnStartup = false
 
     var body: some View {
         Image(nsImage: StatusIcon.image(vietnamese: state.isVietnamese, gray: state.grayIcon))
+            .onAppear {
+                guard !didOpenOnStartup else { return }
+                didOpenOnStartup = true
+                if state.showUIOnStartup {
+                    openWindow(id: "settings")
+                    NSApp.activate(ignoringOtherApps: true)
+                }
+            }
     }
 }
 
@@ -62,6 +72,18 @@ final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         let state = AppState.shared
+
+        // Dock icon per setting (menu-bar app defaults to accessory / no Dock).
+        NSApp.setActivationPolicy(state.showIconOnDock ? .regular : .accessory)
+
+        // Smart-switch: track the frontmost app.
+        NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main
+        ) { note in
+            let id = (note.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication)?.bundleIdentifier ?? ""
+            DispatchQueue.main.async { AppState.shared.handleAppActivated(bundleId: id) }
+        }
+
         // Hotkey → UI: reflect language flips back into AppState (icon/menu).
         state.controller.onLanguageChanged = { [weak state] vi in
             DispatchQueue.main.async { state?.reflectLanguageFromEngine(vi) }
