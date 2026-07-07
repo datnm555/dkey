@@ -22,6 +22,11 @@ final class SettingsStoreTests: XCTestCase {
         s.useMacro = true
         s.useMacroInEnglishMode = true
         s.autoCapsMacro = true
+        s.grayIcon = true
+        s.showIconOnDock = true
+        s.showUIOnStartup = true
+        s.runOnStartup = true
+        s.useSmartSwitchKey = true
         store.save(s)
         XCTAssertEqual(store.load(), s)
     }

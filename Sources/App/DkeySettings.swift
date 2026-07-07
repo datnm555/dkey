@@ -8,6 +8,11 @@ struct DkeySettings: Equatable {
     var useMacro: Bool
     var useMacroInEnglishMode: Bool
     var autoCapsMacro: Bool
+    var grayIcon: Bool
+    var showIconOnDock: Bool
+    var showUIOnStartup: Bool
+    var runOnStartup: Bool
+    var useSmartSwitchKey: Bool
 
     static let defaults = DkeySettings(
         inputMethod: .telex,
@@ -16,7 +21,12 @@ struct DkeySettings: Equatable {
         isVietnamese: true,
         useMacro: false,
         useMacroInEnglishMode: false,
-        autoCapsMacro: false
+        autoCapsMacro: false,
+        grayIcon: false,
+        showIconOnDock: false,
+        showUIOnStartup: false,
+        runOnStartup: false,
+        useSmartSwitchKey: false
     )
 }
 
@@ -25,6 +35,7 @@ extension DkeySettings: Codable {
     enum CodingKeys: String, CodingKey {
         case inputMethod, useModernOrthography, switchKeyStatus, isVietnamese
         case useMacro, useMacroInEnglishMode, autoCapsMacro
+        case grayIcon, showIconOnDock, showUIOnStartup, runOnStartup, useSmartSwitchKey
     }
 
     init(from decoder: Decoder) throws {
@@ -37,5 +48,10 @@ extension DkeySettings: Codable {
         useMacro             = try c.decodeIfPresent(Bool.self, forKey: .useMacro)             ?? false
         useMacroInEnglishMode = try c.decodeIfPresent(Bool.self, forKey: .useMacroInEnglishMode) ?? false
         autoCapsMacro        = try c.decodeIfPresent(Bool.self, forKey: .autoCapsMacro)        ?? false
+        grayIcon          = try c.decodeIfPresent(Bool.self, forKey: .grayIcon)          ?? false
+        showIconOnDock    = try c.decodeIfPresent(Bool.self, forKey: .showIconOnDock)    ?? false
+        showUIOnStartup   = try c.decodeIfPresent(Bool.self, forKey: .showUIOnStartup)   ?? false
+        runOnStartup      = try c.decodeIfPresent(Bool.self, forKey: .runOnStartup)      ?? false
+        useSmartSwitchKey = try c.decodeIfPresent(Bool.self, forKey: .useSmartSwitchKey) ?? false
     }
 }

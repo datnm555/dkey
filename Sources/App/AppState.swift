@@ -84,6 +84,7 @@ final class AppState: ObservableObject {
         useMacro = s.useMacro
         useMacroInEnglishMode = s.useMacroInEnglishMode
         autoCapsMacro = s.autoCapsMacro
+        grayIcon = s.grayIcon
         macros = macroStore.load()
         _isReflecting = false
         controller.apply(inputMethod: s.inputMethod, modernOrthography: s.useModernOrthography, switchKeyStatus: s.switchKeyStatus)
@@ -105,7 +106,9 @@ final class AppState: ObservableObject {
                                 isVietnamese: isVietnamese,
                                 useMacro: useMacro,
                                 useMacroInEnglishMode: useMacroInEnglishMode,
-                                autoCapsMacro: autoCapsMacro))
+                                autoCapsMacro: autoCapsMacro,
+                                grayIcon: grayIcon, showIconOnDock: false, showUIOnStartup: false,
+                                runOnStartup: false, useSmartSwitchKey: false))
     }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.
