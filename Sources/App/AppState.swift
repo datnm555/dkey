@@ -43,7 +43,7 @@ final class AppState: ObservableObject {
     @Published var hasAccessibility: Bool = false
 
     @Published var isVietnamese: Bool = true {
-        didSet { if !_isReflecting { controller.setVietnamese(isVietnamese); persist() } }
+        didSet { if !_isReflecting { controller.setVietnamese(isVietnamese); persist(); rememberCurrentLanguage() } }
     }
     @Published var inputMethod: InputMethod = .telex {
         didSet { if !_isReflecting { controller.engine.inputMethod = inputMethod; controller.engine.newSession(); persist() } }
@@ -51,7 +51,23 @@ final class AppState: ObservableObject {
     @Published var useModernOrthography: Bool = true {
         didSet { if !_isReflecting { controller.engine.useModernOrthography = useModernOrthography; controller.engine.newSession(); persist() } }
     }
-    @Published var grayIcon: Bool = false
+    let smartSwitch = SmartSwitch()
+    var currentBundleId = ""
+    private var restoringForApp = false
+
+    @Published var showIconOnDock: Bool = false {
+        didSet { if !_isReflecting { NSApp.setActivationPolicy(showIconOnDock ? .regular : .accessory); persist() } }
+    }
+    @Published var showUIOnStartup: Bool = false {
+        didSet { if !_isReflecting { persist() } }
+    }
+    @Published var runOnStartup: Bool = false {
+        didSet { if !_isReflecting { LoginItem.setEnabled(runOnStartup); persist() } }
+    }
+    @Published var useSmartSwitchKey: Bool = false {
+        didSet { if !_isReflecting { smartSwitch.isEnabled = useSmartSwitchKey; persist() } }
+    }
+    @Published var grayIcon: Bool = false { didSet { if !_isReflecting { persist() } } }
     @Published var selectedPage: SettingsPage = .typing
     @Published var switchKeyStatus: Int32 = AppState.defaultSwitchKeyStatus {
         didSet { if !_isReflecting { controller.switchKeyStatus = switchKeyStatus; persist() } }
@@ -85,12 +101,17 @@ final class AppState: ObservableObject {
         useMacroInEnglishMode = s.useMacroInEnglishMode
         autoCapsMacro = s.autoCapsMacro
         grayIcon = s.grayIcon
+        showIconOnDock = s.showIconOnDock
+        showUIOnStartup = s.showUIOnStartup
+        runOnStartup = s.runOnStartup
+        useSmartSwitchKey = s.useSmartSwitchKey
         macros = macroStore.load()
         _isReflecting = false
         controller.apply(inputMethod: s.inputMethod, modernOrthography: s.useModernOrthography, switchKeyStatus: s.switchKeyStatus)
         controller.setVietnamese(s.isVietnamese)
         applyMacroFlags()
         controller.macro.setMacros(macros)
+        smartSwitch.isEnabled = useSmartSwitchKey
     }
 
     private func applyMacroFlags() {
@@ -107,13 +128,48 @@ final class AppState: ObservableObject {
                                 useMacro: useMacro,
                                 useMacroInEnglishMode: useMacroInEnglishMode,
                                 autoCapsMacro: autoCapsMacro,
-                                grayIcon: grayIcon, showIconOnDock: false, showUIOnStartup: false,
-                                runOnStartup: false, useSmartSwitchKey: false))
+                                grayIcon: grayIcon, showIconOnDock: showIconOnDock,
+                                showUIOnStartup: showUIOnStartup, runOnStartup: runOnStartup,
+                                useSmartSwitchKey: useSmartSwitchKey))
     }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.
     func reflectLanguageFromEngine(_ vi: Bool) {
         if isVietnamese != vi { _isReflecting = true; isVietnamese = vi; _isReflecting = false }
+        rememberCurrentLanguage()
+    }
+
+    /// Frontmost app changed. If smart-switch is on and this app has a remembered language, apply it
+    /// WITHOUT recording it back (restoringForApp guards remember()).
+    func handleAppActivated(bundleId: String) {
+        currentBundleId = bundleId
+        guard useSmartSwitchKey, let vi = smartSwitch.languageFor(bundleId), vi != isVietnamese else { return }
+        restoringForApp = true
+        _isReflecting = true; isVietnamese = vi; _isReflecting = false   // update UI without side effects
+        controller.setVietnamese(vi)                                     // flip the engine explicitly
+        restoringForApp = false
+    }
+
+    /// Record the current language for the current app (called on user-initiated changes only).
+    private func rememberCurrentLanguage() {
+        if useSmartSwitchKey && !restoringForApp { smartSwitch.remember(currentBundleId, vietnamese: isVietnamese) }
+    }
+
+    func resetToDefaults() {
+        let d = DkeySettings.defaults
+        _isReflecting = true
+        isVietnamese = d.isVietnamese; inputMethod = d.inputMethod
+        useModernOrthography = d.useModernOrthography; switchKeyStatus = d.switchKeyStatus
+        useMacro = d.useMacro; useMacroInEnglishMode = d.useMacroInEnglishMode; autoCapsMacro = d.autoCapsMacro
+        grayIcon = d.grayIcon; showIconOnDock = d.showIconOnDock; showUIOnStartup = d.showUIOnStartup
+        runOnStartup = d.runOnStartup; useSmartSwitchKey = d.useSmartSwitchKey
+        _isReflecting = false
+        controller.apply(inputMethod: d.inputMethod, modernOrthography: d.useModernOrthography, switchKeyStatus: d.switchKeyStatus)
+        controller.setVietnamese(d.isVietnamese)
+        applyMacroFlags(); smartSwitch.isEnabled = d.useSmartSwitchKey
+        NSApp.setActivationPolicy(d.showIconOnDock ? .regular : .accessory)
+        LoginItem.setEnabled(d.runOnStartup)
+        persist()
     }
 
     /// Hiển thị hotkey dạng "⌥Z". Phase 0: rút gọn, đủ cho menu.
