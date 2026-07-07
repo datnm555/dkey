@@ -143,7 +143,7 @@ final class AppState: ObservableObject {
     /// WITHOUT recording it back (restoringForApp guards remember()).
     func handleAppActivated(bundleId: String) {
         currentBundleId = bundleId
-        guard useSmartSwitchKey, let vi = smartSwitch.languageFor(bundleId), vi != isVietnamese else { return }
+        guard let vi = smartSwitch.applicableLanguage(for: bundleId, current: isVietnamese) else { return }
         restoringForApp = true
         _isReflecting = true; isVietnamese = vi; _isReflecting = false   // update UI without side effects
         controller.setVietnamese(vi)                                     // flip the engine explicitly
@@ -152,7 +152,7 @@ final class AppState: ObservableObject {
 
     /// Record the current language for the current app (called on user-initiated changes only).
     private func rememberCurrentLanguage() {
-        if useSmartSwitchKey && !restoringForApp { smartSwitch.remember(currentBundleId, vietnamese: isVietnamese) }
+        if !restoringForApp { smartSwitch.recordIfEnabled(currentBundleId, vietnamese: isVietnamese) }
     }
 
     func resetToDefaults() {
@@ -166,7 +166,7 @@ final class AppState: ObservableObject {
         _isReflecting = false
         controller.apply(inputMethod: d.inputMethod, modernOrthography: d.useModernOrthography, switchKeyStatus: d.switchKeyStatus)
         controller.setVietnamese(d.isVietnamese)
-        applyMacroFlags(); smartSwitch.isEnabled = d.useSmartSwitchKey
+        applyMacroFlags(); smartSwitch.isEnabled = d.useSmartSwitchKey; smartSwitch.reset()
         NSApp.setActivationPolicy(d.showIconOnDock ? .regular : .accessory)
         LoginItem.setEnabled(d.runOnStartup)
         persist()

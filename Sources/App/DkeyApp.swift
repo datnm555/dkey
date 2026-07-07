@@ -81,7 +81,7 @@ final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
             forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main
         ) { note in
             let id = (note.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication)?.bundleIdentifier ?? ""
-            DispatchQueue.main.async { AppState.shared.handleAppActivated(bundleId: id) }
+            MainActor.assumeIsolated { AppState.shared.handleAppActivated(bundleId: id) }
         }
 
         // Hotkey → UI: reflect language flips back into AppState (icon/menu).

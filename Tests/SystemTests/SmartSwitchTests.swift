@@ -33,4 +33,28 @@ final class SmartSwitchTests: XCTestCase {
         s.remember("com.apple.Safari", vietnamese: false); s.reset()
         XCTAssertNil(s.languageFor("com.apple.Safari"))
     }
+
+    func testApplicableLanguageDisabledReturnsNil() {
+        let s = SmartSwitch(defaults: fresh()); s.remember("a", vietnamese: false)
+        s.isEnabled = false
+        XCTAssertNil(s.applicableLanguage(for: "a", current: true))
+    }
+    func testApplicableLanguageUnknownOrSameReturnsNil() {
+        let s = SmartSwitch(defaults: fresh()); s.isEnabled = true
+        XCTAssertNil(s.applicableLanguage(for: "unknown", current: true))
+        s.remember("a", vietnamese: true)
+        XCTAssertNil(s.applicableLanguage(for: "a", current: true))   // already matches
+    }
+    func testApplicableLanguageDifferentReturnsRemembered() {
+        let s = SmartSwitch(defaults: fresh()); s.isEnabled = true
+        s.remember("a", vietnamese: false)
+        XCTAssertEqual(s.applicableLanguage(for: "a", current: true), false)
+    }
+    func testRecordIfEnabledRespectsFlag() {
+        let s = SmartSwitch(defaults: fresh())
+        s.isEnabled = false; s.recordIfEnabled("a", vietnamese: true)
+        XCTAssertNil(s.languageFor("a"))
+        s.isEnabled = true; s.recordIfEnabled("a", vietnamese: true)
+        XCTAssertEqual(s.languageFor("a"), true)
+    }
 }
