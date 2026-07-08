@@ -52,7 +52,6 @@ struct MenuBarLabel: View {
     }
 }
 
-
 final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
     private let synthesizer = KeySynthesizer()
     private var eventTap: EventTap?

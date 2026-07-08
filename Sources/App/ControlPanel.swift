@@ -1,5 +1,3 @@
-import Foundation
-
 /// Pure model backing the menu-bar popover (screen ②).
 enum ControlPanel {
     /// One Kiểu gõ segment. `method == nil` + `enabled == false` marks a

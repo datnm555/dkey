@@ -56,7 +56,7 @@ struct ControlPanelView: View {
                 .foregroundStyle(Color.dkSecondary)
                 .frame(width: 56, alignment: .leading)
             HStack(spacing: 2) {
-                ForEach(Array(ControlPanel.inputMethodSegments.enumerated()), id: \.offset) { _, seg in
+                ForEach(ControlPanel.inputMethodSegments, id: \.label) { seg in
                     segmentButton(seg)
                 }
             }
