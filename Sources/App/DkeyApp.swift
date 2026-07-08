@@ -21,6 +21,11 @@ struct DkeyApp: App {
         }
         .windowResizability(.contentSize)
         .defaultSize(width: 760, height: 520)
+
+        Window("Chào mừng", id: "onboarding") {
+            OnboardingView().environmentObject(state)
+        }
+        .windowResizability(.contentSize)
     }
 }
 
@@ -35,7 +40,10 @@ struct MenuBarLabel: View {
             .onAppear {
                 guard !didOpenOnStartup else { return }
                 didOpenOnStartup = true
-                if state.showUIOnStartup {
+                if Onboarding.shouldAutoOpen(completed: state.hasCompletedOnboarding) {
+                    openWindow(id: "onboarding")
+                    NSApp.activate(ignoringOtherApps: true)
+                } else if state.showUIOnStartup {
                     openWindow(id: "settings")
                     NSApp.activate(ignoringOtherApps: true)
                 }
