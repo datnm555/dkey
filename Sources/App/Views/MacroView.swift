@@ -34,6 +34,7 @@ struct MacroView: View {
                             HStack(spacing: 6) {
                                 Image(systemName: "magnifyingglass")
                                     .foregroundStyle(Color.dkSecondary)
+                                    .accessibilityHidden(true)
                                 TextField("Tìm gõ tắt…", text: $searchQuery)
                                     .textFieldStyle(.plain)
                             }
@@ -53,7 +54,7 @@ struct MacroView: View {
                         .onChange(of: selection) { _, id in
                             if let m = state.macros.first(where: { $0.id == id }) {
                                 keyField = m.key; contentField = m.content
-                            } else {
+                            } else {   // deselected → clear the editor so the button reverts to "Thêm"
                                 keyField = ""; contentField = ""
                             }
                         }

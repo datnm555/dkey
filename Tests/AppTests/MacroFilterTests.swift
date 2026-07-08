@@ -25,7 +25,18 @@ final class MacroFilterTests: XCTestCase {
         XCTAssertTrue(MacroFilter.filter(sample, query: "zzz").isEmpty)
     }
 
-    func testPreservesOriginalOrder() {
+    func testEmptyQueryReturnsFullListInOrder() {
         XCTAssertEqual(MacroFilter.filter(sample, query: "").map(\.key), ["vn", "kg", "dc"])
+    }
+
+    // Non-empty query that matches multiple rows: the filtered result must keep
+    // the original relative order (exercises the filter body, not the passthrough).
+    func testMatchesKeepOriginalRelativeOrder() {
+        let macros = [
+            Macro(key: "aa", content: "one match"),
+            Macro(key: "bb", content: "no"),
+            Macro(key: "ac", content: "another match"),
+        ]
+        XCTAssertEqual(MacroFilter.filter(macros, query: "match").map(\.key), ["aa", "ac"])
     }
 }
