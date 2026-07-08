@@ -41,7 +41,9 @@ struct OnboardingView: View {
         .background(Color.dkWindowBg)
         .onAppear {
             // Live status: flip to trusted when the user grants it in System Settings.
-            PermissionMonitor.waitUntilTrusted { isTrusted = true }
+            // Hop to main for the @State write (waitUntilTrusted's callback thread isn't
+            // contractually main — matches the app-delegate convention).
+            PermissionMonitor.waitUntilTrusted { DispatchQueue.main.async { isTrusted = true } }
         }
     }
 
