@@ -49,6 +49,7 @@ struct ToggleRow: View {
             Toggle("", isOn: $isOn)
                 .labelsHidden()
                 .toggleStyle(.switch)
+                .accessibilityLabel(title)
         }
         .opacity(enabled ? 1 : 0.5)
         .disabled(!enabled)
