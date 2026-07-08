@@ -4,7 +4,7 @@ import SwiftUI
 /// the settings tabs (screens ③–⑥).
 struct SectionCard<Content: View>: View {
     let title: String
-    @ViewBuilder var content: Content
+    let content: Content
 
     init(title: String, @ViewBuilder content: () -> Content) {
         self.title = title
