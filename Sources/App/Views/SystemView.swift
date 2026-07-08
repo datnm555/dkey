@@ -40,6 +40,7 @@ struct SystemView: View {
                         }
                         .opacity(0.5)
                         .allowsHitTesting(false)
+                        .accessibilityHidden(true)
                     }
                 }
 
