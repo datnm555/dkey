@@ -18,31 +18,67 @@ struct ConvertView: View {
     }
 
     var body: some View {
-        Form {
-            HStack {
-                Picker("Từ bảng mã:", selection: $fromRaw) {
-                    ForEach(CodeTable.allCases, id: \.rawValue) { Text($0.displayName).tag($0.rawValue) }
+        ScrollView {
+            VStack(spacing: 16) {
+                SectionCard(title: "Bảng mã") {
+                    VStack(alignment: .leading, spacing: 12) {
+                        HStack(spacing: 10) {
+                            Picker("Từ bảng mã", selection: $fromRaw) {
+                                ForEach(CodeTable.allCases, id: \.rawValue) {
+                                    Text($0.displayName).tag($0.rawValue)
+                                }
+                            }
+                            Button {
+                                let t = fromRaw; fromRaw = toRaw; toRaw = t
+                            } label: {
+                                Image(systemName: "arrow.left.arrow.right")
+                            }
+                            .buttonStyle(.borderless)
+                            .help("Hoán đổi bảng mã")
+                            Picker("Sang bảng mã", selection: $toRaw) {
+                                ForEach(CodeTable.allCases, id: \.rawValue) {
+                                    Text($0.displayName).tag($0.rawValue)
+                                }
+                            }
+                        }
+                        Picker("Kiểu chữ", selection: $caseRaw) {
+                            ForEach(CaseMode.allCases, id: \.rawValue) {
+                                Text($0.displayName).tag($0.rawValue)
+                            }
+                        }
+                        ToggleRow(title: "Loại bỏ dấu thanh (tiếng Việt → khong dau)",
+                                  isOn: $removeMark)
+                    }
                 }
-                Button { let t = fromRaw; fromRaw = toRaw; toRaw = t } label: { Image(systemName: "arrow.left.arrow.right") }
-                Picker("Sang:", selection: $toRaw) {
-                    ForEach(CodeTable.allCases, id: \.rawValue) { Text($0.displayName).tag($0.rawValue) }
+
+                SectionCard(title: "Văn bản nguồn") {
+                    TextEditor(text: $input)
+                        .font(.body)
+                        .frame(minHeight: 110)
+                        .scrollContentBackground(.hidden)
+                        .padding(8)
+                        .background(Color.dkWindowBg, in: RoundedRectangle(cornerRadius: 8))
+                }
+
+                SectionCard(title: "Kết quả") {
+                    VStack(alignment: .leading, spacing: 10) {
+                        TextEditor(text: .constant(output))
+                            .font(.body)
+                            .frame(minHeight: 110)
+                            .scrollContentBackground(.hidden)
+                            .padding(8)
+                            .background(Color.dkWindowBg, in: RoundedRectangle(cornerRadius: 8))
+                        Button("Sao chép kết quả") {
+                            NSPasteboard.general.clearContents()
+                            NSPasteboard.general.setString(output, forType: .string)
+                        }
+                    }
                 }
             }
-            Picker("Kiểu chữ:", selection: $caseRaw) {
-                ForEach(CaseMode.allCases, id: \.rawValue) { Text($0.displayName).tag($0.rawValue) }
-            }
-            Toggle("Loại bỏ dấu thanh (tiếng Việt → khong dau)", isOn: $removeMark)
-            Section("Văn bản") {
-                TextEditor(text: $input).frame(minHeight: 90).font(.body)
-            }
-            Section("Kết quả") {
-                TextEditor(text: .constant(output)).frame(minHeight: 90).font(.body)
-                Button("Copy kết quả") {
-                    NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString(output, forType: .string)
-                }
-            }
+            .padding(16)
+            .frame(maxWidth: 640)
         }
-        .formStyle(.grouped)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.dkWindowBg)
     }
 }
