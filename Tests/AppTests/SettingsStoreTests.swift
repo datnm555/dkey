@@ -27,6 +27,7 @@ final class SettingsStoreTests: XCTestCase {
         s.showUIOnStartup = true
         s.runOnStartup = true
         s.useSmartSwitchKey = true
+        s.hasCompletedOnboarding = true
         store.save(s)
         XCTAssertEqual(store.load(), s)
     }

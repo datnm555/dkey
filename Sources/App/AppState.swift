@@ -68,6 +68,9 @@ final class AppState: ObservableObject {
         didSet { if !_isReflecting { smartSwitch.isEnabled = useSmartSwitchKey; persist() } }
     }
     @Published var grayIcon: Bool = false { didSet { if !_isReflecting { persist() } } }
+    @Published var hasCompletedOnboarding: Bool = false {
+        didSet { if !_isReflecting { persist() } }
+    }
     @Published var selectedPage: SettingsPage = .typing
     @Published var switchKeyStatus: Int32 = AppState.defaultSwitchKeyStatus {
         didSet { if !_isReflecting { controller.switchKeyStatus = switchKeyStatus; persist() } }
@@ -105,6 +108,7 @@ final class AppState: ObservableObject {
         showUIOnStartup = s.showUIOnStartup
         runOnStartup = s.runOnStartup
         useSmartSwitchKey = s.useSmartSwitchKey
+        hasCompletedOnboarding = s.hasCompletedOnboarding
         macros = macroStore.load()
         _isReflecting = false
         controller.apply(inputMethod: s.inputMethod, modernOrthography: s.useModernOrthography, switchKeyStatus: s.switchKeyStatus)
@@ -130,7 +134,12 @@ final class AppState: ObservableObject {
                                 autoCapsMacro: autoCapsMacro,
                                 grayIcon: grayIcon, showIconOnDock: showIconOnDock,
                                 showUIOnStartup: showUIOnStartup, runOnStartup: runOnStartup,
-                                useSmartSwitchKey: useSmartSwitchKey))
+                                useSmartSwitchKey: useSmartSwitchKey,
+                                hasCompletedOnboarding: hasCompletedOnboarding))
+    }
+
+    func completeOnboarding() {
+        if !hasCompletedOnboarding { hasCompletedOnboarding = true }  // didSet persists
     }
 
     /// Called from the engine/hotkey side; updates UI state without re-notifying the engine.
