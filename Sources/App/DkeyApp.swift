@@ -8,12 +8,13 @@ struct DkeyApp: App {
 
     var body: some Scene {
         MenuBarExtra {
-            MenuContent()
+            ControlPanelView()
                 .environmentObject(state)
         } label: {
             MenuBarLabel()
                 .environmentObject(state)
         }
+        .menuBarExtraStyle(.window)
 
         Window("dkey — Bộ gõ Tiếng Việt", id: "settings") {
             SettingsRootView()
@@ -51,28 +52,6 @@ struct MenuBarLabel: View {
     }
 }
 
-struct MenuContent: View {
-    @EnvironmentObject private var state: AppState
-    @Environment(\.openWindow) private var openWindow
-
-    var body: some View {
-        Toggle("Tiếng Việt  \(AppState.hotkeyDescription(state.switchKeyStatus))",
-               isOn: $state.isVietnamese)
-
-        Divider()
-
-        Button("Cài đặt…") {
-            openWindow(id: "settings")
-            NSApp.activate(ignoringOtherApps: true)
-        }
-        .keyboardShortcut(",")
-
-        Divider()
-
-        Button("Thoát dkey") { NSApp.terminate(nil) }
-            .keyboardShortcut("q")
-    }
-}
 
 final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
     private let synthesizer = KeySynthesizer()
