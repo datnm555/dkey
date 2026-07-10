@@ -36,6 +36,7 @@ targets:
     dependencies:
       - sdk: Cocoa.framework
       - sdk: ServiceManagement.framework
+      - sdk: Carbon.framework
 
   dkeyTests:
     type: bundle.unit-test
