@@ -62,6 +62,9 @@ final class DkeyAppDelegate: NSObject, NSApplicationDelegate {
         // Dock icon per setting (menu-bar app defaults to accessory / no Dock).
         NSApp.setActivationPolicy(state.showIconOnDock ? .regular : .accessory)
 
+        // Kiểm tra cập nhật ngầm lúc khởi động (tối đa 24h/lần, độc lập engine).
+        UpdateChecker.shared.autoCheckIfDue()
+
         // Smart-switch: track the frontmost app.
         NSWorkspace.shared.notificationCenter.addObserver(
             forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main
