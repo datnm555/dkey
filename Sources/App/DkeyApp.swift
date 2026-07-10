@@ -20,8 +20,9 @@ struct DkeyApp: App {
             SettingsRootView()
                 .environmentObject(state)
         }
+        .windowStyle(.hiddenTitleBar)
         .windowResizability(.contentSize)
-        .defaultSize(width: 760, height: 520)
+        .defaultSize(width: 820, height: 560)
 
         Window("Chào mừng", id: "onboarding") {
             OnboardingView().environmentObject(state)
