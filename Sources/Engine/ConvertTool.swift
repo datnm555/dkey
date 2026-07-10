@@ -8,7 +8,7 @@ public enum CaseMode: Int, CaseIterable {
         case .keep:     return "Giữ nguyên"
         case .upper:    return "IN HOA TOÀN BỘ"
         case .lower:    return "in thường toàn bộ"
-        case .sentence: return "Hoa đầu câu"
+        case .sentence: return "Hoa chữ cái đầu câu"
         case .title:    return "Hoa Mỗi Đầu Từ"
         }
     }
