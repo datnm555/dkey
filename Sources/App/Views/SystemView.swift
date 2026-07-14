@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SystemView: View {
     @EnvironmentObject private var state: AppState
+    @ObservedObject private var updater = UpdateChecker.shared
     @State private var confirmingReset = false
 
     var body: some View {
@@ -17,6 +18,41 @@ struct SystemView: View {
                                   subtitle: SystemExtras.placeholderRows[0].subtitle,
                                   isOn: .constant(false),
                                   enabled: SystemExtras.placeholderRows[0].enabled)
+                    }
+                }
+
+                SectionCard(title: "Cập nhật") {
+                    VStack(alignment: .leading, spacing: 10) {
+                        ToggleRow(title: "Tự động kiểm tra cập nhật khi khởi động",
+                                  isOn: Binding(get: { updater.autoCheckEnabled },
+                                                set: { updater.autoCheckEnabled = $0 }))
+                        HStack(spacing: 8) {
+                            Image(systemName: updateIcon)
+                                .foregroundStyle(updateIconColor)
+                                .accessibilityHidden(true)
+                            Text(updateStatusText)
+                                .font(.system(size: 13))
+                                .foregroundStyle(Color.dkSecondary)
+                                .lineLimit(2)
+                            Spacer()
+                            if case .checking = updater.status {
+                                ProgressView().controlSize(.small)
+                            } else {
+                                Button("Kiểm tra ngay") {
+                                    Task { await updater.check(manual: true) }
+                                }
+                            }
+                        }
+                        if case .available(let info) = updater.status {
+                            HStack {
+                                Text("Phiên bản \(info.version) đã sẵn sàng.")
+                                    .font(.system(size: 13))
+                                    .foregroundStyle(Color.dkText)
+                                Spacer()
+                                Button("Xem bản mới") { updater.openReleasePage(info) }
+                                    .buttonStyle(.borderedProminent)
+                            }
+                        }
                     }
                 }
 
@@ -44,6 +80,16 @@ struct SystemView: View {
                     }
                 }
 
+                SectionCard(title: "Tương thích nâng cao") {
+                    VStack(spacing: 10) {
+                        ToggleRow(title: "Gửi phím từng bước (chậm nhưng tương thích cao) — sắp có",
+                                  isOn: .constant(false), enabled: false)
+                        ToggleRow(title: "Tương thích bố cục bàn phím khác QWERTY — sắp có",
+                                  isOn: .constant(false), enabled: false)
+                    }
+                    .accessibilityHidden(true)
+                }
+
                 Button("Khôi phục cài đặt mặc định", role: .destructive) {
                     confirmingReset = true
                 }
@@ -58,6 +104,34 @@ struct SystemView: View {
                             isPresented: $confirmingReset, titleVisibility: .visible) {
             Button("Khôi phục", role: .destructive) { state.resetToDefaults() }
             Button("Huỷ", role: .cancel) {}
+        }
+    }
+
+    private var updateStatusText: String {
+        switch updater.status {
+        case .idle:              return "Phiên bản hiện tại \(updater.currentVersion)."
+        case .checking:          return "Đang kiểm tra cập nhật…"
+        case .upToDate:          return "Bạn đang dùng bản mới nhất (\(updater.currentVersion))."
+        case .available(let i):  return "Đã có bản \(i.version)."
+        case .failed(let msg):   return msg
+        }
+    }
+
+    private var updateIcon: String {
+        switch updater.status {
+        case .available: return "arrow.down.circle.fill"
+        case .failed:    return "exclamationmark.triangle.fill"
+        case .upToDate:  return "checkmark.circle.fill"
+        default:         return "arrow.triangle.2.circlepath"
+        }
+    }
+
+    private var updateIconColor: Color {
+        switch updater.status {
+        case .available: return Color.dkAccent
+        case .failed:    return .orange
+        case .upToDate:  return Color.dkSuccess
+        default:         return Color.dkSecondary
         }
     }
 }
